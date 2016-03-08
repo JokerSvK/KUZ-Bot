@@ -184,7 +184,7 @@
     "unmuted": "/me [@%%NAME%%] Zrušil/a umlčení @%%USERNAME%%.",
     "muterank": "/me [@%%NAME%%] Nemůžeš umlčet osobu se stejnou nebo vyšší hodností.",
     "oplist": "/me OP list: %%LINK%%",
-    "pong": "/me Hlásím, že %%NAME%% je AFK!",
+    "pong": "/me Pong!",
     "reload": "/me Hned jsem zpět.",
     "removenotinwl": "/me [@%%NAME%%] Vybraný uživatel @%%USERNAME%% není ve frontě.",
     "roomrules": "/me Prosím přečtěte si zde pravidla komunity: %%LINK%%",
