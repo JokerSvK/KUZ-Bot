@@ -155,6 +155,17 @@
     "website": "V této chvíli nemáme žádné webové stránky.",
     "youtube": "/me [%%NAME%%] Link na náš youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: [:+1:%%WOOTS%%|:star:%%GRABS%%|:-1:%%MEHS%%]",
-	"selfwarn": "/em [@%%NAME%%] proč dáváš varování sám sobě?",
-	"nouseralkohol": "/em @%%NAME%% pokud se chceš opít, požádej někoho jiného, aby ti dal panáka."    
+	"selfwarn": "/em [@%%NAME%%] proč varuješ sám sobě?",
+	
+	"nouseralkohol": "/em @%%NAME%% tady bohužel není. Zeptej se někoho jinýho na panáka..",
+	"givealkohol": "/me Pozvat někoho na panáka alkoholu můžeš přes !alkohol @jmeno",
+	"selfalkohol": "/me Ale no ták, nebuď taková labuť a poděl se o panáka!",
+
+	
+	"thorNotClose": "\/me @%%NAME%% nemáš oprávnění k použití kladiva!",
+    "thorcd": "\/me @%%NAME%% můžeš kladivo zkusit za %%TIME%% minut.",
+    "thorWorthy": "\/me @%%NAME%% byl/a jsi vybrán/a kladivem :hammer:, gratulujeme!",
+    "thorNotWorthy": "\/me @%%NAME%%, bohužel ti oznámují, že tě kladivo nevybralo. :(",
+    
+    
 }
