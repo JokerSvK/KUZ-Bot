@@ -20,12 +20,7 @@
         "ti daroval\/a duhovou su\u0161enku pe\u010denou s l\u00e1skou. :heart:",
         "ti daroval\/a starou su\u0161enku, kterou zapomn\u011bl v de\u0161ti. Je plesniv\u00e1.",
         "ti pe\u010de \u010derstv\u00e9 su\u0161enky. Von\u00ed b\u00e1je\u010dn\u011b."
-    ],
-    
-    "alkohol": [
-        "ti dal/a slevu na pivo",
-
-	],
+  
     "balls": [
         "V\u011bt\u0161ina v\u011bc\u00ed nasv\u011bd\u010duje tomu, \u017ee ano. ",
         "Ano",
@@ -212,6 +207,5 @@
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
-        "alkohol": "\/me @%%NAMETO%%, %%NAMEFROM%% %%ALKOHOL%%",
 
 }
