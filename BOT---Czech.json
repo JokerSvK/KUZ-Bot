@@ -234,5 +234,6 @@
     "asksklep": "/me Pokud chceš někoho pozvat nebo odtáhnout do sklepa, napiš !sklep @user.",
     "nousersklep": "/me Nevidím %%NAME%% v roomce, takže smůla.",
     "selfsklep": "/me %%NAME%% to myslíš vážně?? Sám/sama sebe zvát do sklepa, když tu máš tolik lidí na výběr. -,-"
+    "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy"
 
 }
