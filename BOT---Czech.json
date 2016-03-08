@@ -23,31 +23,8 @@
     ],
     
     "alkohol": [
-        'ti dal/a slevu na pivo.',
-                    'si chce s tebou připít',
-                    'ti říká: "Už jsi toho vypil/a moc."',
-                    'ti říká: "Dávej pozor až budeš řidit"',
-                    'ti už míchá drink.',
-                    'se tak motá až spadl/a na zem. S ní/m dneska už nehneš',
-                    'ti nabídl/a panáka skvělé whisky se slovy "Na ex!"',
-                    'ti nabídl/a frgála neoznačeného tuzemáku se vzkazem "Neboj, neoslepneš."',
-                    'ti povídá: "Už jsi jak Zeman."',
-                    'ti nabídl/a klasickou krabici vína',
-                    'ti nabídl/a nealkoholický pití, to musí být nějaký omyl.',
-                    'ti nenabídl/a žadný alkohol, protože je švorc.',
-                    'chce po tobě, aby jsi zaplatil/a.',
-                    'tě pozval/a na menší návštěvu s domácí pálenkou ',
-                    'tě zve na ostrou fíkovici a možná něco víc..',
-                    'ti povídá v připitém stavu: "To za naších časů.."',
-                    'hudruje: "Nemyslíš, zaplatíš."',
-                    'ti podává drink "Sex on the bitch. Pardon beach"',
-                    'se tě snaží opít pivním rohlíkem.',
-                    'tě pozval/a na Beton.',
-					'ti chce nakecat, že to víno je limonáda.',
-					'se s tebou začal/a hádat o alkoholu',
-					'ti vrazil/a panáka se slovy "Když už jsi tady, tak se pořádně opij!"',
-					'ti vypil/a tvůj jed.'
-					
+        "ti dal/a slevu na pivo",
+
 	],
     "balls": [
         "V\u011bt\u0161ina v\u011bc\u00ed nasv\u011bd\u010duje tomu, \u017ee ano. ",
@@ -235,6 +212,6 @@
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
-        "alkohol": "\/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
+        "alkohol": "\/me @%%NAMETO%%, %%NAMEFROM%% %%ALKOHOL%%",
 
 }
