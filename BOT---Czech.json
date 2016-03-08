@@ -207,8 +207,5 @@
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
-    "givealkohol": "/me Chceš-li si s někým dát panáka, napiš !alkohol @jmeno",
-    "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber na panáka někoho jinýho!",
-    "selfalkohol": "/me @%%NAME%%, nebuď labuť a k chlastu si někoho pozvi!"
-    "alkohol": "/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%"
+    
 }
