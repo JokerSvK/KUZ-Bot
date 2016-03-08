@@ -208,7 +208,7 @@
 
     "ego": "/me %%NAME%%  *EGO UP*",
     
-    "afk": "/me Poslušně hlásím, že %%NAME%% bude na nějakou dobu AFK.:V:",
+    "afk": "/me AFK!",
     "back": "/me %%NAME%% BACK!",
    
     "givefacka": "/me Napiš !facka @user a dej někomu facku.",
