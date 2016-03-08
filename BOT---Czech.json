@@ -18,6 +18,7 @@
         "ti daroval/a sušenku. POZOR! Je otrávená!",
         "ti chtěl/a darovat sušenku, ale už ji snědl/a.",
         "ti daroval/a čerstvě upečenou sušenku. Voní úžasně."
+        
     ],
    
     "balls": [
@@ -75,7 +76,7 @@
     "permissionownsong": "/me :up: @%%NAME%% má právo hrát svojí produkci.",
     "isblacklisted": "Tato skladba je na %%BLACKLIST%% blacklistu! Přeskakuji...",
     "isopen": "/me Ruleta je spuštěna! Napiš !join pro přihlášení!",
-    "winnerpicked": "/me Vítěz byl vybrán! @%%NAME%% na pozici %%POSITION%%.",
+    "winnerpicked": "/me Vítěz byl vybrán! @%%NAME%% na pozici %%POSITION%%. Gratulujeme!",
     "ball": "/me %%NAME%% se zeptal/a: \"%%QUESTION%%\" a %%BOTNAME%% odpověděl: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% neghostuje.",
     "ghosting": "[%%NAME1%%] %%NAME2%% buď ghostuje nebo zde není.",
@@ -139,11 +140,11 @@
     "afkstatusreset": "/me [@%%NAME%%] Vynuloval/a afk status uživatele @%%USERNAME%%.",
     "inactivefor": "/me [@%%NAME%%] @%%USERNAME%% byl/a neaktivní po dobu %%TIME%%.",
     "inactivelonger": "/me [@%%NAME%%] @%%USERNAME%% je neaktivní déle než je %%BOTNAME%% spuštěn.",
-    "autowoot": "/me Doporučujeme PlugCubed pro automatický woot: http://plugcubed.net/",
+    "autowoot": "/me Doporučujeme RCS pro automatický woot: http://plugcubed.net/",
     "brandambassador": "/me Brand Ambassador je hlas uživatelů plug.dj. Podporují akce, pomáhají komunitám, sdílejí plug.dj vzkaz po celém světě. Pro více informací: https://plug.dj/ba.",
     "bouncerplusrank": "/me [@%%NAME%%] Musíš být manažer a nebo musí být povolen Bouncer+.",
-    "chatcleared": "/me [@%%NAME%%] Vyčistil/a chat.",
-    "deletechat": "/me [@%%NAME%%] Vyčistil/a chat od %%USERNAME%%.",
+    "chatcleared": "/me [@%%NAME%%] Vymazal/a chat.",
+    "deletechat": "/me [@%%NAME%%] Vymazal/a chat od %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% příkazy: %%LINK%%",
     "eatcookie": "/me Pošli někomu sušenku.",
     "nousercookie": "/me nevidím uživatele %%NAME%% v místnosti, nemůžeš s ním jíst sušenky. ",
@@ -183,7 +184,7 @@
     "unmuted": "/me [@%%NAME%%] Zrušil/a umlčení @%%USERNAME%%.",
     "muterank": "/me [@%%NAME%%] Nemůžeš umlčet osobu se stejnou nebo vyšší hodností.",
     "oplist": "/me OP list: %%LINK%%",
-    "pong": "/me Pong!",
+    "pong": "/me Hlásím, že %%NAME%% je AFK!",
     "reload": "/me Hned jsem zpět.",
     "removenotinwl": "/me [@%%NAME%%] Vybraný uživatel @%%USERNAME%% není ve frontě.",
     "roomrules": "/me Prosím přečtěte si zde pravidla komunity: %%LINK%%",
@@ -206,33 +207,5 @@
     "youtube": "/me [%%NAME%%] Dejte nám odběr na youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
 
-    "ego": "/me %%NAME%%  *EGO UP*",
-    
-    "afk": "/me Hlásím, že %%NAME%% bude na nějakou dobu AFK.:V:",
-    "back": "/me %%NAME%% BACK!",
-   
-    "givefacka": "/me Napiš !facka @user a dej někomu facku.",
-    "nouserfacka": "/me Nevidím %%NAME%% v roomce, tak mu/ji nemůžeš dát facku.",
-    "selffacka": "/me %%NAME%% děláš si srandu?? Přece nebudeš fackovat sám/sama sebe. -,-",
-   
-    "huganyone": "/me Pošli někomu objetí. Stačí napsat !hug @user.",
-    "nouserhug": "/me Nevidím %%NAME%% v roomce, takže mu nepošleš objetí. Škoda.",
-    "selfhug": "/me %%NAME%%, ale ale ty egoisto. Pokud chceš obejmout sám/sama sebe, doporučuji zrcadlo...",
-   
-    "loveanyone": "/me Pokud někoho máš moc rád/a, napiš !love @user.",
-    "nouserlove": "/me Nevidím %%NAME%% v roomce, takže smůla.",
-    "selflove": "/me %%NAME%% to jsi vážně takový egoista?? Jak by řekla Yun... Ty tulipán!",
-   
-    "givemoney": "/me Pokud chceš někomu udělat radost, napiš !money @user a pošli mu nějaké.",
-    "nousermoney": "/me Nevidím %%NAME%% v roomce, tak na něj/ni kašli a ty money si nech.",
-    "selfmoney": "/me %%NAME%% poněkud tě nechápu. Proš bys sám/sama sobě posílal/a money?? Radši je pošli někomu, ať má radost.",
-    
-    "sendspam": "/me Nudíš se hodně?? Tak napiš !spam @user a pošli někomu spam.",
-    "nouserspam": "/me Nevidím %%NAME%% v roomce. Zkus si vybrat někoho jiného.",
-    "selfspam": "/me %%NAME%% neříkej, že se nudíš tak moc, že chceš spamovat i sám/sama sebe.",
-    
-    "asksklep": "/me Pokud chceš někoho pozvat nebo odtáhnout do sklepa, napiš !sklep @user.",
-    "nousersklep": "/me Nevidím %%NAME%% v roomce, takže smůla.",
-    "selfsklep": "/me %%NAME%% to myslíš vážně?? Sám/sama sebe zvát do sklepa, když tu máš tolik lidí na výběr. -,-"
 
 }
