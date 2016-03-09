@@ -45,6 +45,12 @@
 					"ti vrazil/a panáka se slovy \"Když už jsi tady, tak se pořádně opij!\"",
 					"ti vypil/a tvůj jed."
 	],
+	
+	"afk": [
+		"ti říká, že jde AFK"
+		
+	],
+	
     "balls": [
         "Hej nechápu, co chceš, ale tak ok.",
         "Ano.",
@@ -118,9 +124,9 @@
     "askskip": "/me @%%NAME%%, nežádej o přeskočení.",
     "spam": "/me @%%NAME%%, prosím nespamuj.",
     "roomadvertising": " /me @%%NAME%%, prosím změň si svůj AutoWoot. Navrhujeme RCS: https://rcs.radiant.dj/install",
-    "validgiftags": "/me [@%%NAME%%] http://media.giphy.com/media/%%ID%%/giphy.gif [Tags: %%TAGS%%]",
+    "validgiftags": "/me [@%%NAME%%] http:\/\/i.giphy.com\/%%ID%%.gif [Tags: %%TAGS%%]",
     "invalidgiftags": "/me [@%%NAME%%] Neplatný tag, zkus jiný. [Tags: %%TAGS%%]",
-    "validgifrandom": "/me [@%%NAME%%] http://media.giphy.com/media/%%ID%%/giphy.gif [Náhodný GIF]",
+    "validgifrandom": "/me [@%%NAME%%] http:\/\/i.giphy.com\/%%ID%%.gif [Náhodný GIF]",
     "invalidgifrandom": "/me [@%%NAME%%] Neplatná žádost, zkus to znovu.",
     "invalidtime": "/me [@%%NAME%%] Byl zadán neplatný čas.",
     "nouserspecified": "/me [@%%NAME%%] Nebyl zadán uživatel.",
@@ -171,12 +177,12 @@
     "deletechat": "/me [@%%NAME%%] Vyčistil/a chat od %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% příkazy: %%LINK%%",
     "eatcookie": "/me Pošli někomu sušenku přes !cookie @jmeno.",
-    "nousercookie": "/me nevidím uživatele %%NAME%% v místnosti, nemůžeš s ním jíst sušenky. ",
+    "nousercookie": "/me Nevidím uživatele %%NAME%% v místnosti, takže si vyber na sušenky někoho jinýho. ",
     "selfcookie": "/me @%%NAME%%, nejsi trochu chamtivý/á? Dávat sušenky sobě. Heh. Rozděl se s ostatními!",
     "cookie": "/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
     "cycleguardtime": "/me [@%%NAME%%] Cycleguard je nastaven na %%TIME%% minut).",
     "dclookuprank": "/me [@%%NAME%%] Pouze vyhazovač a vyšší může používat lookup pro ostatní.",
-    "emojilist": "/me Emoji list: %%LINK%%",
+    "emojilist": "/me Seznam emotikonů: %%LINK%%",
     "notinwaitlist": "/me @%%NAME%%, nejsi ve frontě.",
     "youarenext": "/me @%%NAME%%, budeš DJ až dohraje tahle skladba.",
     "youaredj": "/me @%%NAME%%, jsi právě DJ.",
@@ -186,7 +192,7 @@
     "roulettejoin": "/me @%%NAME%% se přihlásil/a do rulety! (!leave pokud ji chceš opustit)",
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% je v místnosti po dobu %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] nemůžeš použít kick na uživatele se stejnou nebo vyšší hodností!",
-    "kick": "/me [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
+    "kick": "/me [@%%NAME%%], @%%USERNAME%% byl/a jsi vyhozen/a na %%TIME%% minut.",
     "kill": "/me Vypínání bota. ",
     "logout": "/me [@%%NAME%%] Odhlašuje %%BOTNAME%%",
     "rouletteleave": "/me @%%NAME%% opustil/a ruletu!",
@@ -236,5 +242,11 @@
     "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
     "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
     "selfalkohol": "Nebuď labuť a přestaň chlastat sám/a, když máš tolik ochlastů na výběr.",
-    "alkohol": "/me %%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%"
+    "alkohol": "/me %%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%",
+    
+    "nouserafk": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jdeš AFK.",
+    "selfafk": "/me To chceš říct sám/a sobě, že jdeš AFK?",
+    "giveafk": "/me Oznámují všem, že jde %%NAME%% AFK!",
+    "afk": "/me %%NAMETO%%, %%NAMEFROM%% %%AFK%%"
+    
 }
