@@ -247,6 +247,6 @@
     "nouserafk": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jdeš AFK.",
     "selfafk": "/me To chceš říct sám/a sobě, že jdeš AFK?",
     "giveafk": "/me Oznamují vám, že jde %%NAMEFROM%% AFK!",
-    "afk": "/me %%NAMETO%%, %%NAMEFROM%% %%AFK%%"
+    "afk": "/me Oznamují vám, že jde %%NAME%% AFK!"
     
 }
