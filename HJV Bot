@@ -1,4 +1,3 @@
-
 (function () {
 
     /*window.onerror = function() {
@@ -93,7 +92,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/bscBot/source/master/lang/langIndex.json", function (json) {
+        $.get("https://raw.githubusercontent.com/Franta72/BOT---Czech/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -230,21 +229,21 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.8.15",
+        version: "BETA",
         status: false,
-        name: "basicBot",
+        name: "HJV Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
+        chatLink: "https://raw.githubusercontent.com/Franta72/BOT---Czech/master/BOT---Czech.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
-            language: "english",
-            chatLink: "https://rawgit.com/bscBot/source/master/lang/en.json",
+            botName: "HJV Bot",
+            language: "special",
+            chatLink: "https://raw.githubusercontent.com/Franta72/BOT---Czech/master/BOT---Czech.json",
             scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
@@ -286,18 +285,18 @@
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
-            motdEnabled: false,
+            motdEnabled: true,
             motdInterval: 5,
-            motd: "Temporary Message of the Day",
+            motd: "Děkujeme Vám za podporu! :heart: https://www.facebook.com/HudbaUTomasa/?fref=ts",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: "http://hudbajevsetko.justforum.net/t7-seznam-pravidel",
             themeLink: null,
-            fbLink: null,
+            fbLink: "https://www.facebook.com/HudbaUTomasa/?fref=ts",
             youtubeLink: null,
-            website: null,
+            website: "http://hudbajevsetko.justforum.net/",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -1715,6 +1714,18 @@
                 }
             },
 
+        prikazyCommand: {
+                command: 'prikazy',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(basicBot.chat.prikazy);
+                    }
+                }
+            },
             ballCommand: {
                 command: ['8ball', 'ask'],
                 rank: 'user',
@@ -1946,7 +1957,41 @@
                     }
                 }
             },
+alkoholCommand: {
+                command: 'alkohol',
+                rank: 'user',
+                type: 'startsWith',
+                getALKOHOLY: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.alkoholy.length);
+                    return basicBot.chat.alkoholy[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
 
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.givealkohol);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouseralkohol, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfalkohol, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.alkohol, {nameto: user.username, namefrom: chat.un, ALKOHOLY: this.getALKOHOLY()}));
+                            }
+                        }
+                    }
+                }
+            },
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
