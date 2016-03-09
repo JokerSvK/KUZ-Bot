@@ -19,7 +19,31 @@
         "ti chtěl/a darovat sušenku, ale už ji snědl/a.",
         "ti daroval/a čerstvě upečenou sušenku. Voní úžasně."
     ],
-   
+   "alkohol": ["ti dal/a na pivo.",
+                    "si chce s tebou připít",
+                    "ti říká: "Už jsi toho vypil/a moc."",
+                    "ti říká: "Dávej pozor až budeš řidit"",
+                    "ti už míchá drink."",
+                    "se tak motá až spadl/a na zem. S ní/m dneska už nehneš",
+                    "ti nabídl/a panáka skvělé whisky se slovy "Na ex!"",
+                    "ti nabídl/a frgála neoznačeného tuzemáku se vzkazem "Neboj, neoslepneš."",
+                    "ti povídá: "Už jsi jak Zeman."",
+                    "ti nabídl/a krabičák.",
+                    "ti nabídl/a nealkoholický pití, to musí být nějaký omyl.",
+                    "ti nenabídl/a žadný alkohol, protože je švorc.",
+                    "chce po tobě, aby jsi zaplatil/a.",
+                    "tě pozval/a na menší návštěvu s domácí pálenkou",
+                    "tě zve na ostrou fíkovici a možná něco víc..",
+                    "ti povídá v připitém stavu: "To za naších časů.."",
+                    "hudruje: "Nemyslíš, zaplatíš."",
+                    "ti podává drink "Sex on the bitch. Pardon beach"",
+                    "se tě snaží opít pivním rohlíkem.",
+                    "tě pozval/a na Beton.",
+					"ti chce nakecat, že to víno je limonáda.",
+					"se s tebou začal/a hádat o alkoholu",
+					"ti vrazil/a panáka se slovy "Když už jsi tady, tak se pořádně opij!"",
+					"ti vypil/a tvůj jed."
+	],
     "balls": [
         "Hej nechápu, co chceš, ale tak ok.",
         "Ano.",
@@ -145,7 +169,7 @@
     "chatcleared": "/me [@%%NAME%%] Vyčistil/a chat.",
     "deletechat": "/me [@%%NAME%%] Vyčistil/a chat od %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% příkazy: %%LINK%%",
-    "eatcookie": "/me Pošli někomu sušenku.",
+    "eatcookie": "/me Pošli někomu sušenku přes !cookie @jmeno.",
     "nousercookie": "/me nevidím uživatele %%NAME%% v místnosti, nemůžeš s ním jíst sušenky. ",
     "selfcookie": "/me @%%NAME%%, nejsi trochu chamtivý/á? Dávat sušenky sobě. Heh. Rozděl se s ostatními!",
     "cookie": "/me @%%NAMETO%%, %%NAMEFROM%% %%COOKIE%%",
@@ -206,6 +230,10 @@
     "youtube": "/me [%%NAME%%] Dejte nám odběr na youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
 
-    "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy"
+    "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
+    
+    "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
+    "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
+    "selfalkohol": "Nebuď labuť a přestaň chlastat sám/a, když máš tolik ochlastů na výběr."
 
 }
