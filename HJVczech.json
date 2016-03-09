@@ -249,8 +249,8 @@
     "giveafk": "/me Oznamují vám, že jde %%+user.username+%% AFK!",
     "afk": "/me Oznamují vám, že jde %%+user.username+%% AFK!",
     
-    "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět."
-    "selfzpet": "/me Hej %%+user.username+%%, to chceš říct sám/a sobě, že jsi zpět?"
+    "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět.",
+    "selfzpet": "/me Hej %%+user.username+%%, to chceš říct sám/a sobě, že jsi zpět?",
     "givezpet": "/me %%+user.username+%% se vrátil/a zpět!"
     
 }
