@@ -19,7 +19,8 @@
         "ti chtěl/a darovat sušenku, ale už ji snědl/a.",
         "ti daroval/a čerstvě upečenou sušenku. Voní úžasně."
     ],
-   "alkohol": ["ti dal/a na pivo.",
+   "alkohol": [
+   	            "ti dal/a na pivo.",
                     "si chce s tebou připít",
                     "ti říká: \"Už jsi toho vypil/a moc.\"",
                     "ti říká: \"Dávej pozor až budeš řidit\"",
