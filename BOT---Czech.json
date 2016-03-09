@@ -206,34 +206,6 @@
     "youtube": "/me [%%NAME%%] Dejte nám odběr na youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
 
-    "ego": "/me %%NAME%%  *EGO UP*",
-    
-    "afk": "/me Hlásím, že %%NAME%% bude na nějakou dobu AFK.:V:",
-    "back": "/me %%NAME%% BACK!",
-   
-    "givefacka": "/me Napiš !facka @user a dej někomu facku.",
-    "nouserfacka": "/me Nevidím %%NAME%% v roomce, tak mu/ji nemůžeš dát facku.",
-    "selffacka": "/me %%NAME%% děláš si srandu?? Přece nebudeš fackovat sám/sama sebe. -,-",
-   
-    "huganyone": "/me Pošli někomu objetí. Stačí napsat !hug @user.",
-    "nouserhug": "/me Nevidím %%NAME%% v roomce, takže mu nepošleš objetí. Škoda.",
-    "selfhug": "/me %%NAME%%, ale ale ty egoisto. Pokud chceš obejmout sám/sama sebe, doporučuji zrcadlo...",
-   
-    "loveanyone": "/me Pokud někoho máš moc rád/a, napiš !love @user.",
-    "nouserlove": "/me Nevidím %%NAME%% v roomce, takže smůla.",
-    "selflove": "/me %%NAME%% to jsi vážně takový egoista?? Jak by řekla Yun... Ty tulipán!",
-   
-    "givemoney": "/me Pokud chceš někomu udělat radost, napiš !money @user a pošli mu nějaké.",
-    "nousermoney": "/me Nevidím %%NAME%% v roomce, tak na něj/ni kašli a ty money si nech.",
-    "selfmoney": "/me %%NAME%% poněkud tě nechápu. Proš bys sám/sama sobě posílal/a money?? Radši je pošli někomu, ať má radost.",
-    
-    "sendspam": "/me Nudíš se hodně?? Tak napiš !spam @user a pošli někomu spam.",
-    "nouserspam": "/me Nevidím %%NAME%% v roomce. Zkus si vybrat někoho jiného.",
-    "selfspam": "/me %%NAME%% neříkej, že se nudíš tak moc, že chceš spamovat i sám/sama sebe.",
-    
-    "asksklep": "/me Pokud chceš někoho pozvat nebo odtáhnout do sklepa, napiš !sklep @user.",
-    "nousersklep": "/me Nevidím %%NAME%% v roomce, takže smůla.",
-    "selfsklep": "/me %%NAME%% to myslíš vážně?? Sám/sama sebe zvát do sklepa, když tu máš tolik lidí na výběr. -,-"
     "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy"
 
 }
