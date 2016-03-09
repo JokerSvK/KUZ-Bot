@@ -236,5 +236,5 @@
     "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
     "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
     "selfalkohol": "Nebuď labuť a přestaň chlastat sám/a, když máš tolik ochlastů na výběr.",
-    "alkohol": "/me @%%NAMETO%%, %%NAMEFROM%% %%GETALKOHOL%%"
+    "alkohol": "/me %%NAMETO%%, %%NAMEFROM%% %%getAlkohol%%"
 }
