@@ -60,7 +60,7 @@
 		
         
 	],
-	"love": [
+	"loveyou": [
 		"tě má rád/a. :heart:",
 		"tě miluje. :heart:"
 		
@@ -307,7 +307,7 @@
     "givelove": "/me Příkazem !love @jmeno vyjádříš někomu, že ho máš rád/a.",
     "selflove": "/me %%NAME%% je takovej zamilovanec, že miluje i sám/a sebe.",
     "nouserlove": "/me Nevidím %%NAME%% v místnosti, takže se osoba nedozví, že ji máš rád/a..",
-    "love": "/me %%NAMETO%%, %%NAMEFROM%% %%LOVE%%"
+    "love": "/me %%NAMETO%%, %%NAMEFROM%% %%LOVEYOU%%"
     
 
 }
