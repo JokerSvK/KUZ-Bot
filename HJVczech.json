@@ -10,14 +10,21 @@
         "ti daroval/a sušenku štěstí. Stojí tam: \"Co můžeš udělat dnes, odlož na zítra. Zítra je taky den.\"",
         "ti daroval/a sušenku štěstí. Stojí tam: \"Jsem zajatec v továrně na sušenky štěstí. POMOOOC!\"",
         "ti daroval/a sušenku štěstí. Stojí tam: \"Osoba, která to čte je výjimečná.\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Velký bratr tě vidí!\",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Je čas na panáka :sake: !\",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Pošli světu :heart:. \",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Kup si banán, nejlépe z Lidlu.\",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Pozvi někoho na vínko či něco jinýho :wine_glass: !\",
         "ti daroval/a zlatou sušenku. Nemůžeš ji sníst, protože je ze zlata...",
         "ti daroval/a sušenku Oreo se sklenicí mléka.",
         "ti daroval/a duhovou sušenku, která byla pečena s láskou. :heart:",
         "ti daroval/a modrou sušenku. Moment... Sušenka s viagrou...",
-        "ti daroval/a speciální pony sušenku. Pekla ji Pinkie Pie.",
+        "ti daroval/a speciální pony sušenku.",
         "ti daroval/a sušenku. POZOR! Je otrávená!",
         "ti chtěl/a darovat sušenku, ale už ji snědl/a.",
-        "ti daroval/a čerstvě upečenou sušenku. Voní úžasně."
+        "ti daroval/a čerstvě upečenou sušenku. Voní úžasně.",
+        "ti daroval/a pivní sušenku. Příjemnou chut, ale za volantem ji radši nejez.",
+        "ti daroval/a sušenku se silným kari kořením. I mistr cukrář se někdy utne.."
     ],
    "alkoholy": [
    	            "ti dal/a na pivo.",
@@ -39,7 +46,7 @@
                     "hudruje: \"Nemyslíš, zaplatíš.\"",
                     "ti podává drink \"Sex on the bitch. Pardon beach\"",
                     "se tě snaží opít pivním rohlíkem.",
-                    "tě pozval/a na Beton.",
+                    "tě pozval/a na Octoberfest.",
 					"ti chce nakecat, že to víno je limonáda.",
 					"se s tebou začal/a hádat o alkoholu",
 					"ti vrazil/a panáka se slovy \"Když už jsi tady, tak se pořádně opij!\"",
@@ -60,6 +67,33 @@
 		
         
 	],
+	"sklep": [
+		"tě zve na loupání brambor do sklepa.",
+		"tě odtáhnul/a do sklepa.",
+		"ti nabízí apartmán o všech možných hvězdičkách ve sklepě.",
+		"ti udělá menší prohlídku sklepem.",
+		"má s tebou nekalé úmysly ve sklepě."
+		
+		
+	],
+	"koupit": [
+		    "ti koupil/a zákusky, abys přibral/a.",
+                    "ti koupil/a smítko prachu z velké lásky k tobě. :heart:",
+                    "ti koupil/a zrcadlo, aby ses do něj konečně podíval/a.",
+                    "ti koupil/a kolo, abys zhubl/a.",
+                    "ti koupil/a pořádnou židli, ať máš na čem sedět.",
+                    "ti koupil/a zájezd do Sýrie, protože se tě chce zbavit.",
+                    "ti chtěl/a něco koupit, ale radši to koupil/a sobě..",
+                    "ti koupil/a nutellu, ale cestou k tobě ji snědl/a."
+		
+		
+	],
+	"zvire": [
+		    "si o tobě myslí, že seš jak hlemýžď, jelikož taky se v nejhorším plazíš domů. https://media.giphy.com/media/RCBQSWiMPTQly/giphy.gif"
+                    
+                    
+		
+	],	
     "balls": [
         "Hej nechápu, co chceš, ale máš pravdu.",
         "Ano.",
@@ -273,6 +307,20 @@
     "givelove": "/me Příkazem !love @jmeno vyjádříš někomu, že ho máš rád/a.",
     "selflove": "/me %%NAME%% je takovej zamilovanec, že miluje i sám/a sebe.",
     "nouserlove": "/me Nevidím %%NAME%% v místnosti, takže se osoba nedozví, že ji máš rád/a..",
-    "love": "/me %%NAMETO%%, %%NAMEFROM%% %%LOVE%%"
+    "love": "/me %%NAMETO%%, %%NAMEFROM%% %%LOVE%%",
     
+    "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
+    "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
+    "nousersklep": "/me Nevidím %%NAME%% v místnosti, takže zamkni do sklepa někoho jinýho.",
+    "sklep": "/me %%NAMETO%%, %%NAMEFROM%% %%SKLEP%%",
+    
+    "givekoupit": "/me Příkazem !koupit @jmeno někomu něco koupíš.",
+    "selfkoupit": "/me %%NAME%% si koupil/a čokoládu. ",
+    "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
+    "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%KOUPIT%%",
+    
+    "givezvire": "/me Příkazem !zvire @jmeno řekneš o někom, jaký je zvíře.",
+    "selfzvire": "/me Říkat o sobě, jaké jsi zvíře zavání egem. Haah, to jsem tě dostal %%NAME%% ",
+    "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
+    "zvire": "/me %%NAMETO%%, %%NAMEFROM%% %%ZVIRE%%"
 }
