@@ -257,7 +257,7 @@
      "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět.",
      "selfzpet": "/me Hej %%+user.username+%%, to chceš říct sám/a sobě, že jsi zpět?",
      "givezpet": "/me %%+user.username+%% se vrátil/a zpět!",
-     "zpet": "/me %%+user.username+%% se vrátil/a zpět!"
+     "zpet": "/me %%+user.username+%% se vrátil/a zpět!",
     
     "givefacka": "/me Příkazem !facka @jmeno někomu vlepíš facku.",
     "selffacka": "/me %%NAME%% si nafackoval/a.",
