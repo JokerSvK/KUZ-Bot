@@ -45,45 +45,53 @@
 					"ti vrazil/a panáka se slovy \"Když už jsi tady, tak se pořádně opij!\"",
 					"ti vypil/a tvůj jed."
 	],
-	
-	
+	"facky": [
+		"ti jednu vlepil/a.",
+		"ti dal/a facku.",
+		"ti vrazil/a facku z dobrého kamarádství.",
+		"si počkal/a na vhodnou chvíli a takovou ti ubalil/a, že rajče je oproti tobě bílé."
+		
+        
+	],
 	
     "balls": [
-        "Hej nechápu, co chceš, ale tak ok.",
+        "Hej nechápu, co chceš, ale máš pravdu.",
         "Ano.",
+        "Jistě.",
+        "Proč ne?",
         "Ne.",
-        "Sorry nemám čas odpovídat.",
+        "Nevím.",
+        "Souhlasím.",
+        "Nesouhlasím.",
         "Hej zkus se zeptat jindy.",
         "Ne nezájem, nechci, neprodám, nekoupím.",
         "Tak myslím, že by to i šlo.",
         "Neptej se na hlouposti.",
-        "Zeptej se znovu a srozumitelně.",
-        "Dneska je ale krásné počasí...",
+        "Dneska je tak krásné počasí...",
         "Tak já nevím...",
         "Taky tě miluji. :*",
-        "To zní zajímavě... Ne kecám, je to nuda.",
+        "To zní zajímavě... Kecám, je to nuda.",
         "Jo jasně. Teda možná...",
-        "Nedávej mi mention... Nemám čas.",
         "Snad někdy příště...",
         "LIKE.",
         "Hej neptej se furt.",
         "Docela blbý, ale jinak ok.",
         "Jo jsi sexy.",
         "Nezapomeň svůj dotaz, možná zítra odpovím.",
-        "Jo možná za týden.",
+        "Jo možná za rok.",
         "Naposledy říkám NE!",
         "To řekl kdo?",
         "A jsem snad u výslechu? Na nic neodpovím.",
-        "100 bodů za nejstupidnější dotaz.",
-        "Já nerozumět řeč tvá kmen.",
+        "Sto bodů za nejstupidnější dotaz.",
+        "Prosím, zeptej se tentokrát tak, abych nemusel hledat maďarský slovník.",
         "Nech mě bejt!",
         "Kdo si to myslí?",
-        "Nech mě pls na pokoji!",
         "To jako vážně?!",
         "Děláš si srandu?",
         "Na to honem rychle zapomeň!",
         "Můžeš chvilinku být zticha?!",
-	"69"
+	"69",
+	"Co myslíš, že by na to řekl Germ?"
     ],
 
     "nodatafound": "Nebyla nalezena žádná předchozí data.",
@@ -241,19 +249,13 @@
     "selfalkohol": "/me %%+user.username+%% je taková labuť, že lije ten alkáč rovnou do sebe než aby nabídl/a ostatním.",
     "alkohol": "/me %%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%",
     
-    "giveafk": "/me Oznámují vám, že %%+user.username+%% je AFK!",
-    "nouserafk": "/me Nevidím %%NAME%% v místnosti, takže mu těžko řekneš, že jdeš AFK.",
-    "selfalkohol": "/me Říct sám/a sobě, že jdeš AFK, nebude zrovna nejlepší nápad.",
     "afk": "/me Oznámují vám, že %%+user.username+%% je AFK!",
     
-    "givezpet": "/me %%+user.username+%% se vrátil/a zpět!",
-    "selfzpet": "/me Neříkej sám/a sobě, že ses vrátil/a. Nezní to nejlíp.",
-    "nouserzpet": "/me Nevidím %%NAME%% v místnosti, takže říkat té osobě, že ses vrátil/a, nebude mít žádný smysl.",
     "zpet": "/me %%+user.username+%% se vrátil/a zpět!",
     
     "givefacka": "/me Příkazem !facka @jmeno někomu vlepíš facku.",
     "selffacka": "/me %%+user.username+%% si nafackoval/a.",
-    "nouserfacka": "/me Nevidím %%NAME%% v místnosti, takže té osobě asi nenafackuješ..",
+    "nouserfacka": "/me Nevidím %%NAME%% v místnosti, takže té osobě asi facku nedáš..",
     "facka": "/me %%NAMETO%%, %%NAMEFROM%% %%FACKY%%"
     
     
