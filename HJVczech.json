@@ -249,7 +249,7 @@
     "selfalkohol": "/me %%NAME%% je taková labuť, že lije ten alkáč rovnou do sebe, než aby nabídl/a ostatním.",
     "alkohol": "/me %%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%",
     
-    "afk": "/me Oznámují vám, že %%NAME%% je AFK!",
+    "afk": "/me Oznámují vám, že %%+user.username+%% je AFK!",
     
     "zpet": "/me %%NAME%% se vrátil/a zpět!",
     
