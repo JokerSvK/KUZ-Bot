@@ -250,7 +250,7 @@
     "alkohol": "/me %%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%",
     
     "giveafk": "/me Oznámují vám, že %%+user.username+%% je AFK!",
-    "afk": "/me Oznámují vám, že %%+user.username+%% je AFK!"
+    "afk": "/me Oznámují vám, že %%+user.username+%% je AFK!",
     
     "givezpet": "/me %%+user.username+%% se vrátil/a zpět!",
     
