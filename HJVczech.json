@@ -309,4 +309,18 @@
     "nouserlove": "/me Nevidím %%NAME%% v místnosti, takže se osoba nedozví, že ji máš rád/a..",
     "love": "/me %%NAMETO%%, %%NAMEFROM%% %%LOVE%%"
     
+    "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
+    "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
+    "nousersklep": "/me Nevidím %%NAME%% v místnosti, takže zamkni do sklepa někoho jinýho.",
+    "sklep": "/me %%NAMETO%%, %%NAMEFROM%% %%SKLEP%%",
+    
+    "givekoupit": "/me Příkazem !koupit @jmeno někomu něco koupíš.",
+    "selfkoupit": "/me %%NAME%% si koupil/a čokoládu. ",
+    "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
+    "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%KOUPIT%%",
+    
+    "givezvire": "/me Příkazem !zvire @jmeno řekneš o někom, jaký je zvíře.",
+    "selfzvire": "/me Říkat o sobě, jaké jsi zvíře zavání egem. Haah, to jsem tě dostal %%NAME%% ",
+    "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
+    "zvire": "/me %%NAMETO%%, %%NAMEFROM%% %%ZVIRE%%"
 }
