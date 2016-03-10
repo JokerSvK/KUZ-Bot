@@ -246,7 +246,7 @@
     
     "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
     "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
-    "selfalkohol": "/me +user.username+ je taková labuť, že lije ten alkáč rovnou do sebe než aby nabídl/a ostatním.",
+    "selfalkohol": "/me %%+user.username+%% je taková labuť, že lije ten alkáč rovnou do sebe než aby nabídl/a ostatním.",
     "alkohol": "/me %%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%",
     
     "afk": "/me Oznámují vám, že +user.username+ je AFK!",
