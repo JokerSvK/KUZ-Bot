@@ -306,13 +306,13 @@
     
     "nouserafk": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jdeš AFK.",
     "selfafk": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jdeš AFK?",
-    "giveafk": "/me Oznamují vám, že jde +user.username+ AFK!",
-    "afk": "/me Oznamují vám, že jde +user.username+ AFK!",
+    "giveafk": "/me Oznamují vám, že jde "+user.username+" AFK!",
+    "afk": "/me Oznamují vám, že jde "+user.username+" AFK!",
     
      "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět.",
      "selfzpet": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jsi zpět?",
-     "givezpet": "/me +user.username+ se vrátil/a zpět!",
-     "zpet": "/me +user.username+ se vrátil/a zpět!"
+     "givezpet": "/me "+user.username+" se vrátil/a zpět!",
+     "zpet": "/me "+user.username+" se vrátil/a zpět!"
     
 
 }
