@@ -312,7 +312,17 @@
      "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět.",
      "selfzpet": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jsi zpět?",
      "givezpet": "/me %%+user.username+%% se vrátil/a zpět!",
-     "zpet": "/me %%+user.username+%% se vrátil/a zpět!"
+     "zpet": "/me %%+user.username+%% se vrátil/a zpět!",
     
-
+    "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
+    "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
+    "nousersklep": "/me Nevidím %%NAME%% v místnosti, takže zamkni do sklepa někoho jinýho.",
+    "sklep": "/me %%NAMETO%%, %%NAMEFROM%% %%SKLEP%%",
+    
+    "givekoupit": "/me Příkazem !koupit @jmeno někomu něco koupíš.",
+    "selfkoupit": "/me %%NAME%% si koupil/a čokoládu. ",
+    "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
+    "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%KOUPIT%%"
+    
+    
 }
