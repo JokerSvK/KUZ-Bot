@@ -67,7 +67,7 @@
 		
         
 	],
-	"sklep": [
+	"sklepovky": [
 		"tě zve na loupání brambor do sklepa.",
 		"tě odtáhnul/a do sklepa.",
 		"ti nabízí apartmán o všech možných hvězdičkách ve sklepě.",
@@ -76,7 +76,7 @@
 		
 		
 	],
-	"koupit": [
+	"obchod": [
 		    "ti koupil/a zákusky, abys přibral/a.",
                     "ti koupil/a smítko prachu z velké lásky k tobě. :heart:",
                     "ti koupil/a zrcadlo, aby ses do něj konečně podíval/a.",
@@ -317,12 +317,12 @@
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
     "nousersklep": "/me Nevidím %%NAME%% v místnosti, takže zamkni do sklepa někoho jinýho.",
-    "sklep": "/me %%NAMETO%%, %%NAMEFROM%% %%SKLEP%%",
+    "sklep": "/me %%NAMETO%%, %%NAMEFROM%% %%SKLEPOVKY%%",
     
     "givekoupit": "/me Příkazem !koupit @jmeno někomu něco koupíš.",
     "selfkoupit": "/me %%NAME%% si koupil/a čokoládu. ",
     "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
-    "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%KOUPIT%%"
+    "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%OBCHOD%%"
     
     
 }
