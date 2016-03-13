@@ -21,6 +21,7 @@
         "ti daroval/a modrou sušenku. Moment... Sušenka s viagrou...",
         "ti daroval/a speciální pony sušenku.",
         "ti daroval/a sušenku. POZOR! Je otrávená!",
+        "ti daroval/a sušenku touhy. :resttc:",
         "ti chtěl/a darovat sušenku, ale už ji snědl/a.",
         "ti daroval/a čerstvě upečenou sušenku. Voní úžasně.",
         "ti daroval/a pivní sušenku. Příjemnou chut, ale za volantem ji radši nejez.",
@@ -89,8 +90,10 @@
 		
 	],
 	"animal": [
-		    "si o tobě myslí, že seš jak hlemýžď, protože se taky v tom nejhorším plazíš domů. https://media.giphy.com/media/RCBQSWiMPTQly/giphy.gif"
-                    
+		    "si o tobě myslí, že seš jak hlemýžď, protože se taky v tom nejhorším plazíš domů. https://media.giphy.com/media/RCBQSWiMPTQly/giphy.gif",
+                    "ti říká, že seš jak panda. Taky se do všeho vrháš po hlavě. https://media.giphy.com/media/ZeB4HcMpsyDo4/giphy.gif",
+                    "ti říká, že i žirafa jezdí líp na motorce než ty. https://media.giphy.com/media/d69JfszXz2xwY/giphy.gif",
+                    "ti povídá, že seš jako pes. Taky kašleš na nějaký kluzký podlahy. https://media.giphy.com/media/iOTuHS11PzztS/giphy.gif"
                     
 		
 	],	
