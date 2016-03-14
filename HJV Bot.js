@@ -294,7 +294,7 @@
             afkRankCheck: "ambassador",
             motdEnabled: true,
             motdInterval: 15,
-            motd: "Nezapomeňte na blížíci se akci! Začíná 15.3.2016 v 19:00 https://www.facebook.com/HudbaUTomasa/photos/a.1492723724300858.1073741828.1492409914332239/1699324023640826/?type=3&theater,
+            motd: "Nezapomeňte na blížíci se akci! Začíná 15.3.2016 v 19:00 https://www.facebook.com/HudbaUTomasa/photos/a.1492723724300858.1073741828.1492409914332239/1699324023640826/?type=3&theater",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
