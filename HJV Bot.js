@@ -278,7 +278,7 @@
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: true,
+            thorCommand: false,
             thorCooldown: 10,
             skipPosition: 3,
             skipReasons: [
