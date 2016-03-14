@@ -21,6 +21,8 @@ Uvedené příkazy v tomto provedení nenajdete v žádné jiné komunitě.
 
 !zvire = Příkaz o srovnavání druhého uživatele se zvířaty
 
+!ask = Příkaz k zeptání se na otázku chatbota
+
 !thor = Příkaz ke hře Thorovo kladivo (popis hry příkazem !kladivo)
 
 
