@@ -278,8 +278,8 @@
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: true,
-            thorCooldown: 1,
+            thorCommand: false,
+            thorCooldown: 10,
             skipPosition: 3,
             skipReasons: [
                 ["akce", "Tvá píseň není vhodná k danému tématu probíhající akce. Podrobnosti akce nalezneš na našem Facebooku: https://www.facebook.com/HudbaUTomasa/?fref=ts "],
