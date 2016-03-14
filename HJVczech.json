@@ -332,5 +332,5 @@
     "thorcd": "\/me @%%NAME%% můžeš zkusit štěstí s kladivem za %%TIME%% minut.",
     "thorWorthy": "\/me @%%NAME%% byl/a vybrán/a kladivem! :hammer:, Gratulujeme!",
     "thorNotWorthy": "\/me @%%NAME%% nebyl/a jsi vybrán/a kladivem."
-    "kladivo": "/me Příkazem !thor zkusíte své štěstí o první místo ve frontě. Pokud vás kladivo vybere, tak jdete na první místo ve frontě. Když nevybere, tak jdete naopak na poslední místo ve frontě. Štěstí můžete zkoušet jednou za deset minut."
+    "kladivo": "/me Příkazem !thor můžete zkusit své štěstí v nové hře. Pokud vás kladivo vybere, tak jdete na první místo ve frontě. Když nevybere, tak jdete naopak na poslední místo ve frontě. Štěstí můžete zkoušet jednou za deset minut."
 }
