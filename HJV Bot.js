@@ -3592,6 +3592,7 @@ sklepCommand: {
                 }
             },
 
+    
             thorCommand: {
               command: 'thor',
               rank: 'user',
@@ -3660,7 +3661,6 @@ sklepCommand: {
                     }
                 }
             },
-
             timeguardCommand: {
                 command: 'timeguard',
                 rank: 'bouncer',
