@@ -4,9 +4,12 @@ Bot vznikl v březnu 2016. Základy jsou na systému BasicBotu. Jazyk a příkaz
 
 # Tvůrci bota
 
-Franta72 - Aktuální vývojář projektu
+Franta72 - Vývojář projektu
+
 Itory - Návrhy vět a sestrojení !alkohol příkazu
+
 Lemon - Pomoc při vývoji
+
 Tessi Tess - Kompletní čeština bota, autorka předešlých verzí HJV botů.
 
 a také staff Hudba je Všetko, které dodalo další nápady na tvorbu příkazů.
@@ -16,13 +19,21 @@ a také staff Hudba je Všetko, které dodalo další nápady na tvorbu příkaz
 Uvedené příkazy v tomto provedení nenajdete v žádné jiné komunitě.
 
 !cookie = Příkaz k poslání sušenek
+
 !alkohol = Příkaz k pozvání na sklenku
+
 !koupit = Příkaz ke koupi věci druhému uživateli
+
 !sklep = Příkaz k zatáhnutí do sklepa
+
 !facka = Příkaz k poslání facky
+
 !love = Příkaz k vyjádření druhému lásku
+
 !zvire = Příkaz o srovnavání druhého uživatele se zvířaty
-!thor = Příkaz k nové hře
+
+!thor = Příkaz ke hře
+
 !kladivo Popis ke hře !thor
 
 
