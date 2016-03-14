@@ -2023,7 +2023,7 @@ afkCommand: {
                                 return API.sendChat(subChat(basicBot.chat.selfafk, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.giveafk, {nameto: user.username, namefrom: chat.un, AFK: this.getafk()}));
+                                return API.sendChat(subChat(basicBot.chat.afk, {nameto: user.username, namefrom: chat.un, AFK: this.getafk()}));
                             }
                         }
                     }
@@ -2033,7 +2033,7 @@ zpetCommand: {
                 command: 'zpet',
                 rank: 'user',
                 type: 'startsWith',
-                getfacka: function (chat) {
+                getzpet: function (chat) {
                     var c = Math.floor(Math.random() * basicBot.chat.afk.zpet);
                     return basicBot.chat.zpet[c];
                 },
@@ -2058,7 +2058,7 @@ zpetCommand: {
                                 return API.sendChat(subChat(basicBot.chat.selfzpet, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.givezpet, {nameto: user.username, namefrom: chat.un, zpet: this.getzpet()}));
+                                return API.sendChat(subChat(basicBot.chat.zpet, {nameto: user.username, namefrom: chat.un, zpet: this.getzpet()}));
                             }
                         }
                     }
@@ -2129,7 +2129,7 @@ fackaCommand: {
                                 return API.sendChat(subChat(basicBot.chat.selflove, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, LASKA: this.getLASKA()}));
+                                return API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, LASKA: this.getlaska()}));
                             }
                         }
                     }
@@ -2165,6 +2165,76 @@ fackaCommand: {
                             }
                             else {
                                 return API.sendChat(subChat(basicBot.chat.zvire, {nameto: user.username, namefrom: chat.un, ANIMAL: this.getanimal()}));
+                            }
+                        }
+                    }
+                }
+            },
+koupitCommand: {
+                command: 'koupit',
+                rank: 'user',
+                type: 'startsWith',
+                getobchod: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.obchod.length);
+                    return basicBot.chat.obchod[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.givekoupit);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouserkoupit, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfkoupit, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.koupit, {nameto: user.username, namefrom: chat.un, OBCHOD: this.getobchod()}));
+                            }
+                        }
+                    }
+                }
+            },
+sklepCommand: {
+                command: 'sklep',
+                rank: 'user',
+                type: 'startsWith',
+                getsklepovky: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.sklepovky.length);
+                    return basicBot.chat.sklepovky[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.givesklep);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nousersklep, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfsklep, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.sklep, {nameto: user.username, namefrom: chat.un, SKLEPOVKY: this.getsklepovky()}));
                             }
                         }
                     }
