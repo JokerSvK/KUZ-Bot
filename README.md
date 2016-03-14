@@ -2,17 +2,6 @@
 
 Bot vznikl v březnu 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy jsou upraveny speciálně pro Hudba je Všetko a nesmí být použito nikde jinde bez souhlasu majitele této verze bota.
 
-# Tvůrci bota
-
-Franta72 - Vývojář projektu
-
-Itory - Návrhy vět a sestrojení !alkohol příkazu
-
-Lemon - Pomoc při vývoji
-
-Tessi Tess - Kompletní čeština bota, autorka předešlých verzí HJV botů.
-
-a také staff Hudba je Všetko, které dodalo další nápady na tvorbu příkazů.
 
 # Seznam příkazů:
 
@@ -32,10 +21,25 @@ Uvedené příkazy v tomto provedení nenajdete v žádné jiné komunitě.
 
 !zvire = Příkaz o srovnavání druhého uživatele se zvířaty
 
-!thor = Příkaz ke hře
+!thor = Příkaz ke hře Thorovo kladivo (popis hry příkazem !kladivo)
 
-!kladivo Popis ke hře !thor
 
+
+# Tvůrci bota
+
+Franta72 - Vývojář projektu
+
+Itory - Návrhy vět a sestrojení !alkohol příkazu
+
+Lemon - Pomoc při vývoji
+
+Tessi Tess - Kompletní čeština bota, autorka předešlých verzí HJV botů.
+
+
+
+
+
+a také staff Hudba je Všetko, které dodalo další nápady na tvorbu příkazů.
 
 # 2016, Hudba je Všetko.
 
