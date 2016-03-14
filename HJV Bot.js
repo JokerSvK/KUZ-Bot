@@ -282,13 +282,13 @@
             thorCooldown: 10,
             skipPosition: 3,
             skipReasons: [
-                ["theme", "This song does not fit the room theme. "],
-                ["op", "This song is on the OP list. "],
-                ["history", "This song is in the history. "],
-                ["mix", "You played a mix, which is against the rules. "],
-                ["sound", "The song you played had bad sound quality or no sound. "],
-                ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "]
+                ["akce", "Tvá píseň není vhodná k danému tématu probíhající akce. Podrobnosti akce nalezneš na našem Facebooku: https://www.facebook.com/HudbaUTomasa/?fref=ts "],
+                ["op", "Tvá píseň je v našem seznamu ohraných písní. "],
+                ["historie", "Tvá píseň je v naší historii."],
+                ["mix", "Tvůj hraný remix je v rozporu s našími pravidly komunity. "],
+                ["zvuk", "Tvá píseň má špatnou zvukovou stopu. "],
+                ["nsfw", "Tvá píseň má nevhodný obsah pro děti a mladistvé. "],
+                ["nedostupne", "Tvá píseň nelze přehrát pro ostatní uživatelé. "]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
