@@ -328,5 +328,8 @@
     "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
     "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%OBCHOD%%"
     
-    
+    "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer!",
+    "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
+    "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
+    "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
 }
