@@ -92,11 +92,11 @@
 	
 	
 	"lulus": [
-		    "chce trtkat",
-		    "chce vymastit",
-		    "chce vydrnkat",
-		    "chce si pohrát s tebou",
-		    "chce ti vypatexovat byt"
+		    "chce trtkat.",
+		    "chce vymastit.",
+		    "chce vydrnkat.",
+		    "chce si pohrát s tebou.",
+		    "chce ti vypatexovat byt."
 		    
 		    
 		
@@ -323,13 +323,13 @@
     
     "nouserafk": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jdeš AFK.",
     "selfafk": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jdeš AFK?",
-    "giveafk": "/me Oznamují vám, že jde '+user.username+' AFK!",
-    "afk": "/me Oznamují vám, že jde '+user.username+' AFK!",
+    "giveafk": "/me Oznamují vám, že jde +user.username+ AFK!",
+    "afk": "/me Oznamují vám, že jde +user.username+ AFK!",
     
      "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět.",
      "selfzpet": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jsi zpět?",
-     "givezpet": "/me '+user.username+' se vrátil/a zpět!",
-     "zpet": "/me '+user.username+' se vrátil/a zpět!",
+     "givezpet": "/me +user.username+ se vrátil/a zpět!",
+     "zpet": "/me +user.username+ se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
