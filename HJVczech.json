@@ -92,7 +92,7 @@
 	
 	
 	"lulus": [
-		    "chce trtkat"
+		    "chce lulu"
 		    
 		
 		
@@ -337,7 +337,7 @@
     "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%OBCHOD%%",
     
     "givelulu": "/me Příkazem !lulu projevíš na někom svojí nadrženost.",
-    "selflulu": "/me %%NAME%% šel trtkat. ",
+    "selflulu": "/me %%NAME%% šel lulu. ",
     "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
     "lulu": "/me %%NAMETO%%, %%NAMEFROM%% %%LULUS%%"
     
