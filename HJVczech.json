@@ -96,7 +96,7 @@
 		    "chce vymastit.",
 		    "chce vydrnkat.",
 		    "chce si pohrát s tebou.",
-		    "chce ti vypatexovat byt."
+		    "ti chce vypatexovat byt."
 		    
 		    
 		
@@ -168,7 +168,7 @@
     "permissionownsong": "/me :up: @%%NAME%% má právo hrát svojí produkci.",
     "isblacklisted": "Tato skladba je na %%BLACKLIST%% blacklistu! Přeskakuji...",
     "isopen": "/me Ruleta je spuštěna! Napiš !join pro přihlášení!",
-    "winnerpicked": "/me Vítěz byl vybrán! @%%NAME%% na pozici %%POSITION%%.",
+    "winnerpicked": "/me Vítěz byl vybrán! @%%NAME%% na pozici %%POSITION%%. Gratulujeme!",
     "ball": "/me %%NAME%% se zeptal/a: \"%%QUESTION%%\" a %%BOTNAME%% odpověděl: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% neghostuje.",
     "ghosting": "[%%NAME1%%] %%NAME2%% buď ghostuje nebo zde není.",
@@ -208,7 +208,7 @@
     "afklimit": "AFK limit",
     "autodisable": "autodisable",
     "autoskip": "autoskip",
-    "newblacklisted": "/me [@%%NAME%%] Tato skaldba patří do %%BLACKLIST%% blacklistu! [ %%AUTHOR%% - %%TITLE%% - %%MID%% ]",
+    "newblacklisted": "/me [@%%NAME%%] Tato skladba patří do %%BLACKLIST%% blacklistu! [ %%AUTHOR%% - %%TITLE%% - %%MID%% ]",
     "blinfo": "[@%%NAME%%] Blacklist informace - autor: %%AUTHOR%%, název: %%TITLE%%, mid: %%SONGID%%",
     "blacklist": "blacklist",
     "cycleguard": "cycleguard",
@@ -269,11 +269,11 @@
     "currentbotname": "/me Jméno bota je: %%BOTNAME%%",
     "botnameset": "/me Jméno bota je změněno na: %%BOTNAME%%",
     "addbotwaitlist": "/me @%%NAME%%, nesnaž se mě přidat do fronty, prosím.",
-    "move": "/me [%%NAME%% použil/a move]",
+    "move": "/me [%%NAME%% přesunuje pozici ve frontě]",
     "mutednotime": "/me [@%%NAME%%] Umlčel/a @%%USERNAME%%.",
     "mutedmaxtime": "/me [@%%NAME%%] Můžeš umlčet uživatele maximálně na %%TIME%% minut.",
     "mutedtime": "/me [@%%NAME%%] Umlčel/a @%%USERNAME%% na %%TIME%% minut.",
-    "unmuted": "/me [@%%NAME%%] Zrušil/a umlčení @%%USERNAME%%.",
+    "unmuted": "/me [@%%NAME%%] Odmlčel/a @%%USERNAME%%.",
     "muterank": "/me [@%%NAME%%] Nemůžeš umlčet osobu se stejnou nebo vyšší hodností.",
     "oplist": "/me OP list: %%LINK%%",
     "pong": "/me Pong!",
@@ -321,15 +321,15 @@
     "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
     "zvire": "/me %%NAMETO%%, %%NAMEFROM%% %%ANIMAL%%",
     
-    "nouserafk": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jdeš AFK.",
+    "nouserafk": "/me Oznamují, že jde \"%%+USER.USERNAME+%%\" AFK a zanechává vzkaz %%NAME%%.",
     "selfafk": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jdeš AFK?",
-    "giveafk": "/me Oznamují vám, že jde +user.username+ AFK!",
-    "afk": "/me Oznamují vám, že jde +user.username+ AFK!",
+    "giveafk": "/me Oznamují vám, že jde \"%%+USER.USERNAME+%%\" AFK!",
+    "afk": "/me Oznamují vám, že jde \"%%+USER.USERNAME+%%\" AFK!",
     
-     "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět.",
+     "nouserzpet": "/me Oznamují, že se \"%%+USER.USERNAME+%%\" vrátil/a zpět se vzkazem %%NAME%%",
      "selfzpet": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jsi zpět?",
-     "givezpet": "/me +user.username+ se vrátil/a zpět!",
-     "zpet": "/me +user.username+ se vrátil/a zpět!",
+     "givezpet": "/me \"%%+USER.USERNAME+%%\" se vrátil/a zpět!",
+     "zpet": "/me \"%%+USER.USERNAME+%%\" se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
