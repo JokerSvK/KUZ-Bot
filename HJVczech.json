@@ -89,6 +89,14 @@
 		
 		
 	],
+	
+	
+	"lulus": [
+		    "chce trtkat"
+		    
+		
+		
+	],
 	"animal": [
 		    "si o tobě myslí, že seš jak hlemýžď, protože se taky v tom nejhorším plazíš domů. https://media.giphy.com/media/RCBQSWiMPTQly/giphy.gif",
                     "ti říká, že seš jak panda. Taky se do všeho vrháš po hlavě. https://media.giphy.com/media/ZeB4HcMpsyDo4/giphy.gif",
@@ -310,13 +318,13 @@
     
     "nouserafk": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jdeš AFK.",
     "selfafk": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jdeš AFK?",
-    "giveafk": "/me Oznamují vám, že jde %%+user.username+%% AFK!",
-    "afk": "/me Oznamují vám, že jde %%+user.username+%% AFK!",
+    "giveafk": "/me Oznamují vám, že jde '+user.username+' AFK!",
+    "afk": "/me Oznamují vám, že jde '+user.username+' AFK!",
     
      "nouserzpet": "/me Nevidím %%NAME%% v místnosti, nemůžeš jí/mu oznámit, že jsi zpět.",
      "selfzpet": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jsi zpět?",
-     "givezpet": "/me %%+user.username+%% se vrátil/a zpět!",
-     "zpet": "/me %%+user.username+%% se vrátil/a zpět!",
+     "givezpet": "/me '+user.username+' se vrátil/a zpět!",
+     "zpet": "/me '+user.username+' se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
@@ -328,9 +336,9 @@
     "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
     "koupit": "/me %%NAMETO%%, %%NAMEFROM%% %%OBCHOD%%",
     
-    "thorNotClose": "\/me @%%NAME%%, nemáš oprávnění využít kladivo!",
-    "thorcd": "\/me @%%NAME%% můžeš zkusit štěstí s kladivem za %%TIME%% minut.",
-    "thorWorthy": "\/me @%%NAME%% byl/a vybrán/a kladivem! :hammer:, Gratulujeme!",
-    "thorNotWorthy": "\/me @%%NAME%% nebyl/a jsi vybrán/a kladivem.",
-    "kladivo": "/me Příkazem !thor můžete zkusit své štěstí v nové hře. Pokud vás kladivo vybere, tak jdete na první místo ve frontě. Když nevybere, tak jdete naopak na poslední místo ve frontě. Štěstí můžete zkoušet jednou za deset minut."
+    "givelulu": "/me Příkazem !lulu projevíš na někom svojí nadrženost.",
+    "selflulu": "/me %%NAME%% šel trtkat. ",
+    "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
+    "lulu": "/me %%NAMETO%%, %%NAMEFROM%% %%LULUS%%"
+    
 }
