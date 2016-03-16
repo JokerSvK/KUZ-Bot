@@ -1138,6 +1138,12 @@
             if (msg === 'skip') {
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
+                
+            }
+            msg = msg.toLowerCase();
+            if (msg === 'stg.plug.dj') {
+                API.sendChat(subChat(basicBot.chat.reklama, {name: chat.un}));
+                return true;
             }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
                 if (msg === basicBot.chatUtilities.spam[j]) {
