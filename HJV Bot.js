@@ -280,15 +280,15 @@
             usercommandsEnabled: true,
             thorCommand: false,
             thorCooldown: 10,
-            skipPosition: 3,
+            skipPosition: 1,
             skipReasons: [
-                ["akce", "Tvá píseň není vhodná k danému tématu probíhající akce. Podrobnosti akce nalezneš na našem Facebooku: https://www.facebook.com/HudbaUTomasa/?fref=ts "],
-                ["op", "Tvá píseň je v našem seznamu ohraných písní. "],
-                ["historie", "Tvá píseň je v naší historii."],
-                ["mix", "Tvůj hraný remix je v rozporu s našími pravidly komunity. "],
-                ["zvuk", "Tvá píseň má špatnou zvukovou stopu. "],
-                ["nsfw", "Tvá píseň má nevhodný obsah pro děti a mladistvé. "],
-                ["nedostupne", "Tvá píseň nelze přehrát pro ostatní uživatelé. "]
+                ["akce", "tvá píseň není vhodná k danému tématu probíhající akce. Podrobnosti akce nalezneš na našem Facebooku: https://www.facebook.com/HudbaUTomasa/?fref=ts "],
+                ["op", "tvá píseň je v našem seznamu ohraných písní. "],
+                ["historie", "tvá píseň je v naší historii."],
+                ["mix", "tvůj hraný remix je v rozporu s našími pravidly komunity. "],
+                ["zvuk", "tvá píseň má špatnou zvukovou stopu. "],
+                ["nsfw", "tvá píseň má nevhodný obsah pro děti a mladistvé. "],
+                ["nedostupne", "tvá píseň nelze přehrát pro ostatní uživatelé. "]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
