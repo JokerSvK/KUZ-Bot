@@ -321,15 +321,15 @@
     "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
     "zvire": "/me %%NAMETO%%, %%NAMEFROM%% %%ANIMAL%%",
     
-    "nouserafk": "/me Oznamují, že jde "%%+USER.USERNAME+%%" AFK a zanechává vzkaz %%NAME%%.",
+    "nouserafk": "/me Oznamují, že jde %%+USER.USERNAME+%% AFK a zanechává vzkaz %%NAME%%.",
     "selfafk": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jdeš AFK?",
-    "giveafk": "/me Oznamují vám, že jde "%%+USER.USERNAME+%%" AFK!",
-    "afk": "/me Oznamují vám, že jde "%%+USER.USERNAME+%%" AFK!",
+    "giveafk": "/me Oznamují vám, že jde %%+USER.USERNAME+%% AFK!",
+    "afk": "/me Oznamují vám, že jde %%+USER.USERNAME+%% AFK!",
     
-     "nouserzpet": "/me Oznamují, že se "%%+USER.USERNAME+%%" vrátil/a zpět se vzkazem %%NAME%%",
+     "nouserzpet": "/me Oznamují, že se %%+USER.USERNAME+%% vrátil/a zpět se vzkazem %%NAME%%",
      "selfzpet": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jsi zpět?",
-     "givezpet": "/me "%%+USER.USERNAME+%%" se vrátil/a zpět!",
-     "zpet": "/me "%%+USER.USERNAME+%%" se vrátil/a zpět!",
+     "givezpet": "/me %%+USER.USERNAME+%% se vrátil/a zpět!",
+     "zpet": "/me %%+USER.USERNAME+%% se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
