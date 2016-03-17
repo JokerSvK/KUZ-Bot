@@ -1140,11 +1140,6 @@
                 return true;
                 
             }
-            msg = msg.toLowerCase();
-            if (msg === 'stg.plug.dj') {
-                API.sendChat(subChat(basicBot.chat.reklama, {name: chat.un}));
-                return true;
-            }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
                 if (msg === basicBot.chatUtilities.spam[j]) {
                     API.sendChat(subChat(basicBot.chat.spam, {name: chat.un}));
@@ -2009,7 +2004,7 @@ afkCommand: {
                 command: 'afk',
                 rank: 'user',
                 type: 'startsWith',
-                getfacka: function (chat) {
+                getafk: function (chat) {
                     var c = Math.floor(Math.random() * basicBot.chat.afk.length);
                     return basicBot.chat.afk[c];
                 },
