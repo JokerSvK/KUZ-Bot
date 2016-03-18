@@ -321,7 +321,7 @@
     "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
     "zvire": "/me %%NAMETO%%, %%NAMEFROM%% %%ANIMAL%%",
     
-    "afk": "/me %%NAME%% jde AFK!",
+    "afk": "/me %%NAMEFROM%% jde AFK!",
     "zpet": "/me %%NAME%% se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
