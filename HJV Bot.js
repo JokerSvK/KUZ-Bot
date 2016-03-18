@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://raw.githubusercontent.com/Franta72/BOT---Czech/master/langIndex.json", function (json) {
+        $.get("https://raw.githubusercontent.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
