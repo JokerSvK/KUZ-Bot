@@ -321,15 +321,8 @@
     "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
     "zvire": "/me %%NAMETO%%, %%NAMEFROM%% %%ANIMAL%%",
     
-    "nouserafk": "/me %%+a.username+%% jde AFK z důvodu: \"%%NAME%%\"",
-    "selfafk": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jdeš AFK?",
-    "giveafk": "/me %%NAME%% jde AFK!",
-    "afk": "/me %%NAME%% jde AFK!",
-    
-     "nouserzpet": "/me %%NAME%% se vrátil/a zpět se vzkazem \"%%NAME%%\"",
-     "selfzpet": "/me Hej %%NAME%%, to chceš říct sám/a sobě, že jsi zpět?",
-     "givezpet": "/me %%NAME%% se vrátil/a zpět!",
-     "zpet": "/me %%NAME%% se vrátil/a zpět!",
+    "afk": "/me "+a.username+" jde AFK!",
+    "zpet": "/me "+a.username+" se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me Zvát se sám/a sebe do sklepa není zrovna nejvhodnější, %%NAME%%. ",
