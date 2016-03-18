@@ -1996,7 +1996,7 @@ alkoholCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var name = msg.substring(space + 2);
+                        var space = msg.indexOf(' ');
                             var user = basicBot.userUtilities.lookupUserName(name);
                             if (user === false || !user.inRoom) {
                                 return API.sendChat(subChat(basicBot.chat.afk, {name: name}));
