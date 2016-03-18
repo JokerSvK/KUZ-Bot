@@ -240,7 +240,7 @@
         status: false,
         name: "HJV Bot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
+        scriptLink: "https://raw.githubusercontent.com/bscBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
         chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
         chat: null,
