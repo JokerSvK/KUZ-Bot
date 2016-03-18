@@ -4073,7 +4073,21 @@ sklepCommand: {
                     }
                 }
             },
-
+rollCommand: {
+                command: 'kostky',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+						var cislo = Math.floor((Math.random() * 12) + 2);
+                        API.sendChat(cislo.toString());
+                    }
+                }
+            }
+        }
+    },
             youtubeCommand: {
                 command: 'youtube',
                 rank: 'user',
