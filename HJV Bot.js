@@ -1,10 +1,10 @@
-
 /**
  *Copyright 2015 bscBot
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
  *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
  */
- 
+
+
 (function () {
 
     /*window.onerror = function() {
@@ -54,7 +54,7 @@
             };
         }
         if (typeof SockJS == 'undefined') {
-            $.getScript('https://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js', loadSocket);
+            $.getScript('https://cdn.jsdelivr.net/sockjs/1.0.3/sockjs.min.js', loadSocket);
         } else loadSocket();
     }
 
@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://raw.githubusercontent.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
+        $.get("https://rawgit.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -240,9 +240,9 @@
         status: false,
         name: "HJV Bot",
         loggedInID: null,
-        scriptLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJV%20Bot.js",
+        scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
+        chatLink: "https://rawgit.com/Franta72/HJV-Bot/master/HJVczech.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,17 +250,17 @@
         settings: {
             botName: "HJV Bot",
             language: "special",
-            chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
-            scriptLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJV%20Bot.js",
+            chatLink: "https://rawgit.com/Franta72/HJV-Bot/master/HJVczech.json",
+            scriptLink: "https://rawgit.com/bscBot/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
-            startupEmoji: true, // true or false
+            startupEmoji: false, // true or false
             autowoot: true,
             autoskip: false,
             smartSkip: true,
             cmdDeletion: true,
-            maximumAfk: 120,
+            maximumAfk: 300,
             afkRemoval: true,
             maximumDc: 60,
             bouncerPlus: true,
@@ -275,27 +275,27 @@
             historySkip: false,
             timeGuard: true,
             maximumSongLength: 10,
-            autodisable: true,
+            autodisable: false,
             commandCooldown: 30,
             usercommandsEnabled: true,
             thorCommand: false,
             thorCooldown: 10,
             skipPosition: 1,
             skipReasons: [
-                ["akce", "tvá píseň není vhodná k danému tématu probíhající akce. Podrobnosti akce nalezneš na našem Facebooku: https://www.facebook.com/HudbaUTomasa/?fref=ts "],
-                ["op", "tvá píseň je v našem seznamu ohraných písní. "],
-                ["historie", "tvá píseň je v naší historii."],
-                ["mix", "tvůj hraný remix je v rozporu s našími pravidly komunity. "],
-                ["zvuk", "tvá píseň má špatnou zvukovou stopu. "],
-                ["nsfw", "tvá píseň má nevhodný obsah pro děti a mladistvé. "],
-                ["nedostupne", "tvá píseň nelze přehrát pro ostatní uživatelé. "]
+                ["theme", "tvá píseň není vhodná k tématu naší akce. "],
+                ["op", "tvá píseň je na našem seznamu ohraných písní. "],
+                ["history", "tvá píseň je v historii. "],
+                ["mix", "tvá píseň obsahovala mix porušující naše pravidla. "],
+                ["sound", "tvá píseň měla špatný zvukový záznam. "],
+                ["nsfw", "tvá píseň měla nevhodný obsah pro děti a mladistvé. "],
+                ["unavailable", "tvá píseň nešla přehrát pro ostatní uživatelé. "]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
-            motdEnabled: true,
-            motdInterval: 10,
-            motd: "TIP: Můžete vyzkoušet naše speciální příkazy, stále je doplňujeme a návrhy můžeš posílat i ty. http://hudbajevsetko.justforum.net/t9-nase-prikazy",
-            filterChat: true,
+            motdEnabled: false,
+            motdInterval: 5,
+            motd: "Temporary Message of the Day",
+            filterChat: false,
             etaRestriction: false,
             welcome: true,
             opLink: null,
@@ -309,9 +309,9 @@
             songstats: true,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://raw.githubusercontent.com/bscBot/custom/master/blacklists/NSFWlist.json",
-                OP: "https://raw.githubusercontent.com/bscBot/custom/master/blacklists/OPlist.json",
-                BANNED: "https://raw.githubusercontent.com/bscBot/custom/master/blacklists/BANNEDlist.json"
+                NSFW: "https://rawgit.com/bscBot/custom/master/blacklists/NSFWlist.json",
+                OP: "https://rawgit.com/bscBot/custom/master/blacklists/OPlist.json",
+                BANNED: "https://rawgit.com/bscBot/custom/master/blacklists/BANNEDlist.json"
             }
         },
         room: {
@@ -741,21 +741,21 @@
                 }, 1000, id);
             },
             changeDJCycle: function () {
-                var toggle = $(".cycle-toggle");
-                if (toggle.hasClass("disabled")) {
-                    toggle.click();
-                    if (basicBot.settings.cycleGuard) {
-                        basicBot.room.cycleTimer = setTimeout(function () {
-                            if (toggle.hasClass("enabled")) toggle.click();
-                        }, basicBot.settings.cycleMaxTime * 60 * 1000);
-                    }
-                }
-                else {
-                    toggle.click();
-                    clearTimeout(basicBot.room.cycleTimer);
-                }
-
-                // TODO: Use API.moderateDJCycle(true/false)
+                $.getJSON('https://stg.plug.dj/_/rooms/state', function(data) {
+                    if (data.data[0].booth.shouldCycle) { // checks "" "shouldCycle": true "" if its true
+                        API.moderateDJCycle(false); // Disables the DJ Cycle
+                        clearTimeout(basicBot.room.cycleTimer); // Clear the cycleguard timer
+                    } else { // If cycle is already disable; enable it
+                        if (basicBot.settings.cycleGuard) { // Is cycle guard on?
+                        API.moderateDJCycle(true); // Enables DJ cycle
+                        basicBot.room.cycleTimer = setTimeout(function () {  // Start timer
+                            API.moderateDJCycle(false); // Disable cycle
+                        }, basicBot.settings.maximumCycletime * 60 * 1000); // The time
+                        } else { // So cycleguard is not on?
+                         API.moderateDJCycle(true); // Enables DJ cycle
+                        }
+                    };
+                });
             },
             intervalMessage: function () {
                 var interval;
@@ -1138,7 +1138,6 @@
             if (msg === 'skip') {
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
-                
             }
             for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
                 if (msg === basicBot.chatUtilities.spam[j]) {
@@ -1722,18 +1721,6 @@
                 }
             },
 
-        prikazyCommand: {
-                command: 'prikazy',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.prikazy);
-                    }
-                }
-            },
             ballCommand: {
                 command: ['8ball', 'ask'],
                 rank: 'user',
@@ -2105,8 +2092,7 @@ fackaCommand: {
                     }
                 }
             },
-
-            loveCommand: {
+loveCommand: {
                 command: 'love',
                 rank: 'user',
                 type: 'startsWith',
@@ -2278,6 +2264,18 @@ sklepCommand: {
                                 return API.sendChat(subChat(basicBot.chat.sklep, {nameto: user.username, namefrom: chat.un, SKLEPOVKY: this.getsklepovky()}));
                             }
                         }
+                    }
+                }
+            },
+            prikazyCommand: {
+                command: 'prikazy',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(basicBot.chat.prikazy);
                     }
                 }
             },
@@ -2464,16 +2462,16 @@ sklepCommand: {
                         var ch = '/me @' + name + ' ';
                         switch(lang){
                             case 'en': break;
-                            case 'da': ch += 'Var venlig at tale engelsk.'; break;
+                            case 'da': ch += 'Vær venlig at tale engelsk.'; break;
                             case 'de': ch += 'Bitte sprechen Sie Englisch.'; break;
                             case 'es': ch += 'Por favor, hable Inglés.'; break;
                             case 'fr': ch += 'Parlez anglais, s\'il vous plaît.'; break;
                             case 'nl': ch += 'Spreek Engels, alstublieft.'; break;
                             case 'pl': ch += 'Proszę mówić po angielsku.'; break;
-                            case 'pt': ch += 'Por favor, fale Ingles.'; break;
+                            case 'pt': ch += 'Por favor, fale Inglês.'; break;
                             case 'sk': ch += 'Hovorte po anglicky, prosím.'; break;
                             case 'cs': ch += 'Mluvte prosím anglicky.'; break;
-                            case 'sr': ch += '????? ???, ???????? ????????.'; break;
+                            case 'sr': ch += 'Молим Вас, говорите енглески.'; break;
                         }
                         ch += ' English please.';
                         API.sendChat(ch);
@@ -2804,7 +2802,7 @@ sklepCommand: {
                         if (msg.length <= cmd.length + 1) return API.sendChat(subChat(basicBot.chat.currentlang, {language: basicBot.settings.language}));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get("https://raw.githubusercontent.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
+                        $.get("https://rawgit.com/bscBot/source/master/lang/langIndex.json", function (json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === "undefined") {
@@ -3214,18 +3212,6 @@ sklepCommand: {
                     }
                 }
             },
-           kladivoCommand: {
-                command: 'kladivo',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.kladivo)
-                    }
-                }
-            },
 
             refreshCommand: {
                 command: 'refresh',
@@ -3588,17 +3574,29 @@ sklepCommand: {
                         if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
                         var firstSpace = msg.indexOf(' ');
                         var lastSpace = msg.lastIndexOf(' ');
-                        var name1 = msg.substring(cmd.length + 2, lastSpace);
-                        var name2 = msg.substring(lastSpace + 2);
+                        var name1 = msg.split('@')[1].trim();
+                        var name2 = msg.split('@')[2].trim();
                         var user1 = basicBot.userUtilities.lookupUserName(name1);
                         var user2 = basicBot.userUtilities.lookupUserName(name2);
                         if (typeof user1 === 'boolean' || typeof user2 === 'boolean') return API.sendChat(subChat(basicBot.chat.swapinvalid, {name: chat.un}));
                         if (user1.id === basicBot.loggedInID || user2.id === basicBot.loggedInID) return API.sendChat(subChat(basicBot.chat.addbottowaitlist, {name: chat.un}));
                         var p1 = API.getWaitListPosition(user1.id) + 1;
                         var p2 = API.getWaitListPosition(user2.id) + 1;
-                        if (p1 < 0 || p2 < 0) return API.sendChat(subChat(basicBot.chat.swapwlonly, {name: chat.un}));
+                        if (p1 < 0 && p2 < 0) return API.sendChat(subChat(basicBot.chat.swapwlonly, {name: chat.un}));
                         API.sendChat(subChat(basicBot.chat.swapping, {'name1': name1, 'name2': name2}));
-                        if (p1 < p2) {
+                        if (p1 === -1){
+                            API.moderateRemoveDJ(user2.id);
+                            setTimeout(function (user1, p2) {
+                                basicBot.userUtilities.moveUser(user1.id, p2, true);
+                            }, 2000, user1, p2);
+                        }
+                        else if (p2 === -1){
+                            API.moderateRemoveDJ(user1.id);
+                            setTimeout(function (user2, p1) {
+                                basicBot.userUtilities.moveUser(user2.id, p1, true);
+                            }, 2000, user2, p1);
+                        }
+                        else if (p1 < p2) {
                             basicBot.userUtilities.moveUser(user2.id, p1, false);
                             setTimeout(function (user1, p2) {
                                 basicBot.userUtilities.moveUser(user1.id, p2, false);
@@ -3628,7 +3626,6 @@ sklepCommand: {
                 }
             },
 
-    
             thorCommand: {
               command: 'thor',
               rank: 'user',
@@ -3643,7 +3640,7 @@ sklepCommand: {
                               from = chat.un,
                               djlist = API.getWaitList(),
                               inDjList = false,
-                              oldTime = 1,
+                              oldTime = 0,
                               usedThor = false,
                               indexArrUsedThor,
                               thorCd = false,
@@ -3697,6 +3694,7 @@ sklepCommand: {
                     }
                 }
             },
+
             timeguardCommand: {
                 command: 'timeguard',
                 rank: 'bouncer',
@@ -4075,21 +4073,7 @@ sklepCommand: {
                     }
                 }
             },
-rollCommand: {
-                command: 'hazeni',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-						var cislo = Math.floor((Math.random() * 12) + 2);
-                        API.sendChat(cislo.toString());
-                    }
-                }
-            }
-        }
-    },
+
             youtubeCommand: {
                 command: 'youtube',
                 rank: 'user',
