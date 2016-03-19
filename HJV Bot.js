@@ -2154,7 +2154,7 @@ koupitCommand: {
             },
             luluCommand: {
                 command: 'lulu',
-                rank: 'mod',
+                rank: 'user',
                 type: 'startsWith',
                 getlulus: function (chat) {
                     var c = Math.floor(Math.random() * basicBot.chat.lulus.length);
