@@ -1178,7 +1178,6 @@
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.moderateBanUser(from, 1, API.BAN.PERMA);
-                        API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
                         API.moderateDeleteChat(chat.cid);
                         return true;
                         
@@ -1189,7 +1188,6 @@
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.moderateBanUser(from, 1, API.BAN.PERMA);
-                        API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
                         API.moderateDeleteChat(chat.cid);
                         return true;
                         
