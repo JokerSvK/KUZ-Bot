@@ -299,6 +299,7 @@
     "youtube": "/me [%%NAME%%] Dejte nám odběr na youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
     "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
+    "urazky": "@%%NAME%%, uklidni svůj slovník, prosím tě."
     
     "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
     "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
