@@ -1198,6 +1198,7 @@
                  
                 if (msg.indexOf('kokot') > -1) {
                     API.sendChat(subChat(basicBot.chat.urazky, {name: chat.un}));
+                    API.moderateDeleteChat(chat.cid);
                     return true;
                 }
                 if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
