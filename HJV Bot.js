@@ -292,7 +292,7 @@
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
-            motdEnabled: false,
+            motdEnabled: true,
             motdInterval: 10,
             motd: "Děkujeme, že jste s námi! :heart: https://www.facebook.com/HudbaUTomasa/",
             filterChat: false,
