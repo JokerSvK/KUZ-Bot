@@ -1174,7 +1174,7 @@
                     API.moderateDeleteChat(chat.cid);
                 }
                 
-                 var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                 var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?stg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
