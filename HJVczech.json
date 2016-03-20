@@ -185,7 +185,7 @@
     "caps": "/me @%%NAME%%, dej si bacha na capslock, prosím.",
     "askskip": "/me @%%NAME%%, nežádej o přeskočení.",
     "spam": "/me @%%NAME%%, prosím nespamuj.",
-    "roomadvertising": "/me @%%NAME%%, ještě jednou napiš reklamu a zlomím ti vaz.",
+    "roomadvertising": "/me @%%NAME%%, tvá zpráva byla nahlášena jako reklama. Do několika minut budeš zabanován/a admin týmem.",
     "validgiftags": "/me [@%%NAME%%] http:\/\/i.giphy.com\/%%ID%%.gif [Tags: %%TAGS%%]",
     "invalidgiftags": "/me [@%%NAME%%] Neplatný tag, zkus jiný. [Tags: %%TAGS%%]",
     "validgifrandom": "/me [@%%NAME%%] http:\/\/i.giphy.com\/%%ID%%.gif [Náhodný GIF]",
@@ -299,7 +299,6 @@
     "youtube": "/me [%%NAME%%] Dejte nám odběr na youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
     "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
-    "reklama": "/me @%%NAME%%, tvá zpráva byla nahlášena jako reklama.",
     
     "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
     "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
