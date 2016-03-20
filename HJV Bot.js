@@ -1139,9 +1139,9 @@
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
             }
-            for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
-                if (msg === basicBot.chatUtilities.spamy[j]) {
-                    API.sendChat(subChat(basicBot.chat.spam, {name: chat.un}));
+            for (var j = 0; j < basicBot.chatUtilities.slovnik.length; j++) {
+                if (msg === basicBot.chatUtilities.slovnik[j]) {
+                    API.sendChat(subChat(basicBot.chat.slovnik,, {name: chat.un}));
                     return true;
                 }
             }
@@ -1297,11 +1297,9 @@
                 }
                 basicBot.room.roomstats.chatmessages++;
             },
-            spamy: [
-                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
-                'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
-                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
-                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
+            slovnik: [
+                'kurva', 'kokot', 'píča', 'jebat', 'debil', 'idiot', 'čurak', 'pica', 'mrdat', 'hovno', 'piča', 'hajzl', 'shit', 'bitch'
+                
             ],
             curses: [
                 'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
