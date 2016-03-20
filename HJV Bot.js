@@ -1195,6 +1195,14 @@
                         
                     } 
                 }
+                var plugRoomLinkPatt = [ 'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka' ],
+                 if (plugRoomLinkPatt.exec(msg)) {
+                    if (perm === 0) {
+                        API.sendChat(subChat(basicBot.chat.urazky, {name: chat.un}));
+                        return true;
+                        
+                    } 
+                }
                  
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
