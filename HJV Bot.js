@@ -1141,7 +1141,7 @@
             }
             for (var j = 0; j < basicBot.chatUtilities.slovnik.length; j++) {
                 if (msg === basicBot.chatUtilities.slovnik[j]) {
-                    API.sendChat(subChat(basicBot.chat.slovnik,, {name: chat.un}));
+                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
                     return true;
                 }
             }
