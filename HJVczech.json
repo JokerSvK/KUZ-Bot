@@ -337,6 +337,17 @@
     "givelulu": "/me Příkazem !lulu projevíš na někom svojí nadrženost.",
     "selflulu": "/me %%NAME%% šel lulu.",
     "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
-    "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%"
+    "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%",
+    
+    "germ": "/me GEЯM je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, anime, kočky, banány a rád spamuje.",
+    "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když se v chatu lidi vyjadřují sprostě a mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2",
+    "sumer": "/me Sumer miluje jízdu na kole. Je klidné a mírumilovné povahy a snadno se nenaštve, ale když se to někomu podaří, tak to stojí za to… Občas je tvrdohlavý a je pro každou srandu. Má přezdívku sumec. >(°>__<°)<",
+    "franta": "/me Franta72 je někdy náladový týpek, ale vždy je nějaký způsob, jak si s ním pokecat. Nemá rád, když mu někdo lže. Miluje rap, ale poslouchá v podstatě všechno.",
+    "dykobraz": "/me Dykobraz je kliďas, pohodář a všechno bere s humorem. Miluje cz/sk rap. Mezi jeho oblíbence patří Ektor, Separ, Haha Crew, Hypno808... Jen tak se nenaštve a má přezdívku negr nebo ježek. <ᶺ.ᶺ.ᶺ>",
+    "thomas": "/me THØMAS B je milý a hodný člověk, ale nesmíte ho naštvat. Nesnáší lež a faleš a má rád ty, kteří mají rádi ho. Někdy bývá náladový, ale má rád srandu a dokáže rozesmát. Nesnáší škemrání o staff.",
+    "ichigo": "/me Ichigo Kurosaki je jako každý normální středoškolák, pokuď nepočítáme schopnost vidět duchy. V našem staff jíž nepůsobí, ale udělal nám speciální CSS pozadí.",
+    "nicmoc": "/me [NicMoc.Dj] je strašný flegmatik. Baví ho posilování, běhání a občas hraje WOT. Nepokoušejte se ho naštvat nebo špatně skončíte. Ale jinak je s ním sranda a rád si dělá srandu z ostatních.",
+    "derp": "/me Derp je Derp.",
+    "misul": "/me *Sweetie-Mišul* má ráda dobrou hudbu a pokec s fajn lidmi. Miluje seriály a čtení knih. Je svá, bezstarostná a často afk!"
     
 }
