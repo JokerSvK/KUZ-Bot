@@ -1177,9 +1177,9 @@
                  var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?stg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
+                        API.moderateBanUser(from, 1, API.BAN.PERMA);
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
                         API.moderateDeleteChat(chat.cid);
-                        API.moderateBanUser(from, 1, API.BAN.PERMA);
                         return true;
                         
                     } 
@@ -1188,9 +1188,9 @@
                  var plugRoomLinkPatt = /(\bstg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
+                        API.moderateBanUser(from, 1, API.BAN.PERMA);
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
                         API.moderateDeleteChat(chat.cid);
-                        API.moderateBanUser(from, 1, API.BAN.PERMA);
                         return true;
                         
                     } 
