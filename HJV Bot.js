@@ -1179,6 +1179,7 @@
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
                         API.moderateDeleteChat(chat.cid);
+                        API.moderateBanUser(from, 1, API.BAN.PERMA);
                         return true;
                         
                     } 
