@@ -1180,7 +1180,10 @@
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
                         API.moderateDeleteChat(chat.cid);
                         return true;
-                    }
+                    if var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?stg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                    else API.moderateBanUser(user.id, 1, API.BAN.PERMA);
+                    return true;
+                    } 
                 }
                  
                 if (msg.indexOf('http://adf.ly/') > -1) {
