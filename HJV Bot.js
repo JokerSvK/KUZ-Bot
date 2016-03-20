@@ -1196,9 +1196,8 @@
                     } 
                 }
                  
-                if (msg.indexOf('http://adf.ly/') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
+                if (msg.indexOf('kokot') > -1) {
+                    API.sendChat(subChat(basicBot.chat.urazky, {name: chat.un}));
                     return true;
                 }
                 if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
