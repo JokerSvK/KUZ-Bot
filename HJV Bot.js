@@ -2460,7 +2460,7 @@ sklepCommand: {
                         var timeRemaining = API.getTimeRemaining();
                         var estimateMS = ((pos + 1) * 4 * 60 + timeRemaining) * 1000;
                         var estimateString = basicBot.roomUtilities.msToStr(estimateMS);
-                        API.sendChat(subChat(basicBot.chat.eta, {name: name, time: estimateString, position: realpos}));
+                        API.sendChat(subChat(basicBot.chat.eta, {name: name}));
                     }
                 }
             },
