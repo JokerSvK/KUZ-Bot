@@ -1298,7 +1298,7 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             slovnik: [
-                'kurva', 'kokot', 'píča', 'jebat', 'debil', 'idiot', 'čurak', 'pica', 'mrdat', 'hovno', 'piča', 'hajzl', 'shit', 'bitch'
+                'kurva', 'kokot', 'píča', 'jebat', 'debil', 'idiot', 'čurak', 'pica', 'mrdat', 'hovno', 'piča', 'hajzl', 'shit', 'bitch', 'čubko', 'jebko', 'debile', 'píčo', 'přeskočit', 'skip'
                 
             ],
             curses: [
