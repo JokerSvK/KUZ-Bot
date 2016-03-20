@@ -1298,7 +1298,7 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             slovnik: [
-                'kurva', 'kokot', 'píča', 'jebat', 'debil', 'idiot', 'čurak', 'pica', 'mrdat', 'hovno', 'piča', 'hajzl', 'shit', 'bitch', 'čubko', 'jebko', 'debile', 'píčo', 'přeskočit', 'skip', 'mamrd', 'pičovina', 'skip' 'pí*ča', 'koko*t', 'píč*ovina', 'kur*va', 'kund*a', 'děv*ka', 'čů*rák', 'mam*rd' 'kokotko', 'pička', 'kunda', 'kundička', 'kundolízačka', 'mrdka', 'jebat', 'čurák', 'piča', 'pičus', 'zmrd', 'kokot', 'kundivál', 'teplouš', 'buzna', 'homokláda', 'bukvice', 'cucák', 'šulin', 'vypičenec', 'kurva', 'běhna', 'coura', 'štětka', 'rašple', 'fuchtle', 'rajda', 'děvka', 'sere', 'sráč', 'hajzl', 'kretén', 'blb', 'štěkna', 'jebat', 'čurák', 'piča', 'pičus', 'zmrd', 'kokot', 'kundivál', 'teplouš', 'buzna', 'homokláda', 'bukvice', 'cucák', 'šulin', 'vypičenec', 'kurva'
+                'kurva', 'kokot', 'píča', 'jebat', 'debil', 'idiot', 'čurak', 'pica', 'mrdat', 'hovno', 'piča', 'hajzl', 'shit', 'bitch', 'čubko', 'jebko', 'debile', 'píčo', 'přeskočit', 'skip', 'mamrd', 'pičovina', 'skip' 'pí*ča', 'koko*t', 'píč*ovina', 'kur*va', 'kund*a', 'děv*ka', 'čů*rák', 'mam*rd' 'kokotko', 'pička', 'kunda', 'kundička', 'kundolízačka', 'mrdka', 'jebat', 'čurák', 'piča', 'pičus', 'zmrd', 'kokot', 'kundivál', 'teplouš', 'buzna', 'homokláda', 'bukvice', 'cucák', 'šulin', 'vypičenec', 'kurva', 'běhna', 'coura', 'štětka', 'rašple', 'fuchtle', 'rajda', 'děvka', 'sere', 'sráč', 'hajzl', 'kretén', 'blb', 'štěkna', 'jebat', 'čurák', 'piča', 'pičus', 'zmrd', 'kokot', 'kundivál', 'teplouš', 'buzna', 'homokláda'
                 
             ],
             curses: [
