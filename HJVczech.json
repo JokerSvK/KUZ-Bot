@@ -248,7 +248,7 @@
     "notinwaitlist": "/me @%%NAME%%, nejsi ve frontě.",
     "youarenext": "/me @%%NAME%%, budeš DJ až dohraje tahle skladba.",
     "youaredj": "/me @%%NAME%%, jsi právě DJ.",
-    "eta": "/me %%NAME%% jde AFK.",
+    "eta": "/me @%%NAME%%, jsi na pozici %%POSITION%% ve frontě a budeš na řadě přibližně za %%TIME%%.",
     "facebook": "/me Likni nás na facebooku: %%LINK%%",
     "starterhelp": "/me Tohle ti pomůže začít na plugu: %%LINK%%",
     "roulettejoin": "/me @%%NAME%% se přihlásil/a do rulety! (!leave pokud ji chceš opustit)",
