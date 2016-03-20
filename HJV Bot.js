@@ -1181,7 +1181,6 @@
                         API.moderateDeleteChat(chat.cid);
                         API.moderateBanUser(user.id, 1, API.BAN.PERMA);
                         return true;
-                    
                     } 
                 }
                  
