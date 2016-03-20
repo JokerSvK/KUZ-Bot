@@ -1139,8 +1139,8 @@
                 API.sendChat(subChat(basicBot.chat.askskip, {name: chat.un}));
                 return true;
             }
-            for (var j = 0; j < basicBot.chatUtilities.spam.length; j++) {
-                if (msg === basicBot.chatUtilities.spam[j]) {
+            for (var j = 0; j < basicBot.chatUtilities.spamy.length; j++) {
+                if (msg === basicBot.chatUtilities.spamy[j]) {
                     API.sendChat(subChat(basicBot.chat.spam, {name: chat.un}));
                     return true;
                 }
@@ -1297,7 +1297,7 @@
                 }
                 basicBot.room.roomstats.chatmessages++;
             },
-            spam: [
+            spamy: [
                 'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
                 'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
                 'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
