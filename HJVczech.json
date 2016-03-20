@@ -185,7 +185,7 @@
     "caps": "/me @%%NAME%%, dej si bacha na capslock, prosím.",
     "askskip": "/me @%%NAME%%, nežádej o přeskočení.",
     "spam": "/me @%%NAME%%, prosím nespamuj.",
-    "roomadvertising": " /me @%%NAME%%, prosím změň si svůj AutoWoot. Navrhujeme RCS: https://rcs.radiant.dj/install",
+    "roomadvertising": "/me @%%NAME%%, ještě jednou napiš reklamu a zlomím ti vaz.",
     "validgiftags": "/me [@%%NAME%%] http:\/\/i.giphy.com\/%%ID%%.gif [Tags: %%TAGS%%]",
     "invalidgiftags": "/me [@%%NAME%%] Neplatný tag, zkus jiný. [Tags: %%TAGS%%]",
     "validgifrandom": "/me [@%%NAME%%] http:\/\/i.giphy.com\/%%ID%%.gif [Náhodný GIF]",
