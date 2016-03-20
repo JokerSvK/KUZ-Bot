@@ -1196,7 +1196,7 @@
                     } 
                 }
                  
-                if (msg.indexOf('kokot') > -1) {
+                if (msg.indexOf('http://adf.ly/') > -1) {
                     API.sendChat(subChat(basicBot.chat.urazky, {name: chat.un}));
                     API.moderateDeleteChat(chat.cid);
                     return true;
