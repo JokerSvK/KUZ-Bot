@@ -1298,7 +1298,7 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             slovnik: [
-                'kurva', 'kokot', 'píča', 'jebat', 'debil', 'idiot', 'čurak', 'pica', 'mrdat', 'hovno', 'piča', 'hajzl', 'shit', 'bitch', 'čubko', 'jebko', 'debile', 'píčo', 'přeskočit', 'skip', 'mamrd', 'pičovina', 'skip' 'pí*ča', 'koko*t', 'píč*ovina', 'kur*va', 'kund*a', 'děv*ka', 'čů*rák', 'mam*rd' 'kokotko', 'pička', 'kunda', 'kundička', 'kundolízačka', 'mrdka', 'jebat', 'čurák', 'piča', 'pičus', 'zmrd', 'kokot', 'kundivál', 'teplouš', 'buzna', 'homokláda', 'bukvice', 'cucák', 'šulin', 'vypičenec', 'kurva', 'běhna', 'coura', 'štětka', 'rašple', 'fuchtle', 'rajda', 'děvka', 'sere', 'sráč', 'hajzl', 'kretén', 'blb', 'štěkna', 'jebat', 'čurák', 'piča', 'pičus', 'zmrd', 'kokot', 'kundivál', 'teplouš', 'buzna', 'homokláda'
+                'kurva', 'kokot', 'píča', 'jebat', 'debil', 'idiot', 'čurak', 'pica', 'mrdat', 'hovno', 'piča', 'hajzl', 'shit', 'bitch', 'čubko', 'jebko', 'debile', 'píčo', 'přeskočit', 'skip'
                 
             ],
             curses: [
@@ -2362,18 +2362,6 @@ sklepCommand: {
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         API.sendChat(basicBot.chat.misul);
-                    }
-                }
-            },
-            operacoCommand: {
-                command: 'operaco',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.operaco);
                     }
                 }
             },
