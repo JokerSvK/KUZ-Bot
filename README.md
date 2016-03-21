@@ -23,24 +23,19 @@ Uvedené příkazy v tomto provedení nenajdete v žádné jiné komunitě.
 
 !ask = Příkaz k zeptání se na otázku chatbota
 
+# Speciální funkce
 
+V této verzi najdete také vylepšenou ochranu proti reklamě, která útočníkovi smaže zprávu, upozorní a automaticky zabanuje.
 
+# Informace o známých lidí
 
-# Tvůrci bota
+!thomas !germ !sumer !franta !dykobraz !derp !ichigo !misul !psycho !nicmoc
 
-Franta72 - Vývojář projektu
+# Tvůrci verze bota
 
-Itory - Návrhy vět a sestrojení !alkohol příkazu
+By Franta72 & Itory
 
-Lemon - Pomoc při vývoji
-
-Tessi Tess - Kompletní čeština bota, autorka předešlých verzí HJV botů.
-
-
-
-
-
-a také staff Hudba je Všetko, které dodalo další nápady na tvorbu příkazů.
+Základem celého bota je BasicBot.
 
 # 2016, Hudba je Všetko.
 
