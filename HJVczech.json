@@ -339,7 +339,7 @@
     "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
     "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%",
     
-    "germ": "/me GEЯM je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, anime, kočky, banány a rád spamuje.",
+    "germ": "/me GEЯM je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, kočky a rád spamuje. Poslední dobou nemá na nic čas, ani na spánek.",
     "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když se v chatu lidi vyjadřují sprostě a mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2",
     "sumer": "/me Sumer miluje jízdu na kole. Je klidné a mírumilovné povahy a snadno se nenaštve, ale když se to někomu podaří, tak to stojí za to… Občas je tvrdohlavý a je pro každou srandu. Má přezdívku sumec. >(°>__<°)<",
     "franta": "/me Franta72 je někdy náladový týpek, ale vždy je nějaký způsob, jak si s ním pokecat. Nemá rád, když mu někdo lže. Miluje rap, ale poslouchá v podstatě všechno.",
@@ -347,9 +347,9 @@
     "thomas": "/me THØMAS B je milý a hodný člověk, ale nesmíte ho naštvat. Nesnáší lež a faleš a má rád ty, kteří mají rádi ho. Někdy bývá náladový, ale má rád srandu a dokáže rozesmát. Nesnáší škemrání o staff.",
     "ichigo": "/me Ichigo Kurosaki je jako každý normální středoškolák, pokuď nepočítáme schopnost vidět duchy. V našem staff jíž nepůsobí, ale udělal nám speciální CSS pozadí.",
     "nicmoc": "/me [NicMoc.Dj] je strašný flegmatik. Baví ho posilování, běhání a občas hraje WOT. Nepokoušejte se ho naštvat nebo špatně skončíte. Ale jinak je s ním sranda a rád si dělá srandu z ostatních.",
-    "derp": "/me Derpulíni.",
+    "derp": "/me Derp... je hodný, upřímný kluk, který rád sere ostatní lidi. Miluje EDM festivaly a dobrý alkohol. Jinak velmi rád se baví se slečnami. Je to kluk jako buk. Prostě náš manažéris.",
     "misul": "/me *Sweetie-Mišul* má ráda dobrou hudbu a pokec s fajn lidmi. Miluje seriály a čtení knih. Je svá, bezstarostná a často afk!",
-    "operaco": "/me Operaco je náš milý hoch, který se nebojí jít za DJ pult. :babyrage: "
-    "kebabčiči": "/me Kočička alá Kebabčiči se považuje za nejhodnějšího člověka na světě. Také je to manažérka místního staffu. Máme ji rádi.",
+    "operaco": "/me Operaco je náš milý hoch, který se nebojí jít za DJ pult. :babyrage: ",
+    "kebabčiči": "/me Kočička alá Kebabčiči se považuje za nejhodnějšího člověka na světě. Takže trošku egoistka, ale máme ji rádi. :heart:"
     
 }
