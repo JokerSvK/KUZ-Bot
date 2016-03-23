@@ -309,7 +309,7 @@
             songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/bscBot/custom/master/blacklists/NSFWlist.json",
+                NSFW: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/blacklist.json",
                 OP: "https://rawgit.com/bscBot/custom/master/blacklists/OPlist.json",
                 BANNED: "https://rawgit.com/bscBot/custom/master/blacklists/BANNEDlist.json"
             }
