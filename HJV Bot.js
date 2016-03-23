@@ -2237,9 +2237,9 @@ sklepCommand: {
                 command: ['sluzby', 'service'],
                 rank: 'user',
                 type: 'startsWith',
-                getsluzby: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.sluzby.length);
-                    return basicBot.chat.sluzby[c];
+                getsluzba: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.sluzba.length);
+                    return basicBot.chat.sluzba[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2262,7 +2262,7 @@ sklepCommand: {
                                 return API.sendChat(subChat(basicBot.chat.selfsluzby, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.sluzby, {nameto: user.username, namefrom: chat.un, SLUZBY: this.getsluzby()}));
+                                return API.sendChat(subChat(basicBot.chat.sluzby, {nameto: user.username, namefrom: chat.un, SLUZBA: this.getsluzba()}));
                             }
                         }
                     }
