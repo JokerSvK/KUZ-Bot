@@ -1964,7 +1964,7 @@
                 }
             },
 alkoholCommand: {
-                command: 'alkohol',
+                command: ['alkohol', 'alcohol'],
                 rank: 'user',
                 type: 'startsWith',
                 getALKOHOLY: function (chat) {
@@ -2024,7 +2024,7 @@ alkoholCommand: {
                 }
             },
 fackaCommand: {
-                command: 'facka',
+                command: ['facka', 'slap'],
                 rank: 'user',
                 type: 'startsWith',
                 getfacka: function (chat) {
@@ -2094,7 +2094,7 @@ loveCommand: {
                 }
             },
  zvireCommand: {
-                command: 'zvire',
+                command: ['zvire', 'animal'],
                 rank: 'user',
                 type: 'startsWith',
                 getanimal: function (chat) {
@@ -2129,7 +2129,7 @@ loveCommand: {
                 }
             },
 koupitCommand: {
-                command: 'koupit',
+                command: ['koupit', 'buy'],
                 rank: 'user',
                 type: 'startsWith',
                 getobchod: function (chat) {
@@ -2199,7 +2199,7 @@ koupitCommand: {
                 }
             },
 sklepCommand: {
-                command: 'sklep',
+                command: ['sklep', 'cellar'],
                 rank: 'user',
                 type: 'startsWith',
                 getsklepovky: function (chat) {
