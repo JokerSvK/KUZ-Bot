@@ -68,7 +68,7 @@
 		
 		
         ],
-	"sluzby": [
+	"sluzba": [
 	                        "chce abys vytřel/a podlahu od zhora až dolů.",
 				"chce odvézt z večírku, protože je zase na mol.",
 				"si od tebe půjčil/a toaleťák.",
@@ -351,9 +351,9 @@
     "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%",
     
     "givesluzby": "/me Příkazem !sluzby @jmeno někoho o něco požádáš.",
-    "selfsluzby": "/me Blázne, přece nebudeš sloužit sám/a sobě, když máš tolik otroků na výběr!",
+    "selfsluzby": "/me %%NAME%%, zkus vybrat nějakého otroka z místnosti.",
     "noursersluzby": "/me Nevidím %%NAME%% v místnosti, takže si vyber jiného otroka.",
-    "sluzby": "/me @%%NAMETO%%, @%%NAMEFROM%% %%SLUZBY%%",
+    "sluzby": "/me @%%NAMETO%%, @%%NAMEFROM%% %%SLUZBA%%",
     
     "germ": "/me GEЯM je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, kočky a rád spamuje. Bývá často AFK.",
     "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když se v chatu lidi vyjadřují sprostě a mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2",
