@@ -295,7 +295,7 @@
             motdEnabled: true,
             motdInterval: 10,
             motd: "Děkujeme, že jste s námi! :heart: https://www.facebook.com/HudbaUTomasa/",
-            filterChat: false,
+            filterChat: true,
             etaRestriction: false,
             welcome: true,
             opLink: null,
