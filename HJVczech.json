@@ -332,8 +332,8 @@
     "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
     "zvire": "/me @%%NAMETO%%, @%%NAMEFROM%% %%ANIMAL%%",
     
-    "afk": "/me @%%NAMEFROM%% jde AFK!",
-    "zpet": "/me @%%NAME%% se vrátil/a zpět!",
+    "afk": "/me %%NAME%% jde AFK!",
+    "zpet": "/me %%NAME%% se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me @%%NAME%%, zvát se sám/a sebe do sklepa není zrovna nejvhodnější. ",
