@@ -139,7 +139,7 @@ Uživatel
 |!website | | Dá link na webové stránky. |
 |!youtube | | Pošle odkaz na YouTube kanál komunity. |
 
-Informace o lidech ze staffu
+Informace o lidech ze staffu & pomocníků HJV
 -----------
 
 |Příkaz | 
@@ -155,3 +155,4 @@ Informace o lidech ze staffu
 |!kebabčiči |
 |!operaco |
 |!misul |
+|!ichigo |
