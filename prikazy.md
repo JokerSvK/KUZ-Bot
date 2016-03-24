@@ -101,17 +101,24 @@ Rezidentní DJ
 Uživatel
 ----
 
-|      Příkaz       | Argument  |  Popis  |
-|:-----------------:|:---------:|:--------------------------------------:|
+|Příkaz | Argument |  Popis |
+|:------:|:---------:|:--------------------------------------:|
 |*!alkohol | @jméno | Dá uživateli panáka alkoholu. |
-|*!money | !koupit | @jméno | Koupí náhodou věc uživateli. |
-|*!zvire | !animal | @jméno | Napíše uživateli společné rysy s náhodným zvířetem. |
+|*!money / !koupit | @jméno | Koupí náhodou věc uživateli. |
+|*!zvire | @jméno | Napíše uživateli společné rysy s náhodným zvířetem. |
 |*!lulu | @jméno | Projeví na někom svojí nadrženost. |
-|*! | @jméno | Osvojí uživatele jako svého/svojí bitch. |
+|*!sklep | @jméno | Pozve uživatele do sklepa. |
+|*!love | @jméno | Vyjádři uživateli lásku. |
+|*!facka | @jméno | Dá uživateli facku. |
+|*!afk | | Napíše o uživateli, že je AFK. |
+|*!zpet | | Napíše o uživateli, že se vrátil zpět. |
+|*!ego | | Uživatel si může zvýšit ego. (Berte s nadhledem) |
+|*!hug | @jméno | Virtuálně obejme uživatele. |
+|*!update | | Napíše stránku s aktualizacemi bota. |
 |!8ball/!ask | (otázka) | Zeptá se bota na otázku typu ano či ne. Bot odpovídá v náhodných variantách. |
 |!autowoot | | Poskytne link na populární autowoot RCS. |
 |!ba | | Vysvětlí v kostce rank Brand Ambassadora. |
-|!prikazy | | Poskytne link na seznam příkazů. |
+|*!prikazy | | Poskytne link na seznam příkazů. |
 |!cookie | (@jméno) | Pošle uživateli sušenku. |
 |!dclookup / !dc | | Vrátí uživatele na předchozí pozici ve frontě před přerušením připojení s místnosti. |
 |!emoji | | Dá link na stránku s emotikony. |
@@ -131,3 +138,20 @@ Uživatel
 |!thor | | Přesune uživatele na první místo, pokuď je zvolen kladivem. |
 |!website | | Dá link na webové stránky. |
 |!youtube | | Pošle odkaz na YouTube kanál komunity. |
+
+Informace o lidech ze staffu
+-----------
+
+|Příkaz | 
+|:------:|
+|*!thomas |
+|*!germ |
+|*!sumer |
+|*!derp |
+|*!franta |
+|*!psycho |
+|*!nicmoc |
+|*!dykobraz |
+|*!kebabčiči |
+|*!operaco |
+|*!misul |
