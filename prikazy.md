@@ -3,7 +3,7 @@ Příkazy:
 
 X specifikuje číslo.
 Argumenty můžou být různé.
-Uvedené příkazy se vyskytují v BasicBotu. Příkazy s hvězdičkou jsou pouze v Hudba je Všetko.*
+Uvedené příkazy se vyskytují v BasicBotu. Kromě speciálních navržené pro Hudba je Všetko.
 
 
 Manažér
@@ -11,7 +11,7 @@ Manažér
 
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|*!bitch | @jméno | Zvolí vybraného uživatele jako osobní bitch. |
+|!bitch | @jméno | Zvolí vybraného uživatele jako osobní bitch. |
 |!afklimit | X | Nastaví maximální AFK limit. |
 |!botname | (název bota) | Změní jméno bota. |
 |!bouncer+ | | Zapnutí/Vypnutí speciálních pravomocí vyhazovačů. |
@@ -92,7 +92,7 @@ Rezidentní DJ
 
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|*!fuck | @jméno | Vyjádři nenávist k danému uživateli. |
+|!fuck | @jméno | Vyjádři nenávist k danému uživateli. |
 |!link | | Pošle YouTube link aktuální písně.
 
 
@@ -103,22 +103,22 @@ Uživatel
 
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|*!alkohol | @jméno | Dá uživateli panáka alkoholu. |
-|*!money / !koupit | @jméno | Koupí náhodou věc uživateli. |
-|*!zvire | @jméno | Napíše uživateli společné rysy s náhodným zvířetem. |
-|*!lulu | @jméno | Projeví na někom svojí nadrženost. |
-|*!sklep | @jméno | Pozve uživatele do sklepa. |
-|*!love | @jméno | Vyjádři uživateli lásku. |
-|*!facka | @jméno | Dá uživateli facku. |
-|*!afk | | Napíše o uživateli, že je AFK. |
-|*!zpet | | Napíše o uživateli, že se vrátil zpět. |
-|*!ego | | Uživatel si může zvýšit ego. (Berte s nadhledem) |
-|*!hug | @jméno | Virtuálně obejme uživatele. |
-|*!update | | Napíše stránku s aktualizacemi bota. |
+|!alkohol | @jméno | Dá uživateli panáka alkoholu. |
+|!money / !koupit | @jméno | Koupí náhodou věc uživateli. |
+|!zvire | @jméno | Napíše uživateli společné rysy s náhodným zvířetem. |
+|!lulu | @jméno | Projeví na někom svojí nadrženost. |
+|!sklep | @jméno | Pozve uživatele do sklepa. |
+|!love | @jméno | Vyjádři uživateli lásku. |
+|!facka | @jméno | Dá uživateli facku. |
+|!afk | | Napíše o uživateli, že je AFK. |
+|!zpet | | Napíše o uživateli, že se vrátil zpět. |
+|!ego | | Uživatel si může zvýšit ego. (Berte s nadhledem) |
+|!hug | @jméno | Virtuálně obejme uživatele. |
+|!update | | Napíše stránku s aktualizacemi bota. |
 |!8ball/!ask | (otázka) | Zeptá se bota na otázku typu ano či ne. Bot odpovídá v náhodných variantách. |
 |!autowoot | | Poskytne link na populární autowoot RCS. |
 |!ba | | Vysvětlí v kostce rank Brand Ambassadora. |
-|*!prikazy | | Poskytne link na seznam příkazů. |
+|!prikazy | | Poskytne link na seznam příkazů. |
 |!cookie | (@jméno) | Pošle uživateli sušenku. |
 |!dclookup / !dc | | Vrátí uživatele na předchozí pozici ve frontě před přerušením připojení s místnosti. |
 |!emoji | | Dá link na stránku s emotikony. |
@@ -144,14 +144,14 @@ Informace o lidech ze staffu
 
 |Příkaz | 
 |:------:|
-|*!thomas |
-|*!germ |
-|*!sumer |
-|*!derp |
-|*!franta |
-|*!psycho |
-|*!nicmoc |
-|*!dykobraz |
-|*!kebabčiči |
-|*!operaco |
-|*!misul |
+|!thomas |
+|!germ |
+|!sumer |
+|!derp |
+|!franta |
+|!psycho |
+|!nicmoc |
+|!dykobraz |
+|!kebabčiči |
+|!operaco |
+|!misul |
