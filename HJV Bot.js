@@ -2007,7 +2007,7 @@ alkoholCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                      return API.sendChat(subChat(basicBot.chat.afk, {nameto: user.username, namefrom: chat.un, AFK: this.getafk()}));
+                        API.sendChat(subChat(basicBot.chat.afk, {name: chat.un}));
                     }
                 }
             },
@@ -2019,7 +2019,7 @@ alkoholCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat(basicBot.chat.zpet)
+                      API.sendChat(subChat(basicBot.chat.zpet, {name: chat.un}));  
                     }
                 }
             },
