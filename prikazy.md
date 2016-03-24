@@ -1,124 +1,125 @@
-Commands:
+Příkazy:
 =========
 
-X specifies a number  
-Arguments between ( ) are optional
+X specifikuje číslo  
+Argumenty můžou být různé
+Jsou to BasicBot příkazy - přeložené do češtiny.
 
 
-Manager
+Manažér
 -------
 
-|Command | Arguments |  Description |
+|Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|!afklimit | X | sets the maximum afk time |
-|!botname | (botname) | change the default bot name |
-|!bouncer+ | | toggle bouncer+ |
-|!skippos | X | set the position to which skip and lockskip moves the dj |
-|!clearchat | |clears the chat |
-|!cycle | | toggle DJ cycle |
-|!cycletimer | X | set the maximum DJ cycle time for when cycleguard is enabled |
-|!language | (language) | specify the language you would like the bot to use |
-|!locktimer | X | set the maximum time the waitlist can be locked if lockguard is enabled |
-|!maxlength | X | specify the maximum length a song can be when timeguard is enabled |
-|!logout | | logs out account bot is hosted on |
-|!refresh | | refreshes the browser of whoever runs the bot |
-|!usercmdcd | X | set the cooldown on commands by grey users |
-|!usercommands | | toggle user commands |
-|!voteskip | (X) | when no argument is specified, returns the current voteskip limit, when X is specified, voteskip limit is updated to the new specified limit. |
+|!afklimit | X | Nastaví maximální AFK limit. |
+|!botname | (název bota) | Změní jméno bota. |
+|!bouncer+ | | Zapnutí/Vypnutí speciálních pravomocí vyhazovačů. |
+|!skippos | X | Nastaví X pozici, která přehazuje uživatele ve frontě za pomocí !lockskip |
+|!clearchat | | Vymaže chat. |
+|!cycle | | Zapnutí/Vypnutí automatického připojení do fronty po dohraní písně. |
+|!cycletimer | X | Nastaví maximální počet automatického připojování za předpokladu zapnutého příkazu !cycleguard |
+|!language | (jazyk) | Změní jazyk bota. |
+|!locktimer | X | Nastaví maximální čas zamknuté fronty za předpokladu zapnutého příkazu !lockguard |
+|!maxlength | X | Nastaví maximální délku písně. |
+|!logout | | Odhlásí účet bota. |
+|!refresh | | Aktualizuje prohlížeč zapnutého bota. |
+|!usercmdcd | X | Nastaví cooldown příkazů pro šedé uživatelé. |
+|!usercommands | | Zapnutí/Vypnutí příkazů pro šedé uživatelé. |
+|!voteskip | (X) | Nastaví počet mehů pro přeskočení písně. |
 
-Bouncer+
+Vyhazovač+
 --------
 
-|Command | Arguments |  Description |
+|Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|!add | @user | add user to the waitlist |
-|!afkremoval | | toggles the afk check |
-|!autoskip | | skips songs automatically when they're done (use when the circles-bug happens) |
-|!deletechat | @user | delete all the chats by a certain user |
-|!lock | | lock the waitlist |
-|!lockdown | | lock down the room: only staff can chat |
-|!move | @user (X) | moves user to position X on the waitlist, default is position 1 |
-|!remove | @user | remove user from the waitlist |
-|~~!roulette~~ | | ~~start a roulette~~ |
-|!songstats | | toggle song statistics |
-|!unlock | | unlock the waitlist |
-|!welcome | | toggle the welcome message on user join |
+|!add | @jméno | Přidá zvoleného uživatele do fronty. |
+|!afkremoval | | Resetuje AFK všem uživatelům. |
+|!autoskip | | Po skončení písně automaticky přeskočí ji za předpokladu bugu s DJováním. |
+|!deletechat | @jméno | Vymaže zprávy daného uživatele. |
+|!lock | | Uzamkne frontu. |
+|!lockdown | | Pouze staff můžete chatovat v místnosti. |
+|!move | @jméno (X) | Přesune uživatele ve frontě na X pozici. (Defaultní pozice značí 1. místo) |
+|!remove | @jméno | Odstraní uživatele z fronty. |
+|!roulette | | Zahájení rulety. |
+|!songstats | | Zapnutí/Vypnutí statistiky skladeb. |
+|!unlock | | Odemkne frontu. |
+|!welcome | | Zapnutí/Vypnutí uvítací zprávy. |
 
-Bouncer
+Vyhazovač
 -------
 
-|Command | Arguments |  Description |
+|Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|!active | (X) | shows how many users chatted in the past X minutes. If no X specified, 60 is set as default |
-|!afkreset | @user | resets the afk time of user |
-|!afktime | @user | shows how long user has been afk |
-|!autodisable | | toggle the autodisable |
-|!ban | @user | bans user for 1 day |
-|!blacklist / !bl | blacklistname | add the song to the specified blacklist |
-|!commanddeletion | | toggles if bot commands gets deleted |
-|!blinfo | | get information required to blacklist a song |
-|!cycleguard | | toggles the cycleguard |
-|!dclookup / !dc | (@user) | do dclookup for user |
-|!english | @user | ask user to speak english (asked in the language they set plug to) |
-|!eta | (@user) | shows when user will reach the booth |
-|!filter | | toggles the chat filter |
-|!forceskip | | forceskips the current song |
-|!historyskip | | toggles the history skip |
-|!jointime | @user | shows how long the user has been in the room |
-|!kick | (X) | kicks user for X minutes, default is 0.25 minutes (15 seconds) |
-|!kill | | shut down the bot |
-|!lockguard | | toggle the lockguard |
-|!lockskip | (reason) | skips, locks and moves the dj back up (the position can be set with !skippos) |
-|!motd | (X)/(message) | when no argument is specified, returns the Message of the Day, when X is specified, the MotD is given every X songs, when "message" is given, it sets the MotD to message |
-|!mute | @user/(X) | mute user, for X minutes if X is specified, otherwise for an undefined period |
-|!reload | | reload the bot |
-|!restricteta | | toggles the restriction on eta: grey users can use it once an hour |
-|!sessionstats | | display stats for the current session |
-|!skip | (reason) | skips the dj using smartskip. actions such as locking and moving user depends on various factors (the position the dj is moved to can be set with !skippos) |
-|!status | | display the bot's status and some settings |
-|!timeguard | | toggle the timeguard |
-|!togglebl | | toggle the blacklist |
-|!togglemotd | | toggle the motd |
-|!togglevoteskip | | toggle the voteskip |
-|!unban | @user | unban user |
-|!unmute | @user/all | unmute user |
-|!voteratio | @user | display the vote statistic for a user |
-|!whois | @user | returns plug related information about user |
+|!active | (X) | Napíše počet zpráv za posledních X minut. (Defaultních minut je 60 bez zadání X) |
+|!afkreset | @jméno | Resetuje AFK danému uživateli. |
+|!afktime | @jméno | Zobrazí, jak dlouho je uživatel AFK. |
+|!autodisable | | Zapnutí/Vypnutí autodisable systému. |
+|!ban | @jméno | Zabanuje uživatele na 24 hodin. |
+|!blacklist / !bl | Jméno blacklistu | Přidá song do zadaného blacklistu. |
+|!commanddeletion | | Zapnutí/Vypnutí mazání zpráv botem. |
+|!blinfo | | Vypíše informace o zařazení do blacklistu. |
+|!cycleguard | | Zapnutí/Vypnutí cycleguard systému. |
+|!dclookup / !dc | (@jméno) | Vrátí zpět zadaného uživatele na předešlé místo ve frontě před přerušením spojení. |
+|!english | @jméno | Napíše zadanému uživateli, aby psal pouze anglicky v chatu. |
+|!eta | (@jméno) | Zjištění doby uživatele k zahrání písně. Pokuď není zadáno @jméno, dozvídá se konkrétní uživatel svojí dobu. |
+|!filter | | Zapnutí/Vypnutí filtru sprostých slov nebo žádostí o přeskočení písně. |
+|!forceskip | | Rychlé přeskočení písně. |
+|!historyskip | | Zapnutí/Vypnutí hlídaní písní v historii místnosti. |
+|!jointime | @user | Zobrazí dobu uživatele v místnosti od zapnutí bota. |
+|!kick | (X) | Vyhodí uživatele z místnosti na X sekund. (Automaticky udělí unban) |
+|!kill | | Vypne bota. |
+|!lockguard | | Zapnutí/Vypnutí lockguard systému. |
+|!lockskip | (důvod) | Přeskočí, zamkne frontu a vrátí uživatele na zvolenou pozici. (Pozice lze měnit v příkazu !skippos) |
+|!motd | (X)/(zpráva) | Zobrazí zprávu dne za X odehraných skladeb. |
+|!mute | @jméno/(X) | Umlčí uživatele na X minut. |
+|!reload | | Aktualizuje bota. |
+|!restricteta | | Zapnutí/Vypnutí doby, za kterou mohou šedí uživatelé využívat příkazy. |
+|!sessionstats | | Zobrazení aktuálních statistik. |
+|!skip | (důvod) | Přeskočí uživatele. Pokuď je zadán platný důvod - přeskočí a přesune uživatele na první místo ve frontě. |
+|!status | | Zobrazuje nastavení bota. |
+|!timeguard | | Zapnutí/Vypnutí timeguard sytému.|
+|!togglebl | | Zapnutí/Vypnutí blacklistu. |
+|!togglemotd | | Zapnutí/Vypnutí zprávy dne. |
+|!togglevoteskip | | Zapnutí/Vypnutí přeskočení písně na počet mehů. |
+|!unban | @jméno | Odbanuje uživatele. |
+|!unmute | @jméno/all | Odmlčí daného uživatele nebo všechny v místnosti. |
+|!voteratio | @jméno | Zobrazí počty wootů, mehů a grabů daného uživatele. |
+|!whois | @jméno | Vypíše informace o daném uživateli. |
 
-Resident DJ
+Rezidentní DJ
 -----------
 
-|Command | Arguments |  Description |
+|Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|!link | | give a link to the current song
+|!link | | Pošle YouTube link aktuální písně.
 
 
 
-User
+Uživatel
 ----
 
-|Command | Arguments |  Description |
+|Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|!8ball | (message) | ask the bot a question, the bot will return random variations of a yes or no answer. |
-|!autowoot | | links to PlugCubed, the advised script/plugin to use for autowooting |
-|!ba | | explains the Brand Ambassador rank |
-|!commands | | gives a link to the commands |
-|!cookie | (@user) | give a cookie to user |
-|!dclookup / !dc | | use dclookup on yourself |
-|!emoji | | a link to a list with emoji's |
-|!eta | | shows how long before you reach the booth |
-|!fb | | links to the room's Facebook page (if set in the settings) |
-|!ghostbuster | @user | checks if user is ghosting |
-|!gif | (message) | returns gif (from giphy) related to the tag provided. Returns a random gif if no tags are provided. |
-|!help | | links to an image to help get people started on plug |
-|~~!join~~ | | ~~join the roulette if it's up~~ |
-|~~!leave~~ | | ~~leave the roulette if you joined~~ |
-|!link | | when the user is the DJ, give a link to the current song |
-|!op | | links to the OverPlayed list (if set in the settings) |
-|!ping | | pong! |
-|!purchase | | returns link to purchase more plug notes |
-|!rules | | links to the rules (if set in the settings) |
-|!theme | | links to the room's theme (if set in the settings) |
-|!thor | | users get moved to position 1 in the waitlist if they're worthy of Thor's hammer. |
-|!website | | links to the room's website (if set in the settings) |
-|!youtube | | links to the room's youtube page (if set in the settings) |
+|!8ball/!ask | (otázka) | Zeptá se bota na otázku typu ano či ne. Bot odpovídá v náhodných variantách. |
+|!autowoot | | Poskytne link na populární autowoot RCS. |
+|!ba | | Vysvětlí v kostce rank Brand Ambassadora. |
+|!prikazy | | Poskytne link na seznam příkazů. |
+|!cookie | (@jméno) | Pošle uživateli sušenku. |
+|!dclookup / !dc | | Vrátí uživatele na předchozí pozici ve frontě před přerušením připojení s místnosti. |
+|!emoji | | Dá link na stránku s emotikony. |
+|!eta | | Zobrazuje dobu, kdy se dostane uživatel na řadu z fronty. |
+|!fb | | Napíše link na naší Facebookové stránky. |
+|!ghostbuster | @jméno | Zkontroluje, zdá je uživatel v bugu a botem neviditelný. |
+|!gif | (téma) | Zobrazí náhodný gif či gif na zvolené téma. |
+|!help | | Dá obrázek pro začátečníky plug.dj. |
+|!join | | Připojí do probíhajíci rulety. |
+|!leave | | Odejde z probíhajíci rulety. |
+|!link | | Pokuď je uživatel DJ, vypíše YouTube link na aktuální skladbu. |
+|!op | | Napíše link na seznam ohraných skladeb. |
+|!ping | | Pong! |
+|!purchase | | Napíše link na koupi Plug Not. (Jíž neplatné) |
+|!rules | | Napíše stránku s pravidly komunity. |
+|!theme | | Hodí link na stránku s tématem. |
+|!thor | | Přesune uživatele na první místo, pokuď je zvolen kladivem. |
+|!website | | Dá link na webové stránky komunity. |
+|!youtube | | Dá link na YouTube kanál komunity. |
