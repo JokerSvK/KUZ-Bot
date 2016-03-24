@@ -1,9 +1,9 @@
 Příkazy:
 =========
 
-X specifikuje číslo  
-Argumenty můžou být různé
-Jsou to BasicBot příkazy - přeložené do češtiny.
+X specifikuje číslo.
+Argumenty můžou být různé.
+Uvedené příkazy se vyskytují v BasicBotu. Příkazy s hvězdičkou jsou pouze v Hudba je Všetko.*
 
 
 Manažér
@@ -11,6 +11,7 @@ Manažér
 
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
+|*!bitch | @jméno | Zvolí vybraného uživatele jako osobní bitch. |
 |!afklimit | X | Nastaví maximální AFK limit. |
 |!botname | (název bota) | Změní jméno bota. |
 |!bouncer+ | | Zapnutí/Vypnutí speciálních pravomocí vyhazovačů. |
@@ -91,15 +92,22 @@ Rezidentní DJ
 
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
+|*!fuck | @jméno | Vyjádři nenávist k danému uživateli. |
 |!link | | Pošle YouTube link aktuální písně.
+
 
 
 
 Uživatel
 ----
 
-|Příkaz | Argument |  Popis |
-|:------:|:---------:|:--------------------------------------:|
+|      Příkaz       | Argument  |  Popis  |
+|:-----------------:|:---------:|:--------------------------------------:|
+|*!alkohol | @jméno | Dá uživateli panáka alkoholu. |
+|*!money | !koupit | @jméno | Koupí náhodou věc uživateli. |
+|*!zvire | !animal | @jméno | Napíše uživateli společné rysy s náhodným zvířetem. |
+|*!lulu | @jméno | Projeví na někom svojí nadrženost. |
+|*! | @jméno | Osvojí uživatele jako svého/svojí bitch. |
 |!8ball/!ask | (otázka) | Zeptá se bota na otázku typu ano či ne. Bot odpovídá v náhodných variantách. |
 |!autowoot | | Poskytne link na populární autowoot RCS. |
 |!ba | | Vysvětlí v kostce rank Brand Ambassadora. |
@@ -121,5 +129,5 @@ Uživatel
 |!rules | | Napíše stránku s pravidly komunity. |
 |!theme | | Hodí link na stránku s tématem. |
 |!thor | | Přesune uživatele na první místo, pokuď je zvolen kladivem. |
-|!website | | Dá link na webové stránky komunity. |
-|!youtube | | Dá link na YouTube kanál komunity. |
+|!website | | Dá link na webové stránky. |
+|!youtube | | Pošle odkaz na YouTube kanál komunity. |
