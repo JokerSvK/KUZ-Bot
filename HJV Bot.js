@@ -387,8 +387,7 @@
                         basicBot.userUtilities.moveUser(winner, pos, false);
                     }, 1 * 1000, winner, pos);
                 }
-            }
-        },
+            },
             usersUsedThor: []
         },
         User: function (id, name) {
