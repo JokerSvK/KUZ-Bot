@@ -21,7 +21,7 @@
         "ti daroval/a modrou sušenku. Moment... Sušenka s viagrou...",
         "ti daroval/a speciální pony sušenku.",
         "ti daroval/a sušenku. POZOR! Je otrávená!",
-        "ti daroval/a sušenku touhy.",
+        "ti daroval/a sušenku touhy. :resttc:",
         "ti chtěl/a darovat sušenku, ale už ji snědl/a.",
         "ti daroval/a čerstvě upečenou sušenku. Voní úžasně.",
         "ti daroval/a pivní sušenku. Příjemnou chut, ale za volantem ji radši nejez.",
@@ -55,70 +55,35 @@
 	"facky": [
 		"ti jednu vlepil/a.",
 		"ti dal/a facku.",
-		"ti vrazil/a moravskou facku z dobrého kamarádství.",
-		"ti vrazil/a facku.",
-		"ti dal/a takovou facku, že tě ani Google nenajde!"
+		"ti vrazil/a moravskou facku z dobrého kamarádství."
 		
 		
         
 	],
 	"laska": [
-		"tě má rád/a. :heart:",
-                    "tě miluje. :heart:",
-                    "ti vzkazuje: \"Jsi pro mě vším.\" :heart:",
-                    "tě nechce nikdy ztratit. :heart:",
-                    "tě vážně má moc rád/a. :heart:",
-                    "ti vzkazuje: \"Jsi podle mě úžasný/á.\" :heart:",
-                    "ti vzkazuje: \"Jsi můj miláček.\" :heart:",
-                    "tě má tak rád/a, že už to víc ani nejde. :heart:",
-                    "ti vzkazuje: \"I Love You.\" :heart:",
-                    "ti vzkazuje: \"Jsi podle mě dokonalý/á\" :heart:"
+		"tě má rád/a. <3 ",
+		"tě miluje. <3",
+		"ti vyznává lásku. <3",
+		"ti zazpíval/a píseň lásky. <3"
 		
 		
         ],
-        
-        "fucks": [
-        	"ti vzkazuje: \"Nech mě na pokoji!\"",
-                    "ti vzkazuje: \"Neštvi mě!\"",
-                    "ti vzkazuje: \"Jdi do háje.\"",
-                    "ti vzkazuje: \"Ještě chvíli mě štvi a takovou ti vrazím, že tě vlastní máma nepozná!!!\"",
-                    "tě tak moc miluje, že by tě nejradší stáhl/a za živa z kůže!!!",
-                    "ti vzkazuje: \"Že tě máma radši nespolkla...\"",
-                    "by tě nejradši zakopal/a dva metry pod zem a postavil/a na tobě obchoďák.",
-                    "ti vzkazuje: \"Skoč do zdi a pozdravuj cihly.\"",
-                    "ti vzkazuje: \"Skoč do zdi a přikryj se omítkou.\"",
-                    "ti vzkazuje: \"Šlápni na lego a zakopni o skříň!\""
-                    
-        ],
-        
-	"bitches": [
-	            "se tě ptá, jestli nechceš být jeho/její bitch.",
-                    "tě chce do svého harému.",
-                    "tě pasuje na svou osobní bitch.",
-                    "chce po tobě ruční práce. Však víš, co tím myslím..",
-                    "ti sahá kam nemá.",
-                    "má s tebou jisté plány..",
-                    "si s tebou chce pohrát.",
-                    "si s tebou chce dát sprchu.",
-                    "si chce líznout.",
-                    "po tobě chce službičku."
-        ],
-        
-         "hugs": [
-         	"ti posílá virtuální objetí http://i.imgur.com/EZXOvFl.gif",
-                "ti posílá virtuální objetí http://i.imgur.com/npZwdNJ.gif"
+	"sluzba": [
+	                        "chce abys vytřel/a podlahu od zhora až dolů.",
+				"chce odvézt z večírku, protože je zase na mol.",
+				"si od tebe půjčil/a toaleťák.",
+				"chce, abys uvařil/a dobrou večeři o pěti chodech.",
+                                "ukradl/a od tebe kečup",
+                                "tě požádal/a abys vynesl/a koš jen ve spodním prádle.",
+                                "ti buší na dveře, abys ztlumil/a ten randál z tvého pokoje.",
+                                "chce po tobě ruční práce."
 	],
 	"sklepovky": [
-		"tě zve do sklepa. :/",
-                    "tě omráčil/a a odtáhl/a k sobě do sklepa.",
-                    "s tebou chce navštívit sklep. :*",
-                    "ti vzkazuje: \"Okamžitě se vrať ke mně do sklepa!\"",
-                    "ti vzkazuje: \"Můj sklep čeká...\"",
-                    "ti vzkazuje: \"Můj sklep je jinde, tak se tam vrať!\"",
-                    "by ti rád/a udělal/a malou prohlídku sklepa. :/",
-                    "s tebou chce navštívit sklep.",
-                    "Pořádá ve sklepě super \"párty\" a ty jsi zván/a. :/",
-                    "tě zve do sklepa. Půjdeš ať chceš nebo ne. :/"
+		"tě zve na loupání brambor do sklepa.",
+		"tě odtáhnul/a do sklepa.",
+		"ti nabízí apartmán o pěti hvězdičkách ve sklepě.",
+		"ti udělá menší prohlídku sklepem.",
+		"má s tebou nekalé úmysly ve sklepě."
 		
 		
 	],
@@ -180,7 +145,7 @@
         "Docela blbý, ale jinak ok.",
         "Jo jsi sexy.",
         "Nezapomeň svůj dotaz, možná zítra odpovím.",
-        "Jo možná za týden.",
+        "Jo možná za rok.",
         "Naposledy říkám NE!",
         "To řekl kdo?",
         "A jsem snad u výslechu? Na nic neodpovím.",
@@ -194,10 +159,7 @@
         "Můžeš chvilinku být zticha?!",
 	"69",
 	"Co myslíš, že by na to řekl Germ?",
-	"To zní fajn. Thomas by jistě souhlasil!",
-	"Doufám, že ano!",
-	"Jo.",
-	"Nikdy!"
+	"To zní fajn. Thomas by jistě souhlasil!"
     ],
 
     "nodatafound": "Nebyla nalezena žádná předchozí data.",
@@ -216,11 +178,11 @@
     "timelimit": "/me @%%NAME%%, tvoje skladba je delší než %%MAXLENGTH%% minut, potřebuješ svolení hrát delší skladby.",
     "permissionownsong": "/me :up: @%%NAME%% má právo hrát svojí produkci.",
     "isblacklisted": "/me Tato skladba je na %%BLACKLIST%% blacklistu! Bude přeskočena!",
-    "isopen": "/me Ruleta je spuštěna! Napiš !join pro přihlášení! (Hra, při které za pomocí slosování, můžeš být hozen/a na první místo ve frontě.)",
+    "isopen": "/me Ruleta je spuštěna! Napiš !join pro přihlášení! (Hra, při které za pomocí slosování, můžeš být hozen/a na náhodnou pozici ve frontě.)",
     "winnerpicked": "/me Vítěz byl vybrán! Gratulujeme! @%%NAME%% na pozici %%POSITION%%.",
     "ball": "/me %%NAME%% se zeptal/a: \"%%QUESTION%%\" a %%BOTNAME%% odpověděl: \"%%RESPONSE%%\"",
-    "notghosting": "[%%NAME1%%] %%NAME2%% není v bugu.",
-    "ghosting": "[%%NAME1%%] %%NAME2%% buď je v bugu nebo zde není.",
+    "notghosting": "[%%NAME1%%] %%NAME2%% neghostuje.",
+    "ghosting": "[%%NAME1%%] %%NAME2%% buď ghostuje nebo zde není.",
     "alreadyadding": "/me Uživatel je již přidán! Změna požadované pozice na %%POSITION%%.",
     "adding": "/me Přidal @%%NAME%% do fronty. Současná pozice: %%POSITION%%.",
     "usernotfound": "/me Uživatel nenalezen.",
@@ -370,10 +332,8 @@
     "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
     "zvire": "/me @%%NAMETO%%, @%%NAMEFROM%% %%ANIMAL%%",
     
-    "afk": "/me %%NAME%% jde AFK!",
-    "zpet": "/me %%NAME%% se vrátil/a zpět!",
-    
-    "ego": "/me %%NAME%% *EGO UP*",
+    "afk": "/me @%%NAME%% jde AFK!",
+    "zpet": "/me @%%NAME%% se vrátil/a zpět!",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me @%%NAME%%, zvát se sám/a sebe do sklepa není zrovna nejvhodnější. ",
@@ -390,22 +350,10 @@
     "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
     "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%",
     
-    "givebitch": "/me Příkazem !bitch @jmeno někoho pasuješ na osobní bitch.",
-    "selfbitch": "/me %%NAME%%, přijde ti normální, dělat bitch sám/a sobě?",
-    "nourserbitch": "/me Nevidím %%NAME%% v místnosti, takže pasuj někoho jiného.",
-    "bitch": "/me @%%NAMETO%%, @%%NAMEFROM%% %%BITCHES%%",
-    
-    "givefuck": "/me Příkazem !fuck @jmeno projevíš nenávist k osobě.",
-    "selffuck": "/me %%NAME%%, vyfuckovat sám/a sebe není zrovna nejlepší nápad.",
-    "nourserfuck": "/me Nevidím %%NAME%% v místnosti, takže nadej někomu jinýmu.",
-    "fuck": "/me @%%NAMETO%%, @%%NAMEFROM%% %%FUCKS%%",
-    
-    "givehug": "/me Příkazem !hug @jmeno někoho virtuálně obejmeš.",
-    "selfhug": "/me %%NAME%%, nemůžeš obejmout sám/a sebe..",
-    "nourserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho..",
-    "hug": "/me @%%NAMETO%%, @%%NAMEFROM%% %%HUGS%%",
-    
-    
+    "givesluzby": "/me Příkazem !sluzby @jmeno někoho o něco požádáš.",
+    "selfsluzby": "/me %%NAME%%, zkus vybrat nějakého otroka z místnosti.",
+    "noursersluzby": "/me Nevidím %%NAME%% v místnosti, takže si vyber jiného otroka.",
+    "sluzby": "/me @%%NAMETO%%, @%%NAMEFROM%% %%SLUZBA%%",
     
     "germ": "/me GEЯM je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, kočky a rád spamuje. Bývá často AFK.",
     "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když se v chatu lidi vyjadřují sprostě a mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2",
