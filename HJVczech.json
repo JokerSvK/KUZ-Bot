@@ -402,7 +402,7 @@
     
     "givehug": "/me Příkazem !hug @jmeno někoho virtuálně obejmeš.",
     "selfhug": "/me %%NAME%%, nemůžeš obejmout sám/a sebe..",
-    "nourserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho.",
+    "nourserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho..",
     "hug": "/me @%%NAMETO%%, @%%NAMEFROM%% %%HUGS%%",
     
     
