@@ -60,6 +60,36 @@
 		
         
 	],
+	"fucks": [
+        	"ti vzkazuje: \"Nech mě na pokoji!\"",
+                    "ti vzkazuje: \"Neštvi mě!\"",
+                    "ti vzkazuje: \"Jdi do háje.\"",
+                    "ti vzkazuje: \"Ještě chvíli mě štvi a takovou ti vrazím, že tě vlastní máma nepozná!!!\"",
+                    "tě tak moc miluje, že by tě nejradší stáhl/a za živa z kůže!!!",
+                    "ti vzkazuje: \"Že tě máma radši nespolkla...\"",
+                    "by tě nejradši zakopal/a dva metry pod zem a postavil/a na tobě obchoďák.",
+                    "ti vzkazuje: \"Skoč do zdi a pozdravuj cihly.\"",
+                    "ti vzkazuje: \"Skoč do zdi a přikryj se omítkou.\"",
+                    "ti vzkazuje: \"Šlápni na lego a zakopni o skříň!\""
+                    
+        ],
+	"bitches": [
+	            "se tě ptá, jestli nechceš být jeho/její bitch.",
+                    "tě chce do svého harému.",
+                    "tě pasuje na svou osobní bitch.",
+                    "chce po tobě ruční práce. Však víš, co tím myslím..",
+                    "ti sahá kam nemá.",
+                    "má s tebou jisté plány..",
+                    "si s tebou chce pohrát.",
+                    "si s tebou chce dát sprchu.",
+                    "si chce líznout.",
+                    "po tobě chce službičku."
+        ],
+         "hugs": [
+         	"ti posílá virtuální objetí http://i.imgur.com/EZXOvFl.gif",
+                "ti posílá virtuální objetí http://i.imgur.com/npZwdNJ.gif"
+                
+        ],
 	"laska": [
 		"tě má rád/a. <3 ",
 		"tě miluje. <3",
@@ -73,16 +103,6 @@
 		
 		
         ],
-	"sluzba": [
-	                        "chce abys vytřel/a podlahu od zhora až dolů.",
-				"chce odvézt z večírku, protože je zase na mol.",
-				"si od tebe půjčil/a toaleťák.",
-				"chce, abys uvařil/a dobrou večeři o pěti chodech.",
-                                "ukradl/a od tebe kečup",
-                                "tě požádal/a abys vynesl/a koš jen ve spodním prádle.",
-                                "ti buší na dveře, abys ztlumil/a ten randál z tvého pokoje.",
-                                "chce po tobě ruční práce."
-	],
 	"sklepovky": [
 		"tě zve na loupání brambor do sklepa.",
 		"tě odtáhnul/a do sklepa.",
@@ -104,8 +124,6 @@
 		
 		
 	],
-	
-	
 	"lulus": [
 		    "chce trtkat.",
 		    "chce vymastit.",
@@ -337,8 +355,9 @@
     "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
     "zvire": "/me @%%NAMETO%%, @%%NAMEFROM%% %%ANIMAL%%",
     
-    "afk": "/me @%%NAME%% jde AFK!",
-    "zpet": "/me @%%NAME%% se vrátil/a zpět!",
+    "afk": "/me %%NAME%% jde AFK!",
+    "zpet": "/me %%NAME%% se vrátil/a zpět!",
+    "ego": "/me %%NAME%% *EGO UP*",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me @%%NAME%%, zvát se sám/a sebe do sklepa není zrovna nejvhodnější. ",
