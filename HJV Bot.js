@@ -274,12 +274,12 @@
             voteSkipLimit: 10,
             historySkip: false,
             timeGuard: true,
-            maximumSongLength: 8.2,
+            maximumSongLength: 8.15,
             autodisable: true,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: false,
-            thorCooldown: 10,
+            thorCommand: true,
+            thorCooldown: 1,
             skipPosition: 1,
             skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
@@ -292,24 +292,24 @@
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
-            motdEnabled: false,
-            motdInterval: 5,
-            motd: "Temporary Message of the Day",
+            motdEnabled: true,
+            motdInterval: 10,
+            motd: "Sledujte nás také na Facebooku. https://www.facebook.com/HudbaUTomasa/?fref=ts",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: null,
+            fbLink: "https://www.facebook.com/HudbaUTomasa/?fref=ts",
             youtubeLink: null,
             website: null,
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/bscBot/custom/master/blacklists/NSFWlist.json",
+                NSFW: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/blacklist.json",
                 OP: "https://rawgit.com/bscBot/custom/master/blacklists/OPlist.json",
                 BANNED: "https://rawgit.com/bscBot/custom/master/blacklists/BANNEDlist.json"
             }
@@ -379,8 +379,7 @@
                     var ind = Math.floor(Math.random() * basicBot.room.roulette.participants.length);
                     var winner = basicBot.room.roulette.participants[ind];
                     basicBot.room.roulette.participants = [];
-                    var pos0 = [1]
-                    var pos = pos0[Math.floor(Math.random() * pos0.length)];
+                    var pos = Math.floor((Math.random() * API.getWaitList().length) + 1);
                     var user = basicBot.userUtilities.lookupUser(winner);
                     var name = user.username;
                     API.sendChat(subChat(basicBot.chat.winnerpicked, {name: name, position: pos}));
@@ -388,8 +387,7 @@
                         basicBot.userUtilities.moveUser(winner, pos, false);
                     }, 1 * 1000, winner, pos);
                 }
-            }
-        },
+            },
             usersUsedThor: []
         },
         User: function (id, name) {
@@ -1195,21 +1193,21 @@
                     return true;
                 }
 
-                 var rlJoinChat = basicBot.chat.roulettejoin;
+                var rlJoinChat = basicBot.chat.roulettejoin;
                 var rlLeaveChat = basicBot.chat.rouletteleave;
- 
+
                 var joinedroulette = rlJoinChat.split('%%NAME%%');
                 if (joinedroulette[1].length > joinedroulette[0].length) joinedroulette = joinedroulette[1];
                 else joinedroulette = joinedroulette[0];
- 
+
                 var leftroulette = rlLeaveChat.split('%%NAME%%');
                 if (leftroulette[1].length > leftroulette[0].length) leftroulette = leftroulette[1];
                 else leftroulette = leftroulette[0];
- 
+
                 if ((msg.indexOf(joinedroulette) > -1 || msg.indexOf(leftroulette) > -1) && chat.uid === basicBot.loggedInID) {
                     setTimeout(function (id) {
                         API.moderateDeleteChat(id);
-                    }, 2 * 1000, chat.cid);
+                    }, 5 * 1000, chat.cid);
                     return true;
                 }
                 return false;
