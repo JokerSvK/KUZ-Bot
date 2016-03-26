@@ -357,7 +357,7 @@
     
     "afk": "/me %%NAME%% jde AFK!",
     "zpet": "/me %%NAME%% se vrátil/a zpět!",
-    "ego": "/me %%NAME%% *EGO UP*",
+    "ego": "/me %%NAME%% [EGO UP]",
     
     "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
     "selfsklep": "/me @%%NAME%%, zvát se sám/a sebe do sklepa není zrovna nejvhodnější. ",
