@@ -83,9 +83,9 @@
 
     var subChat = function (chat, obj) {
         if (typeof chat === "undefined") {
-            API.chatLog("There is a chat text missing.");
-            console.log("There is a chat text missing.");
-            return "[Error] No text message found.";
+            API.chatLog("Tento text chybí v jazykovém balíčku bota.");
+            console.log("Tento text chybí v jazykovém balíčku bota.");
+            return "[Error] Tento text chybí v botovi. Kontaktujte správce bota.";
 
             // TODO: Get missing chat messages from source.
         }
