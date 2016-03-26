@@ -376,17 +376,17 @@
     
      "givebitch": "/me Příkazem !bitch @jmeno někoho pasuješ na osobní bitch.",
      "selfbitch": "/me %%NAME%%, přijde ti normální, dělat bitch sám/a sobě?",
-     "nourserbitch": "/me Nevidím %%NAME%% v místnosti, takže pasuj někoho jiného.",
+     "nouserbitch": "/me Nevidím %%NAME%% v místnosti, takže pasuj někoho jiného.",
      "bitch": "/me @%%NAMETO%%, @%%NAMEFROM%% %%BITCHES%%",
      
      "givefuck": "/me Příkazem !fuck @jmeno projevíš nenávist k osobě.",
      "selffuck": "/me %%NAME%%, vyfuckovat sám/a sebe není zrovna nejlepší nápad.",
-     "nourserfuck": "/me Nevidím %%NAME%% v místnosti, takže nadej někomu jinýmu.",
+     "nouserfuck": "/me Nevidím %%NAME%% v místnosti, takže nadej někomu jinýmu.",
      "fuck": "/me @%%NAMETO%%, @%%NAMEFROM%% %%FUCKS%%",
      
      "givehug": "/me Příkazem !hug @jmeno někoho virtuálně obejmeš.",
      "selfhug": "/me %%NAME%%, nemůžeš obejmout sám/a sebe..",
-     "nourserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho.",
+     "nouserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho.",
      "hug": "/me @%%NAMETO%%, @%%NAMEFROM%% %%HUGS%%",
     
     "germ": "/me GEЯM je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, kočky a rád spamuje. Bývá často AFK.",
