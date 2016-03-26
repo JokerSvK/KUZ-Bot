@@ -350,10 +350,20 @@
     "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
     "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%",
     
-    "givesluzby": "/me Příkazem !sluzby @jmeno někoho o něco požádáš.",
-    "selfsluzby": "/me %%NAME%%, zkus vybrat nějakého otroka z místnosti.",
-    "noursersluzby": "/me Nevidím %%NAME%% v místnosti, takže si vyber jiného otroka.",
-    "sluzby": "/me @%%NAMETO%%, @%%NAMEFROM%% %%SLUZBA%%",
+     "givebitch": "/me Příkazem !bitch @jmeno někoho pasuješ na osobní bitch.",
+     "selfbitch": "/me %%NAME%%, přijde ti normální, dělat bitch sám/a sobě?",
+     "nourserbitch": "/me Nevidím %%NAME%% v místnosti, takže pasuj někoho jiného.",
+     "bitch": "/me @%%NAMETO%%, @%%NAMEFROM%% %%BITCHES%%",
+     
+     "givefuck": "/me Příkazem !fuck @jmeno projevíš nenávist k osobě.",
+     "selffuck": "/me %%NAME%%, vyfuckovat sám/a sebe není zrovna nejlepší nápad.",
+     "nourserfuck": "/me Nevidím %%NAME%% v místnosti, takže nadej někomu jinýmu.",
+     "fuck": "/me @%%NAMETO%%, @%%NAMEFROM%% %%FUCKS%%",
+     
+     "givehug": "/me Příkazem !hug @jmeno někoho virtuálně obejmeš.",
+     "selfhug": "/me %%NAME%%, nemůžeš obejmout sám/a sebe..",
+     "nourserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho.",
+     "hug": "/me @%%NAMETO%%, @%%NAMEFROM%% %%HUGS%%",
     
     "germ": "/me GEЯM je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, kočky a rád spamuje. Bývá často AFK.",
     "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když se v chatu lidi vyjadřují sprostě a mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2",
