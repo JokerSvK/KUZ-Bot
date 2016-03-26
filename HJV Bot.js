@@ -1195,21 +1195,21 @@
                     return true;
                 }
 
-                var rlJoinChat = basicBot.chat.roulettejoin;
+                 var rlJoinChat = basicBot.chat.roulettejoin;
                 var rlLeaveChat = basicBot.chat.rouletteleave;
-
+ 
                 var joinedroulette = rlJoinChat.split('%%NAME%%');
                 if (joinedroulette[1].length > joinedroulette[0].length) joinedroulette = joinedroulette[1];
                 else joinedroulette = joinedroulette[0];
-
+ 
                 var leftroulette = rlLeaveChat.split('%%NAME%%');
                 if (leftroulette[1].length > leftroulette[0].length) leftroulette = leftroulette[1];
                 else leftroulette = leftroulette[0];
-
+ 
                 if ((msg.indexOf(joinedroulette) > -1 || msg.indexOf(leftroulette) > -1) && chat.uid === basicBot.loggedInID) {
                     setTimeout(function (id) {
                         API.moderateDeleteChat(id);
-                    }, 5 * 1000, chat.cid);
+                    }, 2 * 1000, chat.cid);
                     return true;
                 }
                 return false;
