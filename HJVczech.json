@@ -132,7 +132,13 @@
 		    "ti chce vypatexovat byt."
 		    
 		    
-		
+	],
+    "slots": [
+         "winner": ", YOU'RE A WINNER! You've won %%TOKENS%% TOKEns!",
+         "jackpot": ", YOU'VE HIT THE JACKPOT, worth %%TOKENS%% TOKEns! Don't spend them all in one place!",
+         "loser":  ", YOU'RE A LOSER! Awww, too bad... you didn't win anything. Gambling is more addictive than marijuana, care to try again?"
+        
+    ],
 		
 	],
 	"animal": [
