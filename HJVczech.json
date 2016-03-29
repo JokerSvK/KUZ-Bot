@@ -132,9 +132,7 @@
 		    "ti chce vypatexovat byt."
 		    
 		    
-
-         
-        
+		
 		
 	],
 	"animal": [
@@ -336,14 +334,7 @@
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
     "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
     "slovnik": "/me @%%NAME%%, můžeš se laskavě uklidnit?",
-    "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer!",
-    "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
-    "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
-    "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer.",
-    "winner": ", YOU'RE A WINNER! You've won %%TOKENS%% TOKEns!",
-    "jackpot": ", YOU'VE HIT THE JACKPOT, worth %%TOKENS%% TOKEns! Don't spend them all in one place!",
-    "loser":  ", YOU'RE A LOSER! Awww, too bad... you didn't win anything. Gambling is more addictive than marijuana, care to try again?",
-        
+    
 
     
     "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
