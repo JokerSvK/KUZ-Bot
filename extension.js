@@ -58,7 +58,7 @@
                     localStorage.setItem("TheRealPsycho", "100");
                     localStorage.setItem("LoL_OpeRaCo", "100");
                     localStorage.setItem("Dykobraz", "100");
-                    localStorage.setItem("Ozzytu", "5");
+                    localStorage.setItem("Dandeen.*", "100");
                     localStorage.setItem("Dr_McKay", "5");
                     localStorage.setItem("JamesThelll", "5");
                     localStorage.setItem("Chembot", "5000");
@@ -162,7 +162,7 @@
             
             //Check for existing user tokens
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "1");
+                 localStorage.setItem(user, "30");
                  tokens = localStorage.getItem(user);
             }
             else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
