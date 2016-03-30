@@ -49,7 +49,7 @@
                     localStorage.clear();
                     localStorage.setItem("Franta72_Aw", "25");
                     localStorage.setItem("♥ HJV ßØT ♥", "1000");
-                    localStorage.setItem("DudeLove", "10");
+                    localStorage.setItem("Repiboy", "50");
                     localStorage.setItem("EvilTinkerBell", "10");
                     localStorage.setItem("Mizzle51", "10");
                     localStorage.setItem("mux", "10");
