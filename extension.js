@@ -47,17 +47,17 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72_Aw", "30");
+                    localStorage.setItem("Franta72_Aw", "100");
                     localStorage.setItem("♥ HJV ßØT ♥", "10000");
-                    localStorage.setItem("Repiboy", "30");
-                    localStorage.setItem("GeeDee", "30");
-                    localStorage.setItem("#Fucker|Derrpík", "30");
-                    localStorage.setItem("mux", "10");
-                    localStorage.setItem("NoSpillBlood", "10");
-                    localStorage.setItem("TwinKarma", "10");
-                    localStorage.setItem("Sinjun", "10");
-                    localStorage.setItem("Understater", "10");
-                    localStorage.setItem("Atomikat13", "10");
+                    localStorage.setItem("Repiboy", "15");
+                    localStorage.setItem("GeeDee", "100");
+                    localStorage.setItem("#Fucker|Derrpík", "100");
+                    localStorage.setItem("THØMAS B |HJV", "100");
+                    localStorage.setItem("Sumer4ever", "100");
+                    localStorage.setItem("Kebabčiči :3", "100");
+                    localStorage.setItem("TheRealPsycho", "100");
+                    localStorage.setItem("LoL_OpeRaCo", "100");
+                    localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Ozzytu", "5");
                     localStorage.setItem("Dr_McKay", "5");
                     localStorage.setItem("JamesThelll", "5");
