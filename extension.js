@@ -47,11 +47,11 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72_Aw", "25");
-                    localStorage.setItem("♥ HJV ßØT ♥", "1000");
-                    localStorage.setItem("Repiboy", "50");
-                    localStorage.setItem("EvilTinkerBell", "10");
-                    localStorage.setItem("Mizzle51", "10");
+                    localStorage.setItem("Franta72_Aw", "30");
+                    localStorage.setItem("♥ HJV ßØT ♥", "10000");
+                    localStorage.setItem("Repiboy", "30");
+                    localStorage.setItem("GeeDee", "30");
+                    localStorage.setItem("#Fucker|Derrpík", "30");
                     localStorage.setItem("mux", "10");
                     localStorage.setItem("NoSpillBlood", "10");
                     localStorage.setItem("TwinKarma", "10");
