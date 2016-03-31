@@ -12,6 +12,7 @@ Manažér
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
 |!bitch | @jméno | Zvolí vybraného uživatele jako osobní bitch. |
+|!resetzetony | | Resetuje skóre žetonů všech uživatelů v místnosti. |
 |!afklimit | X | Nastaví maximální AFK limit. |
 |!botname | (název bota) | Změní jméno bota. |
 |!bouncer+ | | Zapnutí/Vypnutí speciálních pravomocí vyhazovačů. |
@@ -103,8 +104,8 @@ Uživatel
 
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
-|!alkohol | @jméno | Dá uživateli panáka alkoholu. |
 |!money / !koupit | @jméno | Koupí náhodou věc uživateli. |
+|!alkohol | @jméno | Dá uživateli panáka alkoholu. |
 |!zvire | @jméno | Napíše uživateli společné rysy s náhodným zvířetem. |
 |!lulu | @jméno | Projeví na někom svojí nadrženost. |
 |!sklep | @jméno | Pozve uživatele do sklepa. |
@@ -124,7 +125,7 @@ Uživatel
 |!emoji | | Dá link na stránku s emotikony. |
 |!eta | | Zobrazuje dobu, kdy se dostane uživatel na řadu z fronty. |
 |!fb | | Napíše link na naší Facebookové stránky. |
-|!ghostbuster | @jméno | Zkontroluje, zdá je uživatel v bugu a botem neviditelný. |
+|!ghostbuster | @jméno | Zkontroluje, zdá je uživatel pro bota neviditelný. |
 |!gif | (téma) | Zobrazí náhodný gif či gif na zvolené téma. |
 |!help | | Dá obrázek pro začátečníky plug.dj. |
 |!join | | Připojí do probíhajíci rulety. |
@@ -132,12 +133,13 @@ Uživatel
 |!link | | Pokuď je uživatel DJ, vypíše YouTube link na aktuální skladbu. |
 |!op | | Napíše link na seznam ohraných skladeb. |
 |!ping | | Pong! |
-|!purchase | | Napíše link na koupi Plug Not. (Jíž neplatné) |
 |!rules | | Napíše stránku s pravidly komunity. |
 |!theme | | Hodí link na stránku s tématem. |
-|!thor | | Přesune uživatele na první místo, pokuď je zvolen kladivem. |
 |!website | | Dá link na webové stránky. |
 |!youtube | | Pošle odkaz na YouTube kanál komunity. |
+|!zetony | | Napíše aktuální stav vaších žetonů. |
+|!automaty | VSÁZKA | Vsadíte určitý počet žetonů do automatu. |
+|!bacon | | Bacon! |
 
 Informace o lidech ze staffu & pomocníků HJV
 -----------
@@ -156,3 +158,5 @@ Informace o lidech ze staffu & pomocníků HJV
 |!operaco |
 |!misul |
 |!ichigo |
+
+# Poslední aktualizace příkazů: 31.3.2016
