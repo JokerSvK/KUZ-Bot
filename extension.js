@@ -49,7 +49,7 @@
                     localStorage.clear();
                     localStorage.setItem("Franta72_Aw", "100");
                     localStorage.setItem("♥ HJV ßØT ♥", "10000");
-                    localStorage.setItem("Repiboy", "15");
+                    localStorage.setItem("Repiboy", "30");
                     localStorage.setItem("GeeDee", "100");
                     localStorage.setItem("#Fucker|Derrpík", "100");
                     localStorage.setItem("THØMAS B |HJV", "100");
@@ -364,7 +364,7 @@
       maximumAfk: 5000,
       afkRemoval: false,
       maximumDc: 60,
-      bouncerPlus: true,
+      bouncerPlus: false,
       blacklistEnabled: true,
       lockdownEnabled: false,
       lockGuard: false,
@@ -375,11 +375,11 @@
       voteSkipLimit: 10,
       historySkip: false,
       timeGuard: true,
-      maximumSongLength: 10,
-      autodisable: true,
+      maximumSongLength: 8.15,
+      autodisable: false,
       commandCooldown: 30,
       usercommandsEnabled: true,
-      skipPosition: 3,
+      skipPosition: 1,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
       ["op", "This song is on the OP list. "],
@@ -398,17 +398,17 @@
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: null,
+      rulesLink: "http://hudbajevsetko.justforum.net/t7-seznam-pravidel",
       themeLink: null,
-      fbLink: null,
+      fbLink: "https://www.facebook.com/HudbaUTomasa/?fref=ts",
       youtubeLink: null,
-      website: null,
+      website: "http://hudbajevsetko.justforum.net",
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
+        NSFW: "http://rawgit.com/Franta72/HJV-Bot/master/NSFW.json",
         OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
         BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
       }
