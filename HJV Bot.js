@@ -1,5 +1,5 @@
 /**
- *Copyright 2015 bscBot
+ *Copyright 2015 basicBot
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
  *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
  */
@@ -9,7 +9,7 @@
 
     /*window.onerror = function() {
         var room = JSON.parse(localStorage.getItem("basicBotRoom"));
-        window.location = 'https://stg.plug.dj' + room.name;
+        window.location = 'https://plug.dj' + room.name;
     };*/
 
     API.getWaitListPosition = function(id){
@@ -83,9 +83,9 @@
 
     var subChat = function (chat, obj) {
         if (typeof chat === "undefined") {
-            API.chatLog("Tento text chybí v jazykovém balíčku bota.");
-            console.log("Tento text chybí v jazykovém balíčku bota.");
-            return "[Error] Tento text chybí v botovi. Kontaktujte správce bota.";
+            API.chatLog("Tato zpráva v jazykovém balíčku bota chybí.");
+            console.log("Tato zpráva v jazykovém balíčku bota chybí.");
+            return "[Error] Text nebyl nalezen.";
 
             // TODO: Get missing chat messages from source.
         }
@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://raw.githubusercontent.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
+        $.get("http://rawgit.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -236,9 +236,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "BETA",
+        version: "7.7.2",
         status: false,
-        name: "HJV Bot",
+        name: "HJVBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -260,10 +260,10 @@
             autoskip: false,
             smartSkip: true,
             cmdDeletion: true,
-            maximumAfk: 120,
+            maximumAfk: 5000,
             afkRemoval: true,
             maximumDc: 60,
-            bouncerPlus: true,
+            bouncerPlus: false,
             blacklistEnabled: true,
             lockdownEnabled: false,
             lockGuard: false,
@@ -275,11 +275,11 @@
             historySkip: false,
             timeGuard: true,
             maximumSongLength: 8.15,
-            autodisable: true,
+            autodisable: false,
             commandCooldown: 30,
             usercommandsEnabled: true,
-            thorCommand: true,
-            thorCooldown: 1,
+            thorCommand: false,
+            thorCooldown: 10,
             skipPosition: 1,
             skipReasons: [
                 ["theme", "This song does not fit the room theme. "],
@@ -292,24 +292,24 @@
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
-            motdEnabled: true,
-            motdInterval: 10,
-            motd: "Sledujte nás také na Facebooku. https://www.facebook.com/HudbaUTomasa/?fref=ts",
+            motdEnabled: false,
+            motdInterval: 5,
+            motd: "Temporary Message of the Day",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: "http://hudbajevsetko.justforum.net/t7-seznam-pravidel",
             themeLink: null,
             fbLink: "https://www.facebook.com/HudbaUTomasa/?fref=ts",
             youtubeLink: null,
-            website: null,
+            website: "http://hudbajevsetko.justforum.net",
             intervalMessages: [],
             messageInterval: 5,
             songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/blacklist.json",
+                NSFW: "http://rawgit.com/Franta72/HJV-Bot/master/NSFW.json",
                 OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
                 BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
             }
@@ -741,7 +741,7 @@
                 }, 1000, id);
             },
             changeDJCycle: function () {
-                $.getJSON('https://stg.plug.dj/_/rooms/state', function(data) {
+                $.getJSON('/_/rooms/state', function(data) {
                     if (data.data[0].booth.shouldCycle) { // checks "" "shouldCycle": true "" if its true
                         API.moderateDJCycle(false); // Disables the DJ Cycle
                         clearTimeout(basicBot.room.cycleTimer); // Clear the cycleguard timer
@@ -1173,7 +1173,17 @@
                 if (basicBot.settings.cmdDeletion && msg.startsWith(basicBot.settings.commandLiteral)) {
                     API.moderateDeleteChat(chat.cid);
                 }
-                var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?stg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                
+                 var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                 if (plugRoomLinkPatt.exec(msg)) {
+                    if (perm === 0) {
+                        API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
+                        API.moderateBanUser(user.id, 1, API.BAN.PERMA);
+                        API.moderateDeleteChat(chat.cid);
+                        return true;
+                    }
+                }
+                  var plugRoomLinkPatt = /(\bplug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
@@ -1183,18 +1193,6 @@
                         
                     } 
                 }
-                
-                 var plugRoomLinkPatt = /(\bstg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                 if (plugRoomLinkPatt.exec(msg)) {
-                    if (perm === 0) {
-                        API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
-                        API.moderateBanUser(user.id, 1, API.BAN.PERMA);
-                        API.moderateDeleteChat(chat.cid);
-                        return true;
-                        
-                    } 
-                }
-                
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
@@ -1362,7 +1360,7 @@
             basicBot.connectAPI();
             API.moderateDeleteChat = function (cid) {
                 $.ajax({
-                    url: "https://stg.plug.dj/_/chat/" + cid,
+                    url: "/_/chat/" + cid,
                     type: "DELETE"
                 })
             };
@@ -1381,7 +1379,7 @@
                         kill();
                     }, 1000);
                     if (basicBot.settings.roomLock){
-                        window.location = 'https://stg.plug.dj' + basicBot.room.name;
+                        window.location = basicBot.room.name;
                     }
                     else {
                         clearInterval(Check);
@@ -3975,7 +3973,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        $.getJSON('https://stg.plug.dj/_/bans', function (json){
+                        $.getJSON('/_/bans', function (json){
                             var msg = chat.message;
                             if (msg.length === cmd.length) return;
                             var name = msg.substring(cmd.length + 2);
@@ -4018,7 +4016,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        $.getJSON('https://stg.plug.dj/_/mutes', function (json){
+                        $.getJSON('/_/mutes', function (json){
                             var msg = chat.message;
                             if (msg.length === cmd.length) return;
                             var name = msg.substring(cmd.length+2);
@@ -4232,7 +4230,7 @@ sklepCommand: {
                                 }
                                 var slug = API.getUser(id).slug;
                                 if (typeof slug !== 'undefined') {
-                                    var profile = "https://stg.plug.dj/@/" + slug;
+                                    var profile = "https://plug.dj/@/" + slug;
                                 } else {
                                     var profile = "~";
                                 }
