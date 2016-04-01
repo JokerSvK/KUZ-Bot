@@ -284,17 +284,17 @@
                     //Prevent invalid betting
                     if (bet > playerTokens[0]) {
                         if (playerTokens[0] === 0){
-                            return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů, jenže nemá žádný!"); 
+                            return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. Jenže bez žetonů to nepůjde!"); 
                         } 
                         else if (playerTokens[0] === 1) {
-                            return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů. Ale má pouhý žeton!"); 
+                            return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. Ale asi těžko s jedným žetonem!"); 
                         }
                         else {
-                            return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů. Ale má " + playerTokens[0] + " žetonů!"); 
+                            return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. S " + playerTokens[0] + " žetony to nepůjde!"); 
                         }
                     }
                     else if (bet < 0) {
-                        return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů. To nemůžeš udělat.."); 
+                        return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. To nemůžeš udělat.."); 
                     }
                     else if (bet === 0) { 
                         return API.sendChat("/me @" + chat.un + " se pokoušel/a hrát bez žetonů. Nemůžeš hrát zdarma!"); 
@@ -308,12 +308,12 @@
                     //Display Slots
                     if (space === -1 || bet == 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a jediný žeton do automatu, @" + chat.un + " sleduj výsledky.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a žeton do automatu.);
                         setTimeout(function() {API.sendChat("/me  Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
                     else if (bet > 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu, @" + chat.un + " sleduj výsledky.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.);
                         setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
                     else {
@@ -323,13 +323,13 @@
                     //Display Outcome
                     if (outcome[3] == 0) {
                         if (updatedTokens === 1) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Nyní máš poslední žeton. Chceš to zkusit znovu?")}, 7000);   
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbyl ti jediný žeton.")}, 7000);   
                         }  
                         else if (updatedTokens === 0) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Smůla! Už nemáš žádné žetony!")}, 7000);
                         }
                         else {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů. Chceš to zkusit znovu?")}, 7000);
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
                         }
                     }
                     else if (outcome[3] == (bet * 7)) {
