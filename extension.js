@@ -69,7 +69,7 @@
         
         // !givetokens - needs to be fixed
         bot.commands.givetokensCommand = {
-            command: 'poslatzetony',  //The command to be called. With the standard command literal this would be: !givetokens
+            command: 'givetokens',  //The command to be called. With the standard command literal this would be: !givetokens
             rank: 'manager', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -89,7 +89,7 @@
                          API.sendChat("/me @" + chat.un + ", musíš zadat určitého uživatele k poslání žetonů."); 
                     } 
                     
-                    if (gift == null || gift == "" || gift == " " || gift == "!poslatzetony" || isNaN(gift)) {
+                    if (gift == null || gift == "" || gift == " " || gift == "!givetokens" || isNaN(gift)) {
                          gift = 1;
                     }
                        
@@ -120,7 +120,7 @@
         
         // !tip
         bot.commands.tipCommand = {
-            command: 'tip',  //The command to be called. With the standard command literal this would be: !tip
+            command: 'darovatzetony',  //The command to be called. With the standard command literal this would be: !tip
             rank: 'user', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -135,7 +135,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " tries to tip @" + receiver + ", for the awesome tunes, but doesn't have any TOKEns! It's the thought that counts, right?"); 
+                        return API.sendChat("/me @" + chat.un + " zkoušel/a poslat @" + receiver + " nějaké žetony, jenže dárce žádné žetony nevlastní! "); 
                     }
                     else {
                         receiverTokens += 1;
@@ -145,11 +145,11 @@
                             receiverTokens = validateTokens(currentDJ);
                             receiverTokens += 1; //Repeat check in the event tip is for current DJ.
                             localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " tips @" + currentDJ + " for their contirbution to the art of great music.  @" + chat.un + " has " + giverTokens + " TOKEns left. @" + currentDJ + " now has " + receiverTokens + " TOKEns."); 
+                            return API.sendChat("/me @" + chat.un + " poslal/a žetonový dárek @" + currentDJ + " za hraní skvělé hudby.  @" + chat.un + " zbylo " + giverTokens + " žetonů. @" + currentDJ + " má nyní " + receiverTokens + " žetonů."); 
                         }
                         else {                        
                             localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " tips @" + receiver + " for throwing down great tracks! @" + chat.un + " has " + giverTokens + " TOKEns left. @" + receiver + " now has " + receiverTokens + " TOKEns.");
+                            return API.sendChat("/me @" + chat.un + " poslal/a žetonový dárek @" + receiver + " za hraní skvělé hudby. @" + chat.un + " zbylo " + giverTokens + " žetonů. @" + receiver + " má nyní " + receiverTokens + " žetonů.");
                         }
                     }
                 }
