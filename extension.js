@@ -47,27 +47,23 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72_Aw", "100");
-                    localStorage.setItem("♥ HJV ßØT ♥", "10000");
-                    localStorage.setItem("Repiboy", "30");
-                    localStorage.setItem("GeeDee", "100");
+                    localStorage.setItem("Franta72 | RIP PLUG", "100");
+                    localStorage.setItem("HJV ßØT", "2500");
+                    localStorage.setItem("Sabičiči 2.0", "100");
                     localStorage.setItem("#Fucker|Derrpík", "100");
-                    localStorage.setItem("THØMAS B |HJV", "100");
+                    localStorage.setItem("THØMAS B", "100");
                     localStorage.setItem("Sumer4ever", "100");
-                    localStorage.setItem("Kebabčiči :3", "100");
-                    localStorage.setItem("TheRealPsycho", "100");
+                    localStorage.setItem("Kočička", "100");
+                    localStorage.setItem("ThePsycho", "100");
                     localStorage.setItem("LoL_OpeRaCo", "100");
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.*", "100");
-                    localStorage.setItem("Dr_McKay", "5");
-                    localStorage.setItem("JamesThelll", "5");
-                    localStorage.setItem("Chembot", "5000");
-                    API.sendChat("/me Žetony resetovany!");
+                    API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
         };
         
-        // !givetokens - needs to be fixed
+        // Poznámka: Nefunkční
         bot.commands.givetokensCommand = {
             command: 'givetokens',  //The command to be called. With the standard command literal this would be: !givetokens
             rank: 'manager', //Minimum user permission to use the command
@@ -100,9 +96,9 @@
             }
         };
         
-        // !tokens
-        bot.commands.tokensCommand = {
-            command: 'zetony',  //The command to be called. With the standard command literal this would be: !tokens
+        // !zetony
+        bot.commands.zetonyCommand = {
+            command: ['zetony', 'žetony', 'žeton', 'zeton'],  //The command to be called. With the standard command literal this would be: !tokens
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -118,8 +114,8 @@
         };
        
         
-        // !tip
-        bot.commands.tipCommand = {
+        // !darovatzetony
+        bot.commands.darovatzetonyCommand = {
             command: 'darovatzetony',  //The command to be called. With the standard command literal this would be: !tip
             rank: 'user', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
@@ -135,7 +131,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " zkoušel/a poslat @" + receiver + " nějaké žetony, jenže dárce žádné žetony nevlastní! "); 
+                        return API.sendChat("/me @" + chat.un + " zkoušel/a poslat @" + receiver + " žetony, ale to by je nejdříve dárce musel/a vlastnit! "); 
                     }
                     else {
                         receiverTokens += 1;
@@ -160,7 +156,7 @@
         function validateTokens(user){
             var tokens; 
             
-            //Check for existing user tokens
+            //Základ žetonů pro uživatele
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
                  localStorage.setItem(user, "30");
                  tokens = localStorage.getItem(user);
@@ -175,7 +171,7 @@
             return tokens;
         }
         
-        //Slots---------------------------------------------------------------------------------------------------------------------------
+        //Automaty---------------------------------------------------------------------------------------------------------------------------
         function spinSlots() {
             var slotArray = [':lemon:',
                              ':tangerine:', 
@@ -258,9 +254,9 @@
              return userTokens;
         }
 
-        //slots
-        bot.commands.slotsCommand = { 
-            command: ['automaty', 'slot'],  //The command to be called. With the standard command literal this would be: !slots
+        //automaty
+        bot.commands.automatCommand = { 
+            command: ['automaty', 'automat'],  //The command to be called. With the standard command literal this would be: !slots
             rank: 'user', 
             type: 'startsWith',  
             functionality: function (chat, cmd) { 
