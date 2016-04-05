@@ -131,7 +131,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " zkoušel/a poslat @" + receiver + " žetony, ale to by je nejdříve dárce musel/a vlastnit! "); 
+                        return API.sendChat("/me @" + chat.un + " zkoušel/a poslat @" + receiver + " žetony, ale to by je nejdříve dárce musel vlastnit! "); 
                     }
                     else {
                         receiverTokens += 1;
