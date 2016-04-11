@@ -255,7 +255,7 @@
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
-            startupEmoji: false, // true or false
+            startupEmoji: true, // true or false
             autowoot: true,
             autoskip: false,
             smartSkip: true,
@@ -282,13 +282,13 @@
             thorCooldown: 10,
             skipPosition: 1,
             skipReasons: [
-                ["theme", "This song does not fit the room theme. "],
-                ["op", "This song is on the OP list. "],
-                ["history", "This song is in the history. "],
-                ["mix", "You played a mix, which is against the rules. "],
-                ["sound", "The song you played had bad sound quality or no sound. "],
-                ["nsfw", "The song you contained was NSFW (image or sound). "],
-                ["unavailable", "The song you played was not available for some users. "]
+                ["téma", "tvá píseň nesouhlasí s tématem místnosti. "],
+                ["ohrané", "tvá píseň je v seznamu ohraných písní. "],
+                ["historie", "tvá píseň je v historii. "],
+                ["mix", "tvůj remix nesouhlasí s pravidly. "],
+                ["zvuk", "tvá píseň má špatnou kvalitu zvuku. "],
+                ["nsfw", "tvá píseň je v seznamu nevhodných písní. "],
+                ["nejde", "tvá píseň nešla přehrát. "]
             ],
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
@@ -3496,7 +3496,7 @@ sklepCommand: {
 
             rouletteCommand: {
                 command: 'roulette',
-                rank: 'mod',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
