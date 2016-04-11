@@ -282,7 +282,7 @@
             thorCooldown: 10,
             skipPosition: 1,
             skipReasons: [
-                ["téma", "tvá píseň nesouhlasí s tématem místnosti. "],
+                ["akce", "tvá píseň není vhodná k probíhajíci akci. "],
                 ["ohrané", "tvá píseň je v seznamu ohraných písní. "],
                 ["historie", "tvá píseň je v historii. "],
                 ["mix", "tvůj remix nesouhlasí s pravidly. "],
