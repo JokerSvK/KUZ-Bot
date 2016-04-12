@@ -5,6 +5,12 @@ X specifikuje číslo.
 Argumenty můžou být různé.
 Uvedené příkazy se vyskytují v BasicBotu. Kromě speciálních navržené pro Hudba je Všetko.
 
+Hostitel a zástupci
+-------
+
+|Příkaz | Argument |  Popis |
+|:------:|:---------:|:--------------------------------------:|
+|!resetzetony || Resetuje skóre žetonů všech uživatelů v místnosti. |
 
 Manažér
 -------
@@ -12,7 +18,7 @@ Manažér
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
 |!bitch | @jméno | Zvolí vybraného uživatele jako osobní bitch. |
-|!resetzetony | | Resetuje skóre žetonů všech uživatelů v místnosti. |
+|!roulette | | Zahájí ruletu. |
 |!afklimit | X | Nastaví maximální AFK limit. |
 |!botname | (název bota) | Změní jméno bota. |
 |!bouncer+ | | Zapnutí/Vypnutí speciálních pravomocí vyhazovačů. |
@@ -42,7 +48,6 @@ Vyhazovač+
 |!lockdown | | Pouze staff můžete chatovat v místnosti. |
 |!move | @jméno (X) | Přesune uživatele ve frontě na X pozici. (Defaultní pozice značí 1. místo) |
 |!remove | @jméno | Odstraní uživatele z fronty. |
-|!roulette | | Zahájení rulety. |
 |!songstats | | Zapnutí/Vypnutí statistiky skladeb. |
 |!unlock | | Odemkne frontu. |
 |!welcome | | Zapnutí/Vypnutí uvítací zprávy. |
@@ -143,22 +148,23 @@ Uživatel
 |!boží | | Vyjádřite uživateli, že hraje skvělou skladbu. |
 |!darovatzetony | @jméno POČET | Darujete uživateli určitý počet žetonů. |
 
-Informace o lidech ze staffu & pomocníků HJV
------------
 
-|Příkaz | 
-|:------:|
-|!thomas |
-|!germ |
-|!sumer |
-|!derp |
-|!franta |
-|!psycho |
-|!nicmoc |
-|!dykobraz |
-|!kebabčiči |
-|!operaco |
-|!misul |
-|!ichigo |
+Informace o členech staffu & pomocníků HJV
+----
+
+|Příkaz | Popis |
+|:------:|:--------------------------------------:|
+|!thomas | Zobrazí kratký popis osobnosti od hostitele. |
+|!germ   | Zobrazí kratký popis osobnosti od zástupce hostitele. |
+|!sumer  | Zobrazí kratký popis osobnosti od zástupce hostitele. |
+|!psycho | Zobrazí kratký popis osobnosti od manažera. |
+|!nicmoc | Zobrazí kratký popis osobnosti od manažera. |
+|!derp   | Zobrazí kratký popis osobnosti od manažera. |
+|!franta  | Zobrazí kratký popis osobnosti od manažera. |
+|!kebabčiči  | Zobrazí kratký popis osobnosti od manažerky. |
+|!dykobraz  | Zobrazí kratký popis osobnosti od vyhazovače. |
+|!operaco  | Zobrazí kratký popis osobnosti od vyhazovače. |
+|!misul | Zobrazí kratký popis osobnosti od rezidentní DJky. |
+|!ichigo | Zobrazí kratký popis osobnosti od tvůrce CSS pozadí. |
 
 # Poslední aktualizace příkazů: 12.4.2016
