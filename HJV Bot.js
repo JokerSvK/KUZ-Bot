@@ -2999,7 +2999,7 @@ sklepCommand: {
 
             killCommand: {
                 command: 'kill',
-                rank: 'bouncer',
+                rank: 'cohost',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3232,7 +3232,7 @@ sklepCommand: {
 
             logoutCommand: {
                 command: 'logout',
-                rank: 'manager',
+                rank: 'cohost',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3406,7 +3406,7 @@ sklepCommand: {
 
             refreshCommand: {
                 command: 'refresh',
-                rank: 'manager',
+                rank: 'cohost',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3425,7 +3425,7 @@ sklepCommand: {
 
             reloadCommand: {
                 command: 'reload',
-                rank: 'bouncer',
+                rank: 'cohost',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3639,7 +3639,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me This bot was created by ' + botCreator + ', but is now maintained by ' + botMaintainer + ".");
+                        API.sendChat('/me Tento bot byl vytvořen ' + botCreator + ', úpravy provádí ' + botMaintainer + ".");
                     }
                 }
             },
