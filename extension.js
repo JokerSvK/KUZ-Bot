@@ -51,9 +51,9 @@
                 }
               }
             };
-// !resetzetony
+// !resetzetony - Resetování žetonů
         bot.commands.resetzetonyCommand = {
-            command: 'resetzetony',  //The command to be called. With the standard command literal this would be: !cleartokens
+            command: ['resetzetony', 'resetžetony'],  //The command to be called. With the standard command literal this would be: !cleartokens
             rank: 'cohost', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -72,13 +72,14 @@
                     localStorage.setItem("LoL_OpeRaCo", "100");
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.*", "100");
-                    API.sendChat("/me Proběhlo resetování žetonů!");
+                    var user = chat.un;
+                    API.sendChat("/me [@" + user + "] Proběhlo resetování žetonů!");
                 }
             }
         };
-        // !zetony
+        // !zetony - Stav konta žetonů
         bot.commands.zetonyCommand = {
-            command: ['zetony', 'žetony', 'žeton', 'zeton'],  //The command to be called. With the standard command literal this would be: !tokens
+            command: ['zetony', 'žetony', 'žeton', 'zeton', 'konto'],  
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -88,15 +89,15 @@
                     var user = chat.un;
                     var tokens = validateTokens(user);
                     
-                    API.sendChat("/me @" + user + ", máš " + tokens + " žetonů.");
+                    API.sendChat("/me [@" + user + "] Stav vašeho konta: " + tokens + " žetonů.");
                 }
             }
         };
        
         
-        // !darovatzetony
+        // !darovatzetony - Příkaz slouží k darování žetonů uživateli
         bot.commands.darovatzetonyCommand = {
-            command: 'darovatzetony',  //The command to be called. With the standard command literal this would be: !tip
+            command: ['darovatzetony', 'darovatžetony', 'poslatžetony', 'poslatzetony'], 
             rank: 'user', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -111,7 +112,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " chtěl/a poslat @" + receiver + " žetony, ale to by je nejdříve dárce musel vlastnit! "); 
+                        return API.sendChat("/me [@" + chat.un + "] Abys mohl/a darovat žetony uživateli " + receiver + ", musíš vlastnit alespoň jediný. "); 
                     }
                     else {
                         receiverTokens += 1;
@@ -120,12 +121,12 @@
                         if (space === -1) { 
                             receiverTokens = validateTokens(currentDJ);
                             receiverTokens += 1; //Repeat check in the event tip is for current DJ.
-                            localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " poslal/a žetonový dárek @" + currentDJ + " za hraní skvělé hudby.  @" + chat.un + " zaslal/a " + giverTokens + " žetonů. @" + currentDJ + " má nyní " + receiverTokens + " žetonů."); 
+                            localStorage.setItem(currentDJ);
+                            return API.sendChat("/me [@" + chat.un + "] Žetonový dárek pro uživatele @" + currentDJ + " za hraní skvělé hudby. Uživateli bylo darováno " + giverTokens + " žetonů!"); 
                         }
                         else {                        
-                            localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " poslal/a žetonový dárek @" + receiver + " za hraní skvělé hudby. @" + chat.un + " zaslal/a " + giverTokens + " žetonů. @" + receiver + " má nyní " + receiverTokens + " žetonů.");
+                            localStorage.setItem(receiver);
+                            return API.sendChat("/me [@" + chat.un + "] Žetonový dárek pro uživatele @" + receiver + " za hraní skvělé hudby. Uživateli bylo darováno " + giverTokens + " žetonů!");
                         }
                     }
                 }
@@ -138,7 +139,7 @@
             
             //Základ žetonů pro uživatele
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "30");
+                 localStorage.setItem(user, "50");
                  tokens = localStorage.getItem(user);
             }
             else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
