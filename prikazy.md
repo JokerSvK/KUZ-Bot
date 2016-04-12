@@ -140,6 +140,7 @@ Uživatel
 |!zetony | | Napíše aktuální stav vaších žetonů. |
 |!automaty | VSÁZKA | Vsadíte určitý počet žetonů do automatu. |
 |!bacon | | Bacon! |
+|!boží | | Vyjádřite uživateli, že hraje skvělou skladbu. |
 |!darovatzetony | @jméno POČET | Darujete uživateli určitý počet žetonů. |
 
 Informace o lidech ze staffu & pomocníků HJV
@@ -160,4 +161,4 @@ Informace o lidech ze staffu & pomocníků HJV
 |!misul |
 |!ichigo |
 
-# Poslední aktualizace příkazů: 2.4.2016
+# Poslední aktualizace příkazů: 12.4.2016
