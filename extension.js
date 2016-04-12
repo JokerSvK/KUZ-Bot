@@ -51,10 +51,10 @@
                 }
               }
             };
-// !cleartokens
-        bot.commands.cleartokensCommand = {
+// !resetzetony
+        bot.commands.resetzetonyCommand = {
             command: 'resetzetony',  //The command to be called. With the standard command literal this would be: !cleartokens
-            rank: 'manager', //Minimum user permission to use the command
+            rank: 'cohost', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -76,40 +76,6 @@
                 }
             }
         };
-        
-        // Poznámka: Nefunkční
-        bot.commands.givetokensCommand = {
-            command: 'givetokens',  //The command to be called. With the standard command literal this would be: !givetokens
-            rank: 'manager', //Minimum user permission to use the command
-            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    var msg = chat.message; 
-					var space = msg.indexOf(' ');
-                    var parse = msg.Split(' ');
-                    var name = msg.substring(space + 2);
-                    var gift = parse[2];
-                    var user = bot.userUtilities.lookupUserName(name); 
-                    var startingTokens = validateTokens(user);
-                    var updatedTokens;
-                    
-                    if (space === -1) { 
-                         API.sendChat("/me @" + chat.un + ", musíš zadat určitého uživatele k poslání žetonů."); 
-                    } 
-                    
-                    if (gift == null || gift == "" || gift == " " || gift == "!givetokens" || isNaN(gift)) {
-                         gift = 1;
-                    }
-                       
-                    updatedTokens = Math.round(gift) + startingTokens;
-                    localStorage.setItem(user, updatedTokens);
-                    return API.sendChat("/me @" + chat.un + " poslal/a @" + user + " " + gift + " žetonů. @" + user + " má nyní " + updatedTokens + " žetonů.");
-                }
-            }
-        };
-        
         // !zetony
         bot.commands.zetonyCommand = {
             command: ['zetony', 'žetony', 'žeton', 'zeton'],  //The command to be called. With the standard command literal this would be: !tokens
@@ -145,7 +111,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " zkoušel/a poslat @" + receiver + " žetony, ale to by je nejdříve dárce musel vlastnit! "); 
+                        return API.sendChat("/me @" + chat.un + " chtěl/a poslat @" + receiver + " žetony, ale to by je nejdříve dárce musel vlastnit! "); 
                     }
                     else {
                         receiverTokens += 1;
@@ -294,17 +260,17 @@
                     //Prevent invalid betting
                     if (bet > playerTokens[0]) {
                         if (playerTokens[0] === 0){
-                            return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. Jenže bez žetonů to nepůjde!"); 
+                            return API.sendChat("/me @" + chat.un + " zkoušel/a vsadit " + bet + " žetonů. Jenže bez žetonů to nepůjde!"); 
                         } 
                         else if (playerTokens[0] === 1) {
-                            return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. Ale asi těžko s jedným žetonem!"); 
+                            return API.sendChat("/me @" + chat.un + " zkoušel/a vsadit " + bet + " žetonů. Ale těžko s jedným žetonem!"); 
                         }
                         else {
-                            return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. S " + playerTokens[0] + " žetony to nepůjde!"); 
+                            return API.sendChat("/me @" + chat.un + " zkoušel/a vsadit " + bet + " žetonů. S " + playerTokens[0] + " žetony to nepůjde!"); 
                         }
                     }
                     else if (bet < 0) {
-                        return API.sendChat("/me @" + chat.un + " zkusil/a vsadit " + bet + " žetonů. To nemůžeš udělat.."); 
+                        return API.sendChat("/me @" + chat.un + " zkoušel/a vsadit " + bet + " žetonů. Taková sázka nemůže být uskutečněna.."); 
                     }
                     else if (bet === 0) { 
                         return API.sendChat("/me @" + chat.un + " se pokoušel/a hrát bez žetonů. Nemůžeš hrát zdarma!"); 
@@ -366,7 +332,7 @@
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
-      startupEmoji: false, // true or false
+      startupEmoji: true, // true or false
       autowoot: true,
       autoskip: false,
       smartSkip: true,
