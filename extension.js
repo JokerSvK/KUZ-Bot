@@ -37,6 +37,20 @@
                 }
               }
             };
+             bot.commands.božíCommand = {
+            command: 'boží',  // The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', // Minimum user permission to use the command
+            type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+              functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                var currentDJ = API.getDJ().username;
+                var user = chat.un; 
+                  API.sendChat("/me @" + currentDJ + ", @" + user + " je z této písničky naprosto unešen/a, až se z toho roztekl/a a za doprovodu zmateného hekání se válí v transu na podlaze.");
+                }
+              }
+            };
 // !cleartokens
         bot.commands.cleartokensCommand = {
             command: 'resetzetony',  //The command to be called. With the standard command literal this would be: !cleartokens
@@ -48,7 +62,7 @@
                 else {
                     localStorage.clear();
                     localStorage.setItem("Franta72 | RIP PLUG", "100");
-                    localStorage.setItem("HJV ßØT", "2500");
+                    localStorage.setItem("HJV ßØT", "25000");
                     localStorage.setItem("Sabičiči 2.0", "100");
                     localStorage.setItem("#Fucker|Derrpík", "100");
                     localStorage.setItem("THØMAS B", "100");
