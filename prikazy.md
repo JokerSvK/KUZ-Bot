@@ -60,6 +60,7 @@ Vyhazovač
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
 |!active | X | Napíše počet zpráv za posledních X minut. (Defaultních minut je 60 bez zadání X) |
+|!say | text | Napíše oznámení člena týmu za pomocí bota. |
 |!afkreset | @jméno | Resetuje AFK danému uživateli. |
 |!afktime | @jméno | Zobrazí, jak dlouho je uživatel AFK. |
 |!autodisable | | Zapnutí/Vypnutí autodisable systému. |
@@ -129,6 +130,7 @@ Uživatel
 |!ego | | Zvýšuje ego uživateli. |
 |!ping | | Pong! |
 |!bacon | | Bacon! |
+|!hledat | @jméno | Zjistí dobu nepřítomnosti uživatele v místnosti. Určené k využití na uživatelé, kteří v místnosti nejsou. |
 |!update | | Napíše stránku s aktualizacemi bota. |
 |!ba | | Vysvětlí v kostce rank Brand Ambassadora. |
 |!emoji | | Dá link na stránku s emotikony. |
