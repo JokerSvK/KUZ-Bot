@@ -51,6 +51,47 @@
                 }
               }
             };
+            bot.commands.sayCommand = {
+            command: 'say',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'mod', //Minimum user permission to use the command
+            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.moderateDeleteChat(chat.cid);
+                    API.sendChat("[@" + chat.un + "] " + chat.message.substr(cmd.length + 1));
+                }
+            }
+        };
+
+        bot.commands.hledatCommand = {
+            command: 'hledat',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var searchUser = chat.message.substr(cmd.length +2);
+                    var found = false;
+                    for (var i = 0; i < bot.room.users.length; i++) {
+                        if (bot.room.users[i].username === searchUser) {
+                            found = bot.room.users[i];
+                            if (found.inRoom) {
+                                API.sendChat("[@" + chat.un + "] Stačí otevřít oči! @"+searchUser+ " je tady.");
+                            } else {
+                                API.sendChat("[@" + chat.un + "] Bot naposledy viděl " + searchUser + " před " + bot.roomUtilities.msToStr(new Date().getTime() - found.lastActivity)+ "");
+                            }
+                            break;
+                        }
+                    }
+                    if (!found) {
+                        API.sendChat("Bot nemůže najít "+searchUser+". Zkontroluj, jestli jméno si napsal/a ve tvaru @.")
+                    }
+                }
+            }
+        };
 // !resetzetony - Resetování žetonů
         bot.commands.resetzetonyCommand = {
             command: ['resetzetony', 'resetžetony'],  //The command to be called. With the standard command literal this would be: !cleartokens
@@ -378,10 +419,26 @@
       rulesLink: "http://hudbajevsetko.justforum.net/t7-seznam-pravidel",
       themeLink: null,
       fbLink: "https://www.facebook.com/HudbaUTomasa/?fref=ts",
-      youtubeLink: null,
+      youtubeLink: null, 
       website: "http://hudbajevsetko.justforum.net",
-      intervalMessages: [],
-      messageInterval: 5,
+      intervalMessages: ["[Citát] „Nevím, čím se bude bojovat ve třetí světové válce, ale ve čtvrté to budou klacky a kameny.“ -Albert Einstein ",
+                         "[Citát] „Milióny lidí touží po nesmrtelnosti, a přitom nevědí co mají dělat, když v neděli odpoledne prší.“ -Susan Ertz",
+                         "[Citát] „Ve škole miluj studování, za školou studuj milování.“ -Neznámý autor",
+                         "[TIP] Vyzkoušejte naše automaty. http://hudbajevsetko.justforum.net/t31-vyherni-automaty-v-botovi",
+                         "[Citát] „Miloval jsem jednu a tutéž ženu jednačtyřicet let. Jestli se to manželka dozví, zabije mě.“ -Henny Youngman ",
+                         "[Citát] „Ze života se nikdo nedostane živý.“ -Morison",
+                         "[Citát] „Kdo víno má a nepije, kdo hrozny má a nejí je, kdo ženu má a nelíbá, kdo zábavě se vyhýbá, na toho vemte bič a hůl, to není člověk, to je vůl.“ -Jan Werich",
+                         "[TIP] Chce být součástí našeho staff? Přihlášku si podej zde: http://hudbajevsetko.justforum.net",
+                         "[Citát] „Největší chyba, kterou v životě můžete udělat, je mít pořád strach, že nějakou uděláte.“ -Elbert Hubbard",
+                         "[Citát] „Přátelství může skončit láskou, ale láska nikdy nemůže skončit přátelstvím.“ -Charles Caleb Colton",
+                         "[Citát] „Bůh stvořil člověka, když ho přestaly bavit opice. Na další pokusy už pak neměl nervy.“ -Mark Twain",
+                         "!roulette",
+                         "[Citát] „Vliv je stín moci.“ -Dean Acheson",
+                         "[Citát] „Dej si pauzu, nebo skončíš ve cvokhauzu.“ -Halina Pawlowská",
+                         "[Citát] „Pokud dokážete dívku rozesmát, dokážete ji donutit udělat cokoliv.“ -Marilyn Monroe",
+                         "[Citát] „Demokracie rozkvétá, byť s kosmetickou vadou: ti kteří kradli po léta, dnes dvojnásobně kradou.“ -Karel Kryl",
+                           "[TIP] Lajkněte nás na Facebooku. Blížíme se k hranici pětistého! https://www.facebook.com/HudbaUTomasa/?fref=ts"],
+      messageInterval: 10,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
