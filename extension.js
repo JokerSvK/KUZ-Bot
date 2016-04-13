@@ -60,7 +60,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.moderateDeleteChat(chat.cid);
-                    API.sendChat("[@" + chat.un + "] " + chat.message.substr(cmd.length + 1));
+                    API.sendChat("/me [@" + chat.un + "] " + chat.message.substr(cmd.length + 1));
                 }
             }
         };
@@ -79,15 +79,15 @@
                         if (bot.room.users[i].username === searchUser) {
                             found = bot.room.users[i];
                             if (found.inRoom) {
-                                API.sendChat("[@" + chat.un + "] Stačí otevřít oči! @"+searchUser+ " je tady.");
+                                API.sendChat("/me [@" + chat.un + "] Stačí otevřít oči! @"+searchUser+ " je tady.");
                             } else {
-                                API.sendChat("[@" + chat.un + "] Bot naposledy viděl " + searchUser + " před " + bot.roomUtilities.msToStr(new Date().getTime() - found.lastActivity)+ "");
+                                API.sendChat("/me [@" + chat.un + "] Bot naposledy viděl " + searchUser + " před " + bot.roomUtilities.msToStr(new Date().getTime() - found.lastActivity)+ "");
                             }
                             break;
                         }
                     }
                     if (!found) {
-                        API.sendChat("Bot nemůže najít "+searchUser+". Zkontroluj, jestli jméno si napsal/a ve tvaru @.")
+                        API.sendChat("/me Bot nemůže najít "+searchUser+". Pravděpodobně se odpojil/a před spuštěním bota.")
                     }
                 }
             }
