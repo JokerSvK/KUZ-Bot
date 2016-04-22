@@ -293,7 +293,7 @@
        
                     //Fix bet if blank
                     if (bet == null || isNaN(bet)) {
-                        bet = 1;
+                        bet = 5;
                     }
                     bet = Math.round(bet);      
                                    
@@ -324,12 +324,12 @@
                     }
                     
                     //Display Slots
-                    if (space === -1 || bet == 1) { 
+                    if (space === -1 || bet == 5) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a žeton do automatu.);
+                        API.sendChat("/me @" + chat.un + " vsadil/a pět žetonů do automatu.);
                         setTimeout(function() {API.sendChat("/me  Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
-                    else if (bet > 1) { 
+                    else if (bet > 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.);
                         setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
@@ -341,7 +341,7 @@
                     //Display Outcome
                     if (outcome[3] == 0) {
                         if (updatedTokens === 1) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbyl ti jediný žeton.")}, 7000);   
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbyl ti jediný žeton. Sežeň čtyři a zkus to znova!")}, 7000);   
                         }  
                         else if (updatedTokens === 0) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Smůla! Už nemáš žádné žetony!")}, 7000);
