@@ -9,7 +9,7 @@
 
     /*window.onerror = function() {
         var room = JSON.parse(localStorage.getItem("basicBotRoom"));
-        window.location = 'https://stg.plug.dj' + room.name;
+        window.location = 'https://plug.dj' + room.name;
     };*/
 
     API.getWaitListPosition = function(id){
@@ -741,7 +741,7 @@
                 }, 1000, id);
             },
             changeDJCycle: function () {
-                $.getJSON('https://stg.plug.dj/_/rooms/state', function(data) {
+                $.getJSON('https://plug.dj/_/rooms/state', function(data) {
                     if (data.data[0].booth.shouldCycle) { // checks "" "shouldCycle": true "" if its true
                         API.moderateDJCycle(false); // Disables the DJ Cycle
                         clearTimeout(basicBot.room.cycleTimer); // Clear the cycleguard timer
@@ -1362,7 +1362,7 @@
             basicBot.connectAPI();
             API.moderateDeleteChat = function (cid) {
                 $.ajax({
-                    url: "https://stg.plug.dj/_/chat/" + cid,
+                    url: "https://plug.dj/_/chat/" + cid,
                     type: "DELETE"
                 })
             };
@@ -1381,7 +1381,7 @@
                         kill();
                     }, 1000);
                     if (basicBot.settings.roomLock){
-                        window.location = 'https://stg.plug.dj' + basicBot.room.name;
+                        window.location = 'https://plug.dj' + basicBot.room.name;
                     }
                     else {
                         clearInterval(Check);
@@ -3975,7 +3975,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        $.getJSON('https://stg.plug.dj/_/bans', function (json){
+                        $.getJSON('https://plug.dj/_/bans', function (json){
                             var msg = chat.message;
                             if (msg.length === cmd.length) return;
                             var name = msg.substring(cmd.length + 2);
@@ -4018,7 +4018,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        $.getJSON('https://stg.plug.dj/_/mutes', function (json){
+                        $.getJSON('https://plug.dj/_/mutes', function (json){
                             var msg = chat.message;
                             if (msg.length === cmd.length) return;
                             var name = msg.substring(cmd.length+2);
@@ -4232,7 +4232,7 @@ sklepCommand: {
                                 }
                                 var slug = API.getUser(id).slug;
                                 if (typeof slug !== 'undefined') {
-                                    var profile = "https://stg.plug.dj/@/" + slug;
+                                    var profile = "https://plug.dj/@/" + slug;
                                 } else {
                                     var profile = "~";
                                 }
