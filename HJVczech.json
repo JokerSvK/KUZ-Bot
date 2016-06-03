@@ -342,74 +342,7 @@
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
     "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer.",
-    "prikazy": "\/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
-    
-    "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
-    "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
-    "selfalkohol": "/me Nebuď labuť a radši ten alkohol někomu nabídni, @%%NAME%% ",
-    "alkohol": "/me @%%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%",
-   
-    "givefacka": "/me Příkazem !facka @jmeno někomu vlepíš facku.",
-    "selffacka": "/me %%NAME%% si nafackoval/a.",
-    "nouserfacka": "/me Nevidím %%NAME%% v místnosti, takže té osobě asi facku nedáš..",
-    "facka": "/me @%%NAMETO%%, @%%NAMEFROM%% %%FACKY%%",
-   
-    "givelove": "/me Příkazem !love @jmeno vyjádříš někomu, že ho máš rád/a.",
-    "selflove": "/me %%NAME%% se má rád/a..",
-    "nouserlove": "/me Nevidím %%NAME%% v místnosti, takže se osoba nedozví, že ji máš rád/a..",
-    "love": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LASKA%%",
-   
-    "givezvire": "/me Příkazem !zvire @jmeno naznačíš někomu, jaký je zvíře.",
-    "selfzvire": "/me Říkat o sobě, jaké jsi zvíře zavání egem. Haah, to jsem tě dostal %%NAME%% ",
-    "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
-    "zvire": "/me @%%NAMETO%%, @%%NAMEFROM%% %%ANIMAL%%",
-    
-    "afk": "/me %%NAME%% jde AFK!",
-    "zpet": "/me %%NAME%% se vrátil/a zpět!",
-    "ego": "/me %%NAME%% [EGO UP]",
-    
-    "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
-    "selfsklep": "/me @%%NAME%%, zvát se sám/a sebe do sklepa není zrovna nejvhodnější. ",
-    "nousersklep": "/me Nevidím %%NAME%% v místnosti, takže zamkni do sklepa někoho jinýho.",
-    "sklep": "/me @%%NAMETO%%, @%%NAMEFROM%% %%SKLEPOVKY%%",
-    
-    "givekoupit": "/me Příkazem !koupit @jmeno někomu něco koupíš.",
-    "selfkoupit": "/me %%NAME%% si koupil/a čokoládu. ",
-    "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
-    "koupit": "/me @%%NAMETO%%, @%%NAMEFROM%% %%OBCHOD%%",
-    
-    "givelulu": "/me Příkazem !lulu projevíš na někom svojí nadrženost.",
-    "selflulu": "/me %%NAME%% luluje.",
-    "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
-    "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%",
-    
-     "givebitch": "/me Příkazem !bitch @jmeno někoho pasuješ na osobní bitch.",
-     "selfbitch": "/me @%%NAME%%, přijde ti normální, dělat bitch sám/a sobě?",
-     "nouserbitch": "/me Nevidím %%NAME%% v místnosti, takže pasuj někoho jiného.",
-     "bitch": "/me @%%NAMETO%%, @%%NAMEFROM%% %%BITCHES%%",
-     
-     "givefuck": "/me Příkazem !fuck @jmeno projevíš nenávist k osobě.",
-     "selffuck": "/me @%%NAME%%, nadat si není zrovna nejlepší nápad.",
-     "nouserfuck": "/me Nevidím %%NAME%% v místnosti, takže nadej někomu jinýmu.",
-     "fuck": "/me @%%NAMETO%%, @%%NAMEFROM%% %%FUCKS%%",
-     
-     "givehug": "/me Příkazem !hug @jmeno někoho virtuálně obejmeš.",
-     "selfhug": "/me @%%NAME%%, nemůžeš obejmout sám/a sebe..",
-     "nouserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho.",
-     "hug": "/me @%%NAMETO%%, @%%NAMEFROM%% %%HUGS%%",
-    
-    "germ": "/me GE?M je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, kočky a rád spamuje. Bývá často AFK.",
-    "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když se v chatu lidi vyjadřují sprostě a mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2",
-    "sumer": "/me Sumer miluje jízdu na kole. Je klidné a mírumilovné povahy a snadno se nenaštve, ale když se to někomu podaří, tak to stojí za to… Občas je tvrdohlavý a je pro každou srandu. Má přezdívku sumec. >(°>__<°)<",
-    "franta": "/me Franta72 je někdy náladový, ale vždy je nějaký způsob, jak si s ním pokecat. Nemá rád, když mu někdo lže. Miluje rap, ale poslouchá v podstatě všechno.",
-    "dykobraz": "/me Dykobraz je kliďas, pohodář a všechno bere s humorem. Miluje cz/sk rap. Mezi jeho oblíbence patří Ektor, Separ, Haha Crew, Hypno808... Jen tak se nenaštve a má přezdívku negr nebo ježek. <?.?.?>",
-    "thomas": "/me THOMAS B je milý a hodný člověk, ale nesmíte ho naštvat. Nesnáší lež a faleš a má rád ty, kteří mají rádi ho. Někdy bývá náladový, ale má rád srandu a dokáže rozesmát. Nesnáší škemrání o staff.",
-    "ichigo": "/me Ichigo Kurosaki je jako každý normální středoškolák, pokuď nepočítáme schopnost vidět duchy. V našem staff jíž nepůsobí, ale udělal nám speciální CSS pozadí.",
-    "nicmoc": "/me [NicMoc.Dj] je strašný flegmatik. Baví ho posilování, běhání a občas hraje WOT. Nepokoušejte se ho naštvat nebo špatně skončíte. Ale jinak je s ním sranda a rád si dělá srandu z ostatních.",
-    "derp": "/me Derp... je hodný, upřímný kluk, který rád sere ostatní lidi. Miluje EDM festivaly a dobrý alkohol. Jinak velmi rád se baví se slečnami. Je to kluk jako buk. Prostě náš menežéris.",
-    "misul": "/me *Sweetie-Mišul* má ráda dobrou hudbu a pokec s fajn lidmi. Miluje seriály a čtení knih. Je svá, bezstarostná a často afkuje!",
-    "operaco": "/me Operaco je náš milý hoch, který se nebojí jít za DJ pult. :babyrage: ",
-    "kebabčiči": "/me Kočička alá Kebabčiči se považuje za nejhodnějšího člověka na světě. Takže trošku egoistka, ale máme ji rádi. :heart:"
+    "prikazy": "\/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy"
     
     
     
