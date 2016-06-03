@@ -47,15 +47,15 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72_Aw", "100");
-                    localStorage.setItem("♥ HJV ßØT ♥", "10000");
-                    localStorage.setItem("Repiboy", "15");
+                    localStorage.setItem("Franta72 | RIP PLUG", "100");
+                    localStorage.setItem("HJV Bot", "25000");
+                    localStorage.setItem("Repiboy", "50");
                     localStorage.setItem("GeeDee", "100");
-                    localStorage.setItem("#Fucker|Derrpík", "100");
-                    localStorage.setItem("THØMAS B |HJV", "100");
+                    localStorage.setItem("the menežeris of the END", "100");
+                    localStorage.setItem("THØMAS B", "100");
                     localStorage.setItem("Sumer4ever", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
-                    localStorage.setItem("TheRealPsycho", "100");
+                    localStorage.setItem("ThePsycho", "100");
                     localStorage.setItem("LoL_OpeRaCo", "100");
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.*", "100");
@@ -306,12 +306,12 @@
                     }
                     
                     //Display Slots
-                    if (space === -1 || bet == 1) { 
+                    if (space === -1 || bet == 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu, @" + chat.un + " sleduj výsledky.");
                         setTimeout(function() {API.sendChat("/me  Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
-                    else if (bet > 1) { 
+                    else if (bet > 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu, @" + chat.un + " sleduj výsledky.");
                         setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
