@@ -47,29 +47,29 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72 | RIP PLUG", "100"); 
-                    localStorage.setItem("HJV Bot", "25000");
-                    localStorage.setItem("Repiboy", "50");
+                    localStorage.setItem("Franta72_Aw", "100");
+                    localStorage.setItem("♥ HJV ßØT ♥", "10000");
+                    localStorage.setItem("Repiboy", "15");
                     localStorage.setItem("GeeDee", "100");
-                    localStorage.setItem("The menežeris of the END", "100");
-                    localStorage.setItem("THØMAS B", "100");
-                    localStorage.setItem("#Plug Army", "100");
+                    localStorage.setItem("#Fucker|Derrpík", "100");
+                    localStorage.setItem("THØMAS B |HJV", "100");
+                    localStorage.setItem("Sumer4ever", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
-                    localStorage.setItem("ThePsycho", "100");
-                    localStorage.setItem("Axxi ♔", "100");
+                    localStorage.setItem("TheRealPsycho", "100");
+                    localStorage.setItem("LoL_OpeRaCo", "100");
                     localStorage.setItem("Dykobraz", "100");
-                    localStorage.setItem("BroPlaysKevinCZE", "100");
-                    localStorage.setItem("Dandeen.ka*", "100");
-                    localStorage.setItem("Susenka69", "100");
-                    localStorage.setItem("Test", "5000");
-                    API.sendChat("/me Proběhlo resetování žetonů.");
+                    localStorage.setItem("Dandeen.*", "100");
+                    localStorage.setItem("Dr_McKay", "5");
+                    localStorage.setItem("JamesThelll", "5");
+                    localStorage.setItem("Chembot", "5000");
+                    API.sendChat("/me Žetony resetovany!");
                 }
             }
         };
         
         // !givetokens - needs to be fixed
         bot.commands.givetokensCommand = {
-            command: 'nefunkcniprikaz',  //The command to be called. With the standard command literal this would be: !givetokens
+            command: 'poslatzetony',  //The command to be called. With the standard command literal this would be: !givetokens
             rank: 'manager', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -102,7 +102,7 @@
         
         // !tokens
         bot.commands.tokensCommand = {
-            command: ['zetony', 'konto', 'žetony' ],  //The command to be called. With the standard command literal this would be: !tokens
+            command: 'zetony',  //The command to be called. With the standard command literal this would be: !tokens
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -112,7 +112,7 @@
                     var user = chat.un;
                     var tokens = validateTokens(user);
                     
-                    API.sendChat("/me [@" + user + "] Tvé herní konto: " + tokens + " žetonů.");
+                    API.sendChat("/me @" + user + ", máš " + tokens + " žetonů.");
                 }
             }
         };
@@ -120,7 +120,7 @@
         
         // !tip
         bot.commands.tipCommand = {
-            command: ['darovatzetony', 'poslatzetony'],  //The command to be called. With the standard command literal this would be: !tip
+            command: 'tip',  //The command to be called. With the standard command literal this would be: !tip
             rank: 'user', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -135,7 +135,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me " + chat.un + " nepošle " + receiver + " žetony, protože dárce žádné nemá. "); 
+                        return API.sendChat("/me @" + chat.un + " tries to tip @" + receiver + ", for the awesome tunes, but doesn't have any TOKEns! It's the thought that counts, right?"); 
                     }
                     else {
                         receiverTokens += 1;
@@ -145,12 +145,12 @@
                             receiverTokens = validateTokens(currentDJ);
                             receiverTokens += 1; //Repeat check in the event tip is for current DJ.
                             localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me " + chat.un + " poslal/a " + giverTokens + " žetonů " + currentDJ + " za hraní úžasných skladeb! Příjemce má nyní " + receiverTokens + " žetonů."); 
+                            return API.sendChat("/me @" + chat.un + " tips @" + currentDJ + " for their contirbution to the art of great music.  @" + chat.un + " has " + giverTokens + " TOKEns left. @" + currentDJ + " now has " + receiverTokens + " TOKEns."); 
                         }
                         else {                        
                             localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " poslal/a " + giverTokens + " žetonů @" + receiver + " za hraní úžasných skladeb! Příjemce má nyní " + receiverTokens + " žetonů.");
-                        } 
+                            return API.sendChat("/me @" + chat.un + " tips @" + receiver + " for throwing down great tracks! @" + chat.un + " has " + giverTokens + " TOKEns left. @" + receiver + " now has " + receiverTokens + " TOKEns.");
+                        }
                     }
                 }
             }
@@ -260,7 +260,7 @@
 
         //slots
         bot.commands.slotsCommand = { 
-            command: ['automaty', 'slot', 'automat'],  //The command to be called. With the standard command literal this would be: !slots
+            command: ['automaty', 'slot'],  //The command to be called. With the standard command literal this would be: !slots
             rank: 'user', 
             type: 'startsWith',  
             functionality: function (chat, cmd) { 
@@ -284,17 +284,17 @@
                     //Prevent invalid betting
                     if (bet > playerTokens[0]) {
                         if (playerTokens[0] === 0){
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, protože nevlastní žádný."); 
+                            return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů, jenže nemá žádný!"); 
                         } 
                         else if (playerTokens[0] === 1) {
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, protože vlastní pouze jediný."); 
+                            return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů. Ale má pouhý žeton!"); 
                         }
                         else {
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, protože má " + playerTokens[0] + " žetonů!"); 
+                            return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů. Ale má " + playerTokens[0] + " žetonů!"); 
                         }
                     }
                     else if (bet < 0) {
-                        return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů. S takovou částkou prostě hrát nelze!"); 
+                        return API.sendChat("/me @" + chat.un + " zkouší vsadit " + bet + " žetonů. To nemůžeš udělat.."); 
                     }
                     else if (bet === 0) { 
                         return API.sendChat("/me @" + chat.un + " se pokoušel/a hrát bez žetonů. Nemůžeš hrát zdarma!"); 
@@ -308,12 +308,12 @@
                     //Display Slots
                     if (space === -1 || bet == 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.);
+                        API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu, @" + chat.un + " sleduj výsledky.");
                         setTimeout(function() {API.sendChat("/me  Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
                     else if (bet > 1) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu, @" + chat.un + " sleduj výsledky.");
                         setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
                     else {
@@ -323,7 +323,7 @@
                     //Display Outcome
                     if (outcome[3] == 0) {
                         if (updatedTokens === 1) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Máš posledních pět žetonů, chceš to zkusit znovu?")}, 7000);   
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Nyní máš posledních 5 žetonů. Chceš to zkusit znovu?")}, 7000);   
                         }  
                         else if (updatedTokens === 0) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Smůla! Už nemáš žádné žetony!")}, 7000);
