@@ -1,59 +1,194 @@
 {
     "cookies": [
-        "ti daroval\/a \u010dokol\u00e1dovou su\u0161enku!",
-        "ti daroval\/a jemnou dom\u00e1c\u00ed ovesnou su\u0161enku!",
-        "ti daroval\/a oby\u010dejnou suchou starou su\u0161enku, kter\u00e1 byla posledn\u00ed v s\u00e1\u010dku. Nevychovanec.",
-        "ti daroval\/a cukrovou su\u0161enku. Co? \u017d\u00e1dn\u00e1 poleva a syp\u00e1n\u00ed? 0\/10 nedot\u00fdkal bych se ji.",
-        "ti daroval\/a \u010dokol\u00e1dovou su\u0161enku. Po\u010dkat, jsou na ni rozinky. Bl\u00e9!",
-        "ti daroval\/a obrovskou su\u0161enku. Prop\u00edchnut\u00ed ji ti d\u00e1 v\u00edce su\u0161enek. Podivn\u00e9.",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed. Stoj\u00ed tam: \"Pro\u010d nepracuje\u0161 na \u017e\u00e1dn\u00fdch projektech?\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed. Stoj\u00ed tam: \"\u0158ekni n\u011bkomu speci\u00e1ln\u00edmu n\u011bjak\u00fd kompliment.\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed. Stoj\u00ed tam: \"Riskuj!\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed. Stoj\u00ed tam: \"Jdi ven.\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed. Stoj\u00ed tam: \"Nezapome\u0148 j\u00edst zeleninu.\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed: Stoj\u00ed tam: \"Do you even lift?\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed: Stoj\u00ed tam: \"m808 pros\u00edm\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed. Stoj\u00ed tam: \"Kdy\u017e bude\u0161 h\u00fdbat boky, z\u00edsk\u00e1\u0161 si v\u0161echny sle\u010dny.\"",
-        "ti daroval\/a su\u0161enku \u0161t\u011bst\u00ed. Stoj\u00ed tam: \"Miluju t\u011b.\"",
-        "ti daroval\/a Zlatou Su\u0161enku. Nem\u016f\u017ee\u0161 ji sn\u00edst, proto\u017ee je ze zlata. Zatracen\u011b.",
-        "ti daroval\/a Oreo su\u0161enku se sklenic\u00ed ml\u00e9ka!",
-        "ti daroval\/a duhovou su\u0161enku pe\u010denou s l\u00e1skou. :heart:",
-        "ti daroval\/a starou su\u0161enku, kterou zapomn\u011bl v de\u0161ti. Je plesniv\u00e1.",
-        "ti pe\u010de \u010derstv\u00e9 su\u0161enky. Von\u00ed b\u00e1je\u010dn\u011b."
+        "ti daroval/a čokoládovou sušenku.",
+        "ti daroval/a starou plesnivou sušenku. FUJ!",
+        "ti daroval/a sušenku, ale bylo v ní moc cukru. Blé.",
+        "ti daroval/a čokoládovou sušenku. Počkat... To je rasistické! Je černá!",
+        "ti daroval/a sušenku s rozinkami.",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Germ tě sleduje! :eyes: \"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Pozvi někoho do sklepa!\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Co můžeš udělat dnes, odlož na zítra. Zítra je taky den.\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Jsem zajatec v továrně na sušenky štěstí. POMOOOC!\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Osoba, která to čte je výjimečná.\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Velký bratr tě vidí!\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Je čas na panáka :sake: !\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Pošli světu :heart:. \"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Kup si banán, nejlépe z Lidlu.\"",
+        "ti daroval/a sušenku štěstí. Stojí tam: \"Pozvi někoho na vínko či něco jinýho :wine_glass: !\"",
+        "ti daroval/a zlatou sušenku. Nemůžeš ji sníst, protože je ze zlata...",
+        "ti daroval/a sušenku Oreo se sklenicí mléka.",
+        "ti daroval/a duhovou sušenku, která byla pečena s láskou. :heart:",
+        "ti daroval/a modrou sušenku. Moment... Sušenka s viagrou...",
+        "ti daroval/a speciální pony sušenku.",
+        "ti daroval/a sušenku. POZOR! Je otrávená!",
+        "ti daroval/a sušenku touhy. :resttc:",
+        "ti chtěl/a darovat sušenku, ale už ji snědl/a.",
+        "ti daroval/a čerstvě upečenou sušenku. Voní úžasně.",
+        "ti daroval/a pivní sušenku. Příjemnou chut, ale za volantem ji radši nejez.",
+        "ti daroval/a sušenku se silným kari kořením. I mistr cukrář se někdy utne.."
+        
+"alkoholy": [
+   	            "ti dal/a pivo.",
+                    "si chce s tebou připít",
+                    "ti říká: \"Už jsi toho vypil/a moc.\"",
+                    "ti říká: \"Dávej pozor až budeš řidit\"",
+                    "ti už míchá drink.",
+                    "se tak motá až spadl/a na zem. S ní/m dneska už nehneš",
+                    "ti nabídl/a panáka skvělé whisky se slovy \"Na ex!\"",
+                    "ti povídá: \"Už jsi jak Zeman.\"",
+                    "ti nabídl/a krabičák.",
+                    "ti nabídl/a nealkoholický pití, to musí být nějaký omyl.",
+                    "chce po tobě, aby jsi zaplatil/a.",
+                    "tě pozval/a na menší návštěvu s domácí pálenkou.",
+                    "tě zve na ostrou fíkovici a možná něco víc..",
+                    "ti povídá v připitém stavu: \"To za naších časů..\"",
+                    "hudruje: \"Nemyslíš, zaplatíš.\"",
+                    "ti podává drink \"Sex on the bitch. Pardon beach\"",
+                    "se tě snaží opít pivním rohlíkem.",
+					"ti chce nakecat, že to víno je limonáda.",
+					"ti vrazil/a panáka se slovy \"Když už jsi tady, tak se pořádně opij!\"",
+					"ti vypil/a tvůj jed.",
+					"ti nabídl/a vodku.",
+					"ti uvařil/a čaj s rumem.",
+					"ti dal/a panáka Jelzína."
+	
     ],
+	"facky": [
+		"ti jednu vlepil/a.",
+		"ti dal/a facku.",
+		"ti vrazil/a moravskou facku z dobrého kamarádství."
+		
+		
+        
+	],
+"fucks": [
+        	"ti vzkazuje: \"Nech mě na pokoji!\"",
+                    "ti vzkazuje: \"Neštvi mě!\"",
+                    "ti vzkazuje: \"Jdi do háje.\"",
+                    "ti vzkazuje: \"Ještě chvíli mě štvi a takovou ti vrazím, že tě vlastní máma nepozná!!!\"",
+                    "tě tak moc miluje, že by tě nejradší stáhl/a za živa z kůže!!!",
+                    "ti vzkazuje: \"Že tě máma radši nespolkla...\"",
+                    "by tě nejradši zakopal/a dva metry pod zem a postavil/a na tobě obchoďák.",
+                    "ti vzkazuje: \"Skoč do zdi a pozdravuj cihly.\"",
+                    "ti vzkazuje: \"Skoč do zdi a přikryj se omítkou.\"",
+                    "ti vzkazuje: \"Šlápni na lego a zakopni o skříň!\""
+                    
+        ],
+"bitches": [
+	            "se tě ptá, jestli nechceš být jeho/její bitch.",
+                    "tě chce do svého harému.",
+                    "tě pasuje na svou osobní bitch.",
+                    "chce po tobě ruční práce. Však víš, co tím myslím..",
+                    "ti sahá kam nemá.",
+                    "má s tebou jisté plány..",
+                    "si s tebou chce pohrát.",
+                    "si s tebou chce dát sprchu.",
+                    "si chce líznout.",
+                    "po tobě chce službičku."
+        ],
+         "hugs": [
+         	"ti posílá virtuální objetí http://i.imgur.com/EZXOvFl.gif",
+                "ti posílá virtuální objetí http://i.imgur.com/npZwdNJ.gif"
+                
+        ],
+	"laska": [
+		"tě má rád/a. <3 ",
+		"tě miluje. <3",
+		"ti vyznává lásku. <3",
+		"ti zazpíval/a píseň lásky. <3",
+		"ti vzkazuje: \"Jsi můj miláček.\" <3",
+		"ti vzkazuje: \"I Love You.\" <3",
+		"ti vzkazuje: \"Jsi podle mě dokonalý/á\" <3",
+		"tě má tak rád/a, že už to víc ani nejde. <3"
+  		
+		
+		
+        ],
+	"sklepovky": [
+		"tě zve na loupání brambor do sklepa.",
+		"tě odtáhnul/a do sklepa.",
+		"ti nabízí apartmán o pěti hvězdičkách ve sklepě.",
+		"ti udělá menší prohlídku sklepem.",
+		"má s tebou nekalé úmysly ve sklepě."
+		
+		
+	],
+	"obchod": [
+		    "ti koupil/a zákusky, abys přibral/a.",
+                    "ti koupil/a smítko prachu z velké lásky k tobě. :heart:",
+                    "ti koupil/a zrcadlo, aby ses do něj konečně podíval/a.",
+                    "ti koupil/a kolo, abys zhubl/a.",
+                    "ti koupil/a pořádnou židli, ať máš na čem sedět.",
+                    "ti koupil/a zájezd do Sýrie, protože se tě chce zbavit.",
+                    "ti chtěl/a něco koupit, ale radši to koupil/a sobě..",
+                    "ti koupil/a nutellu, ale cestou k tobě ji snědl/a."
+		
+		
+	],
+	"lulus": [
+		    "chce trtkat.",
+		    "chce vydrnkat.",
+		    "chce si pohrát s tebou.",
+		    "ti chce vypatexovat byt."
+		    
+		    
+		
+		
+	],
+	"animal": [
+		    "ti povídá, že seš jako hlemýžď. Také se v tom nejhorším plazíš domů. https://media.giphy.com/media/RCBQSWiMPTQly/giphy.gif",
+                    "ti povídá, že seš jako panda. Taky bys takhle seděl po pár panácích.. https://media.giphy.com/media/ZeB4HcMpsyDo4/giphy.gif",
+                    "ti povídá, že i žirafa jezdí na motorce lépe než ty. https://media.giphy.com/media/d69JfszXz2xwY/giphy.gif",
+                    "ti povídá, že seš jako pes. Kašleš na nějaký kluzký podlahy. https://media.giphy.com/media/iOTuHS11PzztS/giphy.gif",
+                    "ti povídá, že seš jako liška. Někdy si vybereš moc velkej cíl, no.. https://media.giphy.com/media/nvooCzHZtB9n2/giphy.gif",
+                    "ti povídá, že seš jako kočka. Rveš se za svým názorem, i kdyby tě měli z ringu vyhodit. https://media.giphy.com/media/FOG3rc0p9UGI0/giphy.gif",
+                    "ti povídá, že seš jako opice. Tvůj vkus oblékání se nezapře. https://media.giphy.com/media/dxVuzngmDvgiI/giphy.gif",
+                    "ti povídá, že seš jako medveď. Plaveš ve všem, v čem se dá. https://media.giphy.com/media/SA0uaigWD8gfK/giphy.gif"
+                    
+                    
+		
+	],	
     "balls": [
-        "V\u011bt\u0161ina v\u011bc\u00ed nasv\u011bd\u010duje tomu, \u017ee ano. ",
-        "Ano",
-        "Mlhav\u00e1 odpov\u011b\u010f. Zkus to znovu.",
-        "Bezpochyby.",
-        "M\u00e9 zdroje \u0159\u00edkaj\u00ed, \u017ee ne.",
-        "Jak to vid\u00edm j\u00e1, tak ano.",
-        "Na to se m\u016f\u017ee\u0161 spolehnout.",
-        "Soust\u0159e\u010f se a zeptej se znovu.",
-        "Vyhl\u00eddky nejsou moc dobr\u00e9.",
-        "Rozhodn\u011b je to tak.",
-        "Rad\u011bji ti to ne\u0159eknu hned.",
-        "Velmi pochybn\u00e9.",
-        "\u00c1no - ur\u010dit\u011b.",
-        "To je jist\u00e9.",
-        "To te\u010f nelze p\u0159edv\u00eddat.",
-        "Pravd\u011bpodobn\u011b.",
-        "Zeptej se pozd\u011bji znovu.",
-        "Moje odpov\u011b\u010f zn\u00ed ne.",
-        "Dobr\u00e1 vyhl\u00eddka.",
-        "Na to nespol\u00e9hej.",
-        "Ano, v prav\u00fd \u010das.",
-        "Definitivn\u011b ne.",
-        "Bude\u0161 muset po\u010dkat.",
-        "M\u00e1m sv\u00e9 pochybnosti.",
-        "Vyhl\u00eddky jsou nejasn\u00e9.",
-        "Vypad\u00e1 to dob\u0159e podle m\u011b.",
-        "Kdo v\u00ed...",
-        "Vypad\u00e1 to dob\u0159e!",
-        "Mo\u017en\u00e1.",
-        "D\u011bl\u00e1\u0161 si srandu?",
-        "Nes\u00e1zej na to.",
-        "Zapome\u0148 na to."
+        "Ano.",
+        "Jistě.",
+        "Proč ne?",
+        "Ne.",
+        "Nevím.",
+        "Souhlasím.",
+        "Nesouhlasím.",
+        "Hej zkus se zeptat jindy.",
+        "Ne nezájem, nechci, neprodám, nekoupím.",
+        "Tak myslím, že by to i šlo.",
+        "Neptej se na hlouposti.",
+        "Dneska je tak krásné počasí...",
+        "Tak já nevím...",
+        "Taky tě miluji. :*",
+        "To zní zajímavě... Kecám, je to nuda.",
+        "Jo jasně. Teda možná...",
+        "Snad někdy příště...",
+        "LIKE.",
+        "Jasná páka!",
+        "Bohužel ano.",
+        "Bohužel ne.",
+        "Hej neptej se furt.",
+        "Docela blbý, ale jinak ok.",
+        "Jo jsi sexy.",
+        "Nezapomeň svůj dotaz, možná zítra odpovím.",
+        "Jo možná za rok.",
+        "Naposledy říkám NE!",
+        "To řekl kdo?",
+        "A jsem snad u výslechu? Na nic neodpovím.",
+        "Sto bodů za nejstupidnější dotaz.",
+        "Prosím, zeptej se tentokrát tak, abych nemusel hledat maďarský slovník.",
+        "Nech mě bejt!",
+        "Kdo si to myslí?",
+        "To jako vážně?!",
+        "Děláš si srandu?",
+        "Na to honem rychle zapomeň!",
+        "Můžeš chvilinku být zticha?!",
+	    "69",
+	    "Co myslíš, že by na to řekl Germ?",
+	    "To zní fajn. Thomas by jistě souhlasil!"
     ],
     "nodatafound": "Nebyla nalezena \u017e\u00e1dn\u00e1 p\u0159edchoz\u00ed data.",
     "currentlang": "\/me Aktu\u00e1ln\u00ed jazyk: %%LANGUAGE%%",
@@ -206,5 +341,77 @@
     "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer!",
     "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
     "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
-    "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
+    "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer.",
+    "prikazy": "\/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
+    
+    "nouseralkohol": "/me Nevidím %%NAME%% v místnosti, takže si vyber někoho jinýho na panáka.",
+    "givealkohol": "/me Pozvi někoho na sklenku přes !alkohol @jmeno.",
+    "selfalkohol": "/me Nebuď labuť a radši ten alkohol někomu nabídni, @%%NAME%% ",
+    "alkohol": "/me @%%NAMETO%%, %%NAMEFROM%% %%ALKOHOLY%%",
+   
+    "givefacka": "/me Příkazem !facka @jmeno někomu vlepíš facku.",
+    "selffacka": "/me %%NAME%% si nafackoval/a.",
+    "nouserfacka": "/me Nevidím %%NAME%% v místnosti, takže té osobě asi facku nedáš..",
+    "facka": "/me @%%NAMETO%%, @%%NAMEFROM%% %%FACKY%%",
+   
+    "givelove": "/me Příkazem !love @jmeno vyjádříš někomu, že ho máš rád/a.",
+    "selflove": "/me %%NAME%% se má rád/a..",
+    "nouserlove": "/me Nevidím %%NAME%% v místnosti, takže se osoba nedozví, že ji máš rád/a..",
+    "love": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LASKA%%",
+   
+    "givezvire": "/me Příkazem !zvire @jmeno naznačíš někomu, jaký je zvíře.",
+    "selfzvire": "/me Říkat o sobě, jaké jsi zvíře zavání egem. Haah, to jsem tě dostal %%NAME%% ",
+    "nouserzvire": "/me Nevidím %%NAME%% v místnosti, takže asi zdrhl/a opice.",
+    "zvire": "/me @%%NAMETO%%, @%%NAMEFROM%% %%ANIMAL%%",
+    
+    "afk": "/me %%NAME%% jde AFK!",
+    "zpet": "/me %%NAME%% se vrátil/a zpět!",
+    "ego": "/me %%NAME%% [EGO UP]",
+    
+    "givesklep": "/me Příkazem !sklep @jmeno pozveš někoho do sklepa.",
+    "selfsklep": "/me @%%NAME%%, zvát se sám/a sebe do sklepa není zrovna nejvhodnější. ",
+    "nousersklep": "/me Nevidím %%NAME%% v místnosti, takže zamkni do sklepa někoho jinýho.",
+    "sklep": "/me @%%NAMETO%%, @%%NAMEFROM%% %%SKLEPOVKY%%",
+    
+    "givekoupit": "/me Příkazem !koupit @jmeno někomu něco koupíš.",
+    "selfkoupit": "/me %%NAME%% si koupil/a čokoládu. ",
+    "nouserkoupit": "/me Nevidím %%NAME%% v místnosti, takže má smůlu a koupit to můžeš někomu jinýmu.",
+    "koupit": "/me @%%NAMETO%%, @%%NAMEFROM%% %%OBCHOD%%",
+    
+    "givelulu": "/me Příkazem !lulu projevíš na někom svojí nadrženost.",
+    "selflulu": "/me %%NAME%% luluje.",
+    "nouserlulu": "/me Nevidím %%NAME%% v místnosti, takže ho nevyluluješ.",
+    "lulu": "/me @%%NAMETO%%, @%%NAMEFROM%% %%LULUS%%",
+    
+     "givebitch": "/me Příkazem !bitch @jmeno někoho pasuješ na osobní bitch.",
+     "selfbitch": "/me @%%NAME%%, přijde ti normální, dělat bitch sám/a sobě?",
+     "nouserbitch": "/me Nevidím %%NAME%% v místnosti, takže pasuj někoho jiného.",
+     "bitch": "/me @%%NAMETO%%, @%%NAMEFROM%% %%BITCHES%%",
+     
+     "givefuck": "/me Příkazem !fuck @jmeno projevíš nenávist k osobě.",
+     "selffuck": "/me @%%NAME%%, nadat si není zrovna nejlepší nápad.",
+     "nouserfuck": "/me Nevidím %%NAME%% v místnosti, takže nadej někomu jinýmu.",
+     "fuck": "/me @%%NAMETO%%, @%%NAMEFROM%% %%FUCKS%%",
+     
+     "givehug": "/me Příkazem !hug @jmeno někoho virtuálně obejmeš.",
+     "selfhug": "/me @%%NAME%%, nemůžeš obejmout sám/a sebe..",
+     "nouserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho.",
+     "hug": "/me @%%NAMETO%%, @%%NAMEFROM%% %%HUGS%%",
+    
+    "germ": "/me GE?M je náladový, líný a extrémně náročný. Téměř vždy neutrální. Většinu věcí nebere vážně. Jen tak se nenaštve, bývá nevypočitatelný. Miluje epickou hudbu, kočky a rád spamuje. Bývá často AFK.",
+    "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když se v chatu lidi vyjadřují sprostě a mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2",
+    "sumer": "/me Sumer miluje jízdu na kole. Je klidné a mírumilovné povahy a snadno se nenaštve, ale když se to někomu podaří, tak to stojí za to… Občas je tvrdohlavý a je pro každou srandu. Má přezdívku sumec. >(°>__<°)<",
+    "franta": "/me Franta72 je někdy náladový, ale vždy je nějaký způsob, jak si s ním pokecat. Nemá rád, když mu někdo lže. Miluje rap, ale poslouchá v podstatě všechno.",
+    "dykobraz": "/me Dykobraz je kliďas, pohodář a všechno bere s humorem. Miluje cz/sk rap. Mezi jeho oblíbence patří Ektor, Separ, Haha Crew, Hypno808... Jen tak se nenaštve a má přezdívku negr nebo ježek. <?.?.?>",
+    "thomas": "/me THOMAS B je milý a hodný člověk, ale nesmíte ho naštvat. Nesnáší lež a faleš a má rád ty, kteří mají rádi ho. Někdy bývá náladový, ale má rád srandu a dokáže rozesmát. Nesnáší škemrání o staff.",
+    "ichigo": "/me Ichigo Kurosaki je jako každý normální středoškolák, pokuď nepočítáme schopnost vidět duchy. V našem staff jíž nepůsobí, ale udělal nám speciální CSS pozadí.",
+    "nicmoc": "/me [NicMoc.Dj] je strašný flegmatik. Baví ho posilování, běhání a občas hraje WOT. Nepokoušejte se ho naštvat nebo špatně skončíte. Ale jinak je s ním sranda a rád si dělá srandu z ostatních.",
+    "derp": "/me Derp... je hodný, upřímný kluk, který rád sere ostatní lidi. Miluje EDM festivaly a dobrý alkohol. Jinak velmi rád se baví se slečnami. Je to kluk jako buk. Prostě náš menežéris.",
+    "misul": "/me *Sweetie-Mišul* má ráda dobrou hudbu a pokec s fajn lidmi. Miluje seriály a čtení knih. Je svá, bezstarostná a často afkuje!",
+    "operaco": "/me Operaco je náš milý hoch, který se nebojí jít za DJ pult. :babyrage: ",
+    "kebabčiči": "/me Kočička alá Kebabčiči se považuje za nejhodnějšího člověka na světě. Takže trošku egoistka, ale máme ji rádi. :heart:"
+    
+    
+    
 }
+
