@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("http://rawgit.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
+        $.get("https://raw.githubusercontent.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -236,13 +236,13 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "7.2.2",
+        version: "7.7.2",
         status: false,
         name: "HJV Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Franta72/HJV-Bot/master/HJVczech.json",
+        chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,7 +250,7 @@
         settings: {
             botName: "HJV Bot",
             language: "special",
-            chatLink: "https://rawgit.com/Franta72/HJV-Bot/master/HJVczech.json",
+            chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
             scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
