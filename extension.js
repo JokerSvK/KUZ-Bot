@@ -62,7 +62,7 @@
                     localStorage.setItem("Dr_McKay", "5");
                     localStorage.setItem("JamesThelll", "5");
                     localStorage.setItem("Chembot", "5000");
-                    API.sendChat("/me Žetony resetovany!");
+                    API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
         };
@@ -89,7 +89,7 @@
                          API.sendChat("/me @" + chat.un + ", musíš zadat určitého uživatele k poslání žetonů."); 
                     } 
                     
-                    if (gift == null || gift == "" || gift == " " || gift == "!poslatzetony" || isNaN(gift)) {
+                    if (gift == null || gift == "" || gift == " " || gift == "!nefunkcniprikaz" || isNaN(gift)) {
                          gift = 1;
                     }
                        
