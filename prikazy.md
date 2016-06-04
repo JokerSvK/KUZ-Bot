@@ -100,7 +100,6 @@ Rezidentní DJ
 |Příkaz | Argument |  Popis |
 |:------:|:---------:|:--------------------------------------:|
 |!fuck | @jméno | Vyjádři nenávist k danému uživateli. |
-|!boží | | Vyjádřite uživateli hraní skvělé skladby. |
 |!link | | Pošle YouTube link aktuální písně. |
 
 
@@ -146,7 +145,6 @@ Uživatel
 |!ghostbuster | @jméno | Zkontroluje, zdá je uživatel pro bota neviditelný. |
 |!zetony | | Napíše aktuální stav vaších žetonů. |
 |!automaty | vsázka | Vsadíte určitý počet žetonů do automatu. |
-|!darovatzetony | @jméno/číslo | Darujete uživateli zvolený počet žetonů. |
 
 
 Informace o členech staffu & pomocníků HJV
