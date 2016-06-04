@@ -69,7 +69,7 @@
         
         // !givetokens - needs to be fixed
         bot.commands.givetokensCommand = {
-            command: 'poslatzetony',  //The command to be called. With the standard command literal this would be: !givetokens
+            command: 'nefunkcniprikaz',  //The command to be called. With the standard command literal this would be: !givetokens
             rank: 'manager', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
