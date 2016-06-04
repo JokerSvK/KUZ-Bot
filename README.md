@@ -22,7 +22,7 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 - Příkaz k vyhledání uživatele !hledat
 - Členové admin týmu mohou psát oznámení přes !say
 
-[v7.5.5] [Červenec 2016]
+[v7.8.2] [Červenec 2016]
 
 - Novinky do této verze se připravují
 
