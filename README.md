@@ -14,13 +14,18 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 - Blacklist
 - Přeloženo pár frází do češtiny
 
-[v7.7.2] [31.3.2016]
+[v7.7.2] [Duben - Červen 2016]
 
 - Nová hra: Automaty
 - Spouštění rulety pro manažéřy a vyšší rank
 - Podpora originálního plug.dj
 - Příkaz k vyhledání uživatele !hledat
 - Členové admin týmu mohou psát oznámení přes !say
+
+[v7.5.5] [Červenec 2016]
+
+- Novinky do této verze se připravují
+
 
 # Návrhy nových příkazů
 
