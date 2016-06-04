@@ -119,14 +119,14 @@
                     localStorage.setItem("HJV Bot", "25000");
                     localStorage.setItem("Repiboy", "50");
                     localStorage.setItem("GeeDee", "100");
-                    localStorage.setItem("The menežeris of the END", "100");
+                    localStorage.setItem("The menežeris of the END", "1824");
                     localStorage.setItem("THØMAS B", "100");
                     localStorage.setItem("Sumer4ever", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
                     localStorage.setItem("ThePsycho", "100");
                     localStorage.setItem("LoL_OpeRaCo", "100");
                     localStorage.setItem("Dykobraz", "100");
-                    localStorage.setItem("Dandeen.*", "100");
+                    localStorage.setItem("Dandeen.ka*", "100");
                     localStorage.setItem("Dr_McKay", "5");
                     localStorage.setItem("JamesThelll", "5");
                     localStorage.setItem("Chembot", "5000");
