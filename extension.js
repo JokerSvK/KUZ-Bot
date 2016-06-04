@@ -308,12 +308,12 @@
                     //Display Slots
                     if (space === -1 || bet == 5) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu, @" + chat.un + " sleduj výsledky.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.");
                         setTimeout(function() {API.sendChat("/me  Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
                     else if (bet > 5) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu, @" + chat.un + " sleduj výsledky.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
                         setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
                     } 
                     else {
@@ -323,13 +323,13 @@
                     //Display Outcome
                     if (outcome[3] == 0) {
                         if (updatedTokens === 1) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Nyní máš posledních 5 žetonů. Chceš to zkusit znovu?")}, 7000);   
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti posledních 5 žetonů.")}, 7000);   
                         }  
                         else if (updatedTokens === 0) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Smůla! Už nemáš žádné žetony!")}, 7000);
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Už nemáš žádné žetony!")}, 7000);
                         }
                         else {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů. Chceš to zkusit znovu?")}, 7000);
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
                         }
                     }
                     else if (outcome[3] == (bet * 7)) {
