@@ -145,6 +145,7 @@ Uživatel
 |!ghostbuster | @jméno | Zkontroluje, zdá je uživatel pro bota neviditelný. |
 |!zetony | | Napíše aktuální stav vaších žetonů. |
 |!automaty | vsázka | Vsadíte určitý počet žetonů do automatu. |
+|!soutez | | Vzkáže informace o probíhajíci soutěži. |
 
 
 Informace o členech staffu & pomocníků HJV
