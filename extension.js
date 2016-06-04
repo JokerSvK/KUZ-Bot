@@ -37,6 +37,61 @@
                 }
               }
             };
+            bot.commands.božíCommand = {
+            command: 'boží',  // The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', // Minimum user permission to use the command
+            type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+              functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                var currentDJ = API.getDJ().username;
+                var user = chat.un; 
+                  API.sendChat("/me @" + currentDJ + ", @" + user + " je z této písničky naprosto unešen/a, až se z toho roztekl/a a za doprovodu zmateného hekání se válí v transu na podlaze.");
+                }
+              }
+            };
+            bot.commands.sayCommand = {
+            command: 'say',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'mod', //Minimum user permission to use the command
+            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.moderateDeleteChat(chat.cid);
+                    API.sendChat("/me [@" + chat.un + "] " + chat.message.substr(cmd.length + 1));
+                }
+            }
+        };
+
+        bot.commands.hledatCommand = {
+            command: 'hledat',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var searchUser = chat.message.substr(cmd.length +2);
+                    var found = false;
+                    for (var i = 0; i < bot.room.users.length; i++) {
+                        if (bot.room.users[i].username === searchUser) {
+                            found = bot.room.users[i];
+                            if (found.inRoom) {
+                                API.sendChat("/me [@" + chat.un + "] Stačí otevřít oči! @"+searchUser+ " je tady.");
+                            } else {
+                                API.sendChat("/me [@" + chat.un + "] Bot naposledy viděl " + searchUser + " před " + bot.roomUtilities.msToStr(new Date().getTime() - found.lastActivity)+ "");
+                            }
+                            break;
+                        }
+                    }
+                    if (!found) {
+                        API.sendChat("/me Bot nemůže najít "+searchUser+". Pravděpodobně se odpojil/a před spuštěním bota.")
+                    }
+                }
+            }
+        };
             bot.commands.odmenaCommand = {
             command: 'soutez',  // The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', // Minimum user permission to use the command
@@ -418,7 +473,7 @@
       website: null,
       intervalMessages: [],
       messageInterval: 5,
-      songstats: true,
+      songstats: false,
       commandLiteral: "!",
       blacklists: {
         NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
