@@ -143,13 +143,13 @@
                         localStorage.setItem(chat.un, giverTokens);
                         if (space === -1) { 
                             receiverTokens = validateTokens(currentDJ);
-                            receiverTokens += 1; //Repeat check in the event tip is for current DJ.
+                            receiverTokens += 10; //Repeat check in the event tip is for current DJ.
                             localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + currentDJ + " za hraní úžasných skladeb!  @" + chat.un + " má o " + giverTokens + " žetonů méně. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
+                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + currentDJ + " za hraní úžasných skladeb!  @" + chat.un + " zůstalo " + giverTokens + " žetonů. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
                         }
                         else {                        
                             localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + receiver + " za hraní skvělých skladeb! @" + chat.un + " má o " + giverTokens + " žetonů méně. @" + receiver + " nyní má " + receiverTokens + " žetonů");
+                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + receiver + " za hraní skvělých skladeb! @" + chat.un + " zůstalo " + giverTokens + " žetonů. @" + receiver + " nyní má " + receiverTokens + " žetonů");
                         }
                     }
                 }
