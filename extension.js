@@ -51,7 +51,7 @@
                     localStorage.setItem("HJV Bot", "25000");
                     localStorage.setItem("Repiboy", "50");
                     localStorage.setItem("GeeDee", "100");
-                    localStorage.setItem("the menežeris of the END", "100");
+                    localStorage.setItem("The menežeris of the END", "100");
                     localStorage.setItem("THØMAS B", "100");
                     localStorage.setItem("Sumer4ever", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
@@ -112,7 +112,7 @@
                     var user = chat.un;
                     var tokens = validateTokens(user);
                     
-                    API.sendChat("/me @" + user + ", máš " + tokens + " žetonů.");
+                    API.sendChat("/me [@" + user + "] Tvé herní konto: " + tokens + " žetonů.");
                 }
             }
         };
@@ -120,7 +120,7 @@
         
         // !tip
         bot.commands.tipCommand = {
-            command: 'tip',  //The command to be called. With the standard command literal this would be: !tip
+            command: 'poslatzetony',  //The command to be called. With the standard command literal this would be: !tip
             rank: 'user', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -135,7 +135,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " tries to tip @" + receiver + ", for the awesome tunes, but doesn't have any TOKEns! It's the thought that counts, right?"); 
+                        return API.sendChat("/me @" + chat.un + " zkouší poděkovat @" + receiver + " za skvělou skladbu, ale nemá žádné žetony!"); 
                     }
                     else {
                         receiverTokens += 1;
@@ -145,11 +145,11 @@
                             receiverTokens = validateTokens(currentDJ);
                             receiverTokens += 1; //Repeat check in the event tip is for current DJ.
                             localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " tips @" + currentDJ + " for their contirbution to the art of great music.  @" + chat.un + " has " + giverTokens + " TOKEns left. @" + currentDJ + " now has " + receiverTokens + " TOKEns."); 
+                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + currentDJ + " za hraní úžasných skladeb!  @" + chat.un + " má o " + giverTokens + " žetonů méně. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
                         }
                         else {                        
                             localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " tips @" + receiver + " for throwing down great tracks! @" + chat.un + " has " + giverTokens + " TOKEns left. @" + receiver + " now has " + receiverTokens + " TOKEns.");
+                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + receiver + " za hraní skvělých skladeb! @" + chat.un + " má o " + giverTokens + " žetonů méně. @" + receiver + " nyní má " + receiverTokens + " žetonů");
                         }
                     }
                 }
@@ -260,7 +260,7 @@
 
         //slots
         bot.commands.slotsCommand = { 
-            command: ['automaty', 'slot'],  //The command to be called. With the standard command literal this would be: !slots
+            command: ['automaty', 'automat'],  //The command to be called. With the standard command literal this would be: !slots
             rank: 'user', 
             type: 'startsWith',  
             functionality: function (chat, cmd) { 
