@@ -307,7 +307,7 @@
             intervalMessages: [],
             messageInterval: 5,
             songstats: false,
-            commandLiteral: "!",
+            commandLiteral: "/",
             blacklists: {
                 NSFW: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/blacklist.json",
                 OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
@@ -1173,7 +1173,7 @@
                 if (basicBot.settings.cmdDeletion && msg.startsWith(basicBot.settings.commandLiteral)) {
                     API.moderateDeleteChat(chat.cid);
                 }
-                var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?stg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
@@ -1184,7 +1184,7 @@
                     } 
                 }
                 
-                 var plugRoomLinkPatt = /(\bstg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                 var plugRoomLinkPatt = /(\bplug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
