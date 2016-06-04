@@ -471,7 +471,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: [],
+      intervalMessages: ["Dejte nám LIKE na našem Facebooku! Děkujeme <3 https://www.facebook.com/HudbaUTomasa/?fref=nf"],
       messageInterval: 5,
       songstats: false,
       commandLiteral: "!",
