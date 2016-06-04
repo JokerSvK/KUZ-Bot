@@ -120,8 +120,8 @@
         
         // !tip
         bot.commands.tipCommand = {
-            command: 'poslatzetony',  //The command to be called. With the standard command literal this would be: !tip
-            rank: 'user', //Minimum user permission to use the command
+            command: 'prispet',  //The command to be called. With the standard command literal this would be: !tip
+            rank: 'bouncer', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -135,7 +135,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " zkouší poděkovat @" + receiver + " za skvělou skladbu, ale nemá žádné žetony!"); 
+                        return API.sendChat("/me @" + chat.un + " nepřipíše @" + receiver + " žádné žetony. Vyskytla se chyba."); 
                     }
                     else {
                         receiverTokens += 1;
@@ -143,13 +143,13 @@
                         localStorage.setItem(chat.un, giverTokens);
                         if (space === -1) { 
                             receiverTokens = validateTokens(currentDJ);
-                            receiverTokens += 10; //Repeat check in the event tip is for current DJ.
+                            receiverTokens += 1; //Repeat check in the event tip is for current DJ.
                             localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + currentDJ + " za hraní úžasných skladeb!  @" + chat.un + " zůstalo " + giverTokens + " žetonů. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
+                            return API.sendChat("/me @" + chat.un + " připsal/a @" + currentDJ + " na herní účet několik žetonů.  @" + chat.un + " zůstalo " + giverTokens + " žetonů. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
                         }
                         else {                        
                             localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " poděkoval/a @" + receiver + " za hraní skvělých skladeb! @" + chat.un + " zůstalo " + giverTokens + " žetonů. @" + receiver + " nyní má " + receiverTokens + " žetonů");
+                            return API.sendChat("/me @" + chat.un + " připsal/a @" + receiver + " na herní účet několik žetonů. @" + chat.un + " zůstalo " + giverTokens + " žetonů. @" + receiver + " nyní má " + receiverTokens + " žetonů");
                         }
                     }
                 }
