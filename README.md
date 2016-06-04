@@ -17,7 +17,6 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 [v7.7.2] [31.3.2016]
 
 - Nová hra: Automaty
-- Přeloženy důvody pro přeskočení písně do češtiny
 - Spouštění rulety pro manažéřy a vyšší rank
 - Podpora originálního plug.dj
 
@@ -26,6 +25,6 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 Máte-li nápad k sestrojení nového příkazů, obraťte se na naše fóru:
 http://hudbajevsetko.justforum.net/t6-navrhy-na-prikazy-do-bota
 
-# Co se děje s plug.dj?
+# Aktuálně
 
-plug.dj je nyní v zaheslovaném režimu přístupný pouze pro administrátory, kteří provádějí přípravy k jeho znovuzahájení. Kdy se na plug.dj opět setkáme, zatím není jisté, ale předpoklady jsou na nejblížši měsíce jara 2016.
+plug.dj se 1.6.2016 vrátil do provozu. Vývoj bota bude pokračovat i nadále.
