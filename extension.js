@@ -143,7 +143,7 @@
                         localStorage.setItem(chat.un, giverTokens);
                         if (space === -1) { 
                             receiverTokens = validateTokens(currentDJ);
-                            receiverTokens += 1; //Repeat check in the event tip is for current DJ.
+                            receiverTokens += -1; //Repeat check in the event tip is for current DJ.
                             localStorage.setItem(currentDJ, receiverTokens);
                             return API.sendChat("/me @" + chat.un + " připsal/a @" + currentDJ + " na herní účet několik žetonů.  @" + chat.un + " zůstalo " + giverTokens + " žetonů. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
                         }
