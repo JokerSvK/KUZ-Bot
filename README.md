@@ -19,12 +19,10 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 - Nová hra: Automaty
 - Spouštění rulety pro manažéřy a vyšší rank
 - Podpora originálního plug.dj
+- Příkaz k vyhledání uživatele !hledat
+- Členové admin týmu mohou psát oznámení přes !say
 
 # Návrhy nových příkazů
 
 Máte-li nápad k sestrojení nového příkazů, obraťte se na naše fóru:
 http://hudbajevsetko.justforum.net/t6-navrhy-na-prikazy-do-bota
-
-# Aktuálně
-
-plug.dj se 1.6.2016 vrátil do provozu. Vývoj bota bude pokračovat i nadále.
