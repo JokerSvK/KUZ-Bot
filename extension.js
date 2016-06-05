@@ -119,7 +119,7 @@
                     localStorage.setItem("HJV Bot", "25000");
                     localStorage.setItem("WhץNαϻε", "0");
                     localStorage.setItem("GeeDee", "335");
-                    localStorage.setItem("The menežeris of the END", "4297");
+                    localStorage.setItem("★Derrpík★", "4297");
                     localStorage.setItem("THØMAS B", "100");
                     localStorage.setItem("#Plug Army", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
