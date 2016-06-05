@@ -117,7 +117,7 @@
                     localStorage.clear();
                     localStorage.setItem("Franta72 | RIP PLUG", "500");
                     localStorage.setItem("HJV Bot", "25000");
-                    localStorage.setItem("WhץNαϻε", "0");
+                    localStorage.setItem("WhץNαϻε", "100");
                     localStorage.setItem("GeeDee", "635");
                     localStorage.setItem("★Derrpík★", "4297");
                     localStorage.setItem("THØMAS B", "500");
@@ -128,8 +128,8 @@
                     localStorage.setItem("Dykobraz", "500");
                     localStorage.setItem("Dandeen.ka*", "500");
                     localStorage.setItem("BroPlaysKevinCZE", "500");
-                    localStorage.setItem("Enciánová Predkožka", "0");
-                    localStorage.setItem("Teekeycz", "0");
+                    localStorage.setItem("Enciánová Predkožka", "1092");
+                    localStorage.setItem("Teekeycz", "100");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
