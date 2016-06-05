@@ -124,12 +124,12 @@
                     localStorage.setItem("#Plug Army", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
                     localStorage.setItem("ThePsycho", "100");
-                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "225");
+                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "100");
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.ka*", "100");
                     localStorage.setItem("BroPlaysKevinCZE", "100");
-                    localStorage.setItem("Enciánová Predkožka", "0");
-                    localStorage.setItem("Mr.FreekillPlays", "113");
+                    localStorage.setItem("Enciánová Predkožka", "50");
+                    localStorage.setItem("Teekeycz", "338");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
