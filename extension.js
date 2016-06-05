@@ -124,7 +124,7 @@
                     localStorage.setItem("#Plug Army", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
                     localStorage.setItem("ThePsycho", "100");
-                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "100");
+                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "225");
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.ka*", "100");
                     localStorage.setItem("BroPlaysKevinCZE", "100");
@@ -257,18 +257,18 @@
                              ':bell:', 
                              ':gem:', 
                              ':frog:'];
-            var slotValue = [2.5, 
+            var slotValue = [2, 
                              3, 
                              3.5, 
                              4, 
                              4.5, 
                              5, 
-                             5.5, 
                              6, 
-                             6.5, 
                              7, 
-                             7.5, 
-                             10];    
+                             8, 
+                             9, 
+                             10, 
+                             15];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
