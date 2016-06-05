@@ -124,12 +124,12 @@
                     localStorage.setItem("#Plug Army", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
                     localStorage.setItem("ThePsycho", "100");
-                    localStorage.setItem("LoL_OpeRaCo", "100");
+                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "100");
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.ka*", "100");
                     localStorage.setItem("BroPlaysKevinCZE", "100");
-                    localStorage.setItem("Enciánová Predkožka", "241");
-                    localStorage.setItem("Mistoproviteze", "500000000000000");
+                    localStorage.setItem("Enciánová Predkožka", "0");
+                    localStorage.setItem("Mr.FreekillPlays", "113");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
@@ -257,7 +257,8 @@
                              ':bell:', 
                              ':gem:', 
                              ':frog:'];
-            var slotValue = [3, 
+            var slotValue = [2.5, 
+                             3, 
                              3.5, 
                              4, 
                              4.5, 
@@ -267,7 +268,6 @@
                              6.5, 
                              7, 
                              7.5, 
-                             8, 
                              10];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
