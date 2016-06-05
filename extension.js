@@ -126,7 +126,7 @@
                     localStorage.setItem("ThePsycho", "500");
                     localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "500");
                     localStorage.setItem("Dykobraz", "500");
-                    localStorage.setItem("Dandeen.ka*", "500");
+                    localStorage.setItem("Dandeen.ka*", "914");
                     localStorage.setItem("BroPlaysKevinCZE", "500");
                     localStorage.setItem("Enciánová Predkožka", "2242");
                     localStorage.setItem("GΣИΣRΔTIOИ XIII.", "3735");
