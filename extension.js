@@ -115,19 +115,19 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72 | RIP PLUG", "100");
+                    localStorage.setItem("Franta72 | RIP PLUG", "500");
                     localStorage.setItem("HJV Bot", "25000");
                     localStorage.setItem("WhץNαϻε", "0");
-                    localStorage.setItem("GeeDee", "335");
+                    localStorage.setItem("GeeDee", "500");
                     localStorage.setItem("★Derrpík★", "4297");
-                    localStorage.setItem("THØMAS B", "100");
-                    localStorage.setItem("#Plug Army", "100");
-                    localStorage.setItem("Kebabčiči :3", "100");
-                    localStorage.setItem("ThePsycho", "100");
-                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "100");
-                    localStorage.setItem("Dykobraz", "100");
-                    localStorage.setItem("Dandeen.ka*", "100");
-                    localStorage.setItem("BroPlaysKevinCZE", "100");
+                    localStorage.setItem("THØMAS B", "500");
+                    localStorage.setItem("#Plug Army", "500");
+                    localStorage.setItem("Kebabčiči :3", "500");
+                    localStorage.setItem("ThePsycho", "500");
+                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "500");
+                    localStorage.setItem("Dykobraz", "500");
+                    localStorage.setItem("Dandeen.ka*", "500");
+                    localStorage.setItem("BroPlaysKevinCZE", "500");
                     localStorage.setItem("Enciánová Predkožka", "0");
                     localStorage.setItem("Teekeycz", "0");
                     API.sendChat("/me Proběhlo resetování žetonů!");
@@ -230,7 +230,7 @@
             
             //Check for existing user tokens
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "50");
+                 localStorage.setItem(user, "100");
                  tokens = localStorage.getItem(user);
             }
             else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
@@ -268,7 +268,7 @@
                              8, 
                              9, 
                              10, 
-                             15];    
+                             25];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
