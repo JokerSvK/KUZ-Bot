@@ -117,9 +117,9 @@
                     localStorage.clear();
                     localStorage.setItem("Franta72 | RIP PLUG", "100");
                     localStorage.setItem("HJV Bot", "25000");
-                    localStorage.setItem("Repiboy", "50");
+                    localStorage.setItem("WhץNαϻε", "0");
                     localStorage.setItem("GeeDee", "335");
-                    localStorage.setItem("The menežeris of the END", "100");
+                    localStorage.setItem("The menežeris of the END", "4297");
                     localStorage.setItem("THØMAS B", "100");
                     localStorage.setItem("#Plug Army", "100");
                     localStorage.setItem("Kebabčiči :3", "100");
@@ -128,8 +128,8 @@
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.ka*", "100");
                     localStorage.setItem("BroPlaysKevinCZE", "100");
-                    localStorage.setItem("Enciánová Predkožka", "50");
-                    localStorage.setItem("Teekeycz", "338");
+                    localStorage.setItem("Enciánová Predkožka", "0");
+                    localStorage.setItem("Teekeycz", "0");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
