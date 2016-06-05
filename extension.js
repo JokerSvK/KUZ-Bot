@@ -257,10 +257,7 @@
                              ':bell:', 
                              ':gem:', 
                              ':frog:'];
-            var slotValue = [1.5, 
-                             2, 
-                             2.5, 
-                             3, 
+            var slotValue = [3, 
                              3.5, 
                              4, 
                              4.5, 
@@ -268,7 +265,10 @@
                              5.5, 
                              6, 
                              6.5, 
-                             7];    
+                             7, 
+                             7.5, 
+                             8, 
+                             10];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
