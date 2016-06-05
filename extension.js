@@ -117,8 +117,8 @@
                     localStorage.clear();
                     localStorage.setItem("Franta72 | RIP PLUG", "100");
                     localStorage.setItem("HJV Bot", "25000");
-                    localStorage.setItem("Axxi ♔", "100");
-                    localStorage.setItem("GeeDee", "100");
+                    localStorage.setItem("Repiboy", "50");
+                    localStorage.setItem("GeeDee", "158");
                     localStorage.setItem("The menežeris of the END", "1824");
                     localStorage.setItem("THØMAS B", "100");
                     localStorage.setItem("#Plug Army", "100");
@@ -128,7 +128,7 @@
                     localStorage.setItem("Dykobraz", "100");
                     localStorage.setItem("Dandeen.ka*", "100");
                     localStorage.setItem("BroPlaysKevinCZE", "100");
-                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "100");
+                    localStorage.setItem("Mistoproviteze", "500000000000000");
                     localStorage.setItem("Mistoproviteze", "500000000000000");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
@@ -474,7 +474,7 @@
       intervalMessages: ["Dejte nám LIKE na našem Facebooku! Děkujeme <3 https://www.facebook.com/HudbaUTomasa/?fref=nf",
                          "Navštivte naše fórum, kde si můžete napsat svůj návrh nebo podat přihlášku do AT! http://hudbajevsetko.justforum.net/",
                          "Úplné znění pravidel najdete na našem fóru: http://hudbajevsetko.justforum.net/t7-seznam-pravidel",
-                         "Zkuste své štěstí každý den na automatech a vyhrajte. Pro více informací napište !soutez"],
+                         "Od června probíhá soutěž o první příčky ve frontě! Více informací naleznete v příkazu !soutez"],
       messageInterval: 5,
       songstats: false,
       commandLiteral: "!",
