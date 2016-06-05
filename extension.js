@@ -118,7 +118,7 @@
                     localStorage.setItem("Franta72 | RIP PLUG", "500");
                     localStorage.setItem("HJV Bot", "25000");
                     localStorage.setItem("WhץNαϻε", "0");
-                    localStorage.setItem("GeeDee", "500");
+                    localStorage.setItem("GeeDee", "635");
                     localStorage.setItem("★Derrpík★", "4297");
                     localStorage.setItem("THØMAS B", "500");
                     localStorage.setItem("#Plug Army", "500");
