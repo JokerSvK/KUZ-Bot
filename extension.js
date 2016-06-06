@@ -126,7 +126,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var user = basicBot.userUtilities.lookupUser(id);
+                    var user = bot.userUtilities.lookupUser(id);
                     var user = chat.un;
                   API.sendChat("/me " + user + " vyzval hráče " + chat.un + " na Kámen, nůžky, papír! Reaguj pomocí !prijmout nebo !odmitnout");
 
