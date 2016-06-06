@@ -255,18 +255,18 @@
                              ':bell:', 
                              ':gem:', 
                              ':frog:'];
-            var slotValue = [20, 
-                             30, 
-                             35, 
-                             40, 
-                             45, 
-                             50, 
-                             60, 
-                             70, 
-                             80, 
-                             90, 
-                             100, 
-                             250];    
+            var slotValue = [2, 
+                             3, 
+                             3.5, 
+                             4, 
+                             4.5, 
+                             5, 
+                             6, 
+                             7, 
+                             8, 
+                             9, 
+                             10, 
+                             25];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
