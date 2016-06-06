@@ -400,7 +400,7 @@
      "givevyzvat": "/me Příkazem !vyzvat @jmeno si zahraješ kamen, nůžky, papír.",
      "selfvyzvat": "/me %%NAME%%, nemůžeš hrát sam/a.",
      "nouservyzvat": "/me Nevidím %%NAME%% v místnosti, takže vyzvi na tuto zapeklitou hru někoho jinýho.",
-     "vyzvat": "/me %%NAMEFROM%% %%KAMENY%% %%NAMETO%%",
+     "vyzvat": "/me @%%NAMETO%%, @%%NAMEFROM%% %%KAMENY%%",
     
     "geedee": "/me GeeDee je náladový, líný, extrémně náročný a téměř vždy neutrální. Miluje sarkasmus a ironii. Jen tak se nenaštve, bývá nevypočitatelný. Miluje Thomase Bergersena, zvířata a rád spamuje. Bývá často AFK.",
     "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když jsou v chatu lidé vulgární. Mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2.",
