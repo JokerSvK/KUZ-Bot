@@ -105,7 +105,7 @@
                 }
               }
             };
-            bot.commands.odmenaCommand = {
+            bot.commands.soutezCommand = {
             command: 'soutez',  // The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', // Minimum user permission to use the command
             type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
@@ -113,7 +113,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Za každých 500 žetonů na automatu budete posunuti na první příčku ve frontě! Akce neplatí pro staff. Soutěž platí do 11.6.2016 v 18:00.");
+                  API.sendChat("/me Momentálně neprobíhá žádná soutěž. Až se tak stane, dáme vám vědět včas na Facebooku!");
 
                 }
               }
