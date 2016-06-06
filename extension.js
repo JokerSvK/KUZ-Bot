@@ -100,7 +100,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Uszi 19050 bodů, 3. Predkozka: 15500 bodů");
+                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Uszi 19050 bodů, 3. Predkozka: 17325 bodů");
 
                 }
               }
@@ -143,7 +143,7 @@
                     localStorage.setItem("BroPlaysKevinCZE", "500");
                     localStorage.setItem("Enciánová Predkožka", "15500");
                     localStorage.setItem("GΣИΣRΔTIOИ XIII.", "0");
-                    API.sendChat("/me Proběhlo resetování žetonů!");
+                    API.sendChat("/me Proběhlo automatické resetování žetonů! Další reset po odehrání 10 písní!");
                 }
             }
         };
