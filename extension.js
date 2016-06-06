@@ -100,7 +100,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Enciánová Predkožka 15500 bodů, 3. Derp: 6247 bodů");
+                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Enciánová Predkožka 15500 bodů, 3. Uszi: 8150 bodů");
 
                 }
               }
@@ -133,10 +133,10 @@
                     localStorage.setItem("WhץNαϻε", "770");
                     localStorage.setItem("GeeDee", "635");
                     localStorage.setItem("dragooon", "4297");
-                    localStorage.setItem("THØMAS B", "3020");
+                    localStorage.setItem("THØMAS B", "3294");
                     localStorage.setItem("#Plug Army", "500");
                     localStorage.setItem("★Derrpík★", "6247");
-                    localStorage.setItem("ThePsycho", "500");
+                    localStorage.setItem("Uszi", "8150");
                     localStorage.setItem("Teekeycz", "700");
                     localStorage.setItem("Dykobraz", "500");
                     localStorage.setItem("Dandeen.ka*", "914");
@@ -341,7 +341,7 @@
 
         //slots
         bot.commands.slotsCommand = { 
-            command: ['automatz', 'automast'],  //The command to be called. With the standard command literal this would be: !slots
+            command: ['automat', 'automaty'],  //The command to be called. With the standard command literal this would be: !slots
             rank: 'user', 
             type: 'startsWith',  
             functionality: function (chat, cmd) { 
