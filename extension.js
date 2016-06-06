@@ -131,7 +131,7 @@
                     localStorage.setItem("Franta72 | RIP PLUG", "500");
                     localStorage.setItem("HJV Bot", "25000");
                     localStorage.setItem("WhץNαϻε", "770");
-                    localStorage.setItem("GeeDee", "635");
+                    localStorage.setItem("GeeDee", "900");
                     localStorage.setItem("dragooon", "4297");
                     localStorage.setItem("THØMAS B", "6844");
                     localStorage.setItem("#Plug Army", "500");
@@ -141,9 +141,9 @@
                     localStorage.setItem("Dykobraz", "500");
                     localStorage.setItem("Dandeen.ka*", "1600");
                     localStorage.setItem("BroPlaysKevinCZE", "500");
-                    localStorage.setItem("Enciánová Predkožka", "20000");
+                    localStorage.setItem("Enciánová Predkožka", "50000");
                     localStorage.setItem("GΣИΣRΔTIOИ XIII.", "168035");
-                    API.sendChat("/me Proběhlo automatické resetování žetonů! Další reset po odehrání 10 písní!");
+                    API.sendChat("/me RESETOVÁNO!");
                 }
             }
         };
