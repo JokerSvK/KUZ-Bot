@@ -100,7 +100,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me 1. Mark Valentine: 27335 bodů, 2. Derp: 6247 bodů, 3. Enciánová Predkožka 2242 bodů (Platí k 6.6)");
+                  API.sendChat("/me 1. Mark Valentine: 40335 bodů, 2. Derp: 6247 bodů, 3. Enciánová Predkožka 4726 bodů");
 
                 }
               }
@@ -141,7 +141,7 @@
                     localStorage.setItem("Dykobraz", "500");
                     localStorage.setItem("Dandeen.ka*", "914");
                     localStorage.setItem("BroPlaysKevinCZE", "500");
-                    localStorage.setItem("Enciánová Predkožka", "2242");
+                    localStorage.setItem("Enciánová Predkožka", "4726");
                     localStorage.setItem("GΣИΣRΔTIOИ XIII.", "40335");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
