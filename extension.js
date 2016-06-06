@@ -100,7 +100,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Uszi 19050 bodů, 3. Predkozka: 17325 bodů");
+                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Predkozka: 20000 bodů, 3. Uszi 19050 bodů");
 
                 }
               }
