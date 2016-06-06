@@ -100,7 +100,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Enciánová Predkožka 15500 bodů, 3. Uszi: 8150 bodů");
+                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Uszi 19050 bodů, 3. Predkozka: 15500 bodů");
 
                 }
               }
@@ -136,10 +136,10 @@
                     localStorage.setItem("THØMAS B", "3294");
                     localStorage.setItem("#Plug Army", "500");
                     localStorage.setItem("★Derrpík★", "6247");
-                    localStorage.setItem("Uszi", "8150");
+                    localStorage.setItem("Uszi", "19050");
                     localStorage.setItem("Teekeycz", "700");
                     localStorage.setItem("Dykobraz", "500");
-                    localStorage.setItem("Dandeen.ka*", "914");
+                    localStorage.setItem("Dandeen.ka*", "1600");
                     localStorage.setItem("BroPlaysKevinCZE", "500");
                     localStorage.setItem("Enciánová Predkožka", "15500");
                     localStorage.setItem("GΣИΣRΔTIOИ XIII.", "0");
