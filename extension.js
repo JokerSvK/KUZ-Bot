@@ -154,7 +154,10 @@
                 {
                     //API.sendChat("Dice Rolls capped to < 1000d1000 & > 1d1");
                 }
-
+}
+                } 
+            } 
+        }; 
         // Load the chat package again to account for any changes
         bot.loadChat();
 
