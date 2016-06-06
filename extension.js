@@ -154,10 +154,18 @@
                 {
                     //API.sendChat("Dice Rolls capped to < 1000d1000 & > 1d1");
                 }
-}
-                } 
-            } 
-        }; 
+
+            }
+
+                var diceRoll = 0;
+                for(var i = 0; i < numDice; i++)
+                {
+                    diceRoll += Math.floor((Math.random()*typeDie)+1);
+                }
+
+                API.sendChat("@"+chat.un+" rolled a "+diceRoll);
+            }
+        };
         // Load the chat package again to account for any changes
         bot.loadChat();
 
