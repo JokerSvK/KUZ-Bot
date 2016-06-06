@@ -100,7 +100,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me 1. Mark Valentine: 168035 bodů, 2. Predkozka: 50000 bodů, 3. Uszi 22450 bodů");
+                  API.sendChat("/me Červnovou soutěž vyhrál hráč Mark Valentine.");
 
                 }
               }
@@ -128,21 +128,21 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72 | RIP PLUG", "500");
-                    localStorage.setItem("HJV Bot", "25000");
-                    localStorage.setItem("WhץNαϻε", "770");
-                    localStorage.setItem("GeeDee", "900");
-                    localStorage.setItem("dragooon", "4297");
-                    localStorage.setItem("THØMAS B", "6844");
-                    localStorage.setItem("#Plug Army", "500");
-                    localStorage.setItem("★Derrpík★", "6247");
-                    localStorage.setItem("Uszi", "22450");
-                    localStorage.setItem("Teekeycz", "700");
-                    localStorage.setItem("Dykobraz", "500");
-                    localStorage.setItem("Dandeen.ka*", "1600");
-                    localStorage.setItem("BroPlaysKevinCZE", "500");
-                    localStorage.setItem("Enciánová Predkožka", "50000");
-                    localStorage.setItem("GΣИΣRΔTIOИ XIII.", "168035");
+                    localStorage.setItem("Franta72 | RIP PLUG", "0");
+                    localStorage.setItem("HJV Bot", "0");
+                    localStorage.setItem("WhץNαϻε", "0");
+                    localStorage.setItem("GeeDee", "0");
+                    localStorage.setItem("dragooon", "0");
+                    localStorage.setItem("THØMAS B", "0");
+                    localStorage.setItem("#Plug Army", "0");
+                    localStorage.setItem("★Derrpík★", "0");
+                    localStorage.setItem("Uszi", "0");
+                    localStorage.setItem("Teekeycz", "0");
+                    localStorage.setItem("Dykobraz", "0");
+                    localStorage.setItem("Dandeen.ka*", "0");
+                    localStorage.setItem("BroPlaysKevinCZE", "0");
+                    localStorage.setItem("Enciánová Predkožka", "0");
+                    localStorage.setItem("GΣИΣRΔTIOИ XIII.", "0");
                     API.sendChat("/me RESETOVÁNO!");
                 }
             }
@@ -243,7 +243,7 @@
             
             //Check for existing user tokens
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "100");
+                 localStorage.setItem(user, "0");
                  tokens = localStorage.getItem(user);
             }
             else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
