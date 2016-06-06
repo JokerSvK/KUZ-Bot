@@ -92,6 +92,19 @@
                 }
             }
         };
+            bot.commands.vysledkyCommand = {
+            command: 'vysledky',  // The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', // Minimum user permission to use the command
+            type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+              functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                  API.sendChat("/me 1. Mark Valentine: 15235 bodů, 2. Derp: 6247 bodů, 3. Enciánová Predkožka 2242 bodů (Platí k 6.6)");
+
+                }
+              }
+            };
             bot.commands.odmenaCommand = {
             command: 'soutez',  // The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', // Minimum user permission to use the command
@@ -100,7 +113,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Probíhá u nás soutěž - kdo nasbírá 500 žetonů na automatu, bude posunut na první příčku ve frontě. Akce neplatí pro staff. Soutěž platí do odvolání.");
+                  API.sendChat("/me Za každých 500 žetonů na automatu budete posunuti na první příčku ve frontě! Akce neplatí pro staff. Soutěž platí do 11.6.2016 v 18:00.");
 
                 }
               }
@@ -117,14 +130,14 @@
                     localStorage.clear();
                     localStorage.setItem("Franta72 | RIP PLUG", "500");
                     localStorage.setItem("HJV Bot", "25000");
-                    localStorage.setItem("WhץNαϻε", "100");
+                    localStorage.setItem("WhץNαϻε", "770");
                     localStorage.setItem("GeeDee", "635");
-                    localStorage.setItem("★Derrpík★", "4297");
+                    localStorage.setItem("dragooon", "4297");
                     localStorage.setItem("THØMAS B", "500");
                     localStorage.setItem("#Plug Army", "500");
-                    localStorage.setItem("Kebabčiči :3", "500");
+                    localStorage.setItem("★Derrpík★", "6247");
                     localStorage.setItem("ThePsycho", "500");
-                    localStorage.setItem("♪♫♪ OpeRátor_DJ ♪♫♪", "500");
+                    localStorage.setItem("Teekeycz", "700");
                     localStorage.setItem("Dykobraz", "500");
                     localStorage.setItem("Dandeen.ka*", "914");
                     localStorage.setItem("BroPlaysKevinCZE", "500");
