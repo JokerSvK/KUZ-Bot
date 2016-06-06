@@ -133,7 +133,7 @@
                     localStorage.setItem("WhץNαϻε", "770");
                     localStorage.setItem("GeeDee", "635");
                     localStorage.setItem("dragooon", "4297");
-                    localStorage.setItem("THØMAS B", "3294");
+                    localStorage.setItem("THØMAS B", "6844");
                     localStorage.setItem("#Plug Army", "500");
                     localStorage.setItem("★Derrpík★", "6247");
                     localStorage.setItem("Uszi", "19050");
