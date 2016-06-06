@@ -142,7 +142,7 @@
                     localStorage.setItem("Dandeen.ka*", "914");
                     localStorage.setItem("BroPlaysKevinCZE", "500");
                     localStorage.setItem("Enciánová Predkožka", "2242");
-                    localStorage.setItem("GΣИΣRΔTIOИ XIII.", "27335");
+                    localStorage.setItem("GΣИΣRΔTIOИ XIII.", "40335");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
