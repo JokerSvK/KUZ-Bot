@@ -484,11 +484,8 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["Dejte nám LIKE na našem Facebooku! Děkujeme <3 https://www.facebook.com/HudbaUTomasa/?fref=nf",
-                         "Navštivte naše fórum, kde si můžete napsat svůj návrh nebo podat přihlášku do AT! http://hudbajevsetko.justforum.net/",
-                         "Úplné znění pravidel najdete na našem fóru: http://hudbajevsetko.justforum.net/t7-seznam-pravidel",
-                         "Od června probíhá soutěž o první příčky ve frontě! Více informací naleznete v příkazu !soutez"],
-      messageInterval: 5,
+      intervalMessages: ["!resetzetony"],
+      messageInterval: 10,
       songstats: false,
       commandLiteral: "!",
       blacklists: {
