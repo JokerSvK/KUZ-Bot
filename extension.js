@@ -128,22 +128,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Franta72 | RIP PLUG", "0");
-                    localStorage.setItem("HJV Bot", "0");
-                    localStorage.setItem("WhץNαϻε", "0");
-                    localStorage.setItem("GeeDee", "0");
-                    localStorage.setItem("dragooon", "0");
-                    localStorage.setItem("THØMAS B", "0");
-                    localStorage.setItem("#Plug Army", "0");
-                    localStorage.setItem("★Derrpík★", "0");
-                    localStorage.setItem("Uszi", "0");
-                    localStorage.setItem("Teekeycz", "0");
-                    localStorage.setItem("Dykobraz", "0");
-                    localStorage.setItem("Dandeen.ka*", "0");
-                    localStorage.setItem("BroPlaysKevinCZE", "0");
-                    localStorage.setItem("Enciánová Predkožka", "0");
-                    localStorage.setItem("GΣИΣRΔTIOИ XIII.", "0");
-                    API.sendChat("/me RESETOVÁNO!");
+                    API.sendChat("/me Automaty resetovány!");
                 }
             }
         };
@@ -243,7 +228,7 @@
             
             //Check for existing user tokens
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "0");
+                 localStorage.setItem(user, "1000000");
                  tokens = localStorage.getItem(user);
             }
             else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
@@ -484,7 +469,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["!resetzetony"],
+      intervalMessages: ["Jsme rádi, že jste stále s námi. Děkujeme <heart>"],
       messageInterval: 10,
       songstats: false,
       commandLiteral: "!",
