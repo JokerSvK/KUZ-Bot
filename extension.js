@@ -118,295 +118,43 @@
                 }
               }
             };
-// !cleartokens
-        bot.commands.cleartokensCommand = {
-            command: 'resetzetony',  //The command to be called. With the standard command literal this would be: !cleartokens
-            rank: 'cohost', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    localStorage.clear();
-                    API.sendChat("/me Automaty resetovány!");
-                }
-            }
-        };
-        
-        // !givetokens - needs to be fixed
-        bot.commands.givetokensCommand = {
-            command: 'nefunkcniprikaz',  //The command to be called. With the standard command literal this would be: !givetokens
-            rank: 'manager', //Minimum user permission to use the command
-            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    var msg = chat.message; 
-					var space = msg.indexOf(' ');
-                    var parse = msg.Split(' ');
-                    var name = msg.substring(space + 2);
-                    var gift = parse[2];
-                    var user = bot.userUtilities.lookupUserName(name); 
-                    var startingTokens = validateTokens(user);
-                    var updatedTokens;
-                    
-                    if (space === -1) { 
-                         API.sendChat("/me @" + chat.un + ", musíš zadat určitého uživatele k poslání žetonů."); 
-                    } 
-                    
-                    if (gift == null || gift == "" || gift == " " || gift == "!nefunkcniprikaz" || isNaN(gift)) {
-                         gift = 1;
-                    }
-                       
-                    updatedTokens = Math.round(gift) + startingTokens;
-                    localStorage.setItem(user, updatedTokens);
-                    return API.sendChat("/me @" + chat.un + " poslal/a @" + user + " " + gift + " žetonů. @" + user + " má nyní " + updatedTokens + " žetonů.");
-                }
-            }
-        };
-        
-        // !tokens
-        bot.commands.tokensCommand = {
-            command: 'zetony',  //The command to be called. With the standard command literal this would be: !tokens
+            bot.commands.rollCommand = {
+            command: 'kostky',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            defaultDice: [1,100],
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    var user = chat.un;
-                    var tokens = validateTokens(user);
-                    
-                    API.sendChat("/me [@" + user + "] Tvé herní konto: " + tokens + " žetonů.");
+                var params = chat.message.substr(cmd.length + 2);
+                console.log(params);
+                var numDice = 1;
+                var typeDie = 100;
+                var diceArray = this.defaultDice;
+                if (params !== undefined)
+                    diceArray = params.split('d');
+                var capped = false;
+                console.log(diceArray);
+                if(diceArray && diceArray.length > 1){
+                    if(!isNaN(diceArray[0])) numDice = diceArray[0];
+                    if(!isNaN(diceArray[1])) typeDie = diceArray[1];
+                    if(typeDie > 1000) {
+                        typeDie = 1000; capped = true;
+                    }
+                    else if (typeDie < 1) {
+                        typeDie = 1; capped = true;
+                    }
+                    if(numDice > 1000) {
+                        numDice = 1000; capped = true;
+                    }
+                    else if (numDice < 1) {
+                        numDice = 1; capped = true;
+                    }
+
                 }
-            }
-        };
-       
-        
-        // !tip
-        bot.commands.tipCommand = {
-            command: 'prispet',  //The command to be called. With the standard command literal this would be: !tip
-            rank: 'bouncer', //Minimum user permission to use the command
-            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    var msg = chat.message; 
-                    var space = msg.indexOf(' ');
-                    var receiver = msg.substring(space + 2); 
-                    var giverTokens = validateTokens(chat.un);
-                    var receiverTokens = validateTokens(receiver);
-                    var currentDJ = API.getDJ().username; 
-            
-                    if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " nepřipíše @" + receiver + " žádné žetony. Vyskytla se chyba."); 
-                    }
-                    else {
-                        receiverTokens += 1;
-                        giverTokens -= 1;
-                        localStorage.setItem(chat.un, giverTokens);
-                        if (space === -1) { 
-                            receiverTokens = validateTokens(currentDJ);
-                            receiverTokens += 1; //Repeat check in the event tip is for current DJ.
-                            localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " připsal/a @" + currentDJ + " na herní účet několik žetonů.  @" + chat.un + " zůstalo " + giverTokens + " žetonů. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
-                        }
-                        else {                        
-                            localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " připsal/a @" + receiver + " na herní účet několik žetonů. @" + chat.un + " zůstalo " + giverTokens + " žetonů. @" + receiver + " nyní má " + receiverTokens + " žetonů");
-                        }
-                    }
+
+                if(capped)
+                {
+                    //API.sendChat("Dice Rolls capped to < 1000d1000 & > 1d1");
                 }
-            }
-        };
-        
-        //Validate Tokens
-        function validateTokens(user){
-            var tokens; 
-            
-            //Check for existing user tokens
-            if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "1000000");
-                 tokens = localStorage.getItem(user);
-            }
-            else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
-                 tokens = localStorage.getItem(user);
-            }
-            else {
-                 tokens = localStorage.getItem(user);
-            }
-            
-            return tokens;
-        }
-        
-        //Slots---------------------------------------------------------------------------------------------------------------------------
-        function spinSlots() {
-            var slotArray = [':lemon:',
-                             ':tangerine:', 
-                             ':strawberry:', 
-                             ':pineapple:', 
-                             ':apple:', 
-                             ':grapes:', 
-                             ':watermelon:', 
-                             ':cherries:', 
-                             ':green_heart:', 
-                             ':bell:', 
-                             ':gem:', 
-                             ':frog:'];
-            var slotValue = [2, 
-                             3, 
-                             3.5, 
-                             4, 
-                             4.5, 
-                             5, 
-                             6, 
-                             7, 
-                             8, 
-                             9, 
-                             10, 
-                             25];    
-            var rand =  Math.floor(Math.random() * (slotArray.length));                
-            return [slotArray[rand], slotValue[rand]]; 
-        }
-        
-        function spinOutcome(bet) {
-            var winnings;
-            var outcome1 = spinSlots(); 
-            var outcome2 = spinSlots(); 
-            var outcome3 = spinSlots();   
 
-            //Determine Winnings
-            if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
-                winnings = Math.round(bet * outcome1[1]);
-            }
-            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
-                winnings = Math.round(bet * (.45 * outcome1[1]));
-            }
-            else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-            }
-            else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.40 * outcome2[1]));
-            }
-            else{
-                winnings = 0;  
-            }
-                        
-            return [outcome1[0], outcome2[0], outcome3[0], winnings];                      
-        }
-        
-        function checkTokens(bet, user) {
-             var tokensPreBet = validateTokens(user);
-             var tokensPostBet;
-             var validBet = true;
-
-             //Adjust amount of tokens
-             if (bet > tokensPreBet || bet < 0) {
-                  validBet = false;
-                  tokensPostBet = tokensPreBet;
-             }
-             else {
-                  tokensPostBet = tokensPreBet - bet;
-             }
-             
-             localStorage.setItem(user, tokensPostBet);
-             return [tokensPreBet, tokensPostBet, validBet];
-        }
-        
-        function slotWinnings(winnings, user) {
-             var userTokens = parseInt(localStorage.getItem(user)) + winnings;
-             if (isNaN(userTokens)) {
-                 userTokens = winnings;
-             }
-             localStorage.setItem(user, userTokens);
-             return userTokens;
-        }
-
-        //slots
-        bot.commands.slotsCommand = { 
-            command: ['automat', 'automaty'],  //The command to be called. With the standard command literal this would be: !slots
-            rank: 'user', 
-            type: 'startsWith',  
-            functionality: function (chat, cmd) { 
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0); 
-                if (!bot.commands.executable(this.rank, chat)) return void (0); 
-                else { 
-                    var msg = chat.message; 
-					var space = msg.indexOf(' ');
-                    var user = chat.un; 
-                    var updatedTokens;
-                    var bet = parseInt(msg.substring(space + 1));
-       
-                    //Fix bet if blank
-                    if (bet == null || isNaN(bet)) {
-                        bet = 5;
-                    }
-                    bet = Math.round(bet);      
-                                   
-                    var playerTokens = checkTokens(bet, user);  
-                    
-                    //Prevent invalid betting
-                    if (bet > playerTokens[0]) {
-                        if (playerTokens[0] === 0){
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, jelikož má nulové konto!"); 
-                        } 
-                        else if (playerTokens[0] === 1) {
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, jelikož má jediný žeton."); 
-                        }
-                        else {
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, jelikož má " + playerTokens[0] + " žetonů!"); 
-                        }
-                    }
-                    else if (bet < 0) {
-                        return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů. Prosím, zkus to přiště bez nesmyslných částek.."); 
-                    }
-                    else if (bet === 0) { 
-                        return API.sendChat("/me @" + chat.un + " se pokoušel/a hrát bez žetonů. Nemůžeš hrát zdarma."); 
-                    }
-                    //Process valid bets
-                    else {
-                        var outcome = spinOutcome(bet);
-                        updatedTokens = slotWinnings(outcome[3], user);
-                    }
-                    
-                    //Display Slots
-                    if (space === -1 || bet == 5) { 
-                        //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me  Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
-                    } 
-                    else if (bet > 5) { 
-                        //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0] + outcome[1] + outcome[2])}, 5000);
-                    } 
-                    else {
-                        return false; 
-                    }
-                         
-                    //Display Outcome
-                    if (outcome[3] == 0) {
-                        if (updatedTokens === 1) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti posledních 5 žetonů.")}, 7000);   
-                        }  
-                        else if (updatedTokens === 0) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Už nemáš žádné žetony!")}, 7000);
-                        }
-                        else {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
-                        }
-                    }
-                    else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Neutrať je všechny na jednom místě!")}, 7000);      
-                    }
-                    else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
-                    }
-                } 
-            } 
-        }; 
         // Load the chat package again to account for any changes
         bot.loadChat();
 
