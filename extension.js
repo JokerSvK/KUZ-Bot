@@ -157,7 +157,7 @@
 
             }
 
-                var diceRoll = 0;
+                diceRoll = 0;
                 for(var i = 0; i < numDice; i++)
                 {
                     diceRoll += Math.floor((Math.random()*typeDie)+1);
