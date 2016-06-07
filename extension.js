@@ -415,7 +415,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "HJV Bot",
+      botName: "WtLS Bot",
       language: "special",
       chatLink: "https://rawgit.com/Franta72/HJV-Bot/master/HJVczech.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
