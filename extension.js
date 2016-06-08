@@ -248,8 +248,12 @@
         
         //Slots---------------------------------------------------------------------------------------------------------------------------
         function spinSlots() {
-            var slotArray = [':frog:'];
-            var slotValue = [50];    
+            var slotArray = ['A',
+                             'B',
+                             'C'];
+            var slotValue = [5,
+                            10,
+                            15,];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
