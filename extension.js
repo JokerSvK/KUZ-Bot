@@ -248,30 +248,8 @@
         
         //Slots---------------------------------------------------------------------------------------------------------------------------
         function spinSlots() {
-            var slotArray = [':lemon:',
-                             ':tangerine:', 
-                             ':strawberry:', 
-                             ':pineapple:', 
-                             ':apple:', 
-                             ':grapes:', 
-                             ':watermelon:', 
-                             ':cherries:', 
-                             ':green_heart:', 
-                             ':bell:', 
-                             ':gem:', 
-                             ':frog:'];
-            var slotValue = [2, 
-                             3, 
-                             3.5, 
-                             4, 
-                             4.5, 
-                             5, 
-                             6, 
-                             7, 
-                             8, 
-                             9, 
-                             10, 
-                             25];    
+            var slotArray = [':frog:'];
+            var slotValue = [50];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
