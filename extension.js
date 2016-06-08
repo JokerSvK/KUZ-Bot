@@ -121,14 +121,19 @@
 // !cleartokens
         bot.commands.cleartokensCommand = {
             command: 'resetzetony',  //The command to be called. With the standard command literal this would be: !cleartokens
-            rank: 'user', //Minimum user permission to use the command
+            rank: 'manager', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    API.sendChat("/me Automaty resetovány!");
+                    localStorage.setItem("Mark Valentine", "1258035");
+                    localStorage.setItem("Enciánová Predkožka", "71400");
+                    localStorage.setItem("Uzsi", "22500");
+                    localStorage.setItem("THØMAS B", "6844");
+                    localStorage.setItem("★Derrpík★", "6247");
+                    API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
         };
