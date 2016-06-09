@@ -311,8 +311,7 @@
             var outcome1 = spinSlots(); 
             var outcome2 = spinSlots(); 
             var outcome3 = spinSlots();
-            var outcome4 = spinSlots();
-            var outcome5 = spinSlots();
+            
 
             //Determine Winnings
              if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
@@ -331,7 +330,7 @@
                 winnings = 0;  
             }
                         
-            return [outcome1[0], outcome2[0], outcome3[0], outcome4[0], outcome5[0], winnings];                      
+            return [outcome1[0], outcome2[0], outcome3[0], winnings];                      
         }
         
         function checkTokens(bet, user) {
@@ -412,19 +411,19 @@
                     if (space === -1 || bet == 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4])}, 5000);
+                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2])}, 5000);
                     } 
                     else if (bet > 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4])}, 5000);
+                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2])}, 5000);
                     }  
                     else {
                         return false; 
                     }
                          
                     //Display Outcome
-                    if (outcome[5] == 0) {
+                    if (outcome[3] == 0) {
                         if (updatedTokens === 1) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti posledních 5 žetonů.")}, 7000);   
                         }  
@@ -435,7 +434,7 @@
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
                         }
                     }
-                    else if (outcome[5] == (bet * 7)) {
+                    else if (outcome[3] == (bet * 7)) {
                         setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Neutrať je všechny na jednom místě!")}, 7000);      
                     }
                     else {
