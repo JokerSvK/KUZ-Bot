@@ -424,7 +424,7 @@
                     }
                          
                     //Display Outcome
-                    if (outcome[3] == 0) {
+                    if (outcome[5] == 0) {
                         if (updatedTokens === 1) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti posledních 5 žetonů.")}, 7000);   
                         }  
@@ -435,7 +435,7 @@
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
                         }
                     }
-                    else if (outcome[3] == (bet * 7)) {
+                    else if (outcome[5] == (bet * 7)) {
                         setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Neutrať je všechny na jednom místě!")}, 7000);      
                     }
                     else {
