@@ -331,7 +331,7 @@
                 winnings = 0;  
             }
                         
-            return [outcome1[0], outcome2[0], outcome3[0], outcome4[0], outcome5[0] winnings];                      
+            return [outcome1[0], outcome2[0], outcome3[0], outcome4[0], outcome5[0], winnings];                      
         }
         
         function checkTokens(bet, user) {
