@@ -316,28 +316,20 @@
             
 
             //Determine Winnings
-             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
+             if (outcome1[0] == outcome2[0] && outcome1[0] && outcome4[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
             }
-            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
+            else if (outcome1[0] == outcome2[0] && outcome1[0] && outcome4[0] != outcome3[0]) {
                 winnings = Math.round(bet * (.45 * outcome1[1]));
             }
-            else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
+            else if (outcome1[0] == outcome4[0] && outcome3[0] && outcome1[0] != outcome2[0]) {
                 winnings = Math.round(bet * (.5 * outcome1[1]));
             }
-            else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
+            else if (outcome2[0] == outcome2[0] && outcome3[0] && outcome1[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
                 
             }
-            else if (outcome1[0] == outcome4[0] && outcome1[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-                
-            }
-            else if (outcome2[0] == outcome4[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.40 * outcome2[1]));
-                
-            }
-            else if (outcome2[0] == outcome4[0] && outcome3[0] != outcome1[0]) {
+            else if (outcome2[0] == outcome2[0] && outcome3[0] && outcome4[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
             }
             else{
@@ -449,7 +441,7 @@
                         }
                     }
                     else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[4] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Neutrať je všechny na jednom místě!")}, 7000);      
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[4] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);      
                     }
                     else {
                         setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[4] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
