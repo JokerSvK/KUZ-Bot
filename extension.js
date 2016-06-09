@@ -311,6 +311,8 @@
             var outcome1 = spinSlots(); 
             var outcome2 = spinSlots(); 
             var outcome3 = spinSlots();
+            var outcome4 = spinSlots();
+            
             
 
             //Determine Winnings
@@ -325,12 +327,20 @@
             }
             else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
+                
+            }
+            else if (outcome1[0] == outcome4[0] && outcome1[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.5 * outcome1[1]));
+                
+            }
+            else if (outcome2[0] == outcome4[0] && outcome2[0] != outcome1[0]) {
+                winnings = Math.round(bet * (.40 * outcome2[1]));
             }
             else{
                 winnings = 0;  
             }
                         
-            return [outcome1[0], outcome2[0], outcome3[0], winnings];                      
+            return [outcome1[0], outcome2[0], outcome3[0], outcome4[0], winnings];                      
         }
         
         function checkTokens(bet, user) {
@@ -404,26 +414,26 @@
                     //Process valid bets
                     else {
                         var outcome = spinOutcome(bet);
-                        updatedTokens = slotWinnings(outcome[3], user);
+                        updatedTokens = slotWinnings(outcome[4], user);
                     }
                     
                     //Display Slots
                     if (space === -1 || bet == 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2])}, 5000);
+                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
                     } 
                     else if (bet > 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2])}, 5000);
+                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
                     }  
                     else {
                         return false; 
                     }
                          
                     //Display Outcome
-                    if (outcome[3] == 0) {
+                    if (outcome[4] == 0) {
                         if (updatedTokens === 1) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti posledních 5 žetonů.")}, 7000);   
                         }  
@@ -435,10 +445,10 @@
                         }
                     }
                     else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Neutrať je všechny na jednom místě!")}, 7000);      
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[4] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Neutrať je všechny na jednom místě!")}, 7000);      
                     }
                     else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[4] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
                     }
                 } 
             } 
