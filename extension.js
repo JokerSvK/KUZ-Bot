@@ -51,6 +51,102 @@
                 }
               }
             };
+             bot.commands.afkCommand = {
+            command: 'afkuj',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    // add user with timestamp to the array and reason
+                    var afkUser = {
+                        un: chat.un,
+                        uid: chat.uid,
+                        timestamp: new Date().getTime(),
+                        reason: (chat.message.length > cmd.length + 1 ? chat.message.substr(cmd.length + 1):"no reason provided")
+                    }
+                    bot.writhemAfkList[chat.un] = afkUser;
+                    API.sendChat("[@" + chat.un + "] Byl/a jsi označen/a jako AFK. Kdokoliv tě označí, povím mu to za tebe.");
+                    localStorage.setItem("writhemAfkList", JSON.stringify(bot.writhemAfkList));
+                }
+            }
+        };
+
+        bot.commands.afkdisableCommand = {
+            command: 'back',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    if (chat.message.length > (cmd.length + 2)
+                        && bot.commands.executable("bouncer",chat)) {
+                        // deal with a username passed
+                        var user = chat.message.substr(cmd.length + 2);
+                        if (typeof bot.writhemAfkList[user] !== 'undefined') {
+                            API.sendChat("[@" + chat.un + "] " + user + " se vrátil/a zpět. Jíž nebude nadále označovan/a botem. Byl/a pryč "+bot.roomUtilities.msToStr(new Date().getTime() - bot.writhemAfkList[user].timestamp));
+                            delete bot.writhemAfkList[user];
+                            localStorage.setItem("writhemAfkList", JSON.stringify(bot.writhemAfkList));
+                        }
+                        else {
+                            API.sendChat("[@" + chat.un + "] " + user + " nebyl/a označen/a jako AFK.");
+                        }
+
+                    }
+                    else {
+                        // self
+                        if (typeof bot.writhemAfkList[chat.un] !== 'undefined') {
+                            API.sendChat("[@" + chat.un + "] Vrátil/a ses zpátky. Byl/a jsi zhruba pryč "+bot.roomUtilities.msToStr(new Date().getTime() - bot.writhemAfkList[chat.un].timestamp));
+                            delete bot.writhemAfkList[chat.un];
+                            localStorage.setItem("writhemAfkList", JSON.stringify(bot.writhemAfkList));
+                        }
+                    }
+                }
+            }
+        };
+        
+        bot.writhemEvents = {};
+        bot.writhemEvents.catchAFKPing = function (chat) {
+            var regexp = RegExp('(:?^| )@(.+)');
+            var regResult = regexp.exec(chat.message);
+            if (regResult != null){
+                var catches = regResult[2].split(" ");
+                var caught = false;
+                var user = null;
+                if (typeof bot.writhemAfkList[catches[0]] !== 'undefined') {
+                    caught = true;user = catches[0];
+                } else if (typeof bot.writhemAfkList[catches[0] + " " + catches[1]] !== 'undefined') {
+                    caught = true;user = catches[0] + " " + catches[1];
+                }
+
+                if (caught) {
+                    API.sendChat("[@"+chat.un+"] Hej! "+ user +" je označen/a jako AFK. "+bot.roomUtilities.msToStr(new Date().getTime() - bot.writhemAfkList[user].timestamp)+" : '"+ bot.writhemAfkList[user].reason+"' ");
+                }
+            }
+        };
+
+        bot.writhemEvents.breakAFKChat = function(chat) {
+            if (typeof bot.writhemAfkList[chat.un] !== 'undefined'
+                && (new Date().getTime() - bot.writhemAfkList[chat.un].timestamp) > 30) {
+                API.sendChat("[@" + chat.un + "] Vrátil/a ses zpátky. Jíž nebudeš nadále označovan/a botem. Byl/a jsi pryč "+bot.roomUtilities.msToStr(new Date().getTime() - bot.writhemAfkList[chat.un].timestamp));
+                delete bot.writhemAfkList[chat.un]
+                localStorage.setItem("writhemAfkList", JSON.stringify(bot.writhemAfkList));
+            }
+        };
+    }
+
+        bot.writhemAPI();
+        var afkList = JSON.parse(localStorage.getItem("writhemAfkList"));
+        if (afkList === null || typeof afkList === 'undefined')
+            afkList = {};
+        bot.writhemAfkList = afkList;
+
+            }
+        };
+        
+
             bot.commands.sayCommand = {
             command: 'say',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'mod', //Minimum user permission to use the command
