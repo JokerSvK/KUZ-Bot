@@ -133,7 +133,7 @@
                     localStorage.setItem("Uzsi", "22500");
                     localStorage.setItem("THØMAS B", "6844");
                     localStorage.setItem("★Derrpík★", "6247");
-                    API.sendChat("/me Proběhlo resetování žetonů!");
+                    API.sendChat("/me Proběhlo resetování kreditu!");
                 }
             }
         };
@@ -173,7 +173,7 @@
         
         // !tokens
         bot.commands.tokensCommand = {
-            command: 'zetony',  //The command to be called. With the standard command literal this would be: !tokens
+            command: ['kredit', 'konto'],  //The command to be called. With the standard command literal this would be: !tokens
             rank: 'user', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -183,7 +183,7 @@
                     var user = chat.un;
                     var tokens = validateTokens(user);
                     
-                    API.sendChat("/me [@" + user + "] Tvé herní konto: " + tokens + " žetonů.");
+                    API.sendChat("/me [@" + user + "] Tvé herní konto: " + tokens + " kreditu.");
                 }
             }
         };
@@ -206,7 +206,7 @@
                     var currentDJ = API.getDJ().username; 
             
                     if (giverTokens <= 0) {
-                        return API.sendChat("/me @" + chat.un + " nepřipíše @" + receiver + " žádné žetony. Vyskytla se chyba."); 
+                        return API.sendChat("/me @" + chat.un + " nepřipíše @" + receiver + " žádné kredity. Vyskytla se chyba."); 
                     }
                     else {
                         receiverTokens += 1;
@@ -216,11 +216,11 @@
                             receiverTokens = validateTokens(currentDJ);
                             receiverTokens += 1; //Repeat check in the event tip is for current DJ.
                             localStorage.setItem(currentDJ, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " připsal/a @" + currentDJ + " na herní účet několik žetonů.  @" + chat.un + " zůstalo " + giverTokens + " žetonů. . @" + currentDJ + " nyní má " + receiverTokens + " žetonů"); 
+                            return API.sendChat("/me @" + chat.un + " připsal/a @" + currentDJ + " na herní účet kredity.  @" + chat.un + " zůstalo " + giverTokens + " kreditu. . @" + currentDJ + " nyní má " + receiverTokens + " kreditu"); 
                         }
                         else {                        
                             localStorage.setItem(receiver, receiverTokens);
-                            return API.sendChat("/me @" + chat.un + " připsal/a @" + receiver + " na herní účet několik žetonů. @" + chat.un + " zůstalo " + giverTokens + " žetonů. @" + receiver + " nyní má " + receiverTokens + " žetonů");
+                            return API.sendChat("/me @" + chat.un + " připsal/a @" + receiver + " na herní účet kredity. @" + chat.un + " zůstalo " + giverTokens + " kreditu. @" + receiver + " nyní má " + receiverTokens + " kreditu");
                         }
                     }
                 }
@@ -248,33 +248,36 @@
         
         //Slots---------------------------------------------------------------------------------------------------------------------------
         function spinSlots() {
-            var slotArray = ['A - ',
-                             'B - ',
-                             'C - ',
-                             'D - ',
-                             'E - ',
-                             'F - ',
-                             'G - ',
-                             'H - ',
-                             'CH - ',
-                             'I - ',
-                             'J - ',
-                             'K - ',
-                             'L - ',
-                             'M - ',
-                             'N - ',
-                             'O - ',
-                             'P - ',
-                             'Q - ',
-                             'R - ',
-                             'S - ',
-                             'T - ',
-                             'U - ',
-                             'V - ',
-                             'W - ',
-                             'X - ',
-                             'Y - ',
-                             'Z - '];
+            var slotArray = ['1 - ',
+                             '2 - ',
+                             '3 - ',
+                             '4 - ',
+                             '5 - ',
+                             '6 - ',
+                             '7 - ',
+                             '8 - ',
+                             '9 - ',
+                             '10 - ',
+                             '11 - ',
+                             '12 - ',
+                             '13 - ',
+                             '14 - ',
+                             '15 - ',
+                             '16 - ',
+                             '17 - ',
+                             '18 - ',
+                             '19 - ',
+                             '20 - ',
+                             '21 - ',
+                             '22 - ',
+                             '23 - ',
+                             '24 - ',
+                             '25 - ',
+                             '26 - ',
+                             '27 - ',
+                             '28 - ',
+                             '29 - ',
+                             '30 - '];
             var slotValue = [4,
                              4.5,
                              5,
@@ -296,6 +299,8 @@
                              13,
                              13.5,
                              14,
+                             15,
+                             15,
                              15,
                              15,
                              15,
@@ -367,9 +372,9 @@
              return userTokens;
         }
 
-        //slots
-        bot.commands.slotsCommand = { 
-            command: ['automat', 'automaty'],  //The command to be called. With the standard command literal this would be: !slots
+        //loterie
+        bot.commands.lottoCommand = { 
+            command: ['loterie', 'lotto'],  //The command to be called. With the standard command literal this would be: !slots
             rank: 'user', 
             type: 'startsWith',  
             functionality: function (chat, cmd) { 
@@ -393,20 +398,20 @@
                     //Prevent invalid betting
                     if (bet > playerTokens[0]) {
                         if (playerTokens[0] === 0){
-                            return API.sendChat("/me @" + chat.un + " nevsadíš " + bet + " žetonů. Nemáš ani floka!"); 
+                            return API.sendChat("/me @" + chat.un + " nevsadíš " + bet + " kreditů. Nemáš ani floka!"); 
                         } 
                         else if (playerTokens[0] === 1) {
-                            return API.sendChat("/me @" + chat.un + " nevsadíš " + bet + " žetonů. Zbyl ti pouze jeden!"); 
+                            return API.sendChat("/me @" + chat.un + " nevsadíš " + bet + " kreditů. Zbyl ti pouhý kredit!"); 
                         }
                         else {
-                            return API.sendChat("/me @" + chat.un + " nevsadíš " + bet + " žetonů. Tvé konto je " + playerTokens[0] + " žetonů!"); 
+                            return API.sendChat("/me @" + chat.un + " nevsadíš " + bet + " kreditů. Tvé konto je " + playerTokens[0] + " žetonů!"); 
                         }
                     }
                     else if (bet < 0) {
-                        return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů. Prosím, zkus to přiště bez nesmyslných částek.."); 
+                        return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " kreditů. Prosím, zkus to přiště bez nesmyslných částek.."); 
                     }
                     else if (bet === 0) { 
-                        return API.sendChat("/me @" + chat.un + " se pokoušel/a hrát bez žetonů. Bez prachů do automatu nelez."); 
+                        return API.sendChat("/me @" + chat.un + " se pokoušel/a hrát bez kreditu. Bez prachů do loterie nelez."); 
                     }
                     //Process valid bets
                     else {
@@ -417,13 +422,13 @@
                     //Display Slots
                     if (space === -1 || bet == 5) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me Vylosování automatů: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
+                        API.sendChat("/me @" + chat.un + " vsadil/a 5 kreditů do automatu.");
+                        setTimeout(function() {API.sendChat("/me Losování loterie: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
                     } 
                     else if (bet > 5) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me Vylosování automatů: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
+                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " kreditů do automatu.");
+                        setTimeout(function() {API.sendChat("/me Losování loterie: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
                     }  
                     else {
                         return false; 
@@ -435,17 +440,17 @@
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Máš poslední šanci.")}, 7000);   
                         }  
                         else if (updatedTokens === 0) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Jsi bez žetonů, chlapče!")}, 7000);
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Jsi bez kreditu!")}, 7000);
                         }
                         else {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " kreditů.")}, 7000);
                         }
                     }
                     else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[4] + " žetonů! Konto navýšeno na " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);      
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[4] + " kreditů! Konto navýšeno na " + updatedTokens + " kreditů. Gratulujeme!!")}, 7000);      
                     }
                     else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[4] + " žetonů! Konto navýšeno na " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[4] + " kreditů! Konto navýšeno na " + updatedTokens + " kreditů. Dobrá práce!")}, 7000); 
                     }
                 } 
             } 
@@ -512,7 +517,7 @@
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["TIP: Vyzkoušejte naše automaty. Zvolte si sázku a bude vám vylosovany čtyři symboly. Jsou to náhodná písmena od A-Z. Trefíte se alespoň třikrát, vyhráváte."],
+      intervalMessages: ["TIP: Vyzkoušejte naší loterii. Zvolte si sázku a bude vám vylosovany čtyři čísla. Jsou náhodná od 1-30. Budou-li čísla třikrát stejná, vyhráváte."],
       messageInterval: 10,
       songstats: false,
       commandLiteral: "!",
