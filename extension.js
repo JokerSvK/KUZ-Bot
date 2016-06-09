@@ -321,21 +321,26 @@
             
 
             //Determine Winnings
-             if (outcome1[0] == outcome2[0] & outcome1[0] && outcome4[0] == outcome3[0]) {
+             if (outcome1[0] == outcome2[0] & outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
             }
-            else if (outcome1[0] == outcome2[0] & outcome1[0] && outcome4[0] != outcome3[0]) {
+            else if (outcome1[0] == outcome2[0] & outcome1[0] != outcome3[0]) {
                 winnings = Math.round(bet * (.45 * outcome1[1]));
             }
-            else if (outcome1[0] == outcome4[0] & outcome3[0] && outcome1[0] != outcome2[0]) {
+            else if (outcome1[0] == outcome4[0] & outcome3[0] != outcome2[0]) {
                 winnings = Math.round(bet * (.5 * outcome1[1]));
             }
-            else if (outcome2[0] == outcome2[0] & outcome3[0] && outcome4[0] != outcome1[0]) {
+            else if (outcome2[0] == outcome1[0] & outcome4[0] != outcome2[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
                 
             }
-            else if (outcome2[0] == outcome1[0] & outcome2[0] && outcome3[0] != outcome4[0]) {
+            else if (outcome2[0] == outcome2[0] & outcome4[0]!= outcome3[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
+                
+            }
+            else if (outcome2[0] == outcome3[0] & outcome1[0]!= outcome2[0]) {
+                winnings = Math.round(bet * (.40 * outcome2[1]));
+              
                 
             }
             else{
@@ -422,12 +427,12 @@
                     //Display Slots
                     if (space === -1 || bet == 5) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a 5 kreditů do automatu.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a 5 kreditů do loterie.");
                         setTimeout(function() {API.sendChat("/me Losování loterie: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
                     } 
                     else if (bet > 5) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " kreditů do automatu.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " kreditů do loterie.");
                         setTimeout(function() {API.sendChat("/me Losování loterie: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
                     }  
                     else {
