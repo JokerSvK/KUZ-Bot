@@ -129,7 +129,7 @@
                 else {
                     localStorage.clear();
                     localStorage.setItem("Mark Valentine", "10000000");
-                    localStorage.setItem("Enciánová Predkožka", "250");
+                    localStorage.setItem("Enciánová Predkožka", "71400");
                     localStorage.setItem("Mr.Dalby", "1000");
                     localStorage.setItem("THØMAS B", "1229592");
                     localStorage.setItem("★Derrpík★", "25526");
