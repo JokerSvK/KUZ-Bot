@@ -292,62 +292,37 @@
                 winnings = Math.round(bet * outcome1[1]);
             }
             else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
+                winnings = Math.round(bet * (.45 * outcome1[1]));
             }
             else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
                 winnings = Math.round(bet * (.5 * outcome1[1]));
             }
             else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.5 * outcome2[1]));
+                winnings = Math.round(bet * (.40 * outcome2[1]));
                 
             }
-            else if (outcome1[0] == outcome4[0] && outcome1[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-                
-            }
-            else if (outcome2[0] == outcome4[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.5 * outcome2[1]));
-               
-            }
-            else if (outcome1[0] == outcome4[0] && outcome3[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.40 * outcome1[1]));
-                
-            }
-            else if (outcome1[0] == outcome5[0] && outcome1[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-                
-            }
-            else if (outcome2[0] == outcome5[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.5 * outcome2[1]));
-               
-            }
-            else if (outcome1[0] == outcome5[0] && outcome3[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.40 * outcome1[1]));
-                
-            }
-            else if (outcome1[0] == outcome5[0] && outcome4[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-                
-            }
-            else if (outcome1[0] == outcome6[0] && outcome1[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-                
-            }
-            else if (outcome2[0] == outcome6[0] && outcome2[0] != outcome1[0]) {
-                winnings = Math.round(bet * (.5 * outcome2[1]));
-               
-            }
-            else if (outcome1[0] == outcome6[0] && outcome3[0] != outcome2[0]) {
+            else if (outcome1[0] == outcome5[0] && outcome4[0] != outcome6[0]) {
                 winnings = Math.round(bet * (.45 * outcome1[1]));
-                
             }
-            else if (outcome1[0] == outcome6[0] && outcome4[0] != outcome2[0]) {
+            else if (outcome1[0] == outcome6[0] && outcome4[0] != outcome5[0]) {
                 winnings = Math.round(bet * (.5 * outcome1[1]));
+            }
+            else if (outcome2[0] == outcome6[0] && outcome5[0] != outcome4[0]) {
+                winnings = Math.round(bet * (.40 * outcome2[1]));
                 
             }
-            else if (outcome1[0] == outcome6[0] && outcome5[0] != outcome2[0]) {
+            else if (outcome1[0] == outcome4[0] && outcome3[0] != outcome5[0]) {
                 winnings = Math.round(bet * (.45 * outcome1[1]));
+            }
+            else if (outcome1[0] == outcome5[0] && outcome3[0] != outcome4[0]) {
+                winnings = Math.round(bet * (.5 * outcome1[1]));
+            }
+            else if (outcome2[0] == outcome5[0] && outcome2[0] != outcome4[0]) {
+                winnings = Math.round(bet * (.40 * outcome2[1]));
                 
+            }
+            else if (outcome2[0] == outcome5[0] && outcome1[0] != outcome3[0]) {
+                winnings = Math.round(bet * (.45 * outcome2[1]));
             }
             else{
                 winnings = 0;  
