@@ -248,19 +248,19 @@
         
         //Slots---------------------------------------------------------------------------------------------------------------------------
         function spinSlots() {
-            var slotArray = [':trollface:',
-                             ':dog', 
-                             ':horse:', 
-                             ':koala:', 
-                             ':palm_tree:', 
-                             ':panda_face:', 
-                             ':wine_glass:', 
-                             ':hamburger: ', 
-                             ':football:', 
-                             ':car:', 
-                             ':key:', 
-                             ':gem:'];
-            var slotValue = [-1,
+            var slotArray = [':trollface: -',
+                             ':dog: -', 
+                             ':horse: -', 
+                             ':koala: -', 
+                             ':palm_tree: -', 
+                             ':panda_face: -', 
+                             ':wine_glass: -', 
+                             ':hamburger: -', 
+                             ':football: -', 
+                             ':car: -', 
+                             ':key: -', 
+                             ':gem: -'];
+            var slotValue = [-3,
                              4,
                              4.5,
                              5,
@@ -286,22 +286,26 @@
             
 
             //Determine Winnings
-             if (outcome1[0] == outcome2[0] & outcome1[0] && outcome4[0] == outcome3[0]) {
+             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
             }
-            else if (outcome1[0] == outcome2[0] & outcome1[0] && outcome4[0] != outcome3[0]) {
+            else if (outcome1[0] == outcome4[0] && outcome1[0] != outcome3[0]) {
                 winnings = Math.round(bet * (.45 * outcome1[1]));
             }
-            else if (outcome1[0] == outcome4[0] & outcome3[0] && outcome1[0] != outcome2[0]) {
+            else if (outcome1[0] == outcome3[0] && outcome4[0] != outcome2[0]) {
                 winnings = Math.round(bet * (.5 * outcome1[1]));
             }
-            else if (outcome2[0] == outcome2[0] & outcome3[0] && outcome4[0] != outcome1[0]) {
+            else if (outcome2[0] == outcome2[0] && outcome3[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
                 
             }
-            else if (outcome2[0] == outcome1[0] & outcome2[0] && outcome3[0] != outcome4[0]) {
+            else if (outcome2[0] == outcome2[0] && outcome4[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
                 
+            }
+            else if (outcome1[0] == outcome1[0] && outcome3[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.45 * outcome1[1]));
+            
             }
             else{
                 winnings = 0;  
