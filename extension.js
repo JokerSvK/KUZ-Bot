@@ -446,7 +446,7 @@
                     }
                          
                     //Display Outcome
-                    if (outcome[4] == 0) {
+                    if (outcome[6] == 0) {
                         if (updatedTokens === 1) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti posledních 5 žetonů.")}, 7000);   
                         }  
