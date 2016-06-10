@@ -260,7 +260,7 @@
                              ':car: - ', 
                              ':key: - ', 
                              ':gem: - '];
-            var slotValue = [-5,
+            var slotValue = [-10,
                              4,
                              4.5,
                              5,
@@ -282,6 +282,8 @@
             var outcome2 = spinSlots(); 
             var outcome3 = spinSlots();
             var outcome4 = spinSlots();
+            var outcome5 = spinSlots();
+            var outcome6 = spinSlots();
             
             
 
@@ -305,17 +307,53 @@
             }
             else if (outcome2[0] == outcome4[0] && outcome2[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
+               
+            }
+            else if (outcome1[0] == outcome3[0] && outcome4[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.45 * outcome1[1]));
                 
             }
-            else if (outcome2[0] == outcome3[0] && outcome4[0] != outcome1[0]) {
+            else if (outcome1[0] == outcome5[0] && outcome1[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.5 * outcome1[1]));
+                
+            }
+            else if (outcome2[0] == outcome5[0] && outcome2[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
+               
+            }
+            else if (outcome1[0] == outcome5[0] && outcome3[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.45 * outcome1[1]));
+                
+            }
+            else if (outcome1[0] == outcome5[0] && outcome4[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.45 * outcome1[1]));
+                
+            }
+            else if (outcome1[0] == outcome6[0] && outcome1[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.5 * outcome1[1]));
+                
+            }
+            else if (outcome2[0] == outcome6[0] && outcome2[0] != outcome1[0]) {
+                winnings = Math.round(bet * (.40 * outcome2[1]));
+               
+            }
+            else if (outcome1[0] == outcome6[0] && outcome3[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.45 * outcome1[1]));
+                
+            }
+            else if (outcome1[0] == outcome6[0] && outcome4[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.45 * outcome1[1]));
+                
+            }
+            else if (outcome1[0] == outcome6[0] && outcome5[0] != outcome2[0]) {
+                winnings = Math.round(bet * (.45 * outcome1[1]));
                 
             }
             else{
                 winnings = 0;  
             }
                         
-            return [outcome1[0], outcome2[0], outcome3[0], outcome4[0], winnings];                      
+            return [outcome1[0], outcome2[0], outcome3[0], outcome4[0], outcome5[0], outcome6[0], winnings];                      
         }
         
         function checkTokens(bet, user) {
@@ -389,19 +427,19 @@
                     //Process valid bets
                     else {
                         var outcome = spinOutcome(bet);
-                        updatedTokens = slotWinnings(outcome[4], user);
+                        updatedTokens = slotWinnings(outcome[6], user);
                     }
                     
                     //Display Slots
                     if (space === -1 || bet == 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
+                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4] + outcome[5])}, 5000);
                     } 
                     else if (bet > 5) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
+                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4] + outcome[5])}, 5000);
                     }  
                     else {
                         return false; 
