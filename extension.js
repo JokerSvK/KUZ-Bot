@@ -34,8 +34,6 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                   API.sendChat("/me Bacon!!!");
-                   setTimeout(function() {API.moderateDeleteChat(chat.cid);)}, 5000);
-                  
                 }
               }
             };
@@ -130,11 +128,11 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Mark Valentine", "250");
-                    localStorage.setItem("Enciánová Predkožka", "250");
-                    localStorage.setItem("Uzsi", "250");
-                    localStorage.setItem("THØMAS B", "250");
-                    localStorage.setItem("★Derrpík★", "250");
+                    localStorage.setItem("Mark Valentine", "1258035");
+                    localStorage.setItem("Enciánová Predkožka", "71400");
+                    localStorage.setItem("Uzsi", "22500");
+                    localStorage.setItem("THØMAS B", "6844");
+                    localStorage.setItem("★Derrpík★", "6247");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
@@ -262,7 +260,7 @@
                              ':car: - ', 
                              ':key: - ', 
                              ':gem: - '];
-            var slotValue = [-8,
+            var slotValue = [-5,
                              4,
                              4.5,
                              5,
@@ -288,10 +286,10 @@
             
 
             //Determine Winnings
-             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome4[0]) {
+             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
                 winnings = Math.round(bet * outcome1[1]);
             }
-            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome4[0]) {
+            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
                 winnings = Math.round(bet * (.45 * outcome1[1]));
             }
             else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
@@ -312,8 +310,6 @@
             else if (outcome2[0] == outcome3[0] && outcome4[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
                 
-           
-            
             }
             else{
                 winnings = 0;  
