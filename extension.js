@@ -34,6 +34,8 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                   API.sendChat("/me Bacon!!!");
+                  setTimeout(API.moderateDeleteChat(chat.cid), 1000);
+                  
                 }
               }
             };
