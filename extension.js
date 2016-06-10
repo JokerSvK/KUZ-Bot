@@ -129,10 +129,10 @@
                 else {
                     localStorage.clear();
                     localStorage.setItem("Mark Valentine", "1258035");
-                    localStorage.setItem("Enciánová Predkožka", "71400");
+                    localStorage.setItem("Enciánová Predkožka", "250");
                     localStorage.setItem("Uzsi", "22500");
-                    localStorage.setItem("THØMAS B", "6844");
-                    localStorage.setItem("★Derrpík★", "6247");
+                    localStorage.setItem("THØMAS B", "250");
+                    localStorage.setItem("★Derrpík★", "250");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
@@ -233,7 +233,7 @@
             
             //Check for existing user tokens
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "100");
+                 localStorage.setItem(user, "250");
                  tokens = localStorage.getItem(user);
             }
             else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
