@@ -102,7 +102,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Výherce druhé soutěže: X");
+                  API.sendChat("/me Červnovou soutěž vyhrál hráč Mark Valentine.");
 
                 }
               }
@@ -115,7 +115,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Druhá soutěž je zde! Začíná ve 20:00. Více informací: http://hudbajevsetko.justforum.net/t32-souteze#131");
+                  API.sendChat("/me Momentálně neprobíhá žádná soutěž. Až se tak stane, dáme vám vědět včas na Facebooku!");
 
                 }
               }
@@ -123,13 +123,18 @@
 // !cleartokens
         bot.commands.cleartokensCommand = {
             command: 'resetzetony',  //The command to be called. With the standard command literal this would be: !cleartokens
-            rank: 'cohost', //Minimum user permission to use the command
+            rank: 'manager', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
+                    localStorage.setItem("Mark Valentine", "250");
+                    localStorage.setItem("Enciánová Predkožka", "250");
+                    localStorage.setItem("Uzsi", "250");
+                    localStorage.setItem("THØMAS B", "250");
+                    localStorage.setItem("★Derrpík★", "250");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
@@ -257,7 +262,7 @@
                              ':car: - ', 
                              ':key: - ', 
                              ':gem: - '];
-            var slotValue = [-5,
+            var slotValue = [-8,
                              4,
                              4.5,
                              5,
@@ -283,10 +288,10 @@
             
 
             //Determine Winnings
-             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome3[0]) {
+             if (outcome1[0] == outcome2[0] && outcome1[0] == outcome4[0]) {
                 winnings = Math.round(bet * outcome1[1]);
             }
-            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome3[0]) {
+            else if (outcome1[0] == outcome2[0] && outcome1[0] != outcome4[0]) {
                 winnings = Math.round(bet * (.45 * outcome1[1]));
             }
             else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
@@ -304,8 +309,10 @@
                 winnings = Math.round(bet * (.40 * outcome2[1]));
                 
             }
-            else if (outcome1[0] == outcome3[0] && outcome4[0] != outcome2[0]) {
-                winnings = Math.round(bet * (.45 * outcome1[1]));
+            else if (outcome2[0] == outcome3[0] && outcome4[0] != outcome1[0]) {
+                winnings = Math.round(bet * (.40 * outcome2[1]));
+                
+           
             
             }
             else{
