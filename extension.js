@@ -132,7 +132,7 @@
                     localStorage.setItem("Enciánová Predkožka", "250");
                     localStorage.setItem("Mr.Dalby", "1000");
                     localStorage.setItem("THØMAS B", "1229592");
-                    localStorage.setItem("★Derrpík★", "6247");
+                    localStorage.setItem("★Derrpík★", "15345");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
