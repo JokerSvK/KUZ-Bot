@@ -130,7 +130,7 @@
                     localStorage.clear();
                     localStorage.setItem("Mark Valentine", "7588035");
                     localStorage.setItem("Enciánová Predkožka", "250");
-                    localStorage.setItem("Uzsi", "22500");
+                    localStorage.setItem("Mr.Dalby", "1000");
                     localStorage.setItem("THØMAS B", "250");
                     localStorage.setItem("★Derrpík★", "6247");
                     API.sendChat("/me Proběhlo resetování žetonů!");
