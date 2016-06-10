@@ -457,7 +457,7 @@
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
                         }
                     }
-                    else if (outcome[3] == (bet * 7)) {
+                    else if (outcome[6] == (bet * 7)) {
                         setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);      
                     }
                     else {
