@@ -128,11 +128,11 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Mark Valentine", "10000000");
+                    localStorage.setItem("Mark Valentine", "25000000");
                     localStorage.setItem("Enciánová Predkožka", "200000");
-                    localStorage.setItem("Mr.Dalby", "4000");
+                    localStorage.setItem("Mr.Dalby", "50000");
                     localStorage.setItem("THØMAS B", "1229592");
-                    localStorage.setItem("★Derrpík★",  "12000000");
+                    localStorage.setItem("★Derrpík★",  "135000000");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
@@ -249,11 +249,15 @@
         //Slots---------------------------------------------------------------------------------------------------------------------------
         function spinSlots() {
             var slotArray = [':trollface: - ',
+                             ':no_entry_sign: - ',
                              ':dog: - ', 
                              ':horse: - ', 
                              ':koala: - ', 
                              ':palm_tree: - ', 
                              ':panda_face: - ', 
+                             ':strawberry: - ',
+                             ':watermelon: - ',
+                             ':christmas_tree: - ',
                              ':wine_glass: - ', 
                              ':hamburger: - ', 
                              ':football: - ', 
@@ -261,6 +265,10 @@
                              ':key: - ', 
                              ':gem: - '];
             var slotValue = [-15,
+                             -4,
+                             2.5,
+                             3,
+                             3.5,
                              4,
                              4.5,
                              5,
@@ -270,7 +278,7 @@
                              7,
                              7.5,
                              8,
-                             8.5,
+                             10,
                             15];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
