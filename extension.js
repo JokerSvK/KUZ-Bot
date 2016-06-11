@@ -130,9 +130,9 @@
                     localStorage.clear();
                     localStorage.setItem("Mark Valentine", "10000000");
                     localStorage.setItem("Enciánová Predkožka", "200000");
-                    localStorage.setItem("Mr.Dalby", "1000");
+                    localStorage.setItem("Mr.Dalby", "4000");
                     localStorage.setItem("THØMAS B", "1229592");
-                    localStorage.setItem("★Derrpík★",  "519000");
+                    localStorage.setItem("★Derrpík★",  "12000000");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
@@ -342,7 +342,7 @@
       
             }
             else if (outcome6[0] == outcome4[0] & outcome5[0] && outcome6[0] != outcome1[0] + outcome2[0] + outcome3[0]) {
-                winnings = Math.round(bet * (.5 * outcome6[1]));
+                winnings = Math.round(bet * (.40 * outcome6[1]));
                 
             }
             else{
