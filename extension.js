@@ -260,7 +260,7 @@
                              ':car: - ', 
                              ':key: - ', 
                              ':gem: - '];
-            var slotValue = [-10,
+            var slotValue = [-15,
                              4,
                              4.5,
                              5,
@@ -271,7 +271,7 @@
                              7.5,
                              8,
                              8.5,
-                            12];    
+                            15];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
@@ -340,6 +340,10 @@
             else if (outcome3[0] == outcome4[0] && outcome3[0] != outcome1[0] + outcome2[0] + outcome6[0] + outcome6[0]) {
                 winnings = Math.round(bet * (.5 * outcome3[1]));
       
+            }
+            else if (outcome6[0] == outcome4[0] & outcome5[0] && outcome6[0] != outcome1[0] + outcome2[0] + outcome3[0]) {
+                winnings = Math.round(bet * (.5 * outcome6[1]));
+                
             }
             else{
                 winnings = 0;  
