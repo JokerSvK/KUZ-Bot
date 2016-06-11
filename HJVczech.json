@@ -119,8 +119,9 @@
                     "ti koupil/a kolo, abys zhubl/a.",
                     "ti koupil/a pořádnou židli, ať máš na čem sedět.",
                     "ti koupil/a zájezd do Sýrie, protože se tě chce zbavit.",
-                    "ti chtěl/a něco koupit, ale radši to koupil/a sobě..",
+                    "ti chtěl/a něco koupit, ale radši to koupil/a sobě.",
                     "ti koupil/a nutellu, ale cestou k tobě ji snědl/a."
+                    "ti koupil jedno velké nic, abys poznal pocit prázdnoty."
 		
 		
 	],
@@ -130,10 +131,16 @@
 		    "chce vydrnkat.",
 		    "si chce s tebou pohrát.",
 		    "ti chce vypatexovat byt.",
-		    "ti chce vytahat Pipíka.",
+		    "ti chce vytahat pipíka.",
 		    "ti chce oloupat banán.",
 		    "si tě chce osedlat.",
-		    "si tě chce odtáhnout do nory a zotročit."
+		    "si tě chce odtáhnout do nory a zotročit.",
+		    "chce ochutnat tvou hybridní meruňku.",
+		    "ti chce ukradnout tvého frantíka.",
+		    "tě chce na tvrdo namasírovat mezi půlkami.",
+		    "má chuť na Twister.",
+		    "tě miluje a přeje ti tolik dobrého, kolik by ti nikdo jiný nepřál, ale to neznamená, že mu nemusíš vypindit hoňoura."
+		    
 	
 	],
 	"kameny": [
