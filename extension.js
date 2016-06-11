@@ -100,7 +100,9 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me  GeeDee grab hype! Raduj se! Stal/a jsi se obětí vzáceného stisknutí tohoto tlačítka..");
+                var currentDJ = API.getDJ().username;
+                var user = chat.un; 
+                  API.sendChat("/me " + user + "  grab hype! Raduj se, " + currentDJ + "! Stal/a jsi se obětí vzáceného stisknutí tohoto tlačítka..");
 
                 }
               }
