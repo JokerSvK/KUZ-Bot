@@ -135,7 +135,7 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("Enciánová Predkožka", "200000");
                     localStorage.setItem("Mr.Dalby", "50000");
                     localStorage.setItem("THØMAS B", "1229592");
-                    localStorage.setItem("★Derrpík★",  "11249000000");
+                    localStorage.setItem("★Derrpík★",  "1249000000");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
