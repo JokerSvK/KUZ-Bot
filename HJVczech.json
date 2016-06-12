@@ -293,7 +293,7 @@
     "autowoot": "/me Doporučujeme RCS pro automatický woot: https://rcs.radiant.dj/install",
     "brandambassador": "/me Brand Ambassador je hlas uživatelů plug.dj. Podporují akce, pomáhají komunitám, sdílejí plug.dj vzkaz po celém světě. Pro více informací: https://stg.plug.dj/ba.",
     "bouncerplusrank": "/me [@%%NAME%%] Musíš být manažer a nebo musí být povolen Bouncer+.",
-    "chatcleared": "/me [@%%NAME%%] Vyčistil/a chat.",
+    "chatcleared": "/me [@%%NAME%%] Vymazal/a chat.",
     "deletechat": "/me [@%%NAME%%] Vyčistil/a chat od %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% příkazy: %%LINK%%",
     "eatcookie": "/me Pošli někomu sušenku přes !cookie @jmeno.",
