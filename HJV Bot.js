@@ -1308,7 +1308,7 @@
                 'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
+                'kokot', 'píča', 'piča', 'pica', 'debil', 'magor', 'ichtyl', 'zmrd', 'kurva', 'děvka', 'fuck', 'bitch', 'curak', 'čůrak', 'čurak', 'retard'
             ]
         },
         connectAPI: function () {
@@ -2931,7 +2931,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var link = "(Updated link coming soon)";
+                        var link = "(Link neplánujeme.)";
                         API.sendChat(subChat(basicBot.chat.starterhelp, {link: link}));
                     }
                 }
