@@ -93,7 +93,7 @@
             }
         };
 bot.commands.afkCommand = {
-            command: 'afkuj',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'afk',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
@@ -115,7 +115,7 @@ bot.commands.afkCommand = {
         };
 
         bot.commands.afkdisableCommand = {
-            command: 'back',  //The command to be called. With the standard command literal this would be: !bacon
+            command: 'afkdisable',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
             type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
