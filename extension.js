@@ -298,8 +298,8 @@ bot.commands.gdgrabCommand = {
             var outcome4 = spinSlots();
             var outcome5 = spinSlots();
             var outcome6 = spinSlots();
-            var outcome7 = spinSlots(":strawberry:");
-            var outcome8 = spinSlots(":dog:");
+            var outcome7 = spinSlots(':strawberry:');
+            var outcome8 = spinSlots(':dog:');
             
             
 
