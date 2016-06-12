@@ -273,20 +273,20 @@ bot.commands.gdgrabCommand = {
                              ':gem: - '];
             var slotValue = [-3,
                              -1.5,
-                             2,
-                             3.5,
-                             3,
-                             3.5,
-                             4,
-                             4.5,
                              5,
-                             5.5,
-                             6,
-                             6.5,
-                             7,
-                             7.5,
-                             8,
-                            8.5];    
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                             5,
+                            10];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
@@ -375,6 +375,10 @@ bot.commands.gdgrabCommand = {
                 
             }
             else if (outcome6[0] == outcome1[0] & outcome4[0] && outcome6[0] != outcome2[0] + outcome3[0] + outcome5[0]) {
+                winnings = Math.round(bet * (.5 * outcome6[1]));
+                
+            }
+            else if (outcome6[0] == outcome3[0] & outcome4[0] && outcome6[0] != outcome2[0] + outcome1[0] + outcome5[0]) {
                 winnings = Math.round(bet * (.5 * outcome6[1]));
                 
             }
