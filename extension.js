@@ -272,7 +272,8 @@ bot.commands.gdgrabCommand = {
                              ':gem: - '];
             var slotValue = [-3,
                              -1.5,
-                             2.5,
+                             2,
+                             3.5,
                              3,
                              3.5,
                              4,
@@ -284,8 +285,7 @@ bot.commands.gdgrabCommand = {
                              7,
                              7.5,
                              8,
-                             10,
-                            15];    
+                            8.5];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
