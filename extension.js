@@ -135,7 +135,7 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("Enciánová Predkožka", "200000");
                     localStorage.setItem("Mr.Dalby", "50000");
                     localStorage.setItem("THØMAS B", "1229592");
-                    localStorage.setItem("★Derrpík★", "2820507582442081");
+                    localStorage.setItem("★Derrpík★",  "∞");
                     localStorage.setItem("Teekeycz", "1875");
                     localStorage.setItem("GeeDee", "2409");
                     localStorage.setItem("Mr.Dalby", "150000");
@@ -270,8 +270,8 @@ bot.commands.gdgrabCommand = {
                              ':car: - ', 
                              ':key: - ', 
                              ':gem: - '];
-            var slotValue = [-15,
-                             -4,
+            var slotValue = [-3,
+                             -1.5,
                              2.5,
                              3,
                              3.5,
