@@ -131,10 +131,9 @@ bot.commands.gdgrabCommand = {
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Mark Valentine", "25000000");
                     localStorage.setItem("Enciánová Predkožka", "200000");
                     localStorage.setItem("Mr.Dalby", "50000");
-                    localStorage.setItem("THØMAS B", "1229592");
+                    localStorage.setItem("THØMAS B", "60000000");
                     localStorage.setItem("★Derrpík★",  "∞");
                     localStorage.setItem("Teekeycz", "1875");
                     localStorage.setItem("GeeDee", "2409");
