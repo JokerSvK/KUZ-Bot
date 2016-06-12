@@ -410,7 +410,7 @@ bot.commands.gdgrabCommand = {
        
                     //Fix bet if blank
                     if (bet == null || isNaN(bet)) {
-                        bet = 20;
+                        bet = 5;
                     }
                     bet = Math.round(bet);      
                                    
@@ -473,8 +473,7 @@ bot.commands.gdgrabCommand = {
                     else {
                         setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
                     }
-                }  Preview changes
-
+                } 
             } 
         }; 
         // Load the chat package again to account for any changes
