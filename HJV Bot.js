@@ -1204,7 +1204,7 @@
                     
            
                 }
-                if (msg.indexOf('kurv') > 0 || msg.indexOf('pic') > 0 || msg.indexOf('pič') > 0 || msg.indexOf('jeb') > 0 || msg.indexOf('mrd') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('buzna') > 0 || msg.indexOf('buzik') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurak') > 0 || msg.indexOf('curak') > 0 || msg.indexOf('děvka') > 0 || msg.indexOf('ichty') > 0 || msg.indexOf('šuk') > 0 || msg.indexOf('kurvičk') > 0 || msg.indexOf('štětk') > 0) {
+                if (msg.indexOf('kurv') > 0 || msg.indexOf('pič') > 0 || msg.indexOf('píč') > 0 || msg.indexOf('jeb') > 0 || msg.indexOf('mrd') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('kréten') > 0 || msg.indexOf('buz') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurá') > 0 || msg.indexOf('čura') > 0 || msg.indexOf('děvk') > 0 || msg.indexOf('ser') > 0 || msg.indexOf('šuk') > 0 || msg.indexOf('srat') > 0 || msg.indexOf('srát') > 0) {
                     API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
                     
                     return true;
