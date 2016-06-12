@@ -378,9 +378,10 @@
                     basicBot.room.roulette.rouletteStatus = false;
                     var ind = Math.floor(Math.random() * basicBot.room.roulette.participants.length);
                     var winner = basicBot.room.roulette.participants[ind];
-                    basicBobt.room.roulette.participants = [];
-                    var cisla = ["1" ,"2", "3", "4", "5"];
-                    var pos = cisla[Math.floor(Math.random() * cisla.length)];
+                    basicBot.room.roulette.participants = [];
+                    var cisla = ["1"];
+                    var pos = cisla [Math.floor(Math.random() * cisla.length)];
+                    var user = basicBot.userUtilities.lookupUser(winner);
                     var name = user.username;
                     API.sendChat(subChat(basicBot.chat.winnerpicked, {name: name, position: pos}));
                     setTimeout(function (winner, pos) {
