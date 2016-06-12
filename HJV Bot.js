@@ -1204,7 +1204,7 @@
                     
            
                 }
-                if (msg.indexOf('kurva') > 0 || msg.indexOf('piča') > 0 || msg.indexOf('piče') > 0 || msg.indexOf('pica') > 0 || msg.indexOf('piči') > 0 || msg.indexOf('jebat') > 0 || msg.indexOf('mrdat') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('buzna') > 0 || msg.indexOf('buzik') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurak') > 0 || msg.indexOf('curak') > 0 || msg.indexOf('děvka') > 0 || msg.indexOf('děvko') > 0 || msg.indexOf('pošuk') > 0 || msg.indexOf('kurvička') > 0 || msg.indexOf('jeb') > 0) {
+                if (msg.indexOf('kurv') > 0 || msg.indexOf('pic') > 0 || msg.indexOf('pič') > 0 || msg.indexOf('jeb') > 0 || msg.indexOf('mrd') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('buzna') > 0 || msg.indexOf('buzik') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurak') > 0 || msg.indexOf('curak') > 0 || msg.indexOf('děvka') > 0 || msg.indexOf('ichty') > 0 || msg.indexOf('šuk') > 0 || msg.indexOf('kurvičk') > 0 || msg.indexOf('štětk') > 0) {
                     API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
                     API.moderateDeleteChat(chat.cid);
                     
