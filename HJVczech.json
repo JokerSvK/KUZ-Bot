@@ -242,7 +242,7 @@
     "afkremove": "/me @%%NAME%%, byl/a jsi odstraněn/a z důvodu AFK po dobu %%TIME%%. Byl/a jsi na pozici %%POSITION%%. Napiš alespoň jednou za %%MAXIMUMAFK%% minut, pokud chceš hrát.",
     "caps": "/me @%%NAME%%, dej si bacha na capslock, prosím.",
     "askskip": "/me @%%NAME%%, nežádej o přeskočení písně.",
-    "spam": "/me @%%NAME%%, prosím nespamuj.",
+    "spam": "/me @%%NAME%%, byl/a jsi napomenut/a za používaní vulgárních slov!",
     "roomadvertising": "/me @%%NAME%%, tvá zpráva byla nahlášena jako reklama.",
     "validgiftags": "/me [@%%NAME%%] http:\/\/i.giphy.com\/%%ID%%.gif [Tags: %%TAGS%%]",
     "invalidgiftags": "/me [@%%NAME%%] Neplatný tag, zkus jiný. [Tags: %%TAGS%%]",
@@ -357,7 +357,7 @@
     "youtube": "/me [%%NAME%%] Dejte nám odběr na youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
     "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
-    "slovnik": "/me @%%NAME%%, uklidni svůj slovník!",
+    "slovnik": "/me @%%NAME%%, byl/a jsi napomenut/a za používání vulgárních slov!",
     
 
     
