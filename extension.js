@@ -298,6 +298,8 @@ bot.commands.gdgrabCommand = {
             var outcome4 = spinSlots();
             var outcome5 = spinSlots();
             var outcome6 = spinSlots();
+            var outcome7 = spinSlots(":strawberry:");
+            var outcome8 = spinSlots(":dog:");
             
             
 
@@ -310,6 +312,11 @@ bot.commands.gdgrabCommand = {
             }
             else if (outcome1[0] == outcome3[0] && outcome1[0] != outcome2[0]) {
                 winnings = Math.round(bet * (.5 * outcome1[1]));
+                
+            }
+            else if (outcome8[0] == outcome7[0] && outcome8[0] != outcome2[0] + outcome3[0] + outcome4[0] + outcome5[0] + outcome6[0] + outcome1[0]) {
+                winnings = Math.round(bet * (.40 * outcome8[1]));
+                
             }
             else if (outcome2[0] == outcome3[0] && outcome2[0] != outcome1[0]) {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
@@ -471,7 +478,12 @@ bot.commands.gdgrabCommand = {
                         setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);      
                     }
                     else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000);
+                        
+                    }
+                    else if (outcome8[0] + outcome7[0] == (bet * 7)) {
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Gratujeme ke 2 párům! Tvá výhra je " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);
+                    
                     }
                 } 
             } 
