@@ -1196,168 +1196,18 @@
                     } 
                 }
                 
-                if (msg.indexOf('kurva') > -1) {
+                if (msg.indexOf('redtube') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
                     return true;
                      
-                    } 
-                }
-                    if (msg.indexOf('debil') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('pica') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('idiot') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('piča') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('kokot') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('mrdat') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('jebat') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('hovno') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('čurak') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('curak') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('buzna') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('buzik') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('kurvu') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('piču') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('hovna') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('hajzl') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('hajzle') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('mrdko') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                    if (msg.indexOf('mrdka') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
                     
-                    if (msg.indexOf('šukat') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
+           
                 }
-                     if (msg.indexOf('děvko') > -1) {
-                    API.moderateDeleteChat(chat.cid);
+                if (msg.indexOf('kurva') > 0 || msg.indexOf('piča') > 0 || msg.indexOf('piče') > 0 || msg.indexOf('pica') > 0 || msg.indexOf('piči') > 0 || msg.indexOf('jebat') > 0 || msg.indexOf('mrdat') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('buzna') > 0 ||msg.indexOf('buzik') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurak') > 0 || msg.indexOf('curak') > 0 || msg.indexOf('děvka') > 0 || msg.indexOf('děvko') > 0 || msg.indexOf('pošuk') > 0 || msg.indexOf('kurvička') > 0 || msg.indexOf('jeb') > 0) {
                     API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                     
-                    } 
-                }
-                     if (msg.indexOf('děvka') > -1) {
                     API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                    return true;
-                }
-                if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
-                    API.moderateDeleteChat(chat.cid);
+                    
                     return true;
                 }
 
