@@ -225,7 +225,7 @@
     "timelimit": "/me @%%NAME%%, tvoje skladba je delší než %%MAXLENGTH%% minut, potřebuješ svolení hrát delší skladby.",
     "permissionownsong": "/me :up: @%%NAME%% má právo hrát svojí produkci.",
     "isblacklisted": "/me Tato skladba je na %%BLACKLIST%% blacklistu! Bude přeskočena!",
-    "isopen": "/me Ruleta je spuštěna! Napiš !join pro přihlášení! (Hra, při které za pomocí slosování, můžeš být hozen/a na náhodnou pozici ve frontě.)",
+    "isopen": "/me Ruleta je spuštěna! Napiš !join pro přihlášení! (Hra, při které za pomocí slosování, můžeš být hozen/a na první pozici ve frontě.)",
     "winnerpicked": "/me Vítěz byl vybrán! Gratulujeme! @%%NAME%% na pozici %%POSITION%%.",
     "ball": "/me %%NAME%% se zeptal/a: \"%%QUESTION%%\" a %%BOTNAME%% odpověděl: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% neghostuje.",
