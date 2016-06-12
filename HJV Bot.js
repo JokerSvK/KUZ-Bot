@@ -1185,15 +1185,6 @@
                     } 
                 }
                 
-                var plugRoomLinkPatt = /(\bkurva[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                 if (plugRoomLinkPatt.exec(msg)) {
-                    if (perm === 0) {
-                        API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
-                        return true;
-                        
-                    } 
-                }
-                
                  var plugRoomLinkPatt = /(\bplug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
@@ -1205,9 +1196,8 @@
                     } 
                 }
                 
-                if (msg.indexOf('http://adf.ly/') > -1) {
-                    API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
+                if (msg.indexOf('kurva', 'debil', 'pica', 'idiot', 'piča', 'kokot', 'mrdat', 'jebat', 'hovno', 'curak', 'čurak') > -1) {
+                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
                     return true;
                 }
                 if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
