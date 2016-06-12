@@ -1186,18 +1186,6 @@
                 }
                 
                 var plugRoomLinkPatt = /(\bkurva[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bpiča[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bkokot[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bdebil[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bjebat[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bmrdat[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bčůrak[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bčurak[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bcurak[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bpica[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bidiot[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bkrypl[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                var plugRoomLinkPatt = /(\bhovno[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
