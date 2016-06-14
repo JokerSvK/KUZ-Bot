@@ -131,13 +131,23 @@ bot.commands.gdgrabCommand = {
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("Enciánová Predkožka", "200000");
+                    localStorage.setItem("-PinguiN-", "205000");
                     localStorage.setItem("Mr.Dalby", "50000");
-                    localStorage.setItem("THØMAS B", "60000000");
+                    localStorage.setItem("THØMAS B", "59940000");
                     localStorage.setItem("★Derrpík★",  "∞");
                     localStorage.setItem("Teekeycz", "1875");
-                    localStorage.setItem("GeeDee", "2409");
+                    localStorage.setItem("GeeDee", "7409");
                     localStorage.setItem("Mr.Dalby", "150000");
+                    localStorage.setItem("filipskolnik", "5724");
+                    localStorage.setItem("BroPlaysKevinCZE", "5300");
+                    localStorage.setItem("Franta72 | RIP PLUG", "5000");
+                    localStorage.setItem("Sumer4ever", "5000");
+                    localStorage.setItem("Bσηkἱ", "5000");
+                    localStorage.setItem("Dandeen.ka*", "5000");
+                    localStorage.setItem("Dykobraz", "5000");
+                    localStorage.setItem("Sabičiči", "5000");
+                    localStorage.setItem("ThePsycho", "5000");
+                    localStorage.setItem("[NicMoc.Dj]", "5000")
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
