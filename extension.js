@@ -138,8 +138,8 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("Teekeycz", "18688");
                     localStorage.setItem("GeeDee", "7409");
                     localStorage.setItem("Mr.Dalby", "150000");
-                    localStorage.setItem("filipskolnik", "25000");
-                    localStorage.setItem("BroPlaysKevinCZE", "5300");
+                    localStorage.setItem("filipskolnik", "62500");
+                    localStorage.setItem("BroPlaysKevinCZE", "13250");
                     localStorage.setItem("Franta72 | RIP PLUG", "5000");
                     localStorage.setItem("Sumer4ever", "5000");
                     localStorage.setItem("Bσηkἱ", "5000");
@@ -148,7 +148,7 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("Sabičiči", "5000");
                     localStorage.setItem("ThePsycho", "5000");
                     localStorage.setItem("[NicMoc.Dj]", "5000");
-                    localStorage.setItem("Dejvid555", "810");
+                    localStorage.setItem("Dejvid555", "2282");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
