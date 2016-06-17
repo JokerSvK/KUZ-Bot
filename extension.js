@@ -148,7 +148,7 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("Sabičiči", "5000");
                     localStorage.setItem("ThePsycho", "5000");
                     localStorage.setItem("[NicMoc.Dj]", "5000");
-                    localStorage.setItem("Dejvid555", "6682");
+                    localStorage.setItem("Dejvid555", "7282");
                     API.sendChat("/me Proběhlo resetování žetonů!");
                 }
             }
