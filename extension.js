@@ -138,7 +138,7 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("Teekeycz", "18688");
                     localStorage.setItem("GeeDee", "7409");
                     localStorage.setItem("Mr.Dalby", "150000");
-                    localStorage.setItem("filipskolnik", "1510500");
+                    localStorage.setItem("filipskolnik", "13216875");
                     localStorage.setItem("BroPlaysKevinCZE", "13250");
                     localStorage.setItem("Franta72 | RIP PLUG", "5000");
                     localStorage.setItem("Sumer4ever", "5000");
