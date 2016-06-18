@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
+        var spamWords = ['spam', 'spam2', 'spam3', 'spam4'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -116,7 +116,7 @@ bot.commands.gdgrabCommand = {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Dnes odpoledne ve 14:00 proběhne mini-turnaj v automatech! Vítěz si odnese poukázky na první příčky ve frontě! Více informací na fóru: http://hudbajevsetko.justforum.net/t32-souteze#131");
+                  API.sendChat("/me Neprobíhá žádná soutěž. Chceš-li být v obraze: http://hudbajevsetko.justforum.net/t32-souteze#131");
 
                 }
               }
@@ -134,12 +134,12 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("-PinguiN-", "5000");
                     localStorage.setItem("THØMAS B", "59940000");
                     localStorage.setItem("★Derrpík★",  "5000");
-                    localStorage.setItem("Teekeyczs", "18688");
+                    localStorage.setItem("Teekeycz", "18688");
                     localStorage.setItem("GEЯM", "7409");
-                    localStorage.setItem("Mr.Dalsby", "150000");
-                    localStorage.setItem("filipskolniks", "13216875");
+                    localStorage.setItem("Mr.Dalby", "150000");
+                    localStorage.setItem("filipskolnik", "13216875");
                     localStorage.setItem("BroPlaysKevinCZE", "5000");
-                    localStorage.setItem("Franta72 | RIP PLUG", "5000");
+                    localStorage.setItem("Franta72", "5000");
                     localStorage.setItem("Sumer4ever", "5000");
                     localStorage.setItem("Bσηkἱ", "5000");
                     localStorage.setItem("Dandeen.ka*", "5000");
@@ -148,8 +148,8 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("ThePsycho", "5000");
                     localStorage.setItem("[NicMoc.Dj]", "5000");
                     localStorage.setItem("Mára|HJV", "5000")
-                    localStorage.setItem("Dejvid55s5", "7282"); 
-                    API.sendChat("/me Žetony byly resetovány admin týmem.");
+                    localStorage.setItem("Dejvid555", "7282"); 
+                    API.sendChat("/me Proběhlo resetování žetonů.");
                 }
             }
         };
