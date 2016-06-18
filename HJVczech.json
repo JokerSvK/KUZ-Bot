@@ -358,6 +358,8 @@
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
     "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
     "slovnik": "/me @%%NAME%%, uklidni se.",
+    "slovnik2": "/me @%%NAME%%, uklidni se nebo budeš umlčen/a.",
+    "slovnik3": "/me @%%NAME%%, byl/a jsi umlčen/a za opakovanou vulgaritu v chatu.",
     
 
     
