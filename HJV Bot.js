@@ -405,6 +405,7 @@
             };
             this.lastEta = null;
             this.afkWarningCount = 0;
+            this.slovnikWarningCount = 0;
             this.afkCountdown = null;
             this.inRoom = true;
             this.isMuted = false;
@@ -443,6 +444,13 @@
             },
             setWarningCount: function (user, value) {
                 user.afkWarningCount = value;
+                
+            },
+            getWarningCount: function (user) {
+                return user.slovikWarningCount;
+            },
+            setWarningCount: function (user, value) {
+                user.slovnikWarningCount = value;
             },
             lookupUser: function (id) {
                 for (var i = 0; i < basicBot.room.users.length; i++) {
