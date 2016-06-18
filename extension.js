@@ -395,11 +395,6 @@ bot.commands.gdgrabCommand = {
                     else if (bet < 0) {
                         return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů. Prosím, zkus to přiště bez nesmyslných částek..");
                          
-                        }
-                        
-                    else if (bet < 20) { 
-                        return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů. Minimální sázka je 20 žetonů.");
-                    
                        }
                     else if (bet === 0) { 
                         return API.sendChat("/me [@" + chat.un + "] Dobrý pokus. Nemůžeš hrát automaty bez žetonů."); 
