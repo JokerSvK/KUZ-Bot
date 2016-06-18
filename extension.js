@@ -131,14 +131,14 @@ bot.commands.gdgrabCommand = {
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     localStorage.clear();
-                    localStorage.setItem("-PinguiN-", "205000");
+                    localStorage.setItem("-PinguiN-", "5000");
                     localStorage.setItem("THØMAS B", "59940000");
-                    localStorage.setItem("★Derrpík★",  "∞");
-                    localStorage.setItem("Teekeycz", "18688");
+                    localStorage.setItem("★Derrpík★",  "5000");
+                    localStorage.setItem("Teekeyczs", "18688");
                     localStorage.setItem("GEЯM", "7409");
-                    localStorage.setItem("Mr.Dalby", "150000");
-                    localStorage.setItem("filipskolnik", "13216875");
-                    localStorage.setItem("BroPlaysKevinCZE", "13250");
+                    localStorage.setItem("Mr.Dalsby", "150000");
+                    localStorage.setItem("filipskolniks", "13216875");
+                    localStorage.setItem("BroPlaysKevinCZE", "5000");
                     localStorage.setItem("Franta72 | RIP PLUG", "5000");
                     localStorage.setItem("Sumer4ever", "5000");
                     localStorage.setItem("Bσηkἱ", "5000");
@@ -148,7 +148,7 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("ThePsycho", "5000");
                     localStorage.setItem("[NicMoc.Dj]", "5000");
                     localStorage.setItem("Mára|HJV", "5000")
-                    localStorage.setItem("Dejvid555", "7282"); 
+                    localStorage.setItem("Dejvid55s5", "7282"); 
                     API.sendChat("/me Žetony byly resetovány admin týmem.");
                 }
             }
@@ -249,7 +249,7 @@ bot.commands.gdgrabCommand = {
             
             //Check for existing user tokens
             if (localStorage.getItem(user) == null || localStorage.getItem(user) == "undefined") {
-                 localStorage.setItem(user, "250");
+                 localStorage.setItem(user, "1000");
                  tokens = localStorage.getItem(user);
             }
             else if (localStorage.getItem(user) !== null  && localStorage.getItem(user) !== "undefined") {
@@ -274,10 +274,6 @@ bot.commands.gdgrabCommand = {
                              ':strawberry: - ',
                              ':watermelon: - ',
                              ':christmas_tree: - ',
-                             ':wine_glass: - ', 
-                             ':hamburger: - ', 
-                             ':football: - ', 
-                             ':car: - ', 
                              ':key: - ', 
                              ':gem: - '];
             var slotValue = [-3,
@@ -291,11 +287,7 @@ bot.commands.gdgrabCommand = {
                              5,
                              5,
                              5,
-                             5,
-                             5,
-                             5,
-                             5,
-                            6];    
+                            10];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
