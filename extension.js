@@ -397,7 +397,10 @@ bot.commands.gdgrabCommand = {
                          
                         }
                         
+                    else if (bet < 20) { 
+                        return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů. Minimální sázka je 20 žetonů.");
                     
+                       }
                     else if (bet === 0) { 
                         return API.sendChat("/me [@" + chat.un + "] Dobrý pokus. Nemůžeš hrát automaty bez žetonů."); 
                     }
@@ -411,12 +414,12 @@ bot.commands.gdgrabCommand = {
                     if (space === -1 || bet == 20) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a dvacku do automatu.");
-                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4] + outcome[5])}, 5000);
+                        setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2])}, 5000);
                     } 
                     else if (bet > 20) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
-                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4] + outcome[5])}, 5000);
+                        setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3])}, 5000);
                     }  
                     else {
                         return false; 
@@ -435,10 +438,10 @@ bot.commands.gdgrabCommand = {
                         }
                     }
                     else if (outcome[3] == (bet * 7)) {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);      
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);      
                     }
                     else {
-                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
+                        setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi! Tvá výhra je " + outcome[3] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Dobrá práce!")}, 7000); 
                     }
                 } 
             } 
