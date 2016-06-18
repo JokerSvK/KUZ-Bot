@@ -374,7 +374,7 @@ bot.commands.gdgrabCommand = {
        
                     //Fix bet if blank
                     if (bet == null || isNaN(bet)) {
-                        bet = 5;
+                        bet = 20;
                     }
                     bet = Math.round(bet);      
                                    
