@@ -116,7 +116,7 @@ bot.commands.gdgrabCommand = {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                  API.sendChat("/me Momentálně neprobíhá žádná soutěž. Až se tak stane, dáme vám vědět včas na Facebooku!");
+                  API.sendChat("/me Dnes odpoledne ve 14:00 proběhne mini-turnaj v automatech! Vítěz si odnese poukázky na první příčky ve frontě! Více informací na fóru: http://hudbajevsetko.justforum.net/t32-souteze#131");
 
                 }
               }
@@ -124,7 +124,7 @@ bot.commands.gdgrabCommand = {
 // !cleartokens
         bot.commands.cleartokensCommand = {
             command: 'resetzetony',  //The command to be called. With the standard command literal this would be: !cleartokens
-            rank: 'manager', //Minimum user permission to use the command
+            rank: 'bouncer', //Minimum user permission to use the command
             type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -132,11 +132,10 @@ bot.commands.gdgrabCommand = {
                 else {
                     localStorage.clear();
                     localStorage.setItem("-PinguiN-", "205000");
-                    localStorage.setItem("Mr.Dalby", "50000");
                     localStorage.setItem("THØMAS B", "59940000");
                     localStorage.setItem("★Derrpík★",  "∞");
                     localStorage.setItem("Teekeycz", "18688");
-                    localStorage.setItem("GeeDee", "7409");
+                    localStorage.setItem("GEЯM", "7409");
                     localStorage.setItem("Mr.Dalby", "150000");
                     localStorage.setItem("filipskolnik", "13216875");
                     localStorage.setItem("BroPlaysKevinCZE", "13250");
@@ -148,8 +147,9 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("Sabičiči", "5000");
                     localStorage.setItem("ThePsycho", "5000");
                     localStorage.setItem("[NicMoc.Dj]", "5000");
-                    localStorage.setItem("Dejvid555", "7282");
-                    API.sendChat("/me Proběhlo resetování žetonů!");
+                    localStorage.setItem("Mára|HJV", "5000")
+                    localStorage.setItem("Dejvid555", "7282"); 
+                    API.sendChat("/me Žetony byly restovány admin týmem.");
                 }
             }
         };
@@ -280,22 +280,22 @@ bot.commands.gdgrabCommand = {
                              ':car: - ', 
                              ':key: - ', 
                              ':gem: - '];
-            var slotValue = [-3,
-                             -1.5,
+            var slotValue = [-5,
+                             -2,
                              2,
-                             3.5,
+                             3,
                              4,
-                             4.5,
                              5,
+                             6,
+                             7,
+                             6,
                              5,
+                             6,
                              5,
+                             6,
                              5,
-                             5,
-                             5,
-                             5,
-                             5,
-                             5,
-                            6];    
+                             6,
+                            10];    
             var rand =  Math.floor(Math.random() * (slotArray.length));                
             return [slotArray[rand], slotValue[rand]]; 
         }
@@ -305,9 +305,7 @@ bot.commands.gdgrabCommand = {
             var outcome1 = spinSlots(); 
             var outcome2 = spinSlots(); 
             var outcome3 = spinSlots();
-            var outcome4 = spinSlots();
-            var outcome5 = spinSlots();
-            var outcome6 = spinSlots();
+            
             
             
 
@@ -325,55 +323,11 @@ bot.commands.gdgrabCommand = {
                 winnings = Math.round(bet * (.40 * outcome2[1]));
                 
             }
-            else if (outcome4[0] == outcome5[0] && outcome4[0] != outcome6[0]) {
-                winnings = Math.round(bet * (.45 * outcome4[1]));
-            }
-            else if (outcome4[0] == outcome6[0] && outcome4[0] != outcome5[0]) {
-                winnings = Math.round(bet * (.5 * outcome4[1]));
-            }
-            else if (outcome5[0] == outcome6[0] && outcome5[0] != outcome4[0]) {
-                winnings = Math.round(bet * (.40 * outcome5[1]));
-                
-            }
-            else if (outcome1[0] == outcome6[0] && outcome1[0] != outcome5[0] + outcome4[0] + outcome3[0] + outcome2[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-            }
-            else if (outcome2[0] == outcome6[0] && outcome2[0] != outcome5[0] + outcome4[0] + outcome3[0] + outcome1[0]) {
-                winnings = Math.round(bet * (.5 * outcome2[1]));
-            }
-            else if (outcome3[0] == outcome6[0] && outcome3[0] != outcome5[0] + outcome4[0] + outcome2[0] + outcome1[0]) {
-                winnings = Math.round(bet * (.5 * outcome3[1]));
-                
-            }
-            else if (outcome1[0] == outcome5[0] && outcome1[0] != outcome2[0] + outcome3[0] + outcome4[0] + outcome6[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-            }
-            else if (outcome2[0] == outcome5[0] && outcome2[0] != outcome1[0] + outcome3[0] + outcome4[0] + outcome6[0]) {
-                winnings = Math.round(bet * (.5 * outcome2[1]));
-            }
-            else if (outcome3[0] == outcome5[0] && outcome3[0] != outcome1[0] + outcome2[0] + outcome4[0] + outcome6[0]) {
-                winnings = Math.round(bet * (.5 * outcome3[1]));
-                
-            }
-            else if (outcome1[0] == outcome4[0] && outcome1[0] != outcome2[0] + outcome3[0] + outcome5[0] + outcome6[0]) {
-                winnings = Math.round(bet * (.5 * outcome1[1]));
-            }
-            else if (outcome2[0] == outcome4[0] && outcome2[0] != outcome1[0] + outcome3[0] + outcome5[0] + outcome6[0]) {
-                winnings = Math.round(bet * (.5 * outcome2[1]));
-            }
-            else if (outcome3[0] == outcome4[0] && outcome3[0] != outcome1[0] + outcome2[0] + outcome6[0] + outcome6[0]) {
-                winnings = Math.round(bet * (.5 * outcome3[1]));
-      
-            }
-            else if (outcome6[0] == outcome4[0] & outcome5[0] && outcome6[0] != outcome1[0] + outcome2[0] + outcome3[0]) {
-                winnings = Math.round(bet * (.40 * outcome6[1]));
-                
-            }
             else{
                 winnings = 0;  
             }
                         
-            return [outcome1[0], outcome2[0], outcome3[0], outcome4[0], outcome5[0], outcome6[0], winnings];                      
+            return [outcome1[0], outcome2[0], outcome3[0], winnings];                      
         }
         
         function checkTokens(bet, user) {
@@ -429,34 +383,40 @@ bot.commands.gdgrabCommand = {
                     //Prevent invalid betting
                     if (bet > playerTokens[0]) {
                         if (playerTokens[0] === 0){
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, jelikož má nulové konto!"); 
+                            return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů, jelikož nemáš žetony!"); 
                         } 
                         else if (playerTokens[0] === 1) {
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, jelikož má jediný žeton."); 
+                            return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů, jelikož máš jediný žeton."); 
                         }
                         else {
-                            return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů, jelikož má " + playerTokens[0] + " žetonů!"); 
+                            return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů, jelikož máš " + playerTokens[0] + " žetonů!"); 
                         }
-                    }
+                    
                     else if (bet < 0) {
-                        return API.sendChat("/me @" + chat.un + " nevsadí " + bet + " žetonů. Prosím, zkus to přiště bez nesmyslných částek.."); 
-                    }
+                        return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů. Prosím, zkus to přiště bez nesmyslných částek..");
+                         
+                        }
+                        
+                    else if (bet < 20) { 
+                        return API.sendChat("/me [@" + chat.un + "] Nevsadíš " + bet + " žetonů. Minimální sázka je 20 žetonů.");
+                    
+                       }
                     else if (bet === 0) { 
-                        return API.sendChat("/me @" + chat.un + " se pokoušel/a hrát bez žetonů. Nemůžeš hrát zdarma."); 
+                        return API.sendChat("/me [@" + chat.un + "] Dobrý pokus. Nemůžeš hrát automaty bez žetonů."); 
                     }
                     //Process valid bets
                     else {
                         var outcome = spinOutcome(bet);
-                        updatedTokens = slotWinnings(outcome[6], user);
+                        updatedTokens = slotWinnings(outcome[3], user);
                     }
                     
                     //Display Slots
-                    if (space === -1 || bet == 5) { 
+                    if (space === -1 || bet == 20) { 
                         //Start Slots
-                        API.sendChat("/me @" + chat.un + " vsadil/a 5 žetonů do automatu.");
+                        API.sendChat("/me @" + chat.un + " vsadil/a dvacku do automatu.");
                         setTimeout(function() {API.sendChat("/me  Automaty říkají: "  + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4] + outcome[5])}, 5000);
                     } 
-                    else if (bet > 5) { 
+                    else if (bet > 20) { 
                         //Start Slots
                         API.sendChat("/me @" + chat.un + " vsadil/a " + bet + " žetonů do automatu.");
                         setTimeout(function() {API.sendChat("/me Automaty říkají: " + outcome[0]  + outcome[1]  + outcome[2] + outcome[3] + outcome[4] + outcome[5])}, 5000);
@@ -466,9 +426,9 @@ bot.commands.gdgrabCommand = {
                     }
                          
                     //Display Outcome
-                    if (outcome[6] == 0) {
+                    if (outcome[3] == 0) {
                         if (updatedTokens === 1) {
-                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti posledních 5 žetonů.")}, 7000);   
+                            setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti 20 žetonů.")}, 7000);   
                         }  
                         else if (updatedTokens === 0) {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Už nemáš žádné žetony!")}, 7000);
@@ -477,7 +437,7 @@ bot.commands.gdgrabCommand = {
                             setTimeout(function() {API.sendChat("/me @" + chat.un + ", prohrál/a jsi! Zbylo ti " + updatedTokens + " žetonů.")}, 7000);
                         }
                     }
-                    else if (outcome[6] == (bet * 7)) {
+                    else if (outcome[3] == (bet * 7)) {
                         setTimeout(function() {API.sendChat("/me @" + chat.un + ", vyhrál/a jsi jackpot " + outcome[6] + " žetonů! Nyní máš " + updatedTokens + " žetonů. Gratulujeme!!")}, 7000);      
                     }
                     else {
