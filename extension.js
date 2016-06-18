@@ -149,7 +149,7 @@ bot.commands.gdgrabCommand = {
                     localStorage.setItem("[NicMoc.Dj]", "5000");
                     localStorage.setItem("Mára|HJV", "5000")
                     localStorage.setItem("Dejvid555", "7282"); 
-                    API.sendChat("/me Žetony byly restovány admin týmem.");
+                    API.sendChat("/me Žetony byly resetovány admin týmem.");
                 }
             }
         };
