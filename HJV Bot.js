@@ -155,6 +155,7 @@
                 }
                 basicBot.room.users = room.users;
                 basicBot.room.afkList = room.afkList;
+                basicBot.room.slovnikList = room.slovnikList
                 basicBot.room.historyList = room.historyList;
                 basicBot.room.mutedUsers = room.mutedUsers;
                 //basicBot.room.autoskip = room.autoskip;
@@ -319,6 +320,7 @@
             chatMessages: [],
             users: [],
             afkList: [],
+            slovnikList: [],
             mutedUsers: [],
             bannedUsers: [],
             skippable: true,
@@ -701,6 +703,41 @@
                                             API.sendChat(subChat(basicBot.chat.afkremove, {name: name, time: time, position: pos, maximumafk: basicBot.settings.maximumAfk}));
                                         }
                                         user.afkWarningCount = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            
+            slovnikCheck: function () {
+                        var user = basicBot.userUtilities.lookupUser(id);
+                        if (typeof user !== 'boolean') {
+                            var plugUser = basicBot.userUtilities.getUser(user);
+                            if (rank !== null && basicBot.userUtilities.getPermission(plugUser) <= rank) {
+                                var name = plugUser.username;
+                                var warncount = user.slovnikWarningCount;
+                                if (msg.indexOf('kurv') > 0 || msg.indexOf('pič') > 0 || msg.indexOf('píč') > 0 || msg.indexOf('jeb') > 0 || msg.indexOf('mrd') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('kréten') > 0 || msg.indexOf('buz') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurá') > 0 || msg.indexOf('čura') > 0 || msg.indexOf('děvk') > 0 || msg.indexOf('ser') > 0 || msg.indexOf('šuk') > 0 || msg.indexOf('srat') > 0 || msg.indexOf('srát') > 0) {
+                                    if (warncount === 0) {
+                                        API.sendChat(subChat(basicBot.chat.slovnik, {name: name}));
+                                        user.slovnikWarningCount = 3;
+                                        userToChange.slovnikWarningCount = 1;
+                                        if (msg.indexOf('kurv') > 0 || msg.indexOf('pič') > 0 || msg.indexOf('píč') > 0 || msg.indexOf('jeb') > 0 || msg.indexOf('mrd') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('kréten') > 0 || msg.indexOf('buz') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurá') > 0 || msg.indexOf('čura') > 0 || msg.indexOf('děvk') > 0 || msg.indexOf('ser') > 0 || msg.indexOf('šuk') > 0 || msg.indexOf('srat') > 0 || msg.indexOf('srát') > 0) {
+                                        } 
+                                    },
+                                    else if (warncount === 1) {
+                                        API.sendChat(subChat(basicBot.chat.slovnik2, {name: name}));
+                                        user.slovnikWarningCount = 3;
+                                            userToChange.slovnikWarningCount = 2;
+                                            if (msg.indexOf('kurv') > 0 || msg.indexOf('pič') > 0 || msg.indexOf('píč') > 0 || msg.indexOf('jeb') > 0 || msg.indexOf('mrd') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('kréten') > 0 || msg.indexOf('buz') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurá') > 0 || msg.indexOf('čura') > 0 || msg.indexOf('děvk') > 0 || msg.indexOf('ser') > 0 || msg.indexOf('šuk') > 0 || msg.indexOf('srat') > 0 || msg.indexOf('srát') > 0) {
+                                        },
+                                    }
+                                    else if (warncount === 2) {
+                                            API.moderateMuteUser(user.id, 1, API.MUTE.SHORT);
+                                            API.sendChat(subChat(basicBot.chat.slovnik3, {name: name}));
+                                        }
+                                        user.slovnikWarningCount = 0;
                                     }
                                 }
                             }
