@@ -236,7 +236,7 @@
     var botCreatorIDs = ["5032556", "4105209"];
 
     var basicBot = {
-        version: "1.0.0",
+        version: "7.7.2",
         status: false,
         name: "KUZ Bot",
         loggedInID: null,
