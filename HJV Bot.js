@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://raw.githubusercontent.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
+        $.get("https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -236,21 +236,21 @@
     var botCreatorIDs = ["5032556", "4105209"];
 
     var basicBot = {
-        version: "Final version by Franta72",
+        version: "1.0.0",
         status: false,
-        name: "HJV Bot",
+        name: "KUZ Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
+        chatLink: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/KUZczech.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "HJV Bot",
+            botName: "KUZ Bot",
             language: "special",
-            chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
+            chatLink: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/KUZczech.json",
             scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
