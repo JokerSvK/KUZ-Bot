@@ -22,12 +22,5 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 - Příkaz k vyhledání uživatele !hledat
 - Členové admin týmu mohou psát oznámení přes !say
 
-[v7.8.2] [Červenec 2016]
-
-- Novinky do této verze se připravují
-
-
-# Návrhy nových příkazů
-
-Máte-li nápad k sestrojení nového příkazů, obraťte se na naše fóru:
-http://hudbajevsetko.justforum.net/t6-navrhy-na-prikazy-do-bota
+19.06.2016 - Ukončení vývoje bota. Bot bude provozován v komunitě i nadále, ale jíž se nebudou vydávat žádné aktualizace.
+vFinal Version by Franta72
