@@ -430,16 +430,15 @@
      "nouservyzvat": "/me Nevidím %%NAME%% v místnosti, takže vyzvi na tuto zapeklitou hru někoho jinýho.",
      "vyzvat": "/me @%%NAMETO%%, @%%NAMEFROM%% %%KAMENY%%",
     
-    "geedee": "/me GeeDee je náladový, líný, extrémně náročný a téměř vždy neutrální. Miluje sarkasmus a ironii. Jen tak se nenaštve, bývá nevypočitatelný. Miluje Thomase Bergersena, zvířata a rád spamuje. Bývá často AFK.",
-    "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Nemá rád, když jsou v chatu lidé vulgární. Mezi jeho zájmy patří chození do posilovny a hraní her na PC jako je třeba SC2.",
+    "germ": "/me GEЯM je hodný, vyrovnaný, neutrální a extrémně náročný flegmatik, který miluje sarkasmus a ironii. Je to nevypočitatelný optimista. Miluje Thomase Bergersena, zvířata a rád spamuje. Bývá často AFK.",
+    "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Poslouchá hlavně rock a metal a nenávidí český rap.",
     "sumer": "/me Sumer miluje jízdu na kole. Je klidné a mírumilovné povahy a málokdy se naštve, ale když se to někomu podaří, tak to stojí za to. Občas je tvrdohlavý a je pro každou srandu. Má přezdívku sumec. >(°>__<°)<",
     "franta": "/me Franta72 je někdy náladový týpek, ale vždy je nějaký způsob, jak si s ním pokecat. Je správcem bota. Nemá rád, když mu někdo lže. Miluje rap, ale poslouchá v podstatě všechno.",
     "dykobraz": "/me Dykobraz je kliďas, pohodář a všechno bere s humorem. Miluje cz/sk rap. Mezi jeho oblíbence patří Ektor, Separ, Haha Crew, Hypno808... Jen tak se nenaštve a má přezdívku negr nebo ježek. <?.?.?>",
-    "thomas": "/me THOMAS B je milý a hodný člověk, ale nesmíte ho naštvat. Nesnáší lež a faleš a má rád ty, kteří mají rádi jeho. Bývá náladový, ale má rád srandu a dokáže rozesmát. Nesnáší škemrání o staff, ale miluje sklepy.",
-    "ichigo": "/me Ichigo Kurosaki je jako každý normální středoškolák, pokuď nepočítáme schopnost vidět duchy. V našem staff jíž nepůsobí, ale udělal nám speciální CSS pozadí.",
+    "thomas": "/me THOMAS B je milý a hodný člověk, ale nesmíte ho naštvat. Nesnáší lež a faleš a má rád ty, kteří mají rádi jeho. Bývá náladový, ale má rád srandu a dokáže rozesmát. Nesnáší škemrání o staff a náhlé změny.",
     "nicmoc": "/me [NicMoc.Dj] je strašný flegmatik. Baví ho posilování, běhání a občas hraje WOT. Nepokoušejte se ho naštvat nebo špatně skončíte. Ale jinak je s ním sranda a rád si dělá srandu z ostatních.",
-    "derp": "/me Derp... je hodný, upřímný kluk, který rád sere ostatní lidi. Miluje EDM festivaly a dobrý alkohol. Jinak velmi rád se baví se slečnami. Je to kluk jako buk. Prostě náš vyhazovačis.",
+    "derp": "/me Derp je hodný upřímný kluk, který rád štve ostatní lidi. Miluje EDM festivaly a dobrý alkohol. Jinak se velmi rád baví se slečnami. Je to kluk jako buk. Prostě náš vyhazovačis.",
     "misul": "/me *Sweetie-Mišul* má ráda dobrou hudbu a pokec s fajn lidmi. Miluje seriály a čtení knih. Je svá, bezstarostná a často afkuje!",
-    "operaco": "/me Operaco je náš milý hoch, který se nebojí jít za DJ pult. :babyrage: ",
+    "operaco": "/me Operaco je náš milý hoch, který se sice nebojí jít za DJ pult. :babyrage: ",
     "kebabčiči": "/me Kočička alá Kebabčiči se považuje za nejhodnějšího člověka na světě. Takže trošku egoistka, ale máme ji rádi. :heart:"
 }
