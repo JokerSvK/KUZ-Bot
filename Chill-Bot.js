@@ -85,7 +85,7 @@
         if (typeof chat === "undefined") {
             API.chatLog("Tento text chybí v jazykovém balíčku bota.");
             console.log("Tento text chybí v jazykovém balíčku bota.");
-            return "[Error] Tento text chybí v botovi. Kontaktujte správce bota.";
+            return "[Error] Tento text chybí v botovi. Nahlašte chybu správci bota. Děkujeme.";
 
             // TODO: Get missing chat messages from source.
         }
@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/langIndex.json", function (json) {
+        $.get("https://raw.githubusercontent.com/Franta72/Chill-Bot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -242,7 +242,7 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/KUZczech.json",
+        chatLink: "https://raw.githubusercontent.com/Franta72/Chill-Bot/master/Chillczech.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,7 +250,7 @@
         settings: {
             botName: "Chill Bot",
             language: "special",
-            chatLink: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/KUZczech.json",
+            chatLink: "https://raw.githubusercontent.com/Franta72/Chill-Bot/master/Chillczech.json",
             scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
