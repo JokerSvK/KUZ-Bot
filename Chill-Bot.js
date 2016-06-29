@@ -301,7 +301,7 @@
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: "Facebookové stránky dočasně nemáme.",
+            fbLink: null,
             youtubeLink: null,
             website: null,
             intervalMessages: [],
