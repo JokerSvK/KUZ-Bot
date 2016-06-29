@@ -236,9 +236,9 @@
     var botCreatorIDs = ["5032556", "4105209"];
 
     var basicBot = {
-        version: "7.7.2",
+        version: "4.2.0",
         status: false,
-        name: "KUZ Bot",
+        name: "Chill Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -248,7 +248,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "KUZ Bot",
+            botName: "Chill Bot",
             language: "special",
             chatLink: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/KUZczech.json",
             scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
@@ -293,15 +293,15 @@
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: true,
-            motdInterval: 10,
-            motd: "Sledujte nás také na Facebooku. https://www.facebook.com/HudbaUTomasa/?fref=ts",
+            motdInterval: 15,
+            motd: "Děkujeme za podporu a hraní úžasných skladeb. #STAFF",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
             opLink: null,
             rulesLink: null,
             themeLink: null,
-            fbLink: "https://www.facebook.com/HudbaUTomasa/?fref=ts",
+            fbLink: "Facebookové stránky dočasně nemáme.",
             youtubeLink: null,
             website: null,
             intervalMessages: [],
@@ -1198,7 +1198,7 @@
                 
                 if (msg.indexOf('redtube') > -1) {
                     API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
+                    API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
                     return true;
                      
                     
@@ -2109,41 +2109,7 @@ loveCommand: {
                     }
                 }
             },
-            kamennuzkypapirCommand: {
-                command: 'vyzvat',
-                rank: 'user',
-                type: 'startsWith',
-                getkameny: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.kameny.length);
-                    return basicBot.chat.kameny[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(basicBot.chat.givevyzvat);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouservyzvat, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfvyzvat, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.vyzvat, {nameto: user.username, namefrom: chat.un, KAMENY: this.getkameny()}));
-                            }
-                        }
-                    }
-                }
-            },
+            
  zvireCommand: {
                 command: ['zvire', 'animal'],
                 rank: 'user',
@@ -2214,41 +2180,7 @@ koupitCommand: {
                     }
                 }
             },
-            luluCommand: {
-                command: 'lulu',
-                rank: 'user',
-                type: 'startsWith',
-                getlulus: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.lulus.length);
-                    return basicBot.chat.lulus[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(basicBot.chat.givelulu);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouserlulu, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selflulu, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.lulu, {nameto: user.username, namefrom: chat.un, LULUS: this.getlulus()}));
-                            }
-                        }
-                    }
-                }
-            },
+            
 sklepCommand: {
                 command: ['sklep', 'cellar'],
                 rank: 'user',
@@ -2284,43 +2216,9 @@ sklepCommand: {
                     }
                 }
             },
-            bitchCommand: {
-                command: 'bitch',
-                rank: 'user',
-                type: 'startsWith',
-                getbitches: function (chat) {
-                    var c = Math.floor(Math.random() * basicBot.chat.bitches.length);
-                    return basicBot.chat.bitches[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(basicBot.chat.givebitch);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = basicBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(basicBot.chat.nouserbitch, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(basicBot.chat.selfbitch, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(basicBot.chat.bitch, {nameto: user.username, namefrom: chat.un, BITCHES: this.getbitches()}));
-                            }
-                        }
-                    }
-                }
-            },
-             fuckCommand: {
-                command: 'fuck',
+           
+             nadavatCommand: {
+                command: 'nadavat',
                 rank: 'user',
                 type: 'startsWith',
                 getfucks: function (chat) {
@@ -2401,18 +2299,6 @@ sklepCommand: {
                     }
                 }
             },
-            thomasCommand: {
-                command: 'thomas',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.thomas);
-                    }
-                }
-            },
             sumerCommand: {
                 command: 'sumer',
                 rank: 'user',
@@ -2437,30 +2323,7 @@ sklepCommand: {
                     }
                 }
             },
-            psychoCommand: {
-                command: 'psycho',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.psycho);
-                    }
-                }
-            },
-            nicmocCommand: {
-                command: 'nicmoc',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.nicmoc);
-                    }
-                }
-            },
+            
             frantaCommand: {
                 command: 'franta',
                 rank: 'user',
@@ -2485,44 +2348,8 @@ sklepCommand: {
                     }
                 }
             },
-            derpCommand: {
-                command: 'derp',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.derp);
-                    }
-                }
-            },
-            ichigoCommand: {
-                command: 'ichigo',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.ichigo);
-                    }
-                }
-            },
-            misulCommand: {
-                command: 'misul',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.misul);
-                    }
-                }
-            },
-             kebabčičiCommand: {
-                command: 'kebabčiči',
+             kočičkaCommand: {
+                command: 'kočička',
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2530,18 +2357,6 @@ sklepCommand: {
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         API.sendChat(basicBot.chat.kebabčiči);
-                    }
-                }
-            },
-            operacoCommand: {
-                command: 'operaco',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(basicBot.chat.operaco);
                     }
                 }
             },
