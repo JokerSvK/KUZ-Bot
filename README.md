@@ -1,8 +1,8 @@
-# HJV Bot
+# Chill Bot
 
-Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy jsou upraveny speciálně pro Hudba je Všetko a nesmí být použito nikde bez souhlasu majitele této verze bota. 
+Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy jsou upraveny speciálně pro Chill & Play CZ/SK a nesmí být použito nikde bez souhlasu majitele této verze bota. 
 
-2016, Hudba je Všetko.
+2016, CHILL & PLAY CZ/SK.
 
 # Verze bota
 
@@ -22,5 +22,8 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 - Příkaz k vyhledání uživatele !hledat
 - Členové admin týmu mohou psát oznámení přes !say
 
-19.06.2016 - Ukončení vývoje bota. Bot bude provozován v komunitě i nadále, ale jíž se nebudou vydávat žádné aktualizace.
-vFinal Version by Franta72
+[v4.2.0] [29.06.2016]
+
+- Přejmenování na "CHILL BOT"
+
+
