@@ -72,18 +72,7 @@
                     "ti vzkazuje: \"Skoč do zdi a přikryj se omítkou.\"",
                     "ti vzkazuje: \"Šlápni na lego a zakopni o skříň!\""
                     
-        ],
-	"bitches": [
-	            "se tě ptá, jestli nechceš být jeho/její bitch.",
-                    "tě chce do svého harému.",
-                    "tě pasuje na svou osobní bitch.",
-                    "chce po tobě ruční práce. Však víš, co tím myslím..",
-                    "ti sahá kam nemá.",
-                    "má s tebou jisté plány..",
-                    "si s tebou chce pohrát.",
-                    "si s tebou chce dát sprchu.",
-                    "si chce líznout.",
-                    "po tobě chce službičku."
+        
         ],
          "hugs": [
          	"ti posílá virtuální objetí http://i.imgur.com/EZXOvFl.gif",
@@ -127,41 +116,9 @@
                     "ti koupil jedno velké nic, abys poznal pocit prázdnoty."
 		
 		
-	],
-	"lulus": [
-		    "chce trtkat.",
-		    "chce vymastit.",
-		    "chce vydrnkat.",
-		    "si chce s tebou pohrát.",
-		    "ti chce vypatexovat byt.",
-		    "ti chce vytahat pipíka.",
-		    "ti chce oloupat banán.",
-		    "si tě chce osedlat.",
-		    "si tě chce odtáhnout do nory a zotročit.",
-		    "chce ochutnat tvou hybridní meruňku.",
-		    "ti chce ukradnout tvého frantíka.",
-		    "tě chce na tvrdo namasírovat mezi půlkami.",
-		    "má chuť na Twister.",
-		    "ti chce namasírovat bambuli.",
-		    "má chuť tě potahat za bambína.",
-		    "si chce pochutnat na tvém nanuku.",
-		    "chce polechtat na fanfulínovi.",
-		    "si chce pohrát s tvými dírkami a pořádně tě protáhnout, protože věří, že ti tím prodlouží život.",
-		    "ti chce ukázat, jak má rád/a lízátka.",
-		    "má micropenis a veřejně to přiznává.",
-		    "tě žádá o krásnou velkou růžovou ponožku.",
-		    "tě miluje a přeje ti tolik dobrého, kolik by ti nikdo jiný nepřál, ale chce za to vypindit hoňoura."
-		    
 	
-	],
-	"kameny": [
-		    "dal/a kamen.",
-		    "dal/a nůžky.",
-		    "dal/a papír.",
-		    "si uprdl/a."
-		    
-		    
-		
+	
+	
 		
 	],
 	"animal": [
@@ -179,22 +136,24 @@
         "Jistě.",
         "Proč ne?",
         "Ne.",
+        "Bohužel, odpovídám ne.",
         "Nevím.",
+        "Ne. Jednou stačilo.",
         "Souhlasím.",
         "Nesouhlasím.",
-        "Hej zkus se zeptat jindy.",
+        "Hej, zkus se zeptat jindy.",
         "Ne nezájem, nechci, neprodám, nekoupím.",
         "Tak myslím, že by to i šlo.",
         "Neptej se na hlouposti.",
         "Dneska je tak krásné počasí...",
         "Tak já nevím...",
         "Taky tě miluji. :*",
-        "To zní zajímavě... Kecám, je to nuda.",
+        "Tak nudná otázka zde ještě nebyla..",
         "Jo jasně. Teda možná...",
         "Snad někdy příště...",
         "LIKE.",
         "Hej neptej se furt.",
-        "Docela blbý, ale jinak ok.",
+        "Na co pořád myslíš, sprosťáku?",
         "Jo jsi sexy.",
         "Nezapomeň svůj dotaz, možná zítra odpovím.",
         "Jo možná za rok.",
@@ -210,11 +169,12 @@
         "Na to honem rychle zapomeň!",
         "Můžeš chvilinku být zticha?!",
 	"69",
-	"Co myslíš, že by na to řekl GeeDee?",
-	"To zní fajn. Thomas by jistě souhlasil!",
+	"Nezájem."
+	"Co myslíš, že by na to řekl GERM?",
+	"To zní fajn. Nech si ten nápad patentovat. Určitě ve světě prorazíš!",
 	"Tato extrémně komplexní otázka zapříčinila edém na mém neocortexu.",
 	"Dáš mi na to recept?",
-	"Proč to raději nenapíšeš GeeDeemu?"
+	"Germ by odpověděl to samé co já."
     ],
 
     "nodatafound": "Nebyla nalezena žádná předchozí data.",
@@ -302,7 +262,7 @@
     "brandambassador": "/me Brand Ambassador je hlas uživatelů plug.dj. Podporují akce, pomáhají komunitám, sdílejí plug.dj vzkaz po celém světě. Pro více informací: https://stg.plug.dj/ba.",
     "bouncerplusrank": "/me [@%%NAME%%] Musíš být manažer a nebo musí být povolen Bouncer+.",
     "chatcleared": "/me [@%%NAME%%] Vymazal/a chat.",
-    "deletechat": "/me [@%%NAME%%] Vyčistil/a chat od %%USERNAME%%.",
+    "deletechat": "/me [@%%NAME%%] Vymazal/a chat od %%USERNAME%%.",
     "commandslink": "/me %%BOTNAME%% příkazy: %%LINK%%",
     "eatcookie": "/me Pošli někomu sušenku přes !cookie @jmeno.",
     "nousercookie": "/me Nevidím uživatele %%NAME%% v místnosti, takže si vyber na sušenky někoho jinýho. ",
@@ -364,10 +324,8 @@
     "website": "/me Prosím navštivte naše webové stránky: %%LINK%%",
     "youtube": "/me [%%NAME%%] Dejte nám odběr na youtube: %%LINK%%",
     "songstatistics": "/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W/%%GRABS%%G/%%MEHS%%M.",
-    "prikazy": "/me Seznam HJV příkazů: http://hudbajevsetko.justforum.net/t9-nase-prikazy",
-    "slovnik": "/me @%%NAME%%, uklidni se.",
-    "slovnik2": "/me @%%NAME%%, uklidni se nebo budeš umlčen/a.",
-    "slovnik3": "/me @%%NAME%%, byl/a jsi umlčen/a za opakovanou vulgaritu v chatu.",
+    "prikazy": "/me Seznam CHILL příkazů: Připravuje se...",
+    
     
 
     
@@ -424,21 +382,11 @@
      "selfhug": "/me %%NAME%%, nemůžeš obejmout sám/a sebe..",
      "nouserhug": "/me Nevidím %%NAME%% v místnosti, takže obejmi někoho jinýho.",
      "hug": "/me @%%NAMETO%%, @%%NAMEFROM%% %%HUGS%%",
-     
-     "givevyzvat": "/me Příkazem !vyzvat @jmeno si zahraješ kamen, nůžky, papír.",
-     "selfvyzvat": "/me %%NAME%%, nemůžeš hrát sam/a.",
-     "nouservyzvat": "/me Nevidím %%NAME%% v místnosti, takže vyzvi na tuto zapeklitou hru někoho jinýho.",
-     "vyzvat": "/me @%%NAMETO%%, @%%NAMEFROM%% %%KAMENY%%",
+  
     
     "germ": "/me Germ je hodný, vyrovnaný, neutrální a extrémně náročný flegmatik, který miluje sarkasmus a ironii. Je to nevypočitatelný optimista. Miluje T. Bergersena, zvířata a rád spamuje. Bývá často AFK.",
-    "psycho": "/me ThePsycho je často nerozhodný, pohodový, optimistický a mírumilovný člověk. Poslouchá hlavně rock a metal a nenávidí český rap.",
     "sumer": "/me Sumer miluje jízdu na kole. Je klidné a mírumilovné povahy a málokdy se naštve, ale když se to někomu podaří, tak to stojí za to. Občas je tvrdohlavý a je pro každou srandu. Má přezdívku sumec. >(°>__<°)<",
     "franta": "/me Franta72 je někdy náladový týpek, ale vždy je nějaký způsob, jak si s ním pokecat. Je správcem bota. Nemá rád, když mu někdo lže. Miluje rap, ale poslouchá v podstatě všechno.",
     "dykobraz": "/me Dykobraz je kliďas, pohodář a všechno bere s humorem. Miluje cz/sk rap. Mezi jeho oblíbence patří Ektor, Separ, Haha Crew, Hypno808... Jen tak se nenaštve a má přezdívku negr nebo ježek. <?.?.?>",
-    "thomas": "/me THOMAS B je milý a hodný člověk, ale nesmíte ho naštvat. Nesnáší lež a faleš a má rád ty, kteří mají rádi jeho. Bývá náladový, ale má rád srandu a dokáže rozesmát. Nesnáší škemrání o staff a náhlé změny.",
-    "nicmoc": "/me [NicMoc.Dj] je strašný flegmatik. Baví ho posilování, běhání a občas hraje WOT. Nepokoušejte se ho naštvat nebo špatně skončíte. Ale jinak je s ním sranda a rád si dělá srandu z ostatních.",
-    "derp": "/me Derp je hodný upřímný kluk, který rád štve ostatní lidi. Miluje EDM festivaly a dobrý alkohol. Jinak se velmi rád baví se slečnami. Je to kluk jako buk. Prostě náš vyhazovačis.",
-    "misul": "/me *Sweetie-Mišul* má ráda dobrou hudbu a pokec s fajn lidmi. Miluje seriály a čtení knih. Je svá, bezstarostná a často afkuje!",
-    "operaco": "/me Operaco je náš milý hoch, který se sice nebojí jít za DJ pult. :babyrage: ",
     "kebabčiči": "/me Kočička alá Kebabčiči se považuje za nejhodnějšího člověka na světě. Takže trošku egoistka, ale máme ji rádi. :heart:"
 }
