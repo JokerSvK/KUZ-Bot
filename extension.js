@@ -506,6 +506,6 @@ bot.commands.gdgrabCommand = {
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Franta72/HJV-Bot/master/KUZ%20Bot.js", extend);
+    $.getScript("https://rawgit.com/Franta72/Chill-Bot/master/Chill%20Bot.js", extend);
 
 }).call(this);
