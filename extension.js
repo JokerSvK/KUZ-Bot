@@ -440,9 +440,9 @@ bot.commands.gdgrabCommand = {
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "Chill Bot",
+      botName: "KUZ Bot",
       language: "special",
-      chatLink: "https://rawgit.com/Franta72/KUT-Bot/master/Chillczech.json",
+      chatLink: "https://rawgit.com/Franta72/KUZ-Bot/master/KUZczech.json",
       scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
@@ -494,7 +494,7 @@ bot.commands.gdgrabCommand = {
       fbLink: null,
       youtubeLink: null,
       website: null,
-      intervalMessages: ["Děkujeme za vaší podporu. S láskou #AT. :heart:"],
+      intervalMessages: ["Sledujte nás také na Facebooku. https://www.facebook.com/KoutUmeleckeZabavy/"],
       messageInterval: 10,
       songstats: false,
       commandLiteral: "!",
@@ -506,6 +506,6 @@ bot.commands.gdgrabCommand = {
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Franta72/Chill-Bot/master/Chill-Bot.js", extend);
+    $.getScript("https://rawgit.com/Franta72/KUZ-Bot/master/KUZ%20Bot.js", extend);
 
 }).call(this);
