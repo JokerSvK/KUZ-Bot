@@ -9,7 +9,7 @@
 
     /*window.onerror = function() {
         var room = JSON.parse(localStorage.getItem("basicBotRoom"));
-        window.location = 'https://stg.plug.dj' + room.name;
+        window.location = 'https://plug.dj' + room.name;
     };*/
 
     API.getWaitListPosition = function(id){
@@ -99,7 +99,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://raw.githubusercontent.com/Franta72/HJV-Bot/master/langIndex.json", function (json) {
+        $.get("https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -233,16 +233,16 @@
 
     var botCreator = "The Basic Team";
     var botMaintainer = "Benzi"
-    var botCreatorIDs = ["3851534", "4105209"];
+    var botCreatorIDs = ["5032556", "4105209"];
 
     var basicBot = {
-        version: "7.2.2",
+        version: "7.7.2",
         status: false,
         name: "KUZ Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
+        chatLink: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/KUZczech.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,7 +250,7 @@
         settings: {
             botName: "KUZ Bot",
             language: "special",
-            chatLink: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/HJVczech.json",
+            chatLink: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/KUZczech.json",
             scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
@@ -261,7 +261,7 @@
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: true,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -270,12 +270,12 @@
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
-            voteSkip: false,
+            voteSkip: true,
             voteSkipLimit: 10,
             historySkip: false,
             timeGuard: true,
             maximumSongLength: 8.15,
-            autodisable: true,
+            autodisable: false,
             commandCooldown: 30,
             usercommandsEnabled: true,
             thorCommand: true,
@@ -307,9 +307,9 @@
             intervalMessages: [],
             messageInterval: 5,
             songstats: false,
-            commandLiteral: "!",
+            commandLiteral: "/",
             blacklists: {
-                NSFW: "https://raw.githubusercontent.com/Franta72/HJV-Bot/master/blacklist.json",
+                NSFW: "https://raw.githubusercontent.com/Franta72/KUZ-Bot/master/blacklist.json",
                 OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
                 BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
             }
@@ -379,7 +379,8 @@
                     var ind = Math.floor(Math.random() * basicBot.room.roulette.participants.length);
                     var winner = basicBot.room.roulette.participants[ind];
                     basicBot.room.roulette.participants = [];
-                    var pos = Math.floor((Math.random() * API.getWaitList().length) + 1);
+                    var cisla = ["1"];
+                    var pos = cisla [Math.floor(Math.random() * cisla.length)];
                     var user = basicBot.userUtilities.lookupUser(winner);
                     var name = user.username;
                     API.sendChat(subChat(basicBot.chat.winnerpicked, {name: name, position: pos}));
@@ -741,7 +742,7 @@
                 }, 1000, id);
             },
             changeDJCycle: function () {
-                $.getJSON('https://stg.plug.dj/_/rooms/state', function(data) {
+                $.getJSON('https://plug.dj/_/rooms/state', function(data) {
                     if (data.data[0].booth.shouldCycle) { // checks "" "shouldCycle": true "" if its true
                         API.moderateDJCycle(false); // Disables the DJ Cycle
                         clearTimeout(basicBot.room.cycleTimer); // Clear the cycleguard timer
@@ -1173,7 +1174,7 @@
                 if (basicBot.settings.cmdDeletion && msg.startsWith(basicBot.settings.commandLiteral)) {
                     API.moderateDeleteChat(chat.cid);
                 }
-                var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?stg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
@@ -1184,7 +1185,7 @@
                     } 
                 }
                 
-                 var plugRoomLinkPatt = /(\bstg.plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                 var plugRoomLinkPatt = /(\bplug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
                  if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(basicBot.chat.roomadvertising, {name: chat.un}));
@@ -1195,13 +1196,18 @@
                     } 
                 }
                 
-                if (msg.indexOf('http://adf.ly/') > -1) {
+                if (msg.indexOf('redtube') > -1) {
                     API.moderateDeleteChat(chat.cid);
-                    API.sendChat(subChat(basicBot.chat.adfly, {name: chat.un}));
+                    API.sendChat(subChat(basicBot.chat.slovnik, {name: chat.un}));
                     return true;
+                     
+                    
+           
                 }
-                if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
-                    API.moderateDeleteChat(chat.cid);
+                if (msg.indexOf('kurv') > 0 || msg.indexOf('pič') > 0 || msg.indexOf('píč') > 0 || msg.indexOf('jeb') > 0 || msg.indexOf('mrd') > 0 || msg.indexOf('kokot') > 0 || msg.indexOf('hajzl') > 0 || msg.indexOf('debil') > 0 || msg.indexOf('kréten') > 0 || msg.indexOf('buz') > 0 || msg.indexOf('hovno') > 0 || msg.indexOf('čurá') > 0 || msg.indexOf('čura') > 0 || msg.indexOf('děvk') > 0 || msg.indexOf('ser') > 0 || msg.indexOf('šuk') > 0 || msg.indexOf('srat') > 0 || msg.indexOf('srát') > 0) {
+                
+                
+                    
                     return true;
                 }
 
@@ -1297,13 +1303,10 @@
                 basicBot.room.roomstats.chatmessages++;
             },
             spam: [
-                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
-                'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
-                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
-                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
+                'kokot', 'píča', 'piča', 'pica', 'debil', 'magor', 'ichtyl', 'zmrd', 'kurva', 'děvka', 'fuck', 'bitch', 'curak', 'čůrak', 'čurak', 'retard'
             ],
             curses: [
-                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
+                'spam'
             ]
         },
         connectAPI: function () {
@@ -1362,7 +1365,7 @@
             basicBot.connectAPI();
             API.moderateDeleteChat = function (cid) {
                 $.ajax({
-                    url: "https://stg.plug.dj/_/chat/" + cid,
+                    url: "https://plug.dj/_/chat/" + cid,
                     type: "DELETE"
                 })
             };
@@ -1381,7 +1384,7 @@
                         kill();
                     }, 1000);
                     if (basicBot.settings.roomLock){
-                        window.location = 'https://stg.plug.dj' + basicBot.room.name;
+                        window.location = 'https://plug.dj' + basicBot.room.name;
                     }
                     else {
                         clearInterval(Check);
@@ -2101,6 +2104,41 @@ loveCommand: {
                             }
                             else {
                                 return API.sendChat(subChat(basicBot.chat.love, {nameto: user.username, namefrom: chat.un, LASKA: this.getlaska()}));
+                            }
+                        }
+                    }
+                }
+            },
+            kamennuzkypapirCommand: {
+                command: 'vyzvat',
+                rank: 'user',
+                type: 'startsWith',
+                getkameny: function (chat) {
+                    var c = Math.floor(Math.random() * basicBot.chat.kameny.length);
+                    return basicBot.chat.kameny[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(basicBot.chat.givevyzvat);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = basicBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(basicBot.chat.nouservyzvat, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfvyzvat, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(basicBot.chat.vyzvat, {nameto: user.username, namefrom: chat.un, KAMENY: this.getkameny()}));
                             }
                         }
                     }
@@ -2891,7 +2929,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var link = "(Updated link coming soon)";
+                        var link = "(Link neplánujeme.)";
                         API.sendChat(subChat(basicBot.chat.starterhelp, {link: link}));
                     }
                 }
@@ -3498,7 +3536,7 @@ sklepCommand: {
 
             rouletteCommand: {
                 command: 'roulette',
-                rank: 'mod',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3975,7 +4013,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        $.getJSON('https://stg.plug.dj/_/bans', function (json){
+                        $.getJSON('https://plug.dj/_/bans', function (json){
                             var msg = chat.message;
                             if (msg.length === cmd.length) return;
                             var name = msg.substring(cmd.length + 2);
@@ -4018,7 +4056,7 @@ sklepCommand: {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        $.getJSON('https://stg.plug.dj/_/mutes', function (json){
+                        $.getJSON('https://plug.dj/_/mutes', function (json){
                             var msg = chat.message;
                             if (msg.length === cmd.length) return;
                             var name = msg.substring(cmd.length+2);
@@ -4232,7 +4270,7 @@ sklepCommand: {
                                 }
                                 var slug = API.getUser(id).slug;
                                 if (typeof slug !== 'undefined') {
-                                    var profile = "https://stg.plug.dj/@/" + slug;
+                                    var profile = "https://plug.dj/@/" + slug;
                                 } else {
                                     var profile = "~";
                                 }
