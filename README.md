@@ -1,8 +1,8 @@
-# Chill Bot
+# KUZ Bot
 
-Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy jsou upraveny speciálně pro Chill & Play CZ/SK a nesmí být použito nikde bez souhlasu majitele této verze bota. 
+Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy jsou upraveny speciálně pro Kout umělecké zábavy a nesmí být použit nikde bez souhlasu majitele této verze bota. 
 
-2016, CHILL & PLAY CZ/SK.
+2016, Kout umělecké zábavy CZ/EN.
 
 # Verze bota
 
@@ -17,13 +17,17 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 [v7.7.2] [Duben - Červen 2016]
 
 - Nová hra: Automaty
-- Spouštění rulety pro manažéřy a vyšší rank
+- Nová hra: Kamen, nůžky, papír - !vyzvat
+- Ruleta hází pouze na první místo ve frontě
 - Podpora originálního plug.dj
-- Příkaz k vyhledání uživatele !hledat
-- Členové admin týmu mohou psát oznámení přes !say
+- Příkaz k vyhledání uživatele - !hledat
+- Opraveny chyby v textech
+- Nové hlášky do vybraných příkazů (!lulu, !love)
+- Členové admin týmu mohou psát oznámení - !say
+- Přejmenování na "KUZ BOT"
 
-[v4.2.0] [29.06.2016]
+* Nová verze vyjde v průběhu léta.
 
-- Přejmenování na "CHILL BOT"
+
 
 
