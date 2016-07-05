@@ -26,7 +26,8 @@ Bot vznikl v únoru 2016. Základy jsou na systému BasicBotu. Jazyk a příkazy
 - Členové admin týmu mohou psát oznámení - !say
 - Přejmenování na "KUZ BOT"
 
-* Nová verze vyjde v průběhu léta.
+
+[ Nová verze vyjde v průběhu léta. ]
 
 
 
