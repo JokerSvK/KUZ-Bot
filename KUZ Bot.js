@@ -899,6 +899,7 @@
                     basicBot.userUtilities.updateDC(basicBot.room.users[i]);
                     basicBot.room.users[i].inRoom = false;
                     if (lastDJ == user.id){
+                        var greet = true;
                         var user = basicBot.userUtilities.lookupUser(basicBot.room.users[i].id);
                         basicBot.userUtilities.updatePosition(user, 0);
                         user.lastDC.time = null;
@@ -906,7 +907,7 @@
                     }
 
             }
-                    if (basicBot.settings.leaveroom) {
+                    if (basicBot.settings.leaveroom && greet) {
                     setTimeout(function (user) {
                         API.sendChat(subChat(basicBot.chat.leaveroom, {name: user.leaveroom}));
                     }, 1 * 1000, user);
