@@ -148,23 +148,4 @@ Uživatel
 |!automaty | vsázka | Vsadíte určitý počet žetonů do automatu. |
 |!soutez | | Vzkáže informace o probíhajíci soutěži. |
 
-
-Informace o členech staffu & pomocníků HJV
-----
-
-|Příkaz | Popis |
-|:------:|:--------------------------------------:|
-|!thomas | Zobrazí kratký popis osobnosti. |
-|!germ   | Zobrazí kratký popis osobnosti. |
-|!sumer  | Zobrazí kratký popis osobnosti. |
-|!psycho | Zobrazí kratký popis osobnosti. |
-|!nicmoc | Zobrazí kratký popis osobnosti. |
-|!derp   | Zobrazí kratký popis osobnosti. |
-|!franta | Zobrazí kratký popis osobnosti. |
-|!kebabčiči|Zobrazí kratký popis osobnosti. |
-|!dykobraz|Zobrazí kratký popis osobnosti. |
-|!operaco| Zobrazí kratký popis osobnosti. |
-|!misul  | Zobrazí kratký popis osobnosti. |
-|!ichigo | Zobrazí kratký popis osobnosti. |
-
 # Poslední aktualizace příkazů: 5.7.2016 - kontrola
