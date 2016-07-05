@@ -3,7 +3,8 @@ Příkazy:
 
 X specifikuje číslo.
 Argumenty můžou být různé.
-Uvedené příkazy se vyskytují v BasicBotu. Některé příkazy naleznete pouze v této HJV verzi.
+Uvedené příkazy se vyskytují v BasicBotu. Některé příkazy naleznete pouze v této KUZ verzi.
+Některé příkazy vznikly z vaších návrhů. Děkujeme.
 
 Hostitel & Zástupce Hostitele
 -------
@@ -166,4 +167,4 @@ Informace o členech staffu & pomocníků HJV
 |!misul  | Zobrazí kratký popis osobnosti. |
 |!ichigo | Zobrazí kratký popis osobnosti. |
 
-# Poslední aktualizace příkazů: 12.4.2016
+# Poslední aktualizace příkazů: 5.7.2016 - kontrola
