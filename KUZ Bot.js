@@ -298,6 +298,7 @@
             filterChat: true,
             etaRestriction: false,
             welcome: true,
+            leaveroom: true,
             opLink: null,
             rulesLink: null,
             themeLink: null,
@@ -903,7 +904,12 @@
                         user.lastDC.time = null;
                         user.lastDC.position = user.lastKnownPosition;
                     }
-                }
+
+            }
+                    if (basicBot.settings.leaveroom) {
+                    setTimeout(function (user) {
+                        API.sendChat(subChat(basicBot.chat.leaveroom, {name: user.leaveroom}));
+                    }, 1 * 1000, user);
             }
         },
         eventVoteupdate: function (obj) {
@@ -4186,6 +4192,25 @@ sklepCommand: {
                         else {
                             basicBot.settings.welcome = !basicBot.settings.welcome;
                             return API.sendChat(subChat(basicBot.chat.toggleon, {name: chat.un, 'function': basicBot.chat.welcomemsg}));
+                        }
+                    }
+                }
+            },
+            leaveroomCommand: {
+                command: 'leaveroom',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (basicBot.settings.leaveroom) {
+                            basicBot.settings.leaveroom = !basicBot.settings.leaveroom;
+                            return API.sendChat(subChat(basicBot.chat.toggleoff, {name: chat.un, 'function': basicBot.chat.leaveroommsg}));
+                        }
+                        else {
+                            basicBot.settings.leaveroom = !basicBot.settings.leaveroom;
+                            return API.sendChat(subChat(basicBot.chat.toggleon, {name: chat.un, 'function': basicBot.chat.leaveroommsg}));
                         }
                     }
                 }
